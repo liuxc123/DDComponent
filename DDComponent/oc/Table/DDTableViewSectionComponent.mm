@@ -23,6 +23,7 @@
 #import "DDTableViewSectionComponent.h"
 #import "DDTableViewComponent+Private.h"
 #import "DDTableViewComponent+Cache.h"
+#import <vector>
 
 @implementation DDTableViewSectionComponent
 
@@ -222,7 +223,9 @@
 @end
 
 
-@implementation DDTableViewItemGroupComponent
+@implementation DDTableViewItemGroupComponent {
+    std::vector<NSInteger> _numberOfItemsCache;
+}
 
 - (void)setSubComponents:(NSArray *)subComponents {
     for (DDTableViewBaseComponent *comp in _subComponents) {
@@ -257,17 +260,39 @@
 
 - (DDTableViewBaseComponent *)componentAtRow:(NSInteger)atRow {
     UITableView *tableView = self.tableView;
-    DDTableViewBaseComponent *component = nil;
+    __block DDTableViewBaseComponent *component = nil;
     if (tableView) {
-        NSInteger row = self.row;
-        NSInteger section = self.section;
-        for (DDTableViewBaseComponent *comp in _subComponents) {
-            NSInteger count = [comp tableView:tableView numberOfRowsInSection:section];
-            if (row <= atRow && row+count > atRow) {
-                component = comp;
-                break;
+        __block NSInteger row = self.row;
+        if (self.dataSourceCacheEnable) {
+            __block NSInteger section = -1; // Lazy load section.
+            [_subComponents enumerateObjectsUsingBlock:^(DDTableViewBaseComponent *obj, NSUInteger idx, BOOL *stop) {
+                NSInteger count = 0;
+                if (_numberOfItemsCache.size() > idx) {
+                    count = _numberOfItemsCache[idx];
+                }
+                else {
+                    if (section < 0) {
+                        section = self.section;
+                    }
+                    count = [obj tableView:tableView numberOfRowsInSection:section];
+                }
+                if (row <= atRow && row+count > atRow) {
+                    component = obj;
+                    *stop = YES;
+                }
+                row += count;
+            }];
+        }
+        else {
+            NSInteger section = self.section;
+            for (DDTableViewBaseComponent *comp in _subComponents) {
+                NSInteger count = [comp tableView:tableView numberOfRowsInSection:section];
+                if (row <= atRow && row+count > atRow) {
+                    component = comp;
+                    break;
+                }
+                row += count;
             }
-            row += count;
         }
     }
     return component;
@@ -277,17 +302,44 @@
     return self.section;
 }
 
-- (NSInteger)firstRowOfSubComponent:(id<DDTableViewComponent>)comp {
+- (NSInteger)firstRowOfSubComponent:(id<DDTableViewComponent>)subComp {
     UITableView *tableView = self.tableView;
-    NSInteger row = self.row;
-    NSInteger section = self.section;
     if (tableView) {
-        for (DDTableViewBaseComponent *subComp in _subComponents) {
-            if (comp == subComp) {
+        if (self.dataSourceCacheEnable) {
+            __block NSInteger row = self.row;
+            __block BOOL matched = NO;
+            __block NSInteger section = -1; // Lazy load section.
+            [_subComponents enumerateObjectsUsingBlock:^(DDTableViewBaseComponent *obj, NSUInteger idx, BOOL *stop) {
+                if (obj == subComp) {
+                    *stop = YES;
+                    matched = YES;
+                }
+                else {
+                    if (_numberOfItemsCache.size() > idx) {
+                        row += _numberOfItemsCache[idx];
+                    }
+                    else {
+                        if (section < 0) {
+                            section = self.section;
+                        }
+                        row += [obj tableView:tableView numberOfRowsInSection:section];
+                    }
+                }
+            }];
+            if (matched) {
                 return row;
             }
-            else {
-                row += [subComp tableView:self.tableView numberOfRowsInSection:section];
+        }
+        else {
+            NSInteger row = self.row;
+            NSInteger section = self.section;
+            for (DDTableViewBaseComponent *comp in _subComponents) {
+                if (comp == subComp) {
+                    return row;
+                }
+                else {
+                    row += [comp tableView:tableView numberOfRowsInSection:section];
+                }
             }
         }
     }
@@ -300,11 +352,22 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    NSInteger rows = 0;
-    for (DDTableViewBaseComponent *comp in _subComponents) {
-        rows += [comp tableView:tableView numberOfRowsInSection:section];
+    NSInteger count = 0;
+    if (self.dataSourceCacheEnable) {
+        _numberOfItemsCache.clear();
+        _numberOfItemsCache.reserve(_subComponents.count);
+        for (DDTableViewBaseComponent *comp in _subComponents) {
+            NSInteger number = [comp tableView:tableView numberOfRowsInSection:section];
+            count += number;
+            _numberOfItemsCache.push_back(number);
+        }
     }
-    return rows;
+    else {
+        for (DDTableViewBaseComponent *comp in _subComponents) {
+            count += [comp tableView:tableView numberOfRowsInSection:section];
+        }
+    }
+    return count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {

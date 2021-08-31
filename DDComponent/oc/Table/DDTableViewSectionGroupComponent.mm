@@ -23,8 +23,11 @@
 #import "DDTableViewSectionGroupComponent.h"
 #import "DDTableViewComponent+Private.h"
 #import "DDTableViewComponent+Cache.h"
+#import <vector>
 
-@implementation DDTableViewSectionGroupComponent
+@implementation DDTableViewSectionGroupComponent {
+    std::vector<NSInteger> _numberOfSectionCache;
+}
 
 #pragma mark - interface
 
@@ -70,7 +73,13 @@
                 *stop = YES;
             }
             else {
-                section += [comp numberOfSectionsInTableView:tableView];
+                // When dataSourceCacheEnable = NO, _numberOfSectionCache.size == 0
+                if (_numberOfSectionCache.size() > idx) {
+                    section += _numberOfSectionCache[idx];
+                }
+                else {
+                    section += [comp numberOfSectionsInTableView:tableView];
+                }
             }
         }];
         if (matched) {
@@ -88,9 +97,13 @@
         __block NSInteger section = self.section;
         [_subComponents enumerateObjectsUsingBlock:^(DDTableViewBaseComponent *comp, NSUInteger idx, BOOL *stop) {
             NSInteger count = 0;
-            
-            count += [comp numberOfSectionsInTableView:tableView];
-
+            // When dataSourceCacheEnable = NO, _numberOfSectionCache.size == 0
+            if (_numberOfSectionCache.size() > idx) {
+                count = _numberOfSectionCache[idx];
+            }
+            else {
+                count += [comp numberOfSectionsInTableView:tableView];
+            }
             if (section <= atSection && section+count > atSection) {
                 component = comp;
                 *stop = YES;
@@ -114,8 +127,19 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     NSInteger sections = 0;
-    for (DDTableViewBaseComponent *comp in _subComponents) {
-        sections += [comp numberOfSectionsInTableView:tableView];
+    if (self.dataSourceCacheEnable) {
+        _numberOfSectionCache.clear();
+        _numberOfSectionCache.reserve(_subComponents.count);
+        for (DDTableViewBaseComponent *comp in _subComponents) {
+            NSInteger number = [comp numberOfSectionsInTableView:tableView];
+            sections += number;
+            _numberOfSectionCache.push_back(number);
+        }
+    }
+    else {
+        for (DDTableViewBaseComponent *comp in _subComponents) {
+            sections += [comp numberOfSectionsInTableView:tableView];
+        }
     }
     return sections;
 }
