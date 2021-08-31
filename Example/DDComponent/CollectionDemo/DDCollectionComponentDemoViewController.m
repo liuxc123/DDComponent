@@ -52,8 +52,7 @@
                 [DDCollectionViewItemDemoComponent new],
                 [DDCollectionViewItemDemoComponent new],
                 [DDCollectionViewItemDemoComponent new]
-            ]]
-            ,
+            ]],
             section0,
             section1
         ]]

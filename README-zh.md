@@ -7,6 +7,13 @@
 
 比如淘宝、考拉等以内容为主的平台，模块间相对独立，同时又有很多模块（推荐、相关、评论等）可以完全复用，就非常符合DDComponent的使用场景。和Instagram的`IGList`比较类似，两者分析会在[这篇文章](./CompareToIGList.md)中说明。
 
+# 源码
+
+**可以通过该组件来创建模块比较多比较复杂的UICollectionView 或者tableView布局**
+本组件的实现代码采用的是 [djs66256/DDComponent作者](https://github.com/djs66256/DDComponent)的DDComponent [源地址链接](https://github.com/djs66256/DDComponent) 
+
+原作者苍耳 关于组件对用的文章 [【美学的表现层组件化之路】](https://djs66256.github.io/2017/04/09/2017-04-09-美学的表现层组件化之路/)
+
 # 安装
 
 ### CocoaPods
