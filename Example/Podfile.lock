@@ -1,0 +1,23 @@
+PODS:
+  - CatalogByConvention (2.5.2)
+  - DDComponent (0.1.0)
+
+DEPENDENCIES:
+  - CatalogByConvention
+  - DDComponent (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - CatalogByConvention
+
+EXTERNAL SOURCES:
+  DDComponent:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  CatalogByConvention: ef713654160053be026fa4648dd28caf6b5ca4e1
+  DDComponent: c792e3a6abdf33eba8f900ea1558a62975cc6bf2
+
+PODFILE CHECKSUM: c0f580dba37d7906120027f3525e191e1d9c4eb3
+
+COCOAPODS: 1.10.1

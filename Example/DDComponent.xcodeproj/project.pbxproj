@@ -7,13 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04EA96D026DDB9CC00725BB7 /* DDCollectionComponentDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EA96CF26DDB9CC00725BB7 /* DDCollectionComponentDemoViewController.m */; };
+		04EA96D626DDF3D800725BB7 /* DDComponentDemoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EA96D526DDF3D800725BB7 /* DDComponentDemoCollectionViewCell.m */; };
+		04EA96D926DDF40D00725BB7 /* DDCollectionHeaderFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EA96D826DDF40D00725BB7 /* DDCollectionHeaderFooterView.m */; };
+		04EA96DD26DDF44B00725BB7 /* DDCollectionViewItemDemoComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EA96DC26DDF44B00725BB7 /* DDCollectionViewItemDemoComponent.m */; };
+		04EA96E026DE092800725BB7 /* DDCollectionViewHeaderFooterSectionDemoComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EA96DF26DE092800725BB7 /* DDCollectionViewHeaderFooterSectionDemoComponent.m */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F598195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F596195388D20070C39A /* InfoPlist.strings */; };
 		6003F59A195388D20070C39A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F599195388D20070C39A /* main.m */; };
 		6003F59E195388D20070C39A /* DDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F59D195388D20070C39A /* DDAppDelegate.m */; };
-		6003F5A7195388D20070C39A /* DDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5A6195388D20070C39A /* DDViewController.m */; };
 		6003F5A9195388D20070C39A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5A8195388D20070C39A /* Images.xcassets */; };
 		6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F5AF195388D20070C39A /* XCTest.framework */; };
 		6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
@@ -24,6 +28,14 @@
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		8DD98160526D3D5A28432A0A /* Pods_DDComponent_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF1CA58DBBA935AAD5C6BF96 /* Pods_DDComponent_Tests.framework */; };
+		F1B0481E26DD253C000D78C1 /* DDTableViewHeaderFooterSectionDemoComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = F1B0481026DD253C000D78C1 /* DDTableViewHeaderFooterSectionDemoComponent.m */; };
+		F1B0481F26DD253C000D78C1 /* DDTableViewHeaderDemoComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = F1B0481126DD253C000D78C1 /* DDTableViewHeaderDemoComponent.m */; };
+		F1B0482026DD253C000D78C1 /* DDTableViewItemDemoComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = F1B0481226DD253C000D78C1 /* DDTableViewItemDemoComponent.m */; };
+		F1B0482126DD253C000D78C1 /* DDTableViewFooterDemoComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = F1B0481326DD253C000D78C1 /* DDTableViewFooterDemoComponent.m */; };
+		F1B0482226DD253C000D78C1 /* DDHeaderFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = F1B0481726DD253C000D78C1 /* DDHeaderFooterView.m */; };
+		F1B0482326DD253C000D78C1 /* DDComponentDemoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F1B0481826DD253C000D78C1 /* DDComponentDemoTableViewCell.m */; };
+		F1B0482426DD253C000D78C1 /* DDTableComponentDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1B0481A26DD253C000D78C1 /* DDTableComponentDemoViewController.m */; };
+		F1B0482526DD253C000D78C1 /* DDTableComponentCustomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1B0481D26DD253C000D78C1 /* DDTableComponentCustomViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +49,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		04EA96CE26DDB9CC00725BB7 /* DDCollectionComponentDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDCollectionComponentDemoViewController.h; sourceTree = "<group>"; };
+		04EA96CF26DDB9CC00725BB7 /* DDCollectionComponentDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDCollectionComponentDemoViewController.m; sourceTree = "<group>"; };
+		04EA96D426DDF3D800725BB7 /* DDComponentDemoCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDComponentDemoCollectionViewCell.h; sourceTree = "<group>"; };
+		04EA96D526DDF3D800725BB7 /* DDComponentDemoCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDComponentDemoCollectionViewCell.m; sourceTree = "<group>"; };
+		04EA96D726DDF40D00725BB7 /* DDCollectionHeaderFooterView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDCollectionHeaderFooterView.h; sourceTree = "<group>"; };
+		04EA96D826DDF40D00725BB7 /* DDCollectionHeaderFooterView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDCollectionHeaderFooterView.m; sourceTree = "<group>"; };
+		04EA96DB26DDF44B00725BB7 /* DDCollectionViewItemDemoComponent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDCollectionViewItemDemoComponent.h; sourceTree = "<group>"; };
+		04EA96DC26DDF44B00725BB7 /* DDCollectionViewItemDemoComponent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDCollectionViewItemDemoComponent.m; sourceTree = "<group>"; };
+		04EA96DE26DE092800725BB7 /* DDCollectionViewHeaderFooterSectionDemoComponent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDCollectionViewHeaderFooterSectionDemoComponent.h; sourceTree = "<group>"; };
+		04EA96DF26DE092800725BB7 /* DDCollectionViewHeaderFooterSectionDemoComponent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDCollectionViewHeaderFooterSectionDemoComponent.m; sourceTree = "<group>"; };
 		5DC714B7C6EAC4C67CB74966 /* Pods-DDComponent_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DDComponent_Tests.release.xcconfig"; path = "Target Support Files/Pods-DDComponent_Tests/Pods-DDComponent_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* DDComponent_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DDComponent_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -48,8 +70,6 @@
 		6003F59B195388D20070C39A /* DDComponent-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DDComponent-Prefix.pch"; sourceTree = "<group>"; };
 		6003F59C195388D20070C39A /* DDAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDAppDelegate.h; sourceTree = "<group>"; };
 		6003F59D195388D20070C39A /* DDAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDAppDelegate.m; sourceTree = "<group>"; };
-		6003F5A5195388D20070C39A /* DDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDViewController.h; sourceTree = "<group>"; };
-		6003F5A6195388D20070C39A /* DDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDViewController.m; sourceTree = "<group>"; };
 		6003F5A8195388D20070C39A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6003F5AE195388D20070C39A /* DDComponent_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DDComponent_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F5AF195388D20070C39A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -64,9 +84,25 @@
 		B72107BBEFB5414F0FF43C5A /* Pods-DDComponent_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DDComponent_Example.debug.xcconfig"; path = "Target Support Files/Pods-DDComponent_Example/Pods-DDComponent_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		BF1CA58DBBA935AAD5C6BF96 /* Pods_DDComponent_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DDComponent_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8D925B2EB0CBD69D18A4AB3 /* Pods-DDComponent_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DDComponent_Example.release.xcconfig"; path = "Target Support Files/Pods-DDComponent_Example/Pods-DDComponent_Example.release.xcconfig"; sourceTree = "<group>"; };
-		E7B55A85DFFC23A1DABFB7FD /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		FD76E02CD1F9A8694E0403A3 /* DDComponent.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = DDComponent.podspec; path = ../DDComponent.podspec; sourceTree = "<group>"; };
-		FEF19D8A25E40907ADEE14A3 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		E7B55A85DFFC23A1DABFB7FD /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		F1B0480B26DD253C000D78C1 /* DDTableComponentDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDTableComponentDemoViewController.h; sourceTree = "<group>"; };
+		F1B0480D26DD253C000D78C1 /* DDTableViewItemDemoComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDTableViewItemDemoComponent.h; sourceTree = "<group>"; };
+		F1B0480E26DD253C000D78C1 /* DDTableViewHeaderDemoComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDTableViewHeaderDemoComponent.h; sourceTree = "<group>"; };
+		F1B0480F26DD253C000D78C1 /* DDTableViewFooterDemoComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDTableViewFooterDemoComponent.h; sourceTree = "<group>"; };
+		F1B0481026DD253C000D78C1 /* DDTableViewHeaderFooterSectionDemoComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDTableViewHeaderFooterSectionDemoComponent.m; sourceTree = "<group>"; };
+		F1B0481126DD253C000D78C1 /* DDTableViewHeaderDemoComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDTableViewHeaderDemoComponent.m; sourceTree = "<group>"; };
+		F1B0481226DD253C000D78C1 /* DDTableViewItemDemoComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDTableViewItemDemoComponent.m; sourceTree = "<group>"; };
+		F1B0481326DD253C000D78C1 /* DDTableViewFooterDemoComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDTableViewFooterDemoComponent.m; sourceTree = "<group>"; };
+		F1B0481426DD253C000D78C1 /* DDTableViewHeaderFooterSectionDemoComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDTableViewHeaderFooterSectionDemoComponent.h; sourceTree = "<group>"; };
+		F1B0481626DD253C000D78C1 /* DDComponentDemoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDComponentDemoTableViewCell.h; sourceTree = "<group>"; };
+		F1B0481726DD253C000D78C1 /* DDHeaderFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDHeaderFooterView.m; sourceTree = "<group>"; };
+		F1B0481826DD253C000D78C1 /* DDComponentDemoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDComponentDemoTableViewCell.m; sourceTree = "<group>"; };
+		F1B0481926DD253C000D78C1 /* DDHeaderFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDHeaderFooterView.h; sourceTree = "<group>"; };
+		F1B0481A26DD253C000D78C1 /* DDTableComponentDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDTableComponentDemoViewController.m; sourceTree = "<group>"; };
+		F1B0481C26DD253C000D78C1 /* DDTableComponentCustomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDTableComponentCustomViewController.h; sourceTree = "<group>"; };
+		F1B0481D26DD253C000D78C1 /* DDTableComponentCustomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDTableComponentCustomViewController.m; sourceTree = "<group>"; };
+		FD76E02CD1F9A8694E0403A3 /* DDComponent.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = DDComponent.podspec; path = ../DDComponent.podspec; sourceTree = "<group>"; };
+		FEF19D8A25E40907ADEE14A3 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +131,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04EA96CD26DDB9AA00725BB7 /* CollectionDemo */ = {
+			isa = PBXGroup;
+			children = (
+				04EA96DA26DDF41400725BB7 /* Component */,
+				04EA96D126DDBA7900725BB7 /* Cell */,
+				04EA96CE26DDB9CC00725BB7 /* DDCollectionComponentDemoViewController.h */,
+				04EA96CF26DDB9CC00725BB7 /* DDCollectionComponentDemoViewController.m */,
+			);
+			path = CollectionDemo;
+			sourceTree = "<group>";
+		};
+		04EA96D126DDBA7900725BB7 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				04EA96D426DDF3D800725BB7 /* DDComponentDemoCollectionViewCell.h */,
+				04EA96D526DDF3D800725BB7 /* DDComponentDemoCollectionViewCell.m */,
+				04EA96D726DDF40D00725BB7 /* DDCollectionHeaderFooterView.h */,
+				04EA96D826DDF40D00725BB7 /* DDCollectionHeaderFooterView.m */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		04EA96DA26DDF41400725BB7 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				04EA96DB26DDF44B00725BB7 /* DDCollectionViewItemDemoComponent.h */,
+				04EA96DC26DDF44B00725BB7 /* DDCollectionViewItemDemoComponent.m */,
+				04EA96DE26DE092800725BB7 /* DDCollectionViewHeaderFooterSectionDemoComponent.h */,
+				04EA96DF26DE092800725BB7 /* DDCollectionViewHeaderFooterSectionDemoComponent.m */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
 		1F3421FAF9A276858B8CE9C3 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -103,7 +172,6 @@
 				ABFE1B2CAD6F32EAD775C4AF /* Pods-DDComponent_Tests.debug.xcconfig */,
 				5DC714B7C6EAC4C67CB74966 /* Pods-DDComponent_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -146,10 +214,10 @@
 			children = (
 				6003F59C195388D20070C39A /* DDAppDelegate.h */,
 				6003F59D195388D20070C39A /* DDAppDelegate.m */,
-				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
-				6003F5A5195388D20070C39A /* DDViewController.h */,
-				6003F5A6195388D20070C39A /* DDViewController.m */,
+				04EA96CD26DDB9AA00725BB7 /* CollectionDemo */,
+				F1B0480A26DD253C000D78C1 /* TableDemo */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
+				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
 			);
@@ -197,6 +265,53 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
+		F1B0480A26DD253C000D78C1 /* TableDemo */ = {
+			isa = PBXGroup;
+			children = (
+				F1B0481526DD253C000D78C1 /* Cell */,
+				F1B0480C26DD253C000D78C1 /* Component */,
+				F1B0481B26DD253C000D78C1 /* Custom */,
+				F1B0480B26DD253C000D78C1 /* DDTableComponentDemoViewController.h */,
+				F1B0481A26DD253C000D78C1 /* DDTableComponentDemoViewController.m */,
+			);
+			path = TableDemo;
+			sourceTree = "<group>";
+		};
+		F1B0480C26DD253C000D78C1 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				F1B0480F26DD253C000D78C1 /* DDTableViewFooterDemoComponent.h */,
+				F1B0481326DD253C000D78C1 /* DDTableViewFooterDemoComponent.m */,
+				F1B0480E26DD253C000D78C1 /* DDTableViewHeaderDemoComponent.h */,
+				F1B0481126DD253C000D78C1 /* DDTableViewHeaderDemoComponent.m */,
+				F1B0481426DD253C000D78C1 /* DDTableViewHeaderFooterSectionDemoComponent.h */,
+				F1B0481026DD253C000D78C1 /* DDTableViewHeaderFooterSectionDemoComponent.m */,
+				F1B0480D26DD253C000D78C1 /* DDTableViewItemDemoComponent.h */,
+				F1B0481226DD253C000D78C1 /* DDTableViewItemDemoComponent.m */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		F1B0481526DD253C000D78C1 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				F1B0481626DD253C000D78C1 /* DDComponentDemoTableViewCell.h */,
+				F1B0481826DD253C000D78C1 /* DDComponentDemoTableViewCell.m */,
+				F1B0481926DD253C000D78C1 /* DDHeaderFooterView.h */,
+				F1B0481726DD253C000D78C1 /* DDHeaderFooterView.m */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		F1B0481B26DD253C000D78C1 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				F1B0481C26DD253C000D78C1 /* DDTableComponentCustomViewController.h */,
+				F1B0481D26DD253C000D78C1 /* DDTableComponentCustomViewController.m */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -208,7 +323,7 @@
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				6DA8018CBE4224F2FA2DA65C /* [CP] Embed Pods Frameworks */,
+				228FB809FE9CAC372939EC32 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -258,6 +373,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -295,6 +411,26 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		228FB809FE9CAC372939EC32 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DDComponent_Example/Pods-DDComponent_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CatalogByConvention/CatalogByConvention.framework",
+				"${BUILT_PRODUCTS_DIR}/DDComponent/DDComponent.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CatalogByConvention.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DDComponent.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DDComponent_Example/Pods-DDComponent_Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		4AD7F5F5A10DCC2AB22927E3 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -315,24 +451,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		6DA8018CBE4224F2FA2DA65C /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-DDComponent_Example/Pods-DDComponent_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/DDComponent/DDComponent.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DDComponent.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DDComponent_Example/Pods-DDComponent_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		8C2CA97F2FDC9E37FF1C0CD7 /* [CP] Check Pods Manifest.lock */ = {
@@ -364,8 +482,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1B0482326DD253C000D78C1 /* DDComponentDemoTableViewCell.m in Sources */,
+				04EA96D626DDF3D800725BB7 /* DDComponentDemoCollectionViewCell.m in Sources */,
+				F1B0481E26DD253C000D78C1 /* DDTableViewHeaderFooterSectionDemoComponent.m in Sources */,
+				F1B0482126DD253C000D78C1 /* DDTableViewFooterDemoComponent.m in Sources */,
+				04EA96D026DDB9CC00725BB7 /* DDCollectionComponentDemoViewController.m in Sources */,
+				F1B0482226DD253C000D78C1 /* DDHeaderFooterView.m in Sources */,
+				04EA96DD26DDF44B00725BB7 /* DDCollectionViewItemDemoComponent.m in Sources */,
+				F1B0482026DD253C000D78C1 /* DDTableViewItemDemoComponent.m in Sources */,
+				F1B0482526DD253C000D78C1 /* DDTableComponentCustomViewController.m in Sources */,
+				04EA96E026DE092800725BB7 /* DDCollectionViewHeaderFooterSectionDemoComponent.m in Sources */,
 				6003F59E195388D20070C39A /* DDAppDelegate.m in Sources */,
-				6003F5A7195388D20070C39A /* DDViewController.m in Sources */,
+				F1B0481F26DD253C000D78C1 /* DDTableViewHeaderDemoComponent.m in Sources */,
+				04EA96D926DDF40D00725BB7 /* DDCollectionHeaderFooterView.m in Sources */,
+				F1B0482426DD253C000D78C1 /* DDTableComponentDemoViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
