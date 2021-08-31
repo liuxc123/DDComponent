@@ -1,9 +1,11 @@
 use_frameworks!
 
-platform :ios, '9.0'
+platform :ios, '10.0'
 
 target 'DDComponent_Example' do
   pod 'DDComponent', :path => '../'
+  pod 'IBPCollectionViewCompositionalLayout'
+
   
   pod 'CatalogByConvention'
 

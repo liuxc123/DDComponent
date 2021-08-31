@@ -72,6 +72,13 @@
     }
 }
 
+- (void)reloadData {
+    [self.tableView beginUpdates];
+    [self.tableView reloadSections:[NSIndexSet indexSetWithIndex:self.section]
+                  withRowAnimation:UITableViewRowAnimationNone];
+    [self.tableView endUpdates];
+}
+
 @end
 
 

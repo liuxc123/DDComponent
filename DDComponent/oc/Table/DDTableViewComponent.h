@@ -47,6 +47,8 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)prepareTableView NS_REQUIRES_SUPER;
 
+- (void)reloadData;
+
 /**
  For ItemComponent, {item, section} is equal to indexPath.
  For SectionComponent, {item, section} is equal to first item's indexPath, or Zero.
@@ -54,23 +56,6 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property (readonly, nonatomic) NSInteger row;
 @property (readonly, nonatomic) NSInteger section;
-
-/**
- Convert methods.
- */
-- (NSInteger)convertSection:(NSInteger)section toSuperComponent:(DDTableViewBaseComponent *)comp;
-- (NSInteger)convertSection:(NSInteger)section toSubComponent:(DDTableViewBaseComponent *)comp;
-
-- (NSInteger)convertToGlobalSection:(NSInteger)section;
-- (NSInteger)convertFromGlobalSection:(NSInteger)section;
-
-- (NSIndexPath *)convertIndexPath:(NSIndexPath *)indexPath toSuperComponent:(DDTableViewBaseComponent *)comp;
-- (NSIndexPath *)convertIndexPath:(NSIndexPath *)indexPath toSubComponent:(DDTableViewBaseComponent *)comp;
-
-- (NSIndexPath *)convertToGlobalIndexPath:(NSIndexPath *)indexPath;
-- (NSIndexPath *)convertFromGlobalIndexPath:(NSIndexPath *)indexPath;
-
-- (DDTableViewBaseComponent *)componentAtIndexPath:(NSIndexPath *)indexPath;
 
 @end
 

@@ -12,6 +12,9 @@
 		04EA96D926DDF40D00725BB7 /* DDCollectionHeaderFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EA96D826DDF40D00725BB7 /* DDCollectionHeaderFooterView.m */; };
 		04EA96DD26DDF44B00725BB7 /* DDCollectionViewItemDemoComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EA96DC26DDF44B00725BB7 /* DDCollectionViewItemDemoComponent.m */; };
 		04EA96E026DE092800725BB7 /* DDCollectionViewHeaderFooterSectionDemoComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EA96DF26DE092800725BB7 /* DDCollectionViewHeaderFooterSectionDemoComponent.m */; };
+		04EA96E626DE167F00725BB7 /* DDSectionBackgroundDecorationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EA96E526DE167F00725BB7 /* DDSectionBackgroundDecorationView.m */; };
+		04EA96E926DE1A1B00725BB7 /* DDCollectionViewHeaderComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EA96E826DE1A1B00725BB7 /* DDCollectionViewHeaderComponent.m */; };
+		04EA96EC26DE1A2E00725BB7 /* DDCollectionViewFooterComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EA96EB26DE1A2E00725BB7 /* DDCollectionViewFooterComponent.m */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -35,7 +38,6 @@
 		F1B0482226DD253C000D78C1 /* DDHeaderFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = F1B0481726DD253C000D78C1 /* DDHeaderFooterView.m */; };
 		F1B0482326DD253C000D78C1 /* DDComponentDemoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F1B0481826DD253C000D78C1 /* DDComponentDemoTableViewCell.m */; };
 		F1B0482426DD253C000D78C1 /* DDTableComponentDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1B0481A26DD253C000D78C1 /* DDTableComponentDemoViewController.m */; };
-		F1B0482526DD253C000D78C1 /* DDTableComponentCustomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1B0481D26DD253C000D78C1 /* DDTableComponentCustomViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,12 @@
 		04EA96DC26DDF44B00725BB7 /* DDCollectionViewItemDemoComponent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDCollectionViewItemDemoComponent.m; sourceTree = "<group>"; };
 		04EA96DE26DE092800725BB7 /* DDCollectionViewHeaderFooterSectionDemoComponent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDCollectionViewHeaderFooterSectionDemoComponent.h; sourceTree = "<group>"; };
 		04EA96DF26DE092800725BB7 /* DDCollectionViewHeaderFooterSectionDemoComponent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDCollectionViewHeaderFooterSectionDemoComponent.m; sourceTree = "<group>"; };
+		04EA96E426DE167F00725BB7 /* DDSectionBackgroundDecorationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDSectionBackgroundDecorationView.h; sourceTree = "<group>"; };
+		04EA96E526DE167F00725BB7 /* DDSectionBackgroundDecorationView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDSectionBackgroundDecorationView.m; sourceTree = "<group>"; };
+		04EA96E726DE1A1B00725BB7 /* DDCollectionViewHeaderComponent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDCollectionViewHeaderComponent.h; sourceTree = "<group>"; };
+		04EA96E826DE1A1B00725BB7 /* DDCollectionViewHeaderComponent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDCollectionViewHeaderComponent.m; sourceTree = "<group>"; };
+		04EA96EA26DE1A2E00725BB7 /* DDCollectionViewFooterComponent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDCollectionViewFooterComponent.h; sourceTree = "<group>"; };
+		04EA96EB26DE1A2E00725BB7 /* DDCollectionViewFooterComponent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDCollectionViewFooterComponent.m; sourceTree = "<group>"; };
 		5DC714B7C6EAC4C67CB74966 /* Pods-DDComponent_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DDComponent_Tests.release.xcconfig"; path = "Target Support Files/Pods-DDComponent_Tests/Pods-DDComponent_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* DDComponent_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DDComponent_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -79,7 +87,7 @@
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7C972A2A1B8FFC82FA92CF44 /* Pods_DDComponent_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DDComponent_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		ABFE1B2CAD6F32EAD775C4AF /* Pods-DDComponent_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DDComponent_Tests.debug.xcconfig"; path = "Target Support Files/Pods-DDComponent_Tests/Pods-DDComponent_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		B72107BBEFB5414F0FF43C5A /* Pods-DDComponent_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DDComponent_Example.debug.xcconfig"; path = "Target Support Files/Pods-DDComponent_Example/Pods-DDComponent_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		BF1CA58DBBA935AAD5C6BF96 /* Pods_DDComponent_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DDComponent_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -99,8 +107,6 @@
 		F1B0481826DD253C000D78C1 /* DDComponentDemoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDComponentDemoTableViewCell.m; sourceTree = "<group>"; };
 		F1B0481926DD253C000D78C1 /* DDHeaderFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDHeaderFooterView.h; sourceTree = "<group>"; };
 		F1B0481A26DD253C000D78C1 /* DDTableComponentDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDTableComponentDemoViewController.m; sourceTree = "<group>"; };
-		F1B0481C26DD253C000D78C1 /* DDTableComponentCustomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDTableComponentCustomViewController.h; sourceTree = "<group>"; };
-		F1B0481D26DD253C000D78C1 /* DDTableComponentCustomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDTableComponentCustomViewController.m; sourceTree = "<group>"; };
 		FD76E02CD1F9A8694E0403A3 /* DDComponent.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = DDComponent.podspec; path = ../DDComponent.podspec; sourceTree = "<group>"; };
 		FEF19D8A25E40907ADEE14A3 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -149,6 +155,8 @@
 				04EA96D526DDF3D800725BB7 /* DDComponentDemoCollectionViewCell.m */,
 				04EA96D726DDF40D00725BB7 /* DDCollectionHeaderFooterView.h */,
 				04EA96D826DDF40D00725BB7 /* DDCollectionHeaderFooterView.m */,
+				04EA96E426DE167F00725BB7 /* DDSectionBackgroundDecorationView.h */,
+				04EA96E526DE167F00725BB7 /* DDSectionBackgroundDecorationView.m */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -160,6 +168,10 @@
 				04EA96DC26DDF44B00725BB7 /* DDCollectionViewItemDemoComponent.m */,
 				04EA96DE26DE092800725BB7 /* DDCollectionViewHeaderFooterSectionDemoComponent.h */,
 				04EA96DF26DE092800725BB7 /* DDCollectionViewHeaderFooterSectionDemoComponent.m */,
+				04EA96E726DE1A1B00725BB7 /* DDCollectionViewHeaderComponent.h */,
+				04EA96E826DE1A1B00725BB7 /* DDCollectionViewHeaderComponent.m */,
+				04EA96EA26DE1A2E00725BB7 /* DDCollectionViewFooterComponent.h */,
+				04EA96EB26DE1A2E00725BB7 /* DDCollectionViewFooterComponent.m */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -216,9 +228,6 @@
 				6003F59D195388D20070C39A /* DDAppDelegate.m */,
 				04EA96CD26DDB9AA00725BB7 /* CollectionDemo */,
 				F1B0480A26DD253C000D78C1 /* TableDemo */,
-				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
-				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
-				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
 			);
 			name = "Example for DDComponent";
@@ -228,6 +237,9 @@
 		6003F594195388D20070C39A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
+				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
+				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F595195388D20070C39A /* DDComponent-Info.plist */,
 				6003F596195388D20070C39A /* InfoPlist.strings */,
 				6003F599195388D20070C39A /* main.m */,
@@ -270,7 +282,6 @@
 			children = (
 				F1B0481526DD253C000D78C1 /* Cell */,
 				F1B0480C26DD253C000D78C1 /* Component */,
-				F1B0481B26DD253C000D78C1 /* Custom */,
 				F1B0480B26DD253C000D78C1 /* DDTableComponentDemoViewController.h */,
 				F1B0481A26DD253C000D78C1 /* DDTableComponentDemoViewController.m */,
 			);
@@ -301,15 +312,6 @@
 				F1B0481726DD253C000D78C1 /* DDHeaderFooterView.m */,
 			);
 			path = Cell;
-			sourceTree = "<group>";
-		};
-		F1B0481B26DD253C000D78C1 /* Custom */ = {
-			isa = PBXGroup;
-			children = (
-				F1B0481C26DD253C000D78C1 /* DDTableComponentCustomViewController.h */,
-				F1B0481D26DD253C000D78C1 /* DDTableComponentCustomViewController.m */,
-			);
-			path = Custom;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -420,11 +422,13 @@
 				"${PODS_ROOT}/Target Support Files/Pods-DDComponent_Example/Pods-DDComponent_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/CatalogByConvention/CatalogByConvention.framework",
 				"${BUILT_PRODUCTS_DIR}/DDComponent/DDComponent.framework",
+				"${BUILT_PRODUCTS_DIR}/IBPCollectionViewCompositionalLayout/IBPCollectionViewCompositionalLayout.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CatalogByConvention.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DDComponent.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IBPCollectionViewCompositionalLayout.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -487,15 +491,17 @@
 				F1B0481E26DD253C000D78C1 /* DDTableViewHeaderFooterSectionDemoComponent.m in Sources */,
 				F1B0482126DD253C000D78C1 /* DDTableViewFooterDemoComponent.m in Sources */,
 				04EA96D026DDB9CC00725BB7 /* DDCollectionComponentDemoViewController.m in Sources */,
+				04EA96EC26DE1A2E00725BB7 /* DDCollectionViewFooterComponent.m in Sources */,
 				F1B0482226DD253C000D78C1 /* DDHeaderFooterView.m in Sources */,
 				04EA96DD26DDF44B00725BB7 /* DDCollectionViewItemDemoComponent.m in Sources */,
+				04EA96E926DE1A1B00725BB7 /* DDCollectionViewHeaderComponent.m in Sources */,
 				F1B0482026DD253C000D78C1 /* DDTableViewItemDemoComponent.m in Sources */,
-				F1B0482526DD253C000D78C1 /* DDTableComponentCustomViewController.m in Sources */,
 				04EA96E026DE092800725BB7 /* DDCollectionViewHeaderFooterSectionDemoComponent.m in Sources */,
 				6003F59E195388D20070C39A /* DDAppDelegate.m in Sources */,
 				F1B0481F26DD253C000D78C1 /* DDTableViewHeaderDemoComponent.m in Sources */,
 				04EA96D926DDF40D00725BB7 /* DDCollectionHeaderFooterView.m in Sources */,
 				F1B0482426DD253C000D78C1 /* DDTableComponentDemoViewController.m in Sources */,
+				04EA96E626DE167F00725BB7 /* DDSectionBackgroundDecorationView.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

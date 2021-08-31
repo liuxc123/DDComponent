@@ -25,18 +25,18 @@
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return self.demoData.count;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return [self.demoData[section] count];
+    return [self.demoData count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     printf("%s\n", sel_getName(_cmd));
     DDComponentDemoTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"DDComponentDemoTableViewCell"];
     cell.contentView.backgroundColor = arc4random()%100 > 50 ? UIColor.redColor : UIColor.greenColor;
-    cell.textLabel.text = [NSString stringWithFormat:@"%@, section:%ld, row:%ld, firstSection:%ld, firstRow:%ld", self.demoData[indexPath.section][indexPath.row], indexPath.section, indexPath.row, self.section, self.row];
+    cell.textLabel.text = [NSString stringWithFormat:@"%@, section:%ld, row:%ld, firstSection:%ld, firstRow:%ld", self.demoData[indexPath.row], indexPath.section, indexPath.row, self.section, self.row];
     return cell;
 }
 

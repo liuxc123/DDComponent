@@ -7,9 +7,16 @@
 //
 
 #import "DDTableComponentDemoViewController.h"
+#import "DDTableViewItemDemoComponent.h"
+#import "DDTableViewComponent.h"
+#import "DDTableViewHeaderFooterSectionDemoComponent.h"
+#import "DDTableViewHeaderDemoComponent.h"
+#import "DDTableViewFooterDemoComponent.h"
 
 @interface DDTableComponentDemoViewController ()
 
+@property (nonatomic, strong) UITableView *tableView;
+@property (nonatomic, strong) DDTableViewRootComponent *rootComponent;
 
 @end
 
@@ -18,17 +25,52 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.title = @"DDTableDemo";
     
+    self.tableView = [[UITableView alloc] initWithFrame:self.view.bounds];
+    [self.view addSubview:self.tableView];
+    
+    self.rootComponent = [[DDTableViewRootComponent alloc] initWithTableView:self.tableView];
+    
+    DDTableViewItemGroupComponent *section0 = [DDTableViewItemGroupComponent componentWithSubComponents:
+                                                   @[
+                                                     [DDTableViewItemDemoComponent new],
+                                                     [DDTableViewItemDemoComponent new]
+                                                     ]];
+    section0.headerComponent = [DDTableViewHeaderDemoComponent new];
+    section0.footerComponent = [DDTableViewFooterDemoComponent new];
+    
+    DDTableViewHeaderFooterSectionDemoComponent *section1 = [DDTableViewHeaderFooterSectionDemoComponent componentWithHeader:[DDTableViewHeaderDemoComponent new] footer:[DDTableViewFooterDemoComponent new]];
+    section1.demoData = @[@[@"AAA", @"BBB", @"CCC"]];
+    
+    DDTableViewSectionGroupComponent *sectionGroup = [DDTableViewSectionGroupComponent componentWithSubComponents:
+                                                      @[
+                                                          section0,
+                                                          section1,
+                                                          [DDTableViewItemGroupComponent componentWithSubComponents:
+                                                         @[
+                                                           [DDTableViewItemDemo1Component new],
+                                                           [DDTableViewItemDemoComponent new]
+                                                           ]],
+                                                        [DDTableViewHeaderFooterSectionDemoComponent componentWithData:@[@"AAA", @"BBB", @"CCC", @"DDD", @"EEE"]],
+                                                        [DDTableViewHeaderFooterSectionDemoComponent  componentWithData:@[@"111", @"222", @"333", @"444", @"555", @"666", @"777", @"888", @"999"]]
+                                                        ]];
+    
+    DDTableViewStatusComponent *status = [DDTableViewStatusComponent componentWithComponents: @{ @"normal": sectionGroup }];
+    status.currentState = @"normal";
+
+    self.rootComponent.subComponents = @[status];
+    
+    [self.tableView reloadData];
+    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        status.currentState = @"loading";
+        [self.tableView reloadData];
+    });
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
++ (NSArray<NSString *> *)catalogBreadcrumbs {
+  return @[ @"DDTableDemo" ];
 }
-*/
 
 @end

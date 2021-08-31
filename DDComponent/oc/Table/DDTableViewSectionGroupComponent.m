@@ -26,77 +26,6 @@
 
 @implementation DDTableViewSectionGroupComponent
 
-#pragma mark - convert
-
-- (NSIndexPath *)convertIndexPath:(NSIndexPath *)indexPath fromComponent:(nonnull DDTableViewBaseComponent *)from toSuperComponent:(nonnull DDTableViewBaseComponent *)comp {
-    NSUInteger rs = [self getIndexFromComponent:comp];
-    if (rs == self.subComponents.count) {
-        return nil;
-    }
-    else {
-        NSIndexPath *idx = [NSIndexPath indexPathForRow:indexPath.row inSection:indexPath.section + rs];
-        return [self convertIndexPath:idx toSuperComponent:comp];
-    }
-}
-
-- (NSIndexPath *)convertIndexPath:(NSIndexPath *)indexPath toSubComponent:(DDTableViewBaseComponent *)comp {
-    if (self == comp) return indexPath;
-
-    NSUInteger rs = [self getIndexFromLocation:indexPath.section];
-    if (rs == self.subComponents.count) {
-        return nil;
-    }
-    else {
-        NSIndexPath *idx = [NSIndexPath indexPathForRow:indexPath.row inSection:indexPath.section - rs];
-        return [self.subComponents[rs] convertIndexPath:idx toSubComponent:comp];
-    }
-}
-
-- (NSInteger)convertSection:(NSInteger)section fromComponent:(DDTableViewBaseComponent *)from toSuperComponent:(DDTableViewBaseComponent *)comp {
-    if (self == comp) return section;
-    
-    NSUInteger rs = [self getIndexFromComponent:comp];
-    if (rs == self.subComponents.count) {
-        return NSNotFound;
-    }
-    else {
-        return [self convertSection:section + rs toSuperComponent:comp];
-    }
-}
-
-- (NSInteger)convertSection:(NSInteger)section toSubComponent:(DDTableViewBaseComponent *)comp {
-    if (self == comp) return section;
-
-    NSUInteger rs = [self getIndexFromLocation:section];
-    if (rs == self.subComponents.count) {
-        return NSNotFound;
-    }
-    else {
-        return [self.subComponents[rs] convertSection:section - rs
-                               toSubComponent:comp];
-    }
-}
-
-- (DDTableViewBaseComponent *)componentAtIndexPath:(NSIndexPath *)indexPath {
-    NSUInteger rs = [self getIndexFromLocation:indexPath.section];
-    if (rs == self.subComponents.count) {
-        return nil;
-    }
-    else {
-        NSIndexPath *idx = [NSIndexPath indexPathForRow:indexPath.row inSection:indexPath.section - rs];
-        return [self.subComponents[rs] componentAtIndexPath:idx];
-    }
-}
-
-- (NSInteger)getIndexFromComponent:(id<DDTableViewComponent>)comp {
-    return [self.subComponents indexOfObject:comp];
-}
-
-- (NSInteger)getIndexFromLocation:(NSInteger)location {
-    return 0;
-}
-
-
 #pragma mark - interface
 
 - (void)setSubComponents:(NSArray *)subComponents {
@@ -427,25 +356,6 @@
 - (void)reloadData {
     [self.tableView reloadData];
 }
-
-#pragma mark - convert
-
-- (NSIndexPath *)convertToGlobalIndexPath:(NSIndexPath *)indexPath {
-    return indexPath;
-}
-
-- (NSIndexPath *)convertFromGlobalIndexPath:(NSIndexPath *)indexPath {
-    return indexPath;
-}
-
-- (NSInteger)convertToGlobalSection:(NSInteger)section {
-    return section;
-}
-
-- (NSInteger)convertFromGlobalSection:(NSInteger)section {
-    return section;
-}
-
 
 #pragma mark - ScrollViewDelegate
 

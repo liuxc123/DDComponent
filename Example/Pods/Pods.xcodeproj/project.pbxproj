@@ -8,80 +8,150 @@
 
 /* Begin PBXBuildFile section */
 		00E6F817CB332AF12466232CAF3725A7 /* DDTableViewSectionComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = B06E36509EA128493416A87DC17D3A51 /* DDTableViewSectionComponent.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0170E5279DBFBB9529302B948038E7CE /* CatalogByConvention.h in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = 75720CE3C66C2F98406630D76A3E9E7F /* CatalogByConvention.h */; };
+		0170E5279DBFBB9529302B948038E7CE /* CatalogByConvention.h in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = D18E9391152C0F70982E76FE1BA4600B /* CatalogByConvention.h */; };
+		018F1D821C9CB5FAC6B1AFCFFBD8D72C /* IBPCollectionCompositionalLayoutSolverResult.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A0257FECB52FA548CEA306E5D381BCE /* IBPCollectionCompositionalLayoutSolverResult.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		037904199279FF2E6A2B1F2C81EC283E /* IBPNSCollectionLayoutGroupCustomItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C4BA844C6B7D23FC85E5A5466CCBEB9 /* IBPNSCollectionLayoutGroupCustomItem.m */; };
 		04F3036DEF372E71F729BD96F9F9B855 /* DDComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = 978DE113F470AC90C4D6AAE90E71B876 /* DDComponent.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		07FB26568F2BCFA5B976E777B8464106 /* CBCNodeListViewController.h in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = DB9CA0EF2A839C945B59F7FB5540056C /* CBCNodeListViewController.h */; };
+		07FB26568F2BCFA5B976E777B8464106 /* CBCNodeListViewController.h in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = 081E44C4DF54D087AFF5123FA0D5DA16 /* CBCNodeListViewController.h */; };
+		08386EC15D6CC3DFCE56D82A558F4FE8 /* IBPNSCollectionLayoutEnvironment.h in Headers */ = {isa = PBXBuildFile; fileRef = 818C4E5BFF22D82F6F8830698B252B05 /* IBPNSCollectionLayoutEnvironment.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		0BA5769F71CECE929B52AC177B83D7B6 /* DDCollectionViewSectionGroupComponent.mm in Sources */ = {isa = PBXBuildFile; fileRef = D7EEF1808DFD895303A2BE824D27C7E7 /* DDCollectionViewSectionGroupComponent.mm */; };
-		0DBF319F26A14E55BA6E5C3B6D3A83B4 /* CBCCatalogExample.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A615CEA93E9FF4242CAE776D07F1D2A /* CBCCatalogExample.h */; };
+		0C41B4904B29B76F893E4CC7CC3D7312 /* IBPNSCollectionLayoutSize.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A2B30FDABCCFD04A0C5A73127DED9DE /* IBPNSCollectionLayoutSize.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0CE5D9FAC0732B0A57C2FEE645BB9945 /* IBPNSCollectionLayoutEdgeSpacing.h in Headers */ = {isa = PBXBuildFile; fileRef = D3D154A621AF07AFD1F84B2F429DFCB2 /* IBPNSCollectionLayoutEdgeSpacing.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0DBAC6E685147F17BC459DD87BE820D2 /* IBPNSCollectionLayoutDecorationItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B42F86F7955A53F6CC4386FD9FE62E36 /* IBPNSCollectionLayoutDecorationItem.m */; };
+		0DBF319F26A14E55BA6E5C3B6D3A83B4 /* CBCCatalogExample.h in Headers */ = {isa = PBXBuildFile; fileRef = 125FAB2BA10DDDE5AF594C531D5649BC /* CBCCatalogExample.h */; };
 		0E84F591931D34AC703F85E7AA63680C /* DDCollectionViewComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = FDAADB97A4192D8C0896B4FB9376E87C /* DDCollectionViewComponent.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		10DC645564793996AD77290493E3C9FF /* DDCollectionViewSectionGroupComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = FEA94EC211776029DF05E0D563E85F84 /* DDCollectionViewSectionGroupComponent.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		118E4E5B8DE758E1D3F5D47709B9EE52 /* DDCollectionViewComponent+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = E946E5A332D1D72F304D0390E3E3B828 /* DDCollectionViewComponent+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		140DD439C804AC6B195FD50D142C37ED /* IBPNSCollectionLayoutAnchor.h in Headers */ = {isa = PBXBuildFile; fileRef = F13F51D31AE897A1D755F743828644E7 /* IBPNSCollectionLayoutAnchor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1BBCF154B2A4C5918428B00FC6EBCED3 /* IBPNSCollectionLayoutSection.m in Sources */ = {isa = PBXBuildFile; fileRef = F36B2DDC1E0F7B5EC1B9D975138CA38A /* IBPNSCollectionLayoutSection.m */; };
 		20AE48771E7AC3FB1769C515BD287DFD /* DDTableViewComponent+Cache.h in Headers */ = {isa = PBXBuildFile; fileRef = 940C48EDD2945E4918C84E10065DC3AE /* DDTableViewComponent+Cache.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		21B49CCF9B1728741AEF5BFA42AD6BBF /* Pods-DDComponent_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3342312D642F90DAFF75CF136CFEDBF1 /* Pods-DDComponent_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		233A7FA3F1CB3727A2A296A76FF878B8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		233A7FA3F1CB3727A2A296A76FF878B8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
 		2A5201BB9C0CD25BD330C86EDB91751B /* DDTableViewItemComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 492CFE53913C5112B1115B690273F479 /* DDTableViewItemComponent.m */; };
-		36FD84FC0C651F24052A8E38E13C24BF /* CBCRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = 045904C123E7756A23FCD24D1D6F53A4 /* CBCRuntime.m */; };
+		303A906125CF20098502E1BDBFD640A0 /* IBPNSCollectionLayoutGroup_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 515AEB0321B12FCF775430B9F570D932 /* IBPNSCollectionLayoutGroup_Private.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		36FD84FC0C651F24052A8E38E13C24BF /* CBCRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D1CA3A9F5AC85A1B77C8C51EF9135E8 /* CBCRuntime.m */; };
+		3972AD6D566F38F28B1282FDE0965E00 /* IBPNSRectAlignment.h in Headers */ = {isa = PBXBuildFile; fileRef = C933C39CCBECA7F867F21EABBC531B96 /* IBPNSRectAlignment.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3C30D5BF7650DA29922C2780B854DAEF /* IBPUICollectionViewCompositionalLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = DBC695AE21833E5209389D4A7CE4FE49 /* IBPUICollectionViewCompositionalLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		439DE7816CAF8D205C2680223555C4C9 /* IBPNSCollectionLayoutSize_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = A44193D7E1DDF8F6126037782FD950BC /* IBPNSCollectionLayoutSize_Private.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		4877BCCA14B074C1A5E2A5C50C485EB2 /* DDTableComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D258F079924B8FB314DFE6E1761640F /* DDTableComponent.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4B3897B1A97F0A734A2112BF9A2B8AEE /* CBCNodeListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F4F0D85A6E68A2470BFA0E02C8B9B2A /* CBCNodeListViewController.m */; };
+		4B3897B1A97F0A734A2112BF9A2B8AEE /* CBCNodeListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECB9830D3E9A2BBE459A7BE917094527 /* CBCNodeListViewController.m */; };
+		4E1D2B5EA6D8E38614BCCF21C005FDC7 /* Pods-DDComponent_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 435916D23E199FBDFDA65BFF54DE4DF4 /* Pods-DDComponent_Example-dummy.m */; };
+		4F618B0E5967F47755AA37615E4F4F68 /* IBPNSCollectionLayoutSpacing.m in Sources */ = {isa = PBXBuildFile; fileRef = CD6E400C1B49704F2B2AC95FF8F88AC6 /* IBPNSCollectionLayoutSpacing.m */; };
 		4F8DD35B9C99D67865B3F361C1E3F05A /* DDCollectionComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = 31C8C204AFA5CA85A5ED2B01C16B5BCF /* DDCollectionComponent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4FD56A339CCC5930A5C84FBC5475031A /* IBPNSCollectionLayoutGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 847C35DF15AD8E67ED41A354983B705E /* IBPNSCollectionLayoutGroup.m */; };
+		52E9781C23DB960335D370C26FF17E68 /* IBPCollectionCompositionalLayoutSolver.m in Sources */ = {isa = PBXBuildFile; fileRef = 96F8A2A10F33DF567C674EA1F923091C /* IBPCollectionCompositionalLayoutSolver.m */; };
+		5A2F983C424C84C1FAAF7C0CA56EA3C4 /* IBPCollectionViewOrthogonalScrollerEmbeddedScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = DD802F1F3636F911E2F87DE7503FA1C1 /* IBPCollectionViewOrthogonalScrollerEmbeddedScrollView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		5B8BA72F68F93F592200ED09312CF0FA /* IBPNSCollectionLayoutGroupCustomItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D89CC04E1E81DC25FADA6E7900FD266 /* IBPNSCollectionLayoutGroupCustomItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		604E2C7B0C7104122FEA0EB4D1973F00 /* DDTableViewComponent+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 5AD126FCC7DDEB5132D44793D97770A1 /* DDTableViewComponent+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		624344D4828B2824E15AB543019DF280 /* DDTableViewStatusComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FE560894A01ECA7930AEB9DFBF3BEB0 /* DDTableViewStatusComponent.m */; };
+		633594B2F1A640D62E6F72B6488AC755 /* IBPNSCollectionLayoutDimension.m in Sources */ = {isa = PBXBuildFile; fileRef = 854EDA0603AE41D7057D5BFA53EC8EE4 /* IBPNSCollectionLayoutDimension.m */; };
+		638DCEACEB633194F4EB470299FD5202 /* IBPNSCollectionLayoutSection_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = AB32FDD2D7311A23B27924AD34000A75 /* IBPNSCollectionLayoutSection_Private.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		6511BCF82FAEAEAA5650C45AFFCFBBED /* IBPUICollectionViewCompositionalLayoutConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = 97674B8F8CC1AAE4232B58B936BC2C83 /* IBPUICollectionViewCompositionalLayoutConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		68166F2DBECD0CDAF2242289E118ACAD /* DDCollectionViewStatusComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = F868599C97213CC77ECA2B01D01F9109 /* DDCollectionViewStatusComponent.m */; };
+		6B8AB752EA43EBCE93F3BF2DAAE943FD /* IBPCollectionViewOrthogonalScrollerSectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CDF9AB69AB2BFBFE4925B8894681364 /* IBPCollectionViewOrthogonalScrollerSectionController.m */; };
 		6F29D8CEA9C7C81CB87CE72E15BC9ADD /* DDCollectionViewStatusComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = F2E6947C425B418F2E7618C3123762ED /* DDCollectionViewStatusComponent.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6F8A89E9360DF7A0BD05E16DCE8D185B /* Pods-DDComponent_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 507A0E07347E7FD88E2B08DAB23A1493 /* Pods-DDComponent_Tests-dummy.m */; };
+		711CE71B2EFA01096B3D438D175F80D5 /* IBPCollectionCompositionalLayoutSolver.h in Headers */ = {isa = PBXBuildFile; fileRef = 729CA2AF0D40B679719D9E6351A280BC /* IBPCollectionCompositionalLayoutSolver.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		729CFC1F49C329B1E77CF007B3A14BA4 /* IBPNSCollectionLayoutEdgeSpacing_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = D87D78E6F8B74DFA7F3377E10FF7153D /* IBPNSCollectionLayoutEdgeSpacing_Private.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		73A1380FB098BACB92F70E2D42E89D9A /* IBPCollectionViewOrthogonalScrollerEmbeddedScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D3F7064DB0E74E5EB79A9CD9EF166F1 /* IBPCollectionViewOrthogonalScrollerEmbeddedScrollView.m */; };
 		769A0BA4813DACEC86539442CD7CB5AC /* DDTableViewSectionGroupComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = 802A86B325FCD3DF7F0CE1078BB9F3C9 /* DDTableViewSectionGroupComponent.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		830B9FEB3A0ECD4AB0DE066CA024B33E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		799488F0CEE4AFD6FA29CF64BA6FCC12 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		7C55C80316ED8B805F27C627AB0857B9 /* IBPNSCollectionLayoutSupplementaryItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 71D8FB07E3D4A0ED197905953B0931E0 /* IBPNSCollectionLayoutSupplementaryItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		80B79C46DED0F67742D8D9EF9009722C /* IBPUICollectionViewCompositionalLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = ACEC2161CCC026D5FC97FE9F05D4196A /* IBPUICollectionViewCompositionalLayout.m */; };
+		830B9FEB3A0ECD4AB0DE066CA024B33E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
 		85BE1F0CB12FA78A0A1D5511A75EA836 /* DDCollectionViewComponent+Cache.h in Headers */ = {isa = PBXBuildFile; fileRef = 62239CB4025A011B71C6BE13E4DEE756 /* DDCollectionViewComponent+Cache.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8682127132439026F7EAE087C17F6212 /* CatalogByConvention.h in Headers */ = {isa = PBXBuildFile; fileRef = 75720CE3C66C2F98406630D76A3E9E7F /* CatalogByConvention.h */; };
+		8682127132439026F7EAE087C17F6212 /* CatalogByConvention.h in Headers */ = {isa = PBXBuildFile; fileRef = D18E9391152C0F70982E76FE1BA4600B /* CatalogByConvention.h */; };
+		8833675A1D62ADC2FC886B2E6C6218AC /* IBPNSCollectionLayoutEdgeSpacing.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E45EF7B103B235A6534A0130F28274 /* IBPNSCollectionLayoutEdgeSpacing.m */; };
 		88B37FED8D7F31B4206E929C619FF8C1 /* DDCollectionViewComponentHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = A1F61CD66E1BFB294617C143CEB47CE2 /* DDCollectionViewComponentHelper.m */; };
+		895902F4086684AE77DC181A17B12CB2 /* IBPNSCollectionLayoutAnchor.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D603B754981CD9DA75E4AA3CFC8358D /* IBPNSCollectionLayoutAnchor.m */; };
 		897C0A29142B10ED5E1D6721B5584E27 /* DDTableViewComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C6AB2CC1F46ADCDCDB33CAB1A5B7DF0 /* DDTableViewComponent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8AB5779D577DD731DBDA7F8AF4EC08C6 /* IBPNSDirectionalEdgeInsets.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF08197AE62F0C2EEFF62B99715C1C8 /* IBPNSDirectionalEdgeInsets.m */; };
+		8B1B8364163E35E5B113CDE0F037FA45 /* IBPNSDirectionalRectEdge.h in Headers */ = {isa = PBXBuildFile; fileRef = EE5ED23BA5B0188BDF535AD859CF092C /* IBPNSDirectionalRectEdge.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8B7D941876D59C588CE9D978A813383F /* DDCollectionViewComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = B9E034FDB3FB5F753407EE9AEB301249 /* DDCollectionViewComponent.m */; };
+		8C83E8486C3A3825C0DC6F531BD15B52 /* IBPNSCollectionLayoutItem_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = F14786F9358CD80D563392189E3602D8 /* IBPNSCollectionLayoutItem_Private.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		8CE3AB8837C5BBF84BC8C4FE7B6CF98A /* IBPNSCollectionLayoutSupplementaryItem_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 56D8AE16396BE66B405B908EE7E35DE2 /* IBPNSCollectionLayoutSupplementaryItem_Private.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		9B0A621DD6FE9E627D0525D37B6C58E0 /* DDTableViewComponentHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 196FA8B0079DEC74D3B96220C523D5EF /* DDTableViewComponentHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A1FE38C50C62B2D973688A65079FA335 /* CatalogByConvention-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 30B459A6A6B2521CD5C3F9F8C73CBB55 /* CatalogByConvention-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9F9854118B11E5A4B199F63DA54A8118 /* IBPNSCollectionLayoutSpacing.h in Headers */ = {isa = PBXBuildFile; fileRef = CAEE46D61AA9C5C8587733A541717710 /* IBPNSCollectionLayoutSpacing.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A03723A19ADE8AD75D2D86A6DEB817B0 /* Pods-DDComponent_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8421B58E92CD7F61A828E233323FBF33 /* Pods-DDComponent_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1FE38C50C62B2D973688A65079FA335 /* CatalogByConvention-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 56001F6430A685615D7338FA3AAEF036 /* CatalogByConvention-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A4E13E540A29456A0090D6C71E6A9882 /* IBPNSCollectionLayoutDimension.h in Headers */ = {isa = PBXBuildFile; fileRef = E7751A3864589EF13E685ED5923432D9 /* IBPNSCollectionLayoutDimension.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A58A7446FB9E5128A7048CC48611E582 /* IBPUICollectionViewCompositionalLayoutConfiguration_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = D476D575A68033566AFD1FB0304DCF5A /* IBPUICollectionViewCompositionalLayoutConfiguration_Private.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		A91280E014E94E1473B11D89F6F42E2E /* DDCollectionViewItemComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F4F697274A681ABA039E3E651A94021 /* DDCollectionViewItemComponent.m */; };
+		B1758E1F02627F989064C5703760EC36 /* IBPNSCollectionLayoutEnvironment.m in Sources */ = {isa = PBXBuildFile; fileRef = 16B899F8C954F5DEB2BFF997C11E61AE /* IBPNSCollectionLayoutEnvironment.m */; };
 		B202F3C868AE780DE52752A041C1CD98 /* DDTableViewSectionComponent.mm in Sources */ = {isa = PBXBuildFile; fileRef = 110DB118D7369160D0AFE0755DEC71AA /* DDTableViewSectionComponent.mm */; };
 		B3DCBDF1B36E4EA146211712DF1FF207 /* DDTableViewStatusComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = B34FAF17E48AA2294AC1F51189485341 /* DDTableViewStatusComponent.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B6451092B24211693297669DAD0C3C23 /* DDTableViewComponentHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = DB796E7EF6CCCA1D902747B7F18BFF2B /* DDTableViewComponentHelper.m */; };
-		BA2F35A173F4FD577BEC6D71991B8301 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		C244D76068463D53CE20B2F9F0D466B4 /* Pods-DDComponent_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 435916D23E199FBDFDA65BFF54DE4DF4 /* Pods-DDComponent_Example-dummy.m */; };
+		B65351A9BFC1FC60EB1FA14408A85FD2 /* IBPNSCollectionLayoutItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 589C88D907FF5E38C9660C96ED244D7E /* IBPNSCollectionLayoutItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B8350317965A1354C6F36889C187A79D /* IBPCollectionCompositionalLayoutSolverResult.m in Sources */ = {isa = PBXBuildFile; fileRef = B1BFCDAE94C00837E30C90D225F703F8 /* IBPCollectionCompositionalLayoutSolverResult.m */; };
+		BA2F35A173F4FD577BEC6D71991B8301 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		BC871DD4B2EACD84E0C9E8536E3B7EE7 /* IBPCollectionViewOrthogonalScrollerSectionController.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E0AFFF41DCFF79781939C70E4671EC0 /* IBPCollectionViewOrthogonalScrollerSectionController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C05ADD03F4095002C3C9A381AF2C5C21 /* IBPUICollectionViewCompositionalLayoutConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = D339699580AA1D91116900354E78C6F0 /* IBPUICollectionViewCompositionalLayoutConfiguration.m */; };
+		C23E438A1EEE8108F6AA79C78D3E3492 /* IBPNSCollectionLayoutSupplementaryItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 57CE74FE4C0C5A45CDBBAFA52D9D527C /* IBPNSCollectionLayoutSupplementaryItem.m */; };
+		C29462F471DFBAFE5AE22D6E99BE438D /* IBPCollectionViewCompositionalLayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B849B806779FB8AADB00CA772706DE1E /* IBPCollectionViewCompositionalLayout-dummy.m */; };
+		C2A6D936BB39B5FD62D5108014060F44 /* IBPNSCollectionLayoutDecorationItem.h in Headers */ = {isa = PBXBuildFile; fileRef = F50C421080DA9A13AF03E10878E3C82F /* IBPNSCollectionLayoutDecorationItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C4593ACE47E1EB5667CAFFB334F7F052 /* IBPNSCollectionLayoutContainer_Protocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D99A2DDE20BA0DC8C8D099EA91EF478 /* IBPNSCollectionLayoutContainer_Protocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C47B6801F8B2D326785F66C95C7998BB /* DDCollectionViewComponentHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = DD0EB416669EE97BF4A06D7E33233179 /* DDCollectionViewComponentHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C688E5CD25C13850C5027D033AEBDD18 /* IBPUICollectionLayoutSectionOrthogonalScrollingBehavior.h in Headers */ = {isa = PBXBuildFile; fileRef = A408B08E4AB2FEC0A3FA254BF9B84028 /* IBPUICollectionLayoutSectionOrthogonalScrollingBehavior.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C7C2E7D676DE9106B40B47F75BB23E20 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */; };
+		D09C3BD6D6A7AC3A8D04E9DF9A8582F1 /* IBPNSCollectionLayoutGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = 19EE4A4A652378DEB695463A8C5F9066 /* IBPNSCollectionLayoutGroup.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D383F7F64A0739DEAF8F37FE8D9B7A4A /* IBPNSCollectionLayoutContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CFC7438E4814A2F1598BDCAAEC768A3 /* IBPNSCollectionLayoutContainer.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		D600975E71BCDB40B29E577A77BE514E /* DDComponent-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 86893FD0FE7104D0AEAD8EE1C438F72C /* DDComponent-dummy.m */; };
+		DC306158D653E81524AA8000680C6033 /* IBPNSCollectionLayoutForwardCompatibility.h in Headers */ = {isa = PBXBuildFile; fileRef = E6346978DDD295B1BFE8752FAEC204CE /* IBPNSCollectionLayoutForwardCompatibility.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DCEE164DABED60B649CBB8D0DDFBD68B /* DDTableViewComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = E821EB842ABB5D8D466C4F37B3992571 /* DDTableViewComponent.m */; };
 		DE2587B13F0AB41217B11F9D52760242 /* DDTableViewSectionGroupComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BE3C24B39DBF209CFF278647FF5DA44 /* DDTableViewSectionGroupComponent.m */; };
-		E46F18572E6404F167B7BD5F6006405B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		E48457226B56D40F9621445F832CC50F /* Pods-DDComponent_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8421B58E92CD7F61A828E233323FBF33 /* Pods-DDComponent_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DE867215161BDAE9B420ADF97A4E73D2 /* IBPNSCollectionLayoutSpacing_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 51CBAF71BDBA65E3F8EF35A1C5D229D7 /* IBPNSCollectionLayoutSpacing_Private.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E47A8EB8A4A8F1E58A04ECBE31316A3E /* IBPNSCollectionLayoutItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 524F62F647D8C7BE3F5FD78BF606AC3D /* IBPNSCollectionLayoutItem.m */; };
+		E8A5946E3F8FE11B888EDB225C82DBD4 /* IBPNSCollectionLayoutSection.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BC344646E333D6E52E394F0E5FAE452 /* IBPNSCollectionLayoutSection.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EBB67B4256CAB321AF5EFC5B0E9B60B9 /* IBPNSCollectionLayoutVisibleItem.h in Headers */ = {isa = PBXBuildFile; fileRef = BEC66A94C189BB65BFE1F956D797FC5C /* IBPNSCollectionLayoutVisibleItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EC6FDCB8F8D41D5CAFF85055D1788AE1 /* IBPNSCollectionLayoutAnchor_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 89090AD5ED9CDE13F721289C4EA60D0E /* IBPNSCollectionLayoutAnchor_Private.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		ED3D97306B3C81D4ECCC3134B966342C /* IBPNSCollectionLayoutSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 08FBF64F596A042E91A09FB2623A6E2D /* IBPNSCollectionLayoutSize.m */; };
+		ED5183EE6CA09091A3F1D26CBCF4A0BB /* IBPCollectionViewCompositionalLayout-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 19796110A2B81D61CF583F2051153C62 /* IBPCollectionViewCompositionalLayout-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EDA02A558F4A38827BCD5C634AD5027A /* DDCollectionViewSectionComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = 6559B5A187A58BCB1C2B8329248AD3C1 /* DDCollectionViewSectionComponent.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F3B8CDE67534BE6E6672711639E68674 /* CBCRuntime.h in Headers */ = {isa = PBXBuildFile; fileRef = 242578216B19FD324EB82A2C50126F40 /* CBCRuntime.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		F41756BC8882ADA189DF49B37A9BF9BE /* CBCNodeListViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = DB9CA0EF2A839C945B59F7FB5540056C /* CBCNodeListViewController.h */; };
+		EDA0EACB1B0C41077572A87A96CA0310 /* IBPCollectionViewCompositionalLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 62978116510C59AE365A66DE85E5AC91 /* IBPCollectionViewCompositionalLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F23455D52768E441962BD0DFAA3A6530 /* IBPNSCollectionLayoutContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC57D00CB6734A95EC58126185B68E4 /* IBPNSCollectionLayoutContainer.m */; };
+		F3B8CDE67534BE6E6672711639E68674 /* CBCRuntime.h in Headers */ = {isa = PBXBuildFile; fileRef = F5B28E753A27B2ED23D915814D660FC4 /* CBCRuntime.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F4136FB43721A84276FA4B56F1FDB355 /* IBPNSCollectionLayoutBoundarySupplementaryItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 83F8F633D42932F0D786B1F7A94CC1F1 /* IBPNSCollectionLayoutBoundarySupplementaryItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F41756BC8882ADA189DF49B37A9BF9BE /* CBCNodeListViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 081E44C4DF54D087AFF5123FA0D5DA16 /* CBCNodeListViewController.h */; };
 		F4FDAFC11DB99A74E677F51BAFF98DEE /* DDCollectionViewSectionComponent.mm in Sources */ = {isa = PBXBuildFile; fileRef = BFC26153C170C3E1A6E7CA3BF36D8B4A /* DDCollectionViewSectionComponent.mm */; };
+		F51FDD6A75346FDFE06E367C460C6A05 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
 		F5D2B986BC79EA2F347791A94BFC6F6B /* DDComponent-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 256D9354A18E0B8E0926FEBA8CEF306D /* DDComponent-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F6234B68315CA408202C3EB07029A4BE /* CBCCatalogExample.h in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = 5A615CEA93E9FF4242CAE776D07F1D2A /* CBCCatalogExample.h */; };
+		F6234B68315CA408202C3EB07029A4BE /* CBCCatalogExample.h in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = 125FAB2BA10DDDE5AF594C531D5649BC /* CBCCatalogExample.h */; };
+		F74E1868883EB27ADF6A8EBD1304898C /* IBPNSCollectionLayoutEnvironment_Protocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 88E8646A7BFDCDD9DA9B1CFBB859F37C /* IBPNSCollectionLayoutEnvironment_Protocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F7934E3A234E8B1C51CF2BF0245ABBB9 /* DDCollectionViewItemComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D9C43144A3846D6C8A940E142F3EA84 /* DDCollectionViewItemComponent.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FA83626A3A8D8A333D6ABAFFDEA3FAEE /* CatalogByConvention-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 71815ED59DA7405CA4E789018E20CB69 /* CatalogByConvention-dummy.m */; };
+		FA83626A3A8D8A333D6ABAFFDEA3FAEE /* CatalogByConvention-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 02AC81496FAE7DC078ADB9D2C6A2FFF3 /* CatalogByConvention-dummy.m */; };
+		FABB2B357A27500142D6F8906E442FE8 /* IBPNSDirectionalEdgeInsets.h in Headers */ = {isa = PBXBuildFile; fileRef = AC29154F14B477477F3BCFBC354D1706 /* IBPNSDirectionalEdgeInsets.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FDBE428FB69D572894498A923073C1FC /* DDTableViewItemComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D376A0EBC90439F61737C4A864C4EC3 /* DDTableViewItemComponent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FEF3DC5B3C7E36851AA810F1D6A32244 /* IBPNSCollectionLayoutBoundarySupplementaryItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B9FB492066ABFD359E772DC1FE8B6128 /* IBPNSCollectionLayoutBoundarySupplementaryItem.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		2DF601ACD305DC1F9F8BE396D207C2B3 /* PBXContainerItemProxy */ = {
+		1B34DA99206E8DD9966ADD7A2F77552B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BC4558A150B1F5F9E0A6366FF11DDE54;
+			remoteInfo = DDComponent;
+		};
+		302BD58827D56588D8AD522DBE51AE72 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C6D33972ECD5C3EBB2CA1DDF16BCE422;
+			remoteInfo = IBPCollectionViewCompositionalLayout;
+		};
+		B9D5BAC2BE7D772C60554DF536EECB8A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 138A45554994A4757DF941467C358D29;
 			remoteInfo = CatalogByConvention;
 		};
-		7C799AF1819DDC8943603CDDF8318011 /* PBXContainerItemProxy */ = {
+		DF11C9583F02EA7FA5F363FF6A7A7450 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 26CF912C65AEE0F0D088F78C5B945E6F;
 			remoteInfo = "Pods-DDComponent_Example";
-		};
-		E07A1459278B0B5D225DE650E43A0FB3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = BC4558A150B1F5F9E0A6366FF11DDE54;
-			remoteInfo = DDComponent;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -102,86 +172,162 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		045904C123E7756A23FCD24D1D6F53A4 /* CBCRuntime.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CBCRuntime.m; path = src/private/CBCRuntime.m; sourceTree = "<group>"; };
+		02AC81496FAE7DC078ADB9D2C6A2FFF3 /* CatalogByConvention-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CatalogByConvention-dummy.m"; sourceTree = "<group>"; };
+		081E44C4DF54D087AFF5123FA0D5DA16 /* CBCNodeListViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CBCNodeListViewController.h; path = src/CBCNodeListViewController.h; sourceTree = "<group>"; };
+		08FBF64F596A042E91A09FB2623A6E2D /* IBPNSCollectionLayoutSize.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IBPNSCollectionLayoutSize.m; path = Sources/IBPCollectionViewCompositionalLayout/IBPNSCollectionLayoutSize.m; sourceTree = "<group>"; };
 		0BAAAA066B3A0951494F84F752B24729 /* DDComponent.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = DDComponent.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		0C6AB2CC1F46ADCDCDB33CAB1A5B7DF0 /* DDTableViewComponent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DDTableViewComponent.h; sourceTree = "<group>"; };
 		110DB118D7369160D0AFE0755DEC71AA /* DDTableViewSectionComponent.mm */ = {isa = PBXFileReference; includeInIndex = 1; path = DDTableViewSectionComponent.mm; sourceTree = "<group>"; };
 		11EAEF2A4829296B1D83C5F367356FA9 /* Pods-DDComponent_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DDComponent_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		125FAB2BA10DDDE5AF594C531D5649BC /* CBCCatalogExample.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CBCCatalogExample.h; path = src/CBCCatalogExample.h; sourceTree = "<group>"; };
 		13B96216BB5807BB4930AC44B418DE90 /* Pods-DDComponent_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DDComponent_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		16B899F8C954F5DEB2BFF997C11E61AE /* IBPNSCollectionLayoutEnvironment.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IBPNSCollectionLayoutEnvironment.m; path = Sources/IBPCollectionViewCompositionalLayout/IBPNSCollectionLayoutEnvironment.m; sourceTree = "<group>"; };
 		196FA8B0079DEC74D3B96220C523D5EF /* DDTableViewComponentHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DDTableViewComponentHelper.h; sourceTree = "<group>"; };
-		1F4F0D85A6E68A2470BFA0E02C8B9B2A /* CBCNodeListViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CBCNodeListViewController.m; path = src/CBCNodeListViewController.m; sourceTree = "<group>"; };
+		19796110A2B81D61CF583F2051153C62 /* IBPCollectionViewCompositionalLayout-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IBPCollectionViewCompositionalLayout-umbrella.h"; sourceTree = "<group>"; };
+		19EE4A4A652378DEB695463A8C5F9066 /* IBPNSCollectionLayoutGroup.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IBPNSCollectionLayoutGroup.h; path = Sources/IBPCollectionViewCompositionalLayout/include/IBPNSCollectionLayoutGroup.h; sourceTree = "<group>"; };
+		1B83192488AD98526B88D056E9445BCC /* IBPCollectionViewCompositionalLayout-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "IBPCollectionViewCompositionalLayout-Info.plist"; sourceTree = "<group>"; };
+		1BC344646E333D6E52E394F0E5FAE452 /* IBPNSCollectionLayoutSection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IBPNSCollectionLayoutSection.h; path = Sources/IBPCollectionViewCompositionalLayout/include/IBPNSCollectionLayoutSection.h; sourceTree = "<group>"; };
 		20A4BC8A1E33D32F13E72FAC4C5B8EDD /* Pods-DDComponent_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DDComponent_Example.release.xcconfig"; sourceTree = "<group>"; };
 		22C7B63B31990CAFD17EEBCDB4510A01 /* DDComponent.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DDComponent.release.xcconfig; sourceTree = "<group>"; };
-		242578216B19FD324EB82A2C50126F40 /* CBCRuntime.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CBCRuntime.h; path = src/private/CBCRuntime.h; sourceTree = "<group>"; };
 		256D9354A18E0B8E0926FEBA8CEF306D /* DDComponent-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DDComponent-umbrella.h"; sourceTree = "<group>"; };
-		30B459A6A6B2521CD5C3F9F8C73CBB55 /* CatalogByConvention-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CatalogByConvention-umbrella.h"; sourceTree = "<group>"; };
+		2CDF9AB69AB2BFBFE4925B8894681364 /* IBPCollectionViewOrthogonalScrollerSectionController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IBPCollectionViewOrthogonalScrollerSectionController.m; path = Sources/IBPCollectionViewCompositionalLayout/IBPCollectionViewOrthogonalScrollerSectionController.m; sourceTree = "<group>"; };
+		2D89CC04E1E81DC25FADA6E7900FD266 /* IBPNSCollectionLayoutGroupCustomItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IBPNSCollectionLayoutGroupCustomItem.h; path = Sources/IBPCollectionViewCompositionalLayout/include/IBPNSCollectionLayoutGroupCustomItem.h; sourceTree = "<group>"; };
 		31C8C204AFA5CA85A5ED2B01C16B5BCF /* DDCollectionComponent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DDCollectionComponent.h; sourceTree = "<group>"; };
 		3342312D642F90DAFF75CF136CFEDBF1 /* Pods-DDComponent_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DDComponent_Tests-umbrella.h"; sourceTree = "<group>"; };
+		3A2B30FDABCCFD04A0C5A73127DED9DE /* IBPNSCollectionLayoutSize.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IBPNSCollectionLayoutSize.h; path = Sources/IBPCollectionViewCompositionalLayout/include/IBPNSCollectionLayoutSize.h; sourceTree = "<group>"; };
+		3AA064D76F7312EE4C66D65A3D11815F /* CatalogByConvention.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CatalogByConvention.debug.xcconfig; sourceTree = "<group>"; };
+		3CFC7438E4814A2F1598BDCAAEC768A3 /* IBPNSCollectionLayoutContainer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IBPNSCollectionLayoutContainer.h; path = Sources/IBPCollectionViewCompositionalLayout/IBPNSCollectionLayoutContainer.h; sourceTree = "<group>"; };
+		3D3F7064DB0E74E5EB79A9CD9EF166F1 /* IBPCollectionViewOrthogonalScrollerEmbeddedScrollView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IBPCollectionViewOrthogonalScrollerEmbeddedScrollView.m; path = Sources/IBPCollectionViewCompositionalLayout/IBPCollectionViewOrthogonalScrollerEmbeddedScrollView.m; sourceTree = "<group>"; };
 		435916D23E199FBDFDA65BFF54DE4DF4 /* Pods-DDComponent_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DDComponent_Example-dummy.m"; sourceTree = "<group>"; };
 		492CFE53913C5112B1115B690273F479 /* DDTableViewItemComponent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DDTableViewItemComponent.m; sourceTree = "<group>"; };
+		4CF08197AE62F0C2EEFF62B99715C1C8 /* IBPNSDirectionalEdgeInsets.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IBPNSDirectionalEdgeInsets.m; path = Sources/IBPCollectionViewCompositionalLayout/IBPNSDirectionalEdgeInsets.m; sourceTree = "<group>"; };
 		4FE560894A01ECA7930AEB9DFBF3BEB0 /* DDTableViewStatusComponent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DDTableViewStatusComponent.m; sourceTree = "<group>"; };
 		507A0E07347E7FD88E2B08DAB23A1493 /* Pods-DDComponent_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DDComponent_Tests-dummy.m"; sourceTree = "<group>"; };
+		515AEB0321B12FCF775430B9F570D932 /* IBPNSCollectionLayoutGroup_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IBPNSCollectionLayoutGroup_Private.h; path = Sources/IBPCollectionViewCompositionalLayout/IBPNSCollectionLayoutGroup_Private.h; sourceTree = "<group>"; };
+		51CBAF71BDBA65E3F8EF35A1C5D229D7 /* IBPNSCollectionLayoutSpacing_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IBPNSCollectionLayoutSpacing_Private.h; path = Sources/IBPCollectionViewCompositionalLayout/IBPNSCollectionLayoutSpacing_Private.h; sourceTree = "<group>"; };
+		524F62F647D8C7BE3F5FD78BF606AC3D /* IBPNSCollectionLayoutItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IBPNSCollectionLayoutItem.m; path = Sources/IBPCollectionViewCompositionalLayout/IBPNSCollectionLayoutItem.m; sourceTree = "<group>"; };
+		56001F6430A685615D7338FA3AAEF036 /* CatalogByConvention-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CatalogByConvention-umbrella.h"; sourceTree = "<group>"; };
+		56D8AE16396BE66B405B908EE7E35DE2 /* IBPNSCollectionLayoutSupplementaryItem_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IBPNSCollectionLayoutSupplementaryItem_Private.h; path = Sources/IBPCollectionViewCompositionalLayout/IBPNSCollectionLayoutSupplementaryItem_Private.h; sourceTree = "<group>"; };
+		57CE74FE4C0C5A45CDBBAFA52D9D527C /* IBPNSCollectionLayoutSupplementaryItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IBPNSCollectionLayoutSupplementaryItem.m; path = Sources/IBPCollectionViewCompositionalLayout/IBPNSCollectionLayoutSupplementaryItem.m; sourceTree = "<group>"; };
 		582407DE291D3ED6A0CD776777623E17 /* DDComponent.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DDComponent.modulemap; sourceTree = "<group>"; };
-		5A615CEA93E9FF4242CAE776D07F1D2A /* CBCCatalogExample.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CBCCatalogExample.h; path = src/CBCCatalogExample.h; sourceTree = "<group>"; };
+		589C88D907FF5E38C9660C96ED244D7E /* IBPNSCollectionLayoutItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IBPNSCollectionLayoutItem.h; path = Sources/IBPCollectionViewCompositionalLayout/include/IBPNSCollectionLayoutItem.h; sourceTree = "<group>"; };
 		5AD126FCC7DDEB5132D44793D97770A1 /* DDTableViewComponent+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DDTableViewComponent+Private.h"; sourceTree = "<group>"; };
 		5AF45F612345D370C62AA8C3A9107B47 /* Pods-DDComponent_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DDComponent_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		5D376A0EBC90439F61737C4A864C4EC3 /* DDTableViewItemComponent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DDTableViewItemComponent.h; sourceTree = "<group>"; };
 		5D9C43144A3846D6C8A940E142F3EA84 /* DDCollectionViewItemComponent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DDCollectionViewItemComponent.h; sourceTree = "<group>"; };
-		6121725C1AD7618BB0A0DB547B7FCDF8 /* CatalogByConvention.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CatalogByConvention.modulemap; sourceTree = "<group>"; };
 		62239CB4025A011B71C6BE13E4DEE756 /* DDCollectionViewComponent+Cache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DDCollectionViewComponent+Cache.h"; sourceTree = "<group>"; };
+		62978116510C59AE365A66DE85E5AC91 /* IBPCollectionViewCompositionalLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IBPCollectionViewCompositionalLayout.h; path = Sources/IBPCollectionViewCompositionalLayout/include/IBPCollectionViewCompositionalLayout.h; sourceTree = "<group>"; };
 		6537262D7BD609B187E3AE281BC2BFC5 /* DDComponent-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DDComponent-prefix.pch"; sourceTree = "<group>"; };
 		6559B5A187A58BCB1C2B8329248AD3C1 /* DDCollectionViewSectionComponent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DDCollectionViewSectionComponent.h; sourceTree = "<group>"; };
 		6B42088EA7F65EBB27271D753B705078 /* DDComponent-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "DDComponent-Info.plist"; sourceTree = "<group>"; };
-		71815ED59DA7405CA4E789018E20CB69 /* CatalogByConvention-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CatalogByConvention-dummy.m"; sourceTree = "<group>"; };
-		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		71D8FB07E3D4A0ED197905953B0931E0 /* IBPNSCollectionLayoutSupplementaryItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IBPNSCollectionLayoutSupplementaryItem.h; path = Sources/IBPCollectionViewCompositionalLayout/include/IBPNSCollectionLayoutSupplementaryItem.h; sourceTree = "<group>"; };
+		729CA2AF0D40B679719D9E6351A280BC /* IBPCollectionCompositionalLayoutSolver.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IBPCollectionCompositionalLayoutSolver.h; path = Sources/IBPCollectionViewCompositionalLayout/IBPCollectionCompositionalLayoutSolver.h; sourceTree = "<group>"; };
 		754ED38811AF747296AC382AB4347EFD /* Pods-DDComponent_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DDComponent_Example-frameworks.sh"; sourceTree = "<group>"; };
-		75720CE3C66C2F98406630D76A3E9E7F /* CatalogByConvention.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CatalogByConvention.h; path = src/CatalogByConvention.h; sourceTree = "<group>"; };
-		77B899851351FB760ED02BE8929D372E /* CatalogByConvention-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CatalogByConvention-prefix.pch"; sourceTree = "<group>"; };
+		7896B225FC1E00F12027C460021C259A /* CatalogByConvention.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CatalogByConvention.release.xcconfig; sourceTree = "<group>"; };
+		7A0257FECB52FA548CEA306E5D381BCE /* IBPCollectionCompositionalLayoutSolverResult.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IBPCollectionCompositionalLayoutSolverResult.h; path = Sources/IBPCollectionViewCompositionalLayout/IBPCollectionCompositionalLayoutSolverResult.h; sourceTree = "<group>"; };
 		7D258F079924B8FB314DFE6E1761640F /* DDTableComponent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DDTableComponent.h; sourceTree = "<group>"; };
+		7D603B754981CD9DA75E4AA3CFC8358D /* IBPNSCollectionLayoutAnchor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IBPNSCollectionLayoutAnchor.m; path = Sources/IBPCollectionViewCompositionalLayout/IBPNSCollectionLayoutAnchor.m; sourceTree = "<group>"; };
 		7DBEC0A529B13F2F29EC059537541665 /* Pods-DDComponent_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DDComponent_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		802A86B325FCD3DF7F0CE1078BB9F3C9 /* DDTableViewSectionGroupComponent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DDTableViewSectionGroupComponent.h; sourceTree = "<group>"; };
+		818C4E5BFF22D82F6F8830698B252B05 /* IBPNSCollectionLayoutEnvironment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IBPNSCollectionLayoutEnvironment.h; path = Sources/IBPCollectionViewCompositionalLayout/IBPNSCollectionLayoutEnvironment.h; sourceTree = "<group>"; };
+		83F8F633D42932F0D786B1F7A94CC1F1 /* IBPNSCollectionLayoutBoundarySupplementaryItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IBPNSCollectionLayoutBoundarySupplementaryItem.h; path = Sources/IBPCollectionViewCompositionalLayout/include/IBPNSCollectionLayoutBoundarySupplementaryItem.h; sourceTree = "<group>"; };
 		8421B58E92CD7F61A828E233323FBF33 /* Pods-DDComponent_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DDComponent_Example-umbrella.h"; sourceTree = "<group>"; };
+		847C35DF15AD8E67ED41A354983B705E /* IBPNSCollectionLayoutGroup.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IBPNSCollectionLayoutGroup.m; path = Sources/IBPCollectionViewCompositionalLayout/IBPNSCollectionLayoutGroup.m; sourceTree = "<group>"; };
+		854EDA0603AE41D7057D5BFA53EC8EE4 /* IBPNSCollectionLayoutDimension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IBPNSCollectionLayoutDimension.m; path = Sources/IBPCollectionViewCompositionalLayout/IBPNSCollectionLayoutDimension.m; sourceTree = "<group>"; };
 		858A3CDD4343D2730D9F6BCC60416A7C /* Pods-DDComponent_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DDComponent_Tests.modulemap"; sourceTree = "<group>"; };
 		86893FD0FE7104D0AEAD8EE1C438F72C /* DDComponent-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DDComponent-dummy.m"; sourceTree = "<group>"; };
+		88E8646A7BFDCDD9DA9B1CFBB859F37C /* IBPNSCollectionLayoutEnvironment_Protocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IBPNSCollectionLayoutEnvironment_Protocol.h; path = Sources/IBPCollectionViewCompositionalLayout/include/IBPNSCollectionLayoutEnvironment_Protocol.h; sourceTree = "<group>"; };
+		89090AD5ED9CDE13F721289C4EA60D0E /* IBPNSCollectionLayoutAnchor_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IBPNSCollectionLayoutAnchor_Private.h; path = Sources/IBPCollectionViewCompositionalLayout/IBPNSCollectionLayoutAnchor_Private.h; sourceTree = "<group>"; };
 		8BE3C24B39DBF209CFF278647FF5DA44 /* DDTableViewSectionGroupComponent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DDTableViewSectionGroupComponent.m; sourceTree = "<group>"; };
-		8CDFECF166A036BBBB52BEF1BE19548D /* CatalogByConvention.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CatalogByConvention.release.xcconfig; sourceTree = "<group>"; };
+		8C4BA844C6B7D23FC85E5A5466CCBEB9 /* IBPNSCollectionLayoutGroupCustomItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IBPNSCollectionLayoutGroupCustomItem.m; path = Sources/IBPCollectionViewCompositionalLayout/IBPNSCollectionLayoutGroupCustomItem.m; sourceTree = "<group>"; };
 		918C8227EE5DCEF207244D343DA7D9A5 /* Pods_DDComponent_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_DDComponent_Tests.framework; path = "Pods-DDComponent_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		940C48EDD2945E4918C84E10065DC3AE /* DDTableViewComponent+Cache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DDTableViewComponent+Cache.h"; sourceTree = "<group>"; };
+		96F8A2A10F33DF567C674EA1F923091C /* IBPCollectionCompositionalLayoutSolver.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IBPCollectionCompositionalLayoutSolver.m; path = Sources/IBPCollectionViewCompositionalLayout/IBPCollectionCompositionalLayoutSolver.m; sourceTree = "<group>"; };
+		97674B8F8CC1AAE4232B58B936BC2C83 /* IBPUICollectionViewCompositionalLayoutConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IBPUICollectionViewCompositionalLayoutConfiguration.h; path = Sources/IBPCollectionViewCompositionalLayout/include/IBPUICollectionViewCompositionalLayoutConfiguration.h; sourceTree = "<group>"; };
 		978DE113F470AC90C4D6AAE90E71B876 /* DDComponent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDComponent.h; path = DDComponent/oc/DDComponent.h; sourceTree = "<group>"; };
 		9AEECE212BC545546730CF6851104280 /* CatalogByConvention.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CatalogByConvention.framework; path = CatalogByConvention.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D1CA3A9F5AC85A1B77C8C51EF9135E8 /* CBCRuntime.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CBCRuntime.m; path = src/private/CBCRuntime.m; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D99A2DDE20BA0DC8C8D099EA91EF478 /* IBPNSCollectionLayoutContainer_Protocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IBPNSCollectionLayoutContainer_Protocol.h; path = Sources/IBPCollectionViewCompositionalLayout/include/IBPNSCollectionLayoutContainer_Protocol.h; sourceTree = "<group>"; };
 		9DA980C47E7015BFAB034BF39038535C /* Pods-DDComponent_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DDComponent_Tests-Info.plist"; sourceTree = "<group>"; };
+		9E0AFFF41DCFF79781939C70E4671EC0 /* IBPCollectionViewOrthogonalScrollerSectionController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IBPCollectionViewOrthogonalScrollerSectionController.h; path = Sources/IBPCollectionViewCompositionalLayout/IBPCollectionViewOrthogonalScrollerSectionController.h; sourceTree = "<group>"; };
+		9ED0CCE46B519C60F268CED5E52ECCCC /* IBPCollectionViewCompositionalLayout.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = IBPCollectionViewCompositionalLayout.modulemap; sourceTree = "<group>"; };
 		9F4F697274A681ABA039E3E651A94021 /* DDCollectionViewItemComponent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DDCollectionViewItemComponent.m; sourceTree = "<group>"; };
-		A06847020AE9BECEAEF20CA21515A05B /* CatalogByConvention-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CatalogByConvention-Info.plist"; sourceTree = "<group>"; };
-		A0B863997599170DD5340506CAD3F4E8 /* CatalogByConvention.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CatalogByConvention.debug.xcconfig; sourceTree = "<group>"; };
 		A1F61CD66E1BFB294617C143CEB47CE2 /* DDCollectionViewComponentHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DDCollectionViewComponentHelper.m; sourceTree = "<group>"; };
+		A408B08E4AB2FEC0A3FA254BF9B84028 /* IBPUICollectionLayoutSectionOrthogonalScrollingBehavior.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IBPUICollectionLayoutSectionOrthogonalScrollingBehavior.h; path = Sources/IBPCollectionViewCompositionalLayout/include/IBPUICollectionLayoutSectionOrthogonalScrollingBehavior.h; sourceTree = "<group>"; };
+		A44193D7E1DDF8F6126037782FD950BC /* IBPNSCollectionLayoutSize_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IBPNSCollectionLayoutSize_Private.h; path = Sources/IBPCollectionViewCompositionalLayout/IBPNSCollectionLayoutSize_Private.h; sourceTree = "<group>"; };
+		A4F5AE7ED1D41D87FE4D301AF297B6B3 /* CatalogByConvention-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CatalogByConvention-Info.plist"; sourceTree = "<group>"; };
 		A6342398946FC17C12C6EBE93B1AFCCF /* Pods_DDComponent_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_DDComponent_Example.framework; path = "Pods-DDComponent_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A97D3AF36692E775C5E85BB27CD81D7E /* DDComponent.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DDComponent.framework; path = DDComponent.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB32FDD2D7311A23B27924AD34000A75 /* IBPNSCollectionLayoutSection_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IBPNSCollectionLayoutSection_Private.h; path = Sources/IBPCollectionViewCompositionalLayout/IBPNSCollectionLayoutSection_Private.h; sourceTree = "<group>"; };
+		AC29154F14B477477F3BCFBC354D1706 /* IBPNSDirectionalEdgeInsets.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IBPNSDirectionalEdgeInsets.h; path = Sources/IBPCollectionViewCompositionalLayout/include/IBPNSDirectionalEdgeInsets.h; sourceTree = "<group>"; };
+		ACEC2161CCC026D5FC97FE9F05D4196A /* IBPUICollectionViewCompositionalLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IBPUICollectionViewCompositionalLayout.m; path = Sources/IBPCollectionViewCompositionalLayout/IBPUICollectionViewCompositionalLayout.m; sourceTree = "<group>"; };
 		B06E36509EA128493416A87DC17D3A51 /* DDTableViewSectionComponent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DDTableViewSectionComponent.h; sourceTree = "<group>"; };
+		B1BFCDAE94C00837E30C90D225F703F8 /* IBPCollectionCompositionalLayoutSolverResult.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IBPCollectionCompositionalLayoutSolverResult.m; path = Sources/IBPCollectionViewCompositionalLayout/IBPCollectionCompositionalLayoutSolverResult.m; sourceTree = "<group>"; };
+		B24EC1DDECB25FD6350B134C9DB62410 /* IBPCollectionViewCompositionalLayout.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IBPCollectionViewCompositionalLayout.release.xcconfig; sourceTree = "<group>"; };
 		B34FAF17E48AA2294AC1F51189485341 /* DDTableViewStatusComponent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DDTableViewStatusComponent.h; sourceTree = "<group>"; };
+		B42F86F7955A53F6CC4386FD9FE62E36 /* IBPNSCollectionLayoutDecorationItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IBPNSCollectionLayoutDecorationItem.m; path = Sources/IBPCollectionViewCompositionalLayout/IBPNSCollectionLayoutDecorationItem.m; sourceTree = "<group>"; };
 		B59BC8E2614B0BE4A1FDDC37976CAD6E /* Pods-DDComponent_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DDComponent_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		B849B806779FB8AADB00CA772706DE1E /* IBPCollectionViewCompositionalLayout-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "IBPCollectionViewCompositionalLayout-dummy.m"; sourceTree = "<group>"; };
 		B9E034FDB3FB5F753407EE9AEB301249 /* DDCollectionViewComponent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DDCollectionViewComponent.m; sourceTree = "<group>"; };
+		B9FB492066ABFD359E772DC1FE8B6128 /* IBPNSCollectionLayoutBoundarySupplementaryItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IBPNSCollectionLayoutBoundarySupplementaryItem.m; path = Sources/IBPCollectionViewCompositionalLayout/IBPNSCollectionLayoutBoundarySupplementaryItem.m; sourceTree = "<group>"; };
+		BA8A6AC228A6A6D356E4BB750E471FE0 /* IBPCollectionViewCompositionalLayout.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IBPCollectionViewCompositionalLayout.debug.xcconfig; sourceTree = "<group>"; };
 		BC0E3ECE1FF60E2EC8C84C9EED1D16FA /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		BEC66A94C189BB65BFE1F956D797FC5C /* IBPNSCollectionLayoutVisibleItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IBPNSCollectionLayoutVisibleItem.h; path = Sources/IBPCollectionViewCompositionalLayout/include/IBPNSCollectionLayoutVisibleItem.h; sourceTree = "<group>"; };
 		BFC26153C170C3E1A6E7CA3BF36D8B4A /* DDCollectionViewSectionComponent.mm */ = {isa = PBXFileReference; includeInIndex = 1; path = DDCollectionViewSectionComponent.mm; sourceTree = "<group>"; };
+		C130D258C631DCF6A447BD7639F8F749 /* CatalogByConvention-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CatalogByConvention-prefix.pch"; sourceTree = "<group>"; };
+		C19709BA17CE88ED0C363225D5A26ED0 /* IBPCollectionViewCompositionalLayout-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IBPCollectionViewCompositionalLayout-prefix.pch"; sourceTree = "<group>"; };
 		C44A8621F6A02E9B2D54CBEC39F55D3B /* Pods-DDComponent_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DDComponent_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		C60732FA2588704A4C43757E2F7D5D35 /* Pods-DDComponent_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DDComponent_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		C65D6DBE6E8B9683EECF4086AF0992F1 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		C933C39CCBECA7F867F21EABBC531B96 /* IBPNSRectAlignment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IBPNSRectAlignment.h; path = Sources/IBPCollectionViewCompositionalLayout/include/IBPNSRectAlignment.h; sourceTree = "<group>"; };
+		CAEE46D61AA9C5C8587733A541717710 /* IBPNSCollectionLayoutSpacing.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IBPNSCollectionLayoutSpacing.h; path = Sources/IBPCollectionViewCompositionalLayout/include/IBPNSCollectionLayoutSpacing.h; sourceTree = "<group>"; };
+		CD6E400C1B49704F2B2AC95FF8F88AC6 /* IBPNSCollectionLayoutSpacing.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IBPNSCollectionLayoutSpacing.m; path = Sources/IBPCollectionViewCompositionalLayout/IBPNSCollectionLayoutSpacing.m; sourceTree = "<group>"; };
+		D18E9391152C0F70982E76FE1BA4600B /* CatalogByConvention.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CatalogByConvention.h; path = src/CatalogByConvention.h; sourceTree = "<group>"; };
+		D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		D339699580AA1D91116900354E78C6F0 /* IBPUICollectionViewCompositionalLayoutConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IBPUICollectionViewCompositionalLayoutConfiguration.m; path = Sources/IBPCollectionViewCompositionalLayout/IBPUICollectionViewCompositionalLayoutConfiguration.m; sourceTree = "<group>"; };
+		D3D154A621AF07AFD1F84B2F429DFCB2 /* IBPNSCollectionLayoutEdgeSpacing.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IBPNSCollectionLayoutEdgeSpacing.h; path = Sources/IBPCollectionViewCompositionalLayout/include/IBPNSCollectionLayoutEdgeSpacing.h; sourceTree = "<group>"; };
+		D476D575A68033566AFD1FB0304DCF5A /* IBPUICollectionViewCompositionalLayoutConfiguration_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IBPUICollectionViewCompositionalLayoutConfiguration_Private.h; path = Sources/IBPCollectionViewCompositionalLayout/IBPUICollectionViewCompositionalLayoutConfiguration_Private.h; sourceTree = "<group>"; };
 		D7EEF1808DFD895303A2BE824D27C7E7 /* DDCollectionViewSectionGroupComponent.mm */ = {isa = PBXFileReference; includeInIndex = 1; path = DDCollectionViewSectionGroupComponent.mm; sourceTree = "<group>"; };
+		D87D78E6F8B74DFA7F3377E10FF7153D /* IBPNSCollectionLayoutEdgeSpacing_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IBPNSCollectionLayoutEdgeSpacing_Private.h; path = Sources/IBPCollectionViewCompositionalLayout/IBPNSCollectionLayoutEdgeSpacing_Private.h; sourceTree = "<group>"; };
 		D89C1277AE07D1453A89EA6E952BE211 /* Pods-DDComponent_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DDComponent_Example-Info.plist"; sourceTree = "<group>"; };
 		DB796E7EF6CCCA1D902747B7F18BFF2B /* DDTableViewComponentHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DDTableViewComponentHelper.m; sourceTree = "<group>"; };
-		DB9CA0EF2A839C945B59F7FB5540056C /* CBCNodeListViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CBCNodeListViewController.h; path = src/CBCNodeListViewController.h; sourceTree = "<group>"; };
+		DBC695AE21833E5209389D4A7CE4FE49 /* IBPUICollectionViewCompositionalLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IBPUICollectionViewCompositionalLayout.h; path = Sources/IBPCollectionViewCompositionalLayout/include/IBPUICollectionViewCompositionalLayout.h; sourceTree = "<group>"; };
 		DD0EB416669EE97BF4A06D7E33233179 /* DDCollectionViewComponentHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DDCollectionViewComponentHelper.h; sourceTree = "<group>"; };
+		DD802F1F3636F911E2F87DE7503FA1C1 /* IBPCollectionViewOrthogonalScrollerEmbeddedScrollView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IBPCollectionViewOrthogonalScrollerEmbeddedScrollView.h; path = Sources/IBPCollectionViewCompositionalLayout/IBPCollectionViewOrthogonalScrollerEmbeddedScrollView.h; sourceTree = "<group>"; };
+		E48F0D65F89CC343D4071F3F1B72CE6B /* IBPCollectionViewCompositionalLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = IBPCollectionViewCompositionalLayout.framework; path = IBPCollectionViewCompositionalLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6346978DDD295B1BFE8752FAEC204CE /* IBPNSCollectionLayoutForwardCompatibility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IBPNSCollectionLayoutForwardCompatibility.h; path = Sources/IBPCollectionViewCompositionalLayout/include/IBPNSCollectionLayoutForwardCompatibility.h; sourceTree = "<group>"; };
+		E7751A3864589EF13E685ED5923432D9 /* IBPNSCollectionLayoutDimension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IBPNSCollectionLayoutDimension.h; path = Sources/IBPCollectionViewCompositionalLayout/include/IBPNSCollectionLayoutDimension.h; sourceTree = "<group>"; };
 		E821EB842ABB5D8D466C4F37B3992571 /* DDTableViewComponent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DDTableViewComponent.m; sourceTree = "<group>"; };
 		E946E5A332D1D72F304D0390E3E3B828 /* DDCollectionViewComponent+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DDCollectionViewComponent+Private.h"; sourceTree = "<group>"; };
+		EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		EBC57D00CB6734A95EC58126185B68E4 /* IBPNSCollectionLayoutContainer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IBPNSCollectionLayoutContainer.m; path = Sources/IBPCollectionViewCompositionalLayout/IBPNSCollectionLayoutContainer.m; sourceTree = "<group>"; };
+		ECB9830D3E9A2BBE459A7BE917094527 /* CBCNodeListViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CBCNodeListViewController.m; path = src/CBCNodeListViewController.m; sourceTree = "<group>"; };
 		ED8E2D32E96833D0C99232C41E8E1248 /* DDComponent.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DDComponent.debug.xcconfig; sourceTree = "<group>"; };
+		EE5ED23BA5B0188BDF535AD859CF092C /* IBPNSDirectionalRectEdge.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IBPNSDirectionalRectEdge.h; path = Sources/IBPCollectionViewCompositionalLayout/include/IBPNSDirectionalRectEdge.h; sourceTree = "<group>"; };
+		F13F51D31AE897A1D755F743828644E7 /* IBPNSCollectionLayoutAnchor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IBPNSCollectionLayoutAnchor.h; path = Sources/IBPCollectionViewCompositionalLayout/include/IBPNSCollectionLayoutAnchor.h; sourceTree = "<group>"; };
+		F14786F9358CD80D563392189E3602D8 /* IBPNSCollectionLayoutItem_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IBPNSCollectionLayoutItem_Private.h; path = Sources/IBPCollectionViewCompositionalLayout/IBPNSCollectionLayoutItem_Private.h; sourceTree = "<group>"; };
 		F2E6947C425B418F2E7618C3123762ED /* DDCollectionViewStatusComponent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DDCollectionViewStatusComponent.h; sourceTree = "<group>"; };
+		F36B2DDC1E0F7B5EC1B9D975138CA38A /* IBPNSCollectionLayoutSection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IBPNSCollectionLayoutSection.m; path = Sources/IBPCollectionViewCompositionalLayout/IBPNSCollectionLayoutSection.m; sourceTree = "<group>"; };
+		F50C421080DA9A13AF03E10878E3C82F /* IBPNSCollectionLayoutDecorationItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IBPNSCollectionLayoutDecorationItem.h; path = Sources/IBPCollectionViewCompositionalLayout/include/IBPNSCollectionLayoutDecorationItem.h; sourceTree = "<group>"; };
+		F5B28E753A27B2ED23D915814D660FC4 /* CBCRuntime.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CBCRuntime.h; path = src/private/CBCRuntime.h; sourceTree = "<group>"; };
 		F868599C97213CC77ECA2B01D01F9109 /* DDCollectionViewStatusComponent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DDCollectionViewStatusComponent.m; sourceTree = "<group>"; };
+		F8E45EF7B103B235A6534A0130F28274 /* IBPNSCollectionLayoutEdgeSpacing.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IBPNSCollectionLayoutEdgeSpacing.m; path = Sources/IBPCollectionViewCompositionalLayout/IBPNSCollectionLayoutEdgeSpacing.m; sourceTree = "<group>"; };
+		FD4D08D32E17B87CE75B4235D4AD5E81 /* CatalogByConvention.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CatalogByConvention.modulemap; sourceTree = "<group>"; };
 		FDAADB97A4192D8C0896B4FB9376E87C /* DDCollectionViewComponent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DDCollectionViewComponent.h; sourceTree = "<group>"; };
 		FEA94EC211776029DF05E0D563E85F84 /* DDCollectionViewSectionGroupComponent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DDCollectionViewSectionGroupComponent.h; sourceTree = "<group>"; };
 		FF49C116378040E480680D94F3E8F03A /* Pods-DDComponent_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DDComponent_Example.modulemap"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		5AE37F7524B7E30DE59CCB1E6207285F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				799488F0CEE4AFD6FA29CF64BA6FCC12 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9E28216636EAEDF0AFA25A85A374B958 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -198,11 +344,12 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BC39243E6F37A9688F752C01BD860474 /* Frameworks */ = {
+		C47ADA0B7B218E0495ABAAB766E26F45 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E46F18572E6404F167B7BD5F6006405B /* Foundation.framework in Frameworks */,
+				F51FDD6A75346FDFE06E367C460C6A05 /* Foundation.framework in Frameworks */,
+				C7C2E7D676DE9106B40B47F75BB23E20 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,6 +379,14 @@
 			path = "Example/Pods/Target Support Files/DDComponent";
 			sourceTree = "<group>";
 		};
+		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				59DA5C1F72E1D5BABC43EACBA672C3BA /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		2C849A3B2FF7C79864A87652834E93D4 /* Table */ = {
 			isa = PBXGroup;
 			children = (
@@ -253,21 +408,6 @@
 			);
 			name = Table;
 			path = DDComponent/oc/Table;
-			sourceTree = "<group>";
-		};
-		2D1DBF9398EE430CA643C266F41581E3 /* CatalogByConvention */ = {
-			isa = PBXGroup;
-			children = (
-				75720CE3C66C2F98406630D76A3E9E7F /* CatalogByConvention.h */,
-				5A615CEA93E9FF4242CAE776D07F1D2A /* CBCCatalogExample.h */,
-				DB9CA0EF2A839C945B59F7FB5540056C /* CBCNodeListViewController.h */,
-				1F4F0D85A6E68A2470BFA0E02C8B9B2A /* CBCNodeListViewController.m */,
-				242578216B19FD324EB82A2C50126F40 /* CBCRuntime.h */,
-				045904C123E7756A23FCD24D1D6F53A4 /* CBCRuntime.m */,
-				7226DFE90DE19EBB4359D3AE2BC6BDC0 /* Support Files */,
-			);
-			name = CatalogByConvention;
-			path = CatalogByConvention;
 			sourceTree = "<group>";
 		};
 		2EBF891212E2846811163DB0D12F0A56 /* Pods-DDComponent_Example */ = {
@@ -300,27 +440,28 @@
 			path = ../..;
 			sourceTree = "<group>";
 		};
-		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+		5600E373835F9445F54CB7B7B3B9795B /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		7226DFE90DE19EBB4359D3AE2BC6BDC0 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				6121725C1AD7618BB0A0DB547B7FCDF8 /* CatalogByConvention.modulemap */,
-				71815ED59DA7405CA4E789018E20CB69 /* CatalogByConvention-dummy.m */,
-				A06847020AE9BECEAEF20CA21515A05B /* CatalogByConvention-Info.plist */,
-				77B899851351FB760ED02BE8929D372E /* CatalogByConvention-prefix.pch */,
-				30B459A6A6B2521CD5C3F9F8C73CBB55 /* CatalogByConvention-umbrella.h */,
-				A0B863997599170DD5340506CAD3F4E8 /* CatalogByConvention.debug.xcconfig */,
-				8CDFECF166A036BBBB52BEF1BE19548D /* CatalogByConvention.release.xcconfig */,
+				FD4D08D32E17B87CE75B4235D4AD5E81 /* CatalogByConvention.modulemap */,
+				02AC81496FAE7DC078ADB9D2C6A2FFF3 /* CatalogByConvention-dummy.m */,
+				A4F5AE7ED1D41D87FE4D301AF297B6B3 /* CatalogByConvention-Info.plist */,
+				C130D258C631DCF6A447BD7639F8F749 /* CatalogByConvention-prefix.pch */,
+				56001F6430A685615D7338FA3AAEF036 /* CatalogByConvention-umbrella.h */,
+				3AA064D76F7312EE4C66D65A3D11815F /* CatalogByConvention.debug.xcconfig */,
+				7896B225FC1E00F12027C460021C259A /* CatalogByConvention.release.xcconfig */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/CatalogByConvention";
+			sourceTree = "<group>";
+		};
+		59DA5C1F72E1D5BABC43EACBA672C3BA /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */,
+				D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */,
+			);
+			name = iOS;
 			sourceTree = "<group>";
 		};
 		77E6D6F9C9075FA1C5346BFEE45F2D8B /* Pods-DDComponent_Tests */ = {
@@ -339,12 +480,81 @@
 			path = "Target Support Files/Pods-DDComponent_Tests";
 			sourceTree = "<group>";
 		};
-		818DE9A4B6BC80FE337FC8631AA0F5D0 /* Pods */ = {
+		7CAEAB889FE378E00B2BBE4CD746BC6A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				2D1DBF9398EE430CA643C266F41581E3 /* CatalogByConvention */,
+				DE66BD133EC155EBA9950D736465B0F6 /* CatalogByConvention */,
+				9EE9CC9AFD0B84C51679C2E1D39F2D9D /* IBPCollectionViewCompositionalLayout */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		9EE9CC9AFD0B84C51679C2E1D39F2D9D /* IBPCollectionViewCompositionalLayout */ = {
+			isa = PBXGroup;
+			children = (
+				729CA2AF0D40B679719D9E6351A280BC /* IBPCollectionCompositionalLayoutSolver.h */,
+				96F8A2A10F33DF567C674EA1F923091C /* IBPCollectionCompositionalLayoutSolver.m */,
+				7A0257FECB52FA548CEA306E5D381BCE /* IBPCollectionCompositionalLayoutSolverResult.h */,
+				B1BFCDAE94C00837E30C90D225F703F8 /* IBPCollectionCompositionalLayoutSolverResult.m */,
+				62978116510C59AE365A66DE85E5AC91 /* IBPCollectionViewCompositionalLayout.h */,
+				DD802F1F3636F911E2F87DE7503FA1C1 /* IBPCollectionViewOrthogonalScrollerEmbeddedScrollView.h */,
+				3D3F7064DB0E74E5EB79A9CD9EF166F1 /* IBPCollectionViewOrthogonalScrollerEmbeddedScrollView.m */,
+				9E0AFFF41DCFF79781939C70E4671EC0 /* IBPCollectionViewOrthogonalScrollerSectionController.h */,
+				2CDF9AB69AB2BFBFE4925B8894681364 /* IBPCollectionViewOrthogonalScrollerSectionController.m */,
+				F13F51D31AE897A1D755F743828644E7 /* IBPNSCollectionLayoutAnchor.h */,
+				7D603B754981CD9DA75E4AA3CFC8358D /* IBPNSCollectionLayoutAnchor.m */,
+				89090AD5ED9CDE13F721289C4EA60D0E /* IBPNSCollectionLayoutAnchor_Private.h */,
+				83F8F633D42932F0D786B1F7A94CC1F1 /* IBPNSCollectionLayoutBoundarySupplementaryItem.h */,
+				B9FB492066ABFD359E772DC1FE8B6128 /* IBPNSCollectionLayoutBoundarySupplementaryItem.m */,
+				3CFC7438E4814A2F1598BDCAAEC768A3 /* IBPNSCollectionLayoutContainer.h */,
+				EBC57D00CB6734A95EC58126185B68E4 /* IBPNSCollectionLayoutContainer.m */,
+				9D99A2DDE20BA0DC8C8D099EA91EF478 /* IBPNSCollectionLayoutContainer_Protocol.h */,
+				F50C421080DA9A13AF03E10878E3C82F /* IBPNSCollectionLayoutDecorationItem.h */,
+				B42F86F7955A53F6CC4386FD9FE62E36 /* IBPNSCollectionLayoutDecorationItem.m */,
+				E7751A3864589EF13E685ED5923432D9 /* IBPNSCollectionLayoutDimension.h */,
+				854EDA0603AE41D7057D5BFA53EC8EE4 /* IBPNSCollectionLayoutDimension.m */,
+				D3D154A621AF07AFD1F84B2F429DFCB2 /* IBPNSCollectionLayoutEdgeSpacing.h */,
+				F8E45EF7B103B235A6534A0130F28274 /* IBPNSCollectionLayoutEdgeSpacing.m */,
+				D87D78E6F8B74DFA7F3377E10FF7153D /* IBPNSCollectionLayoutEdgeSpacing_Private.h */,
+				818C4E5BFF22D82F6F8830698B252B05 /* IBPNSCollectionLayoutEnvironment.h */,
+				16B899F8C954F5DEB2BFF997C11E61AE /* IBPNSCollectionLayoutEnvironment.m */,
+				88E8646A7BFDCDD9DA9B1CFBB859F37C /* IBPNSCollectionLayoutEnvironment_Protocol.h */,
+				E6346978DDD295B1BFE8752FAEC204CE /* IBPNSCollectionLayoutForwardCompatibility.h */,
+				19EE4A4A652378DEB695463A8C5F9066 /* IBPNSCollectionLayoutGroup.h */,
+				847C35DF15AD8E67ED41A354983B705E /* IBPNSCollectionLayoutGroup.m */,
+				515AEB0321B12FCF775430B9F570D932 /* IBPNSCollectionLayoutGroup_Private.h */,
+				2D89CC04E1E81DC25FADA6E7900FD266 /* IBPNSCollectionLayoutGroupCustomItem.h */,
+				8C4BA844C6B7D23FC85E5A5466CCBEB9 /* IBPNSCollectionLayoutGroupCustomItem.m */,
+				589C88D907FF5E38C9660C96ED244D7E /* IBPNSCollectionLayoutItem.h */,
+				524F62F647D8C7BE3F5FD78BF606AC3D /* IBPNSCollectionLayoutItem.m */,
+				F14786F9358CD80D563392189E3602D8 /* IBPNSCollectionLayoutItem_Private.h */,
+				1BC344646E333D6E52E394F0E5FAE452 /* IBPNSCollectionLayoutSection.h */,
+				F36B2DDC1E0F7B5EC1B9D975138CA38A /* IBPNSCollectionLayoutSection.m */,
+				AB32FDD2D7311A23B27924AD34000A75 /* IBPNSCollectionLayoutSection_Private.h */,
+				3A2B30FDABCCFD04A0C5A73127DED9DE /* IBPNSCollectionLayoutSize.h */,
+				08FBF64F596A042E91A09FB2623A6E2D /* IBPNSCollectionLayoutSize.m */,
+				A44193D7E1DDF8F6126037782FD950BC /* IBPNSCollectionLayoutSize_Private.h */,
+				CAEE46D61AA9C5C8587733A541717710 /* IBPNSCollectionLayoutSpacing.h */,
+				CD6E400C1B49704F2B2AC95FF8F88AC6 /* IBPNSCollectionLayoutSpacing.m */,
+				51CBAF71BDBA65E3F8EF35A1C5D229D7 /* IBPNSCollectionLayoutSpacing_Private.h */,
+				71D8FB07E3D4A0ED197905953B0931E0 /* IBPNSCollectionLayoutSupplementaryItem.h */,
+				57CE74FE4C0C5A45CDBBAFA52D9D527C /* IBPNSCollectionLayoutSupplementaryItem.m */,
+				56D8AE16396BE66B405B908EE7E35DE2 /* IBPNSCollectionLayoutSupplementaryItem_Private.h */,
+				BEC66A94C189BB65BFE1F956D797FC5C /* IBPNSCollectionLayoutVisibleItem.h */,
+				AC29154F14B477477F3BCFBC354D1706 /* IBPNSDirectionalEdgeInsets.h */,
+				4CF08197AE62F0C2EEFF62B99715C1C8 /* IBPNSDirectionalEdgeInsets.m */,
+				EE5ED23BA5B0188BDF535AD859CF092C /* IBPNSDirectionalRectEdge.h */,
+				C933C39CCBECA7F867F21EABBC531B96 /* IBPNSRectAlignment.h */,
+				A408B08E4AB2FEC0A3FA254BF9B84028 /* IBPUICollectionLayoutSectionOrthogonalScrollingBehavior.h */,
+				DBC695AE21833E5209389D4A7CE4FE49 /* IBPUICollectionViewCompositionalLayout.h */,
+				ACEC2161CCC026D5FC97FE9F05D4196A /* IBPUICollectionViewCompositionalLayout.m */,
+				97674B8F8CC1AAE4232B58B936BC2C83 /* IBPUICollectionViewCompositionalLayoutConfiguration.h */,
+				D339699580AA1D91116900354E78C6F0 /* IBPUICollectionViewCompositionalLayoutConfiguration.m */,
+				D476D575A68033566AFD1FB0304DCF5A /* IBPUICollectionViewCompositionalLayoutConfiguration_Private.h */,
+				FA2021135CD7BCD7157EFD297BB8C1F3 /* Support Files */,
+			);
+			name = IBPCollectionViewCompositionalLayout;
+			path = IBPCollectionViewCompositionalLayout;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -352,9 +562,9 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				EEA57FA20F4A5007E5E4359F8F9A8EDD /* Development Pods */,
-				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				818DE9A4B6BC80FE337FC8631AA0F5D0 /* Pods */,
-				D71E4C69E157D6D3E61909A02CC82DD6 /* Products */,
+				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
+				7CAEAB889FE378E00B2BBE4CD746BC6A /* Pods */,
+				F338CB3D125C43BF74BAF079DCC6450A /* Products */,
 				D02FBE8BCDBCA11D846A67E23E93FC84 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -368,14 +578,6 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				578452D2E740E91742655AC8F1636D1F /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		D69B87E4243D79727AED5A7102DE2407 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
@@ -386,15 +588,19 @@
 			name = Pod;
 			sourceTree = "<group>";
 		};
-		D71E4C69E157D6D3E61909A02CC82DD6 /* Products */ = {
+		DE66BD133EC155EBA9950D736465B0F6 /* CatalogByConvention */ = {
 			isa = PBXGroup;
 			children = (
-				9AEECE212BC545546730CF6851104280 /* CatalogByConvention.framework */,
-				A97D3AF36692E775C5E85BB27CD81D7E /* DDComponent.framework */,
-				A6342398946FC17C12C6EBE93B1AFCCF /* Pods_DDComponent_Example.framework */,
-				918C8227EE5DCEF207244D343DA7D9A5 /* Pods_DDComponent_Tests.framework */,
+				D18E9391152C0F70982E76FE1BA4600B /* CatalogByConvention.h */,
+				125FAB2BA10DDDE5AF594C531D5649BC /* CBCCatalogExample.h */,
+				081E44C4DF54D087AFF5123FA0D5DA16 /* CBCNodeListViewController.h */,
+				ECB9830D3E9A2BBE459A7BE917094527 /* CBCNodeListViewController.m */,
+				F5B28E753A27B2ED23D915814D660FC4 /* CBCRuntime.h */,
+				9D1CA3A9F5AC85A1B77C8C51EF9135E8 /* CBCRuntime.m */,
+				5600E373835F9445F54CB7B7B3B9795B /* Support Files */,
 			);
-			name = Products;
+			name = CatalogByConvention;
+			path = CatalogByConvention;
 			sourceTree = "<group>";
 		};
 		EEA57FA20F4A5007E5E4359F8F9A8EDD /* Development Pods */ = {
@@ -403,6 +609,33 @@
 				332E08C006AD8CC12B43294FE10A1645 /* DDComponent */,
 			);
 			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		F338CB3D125C43BF74BAF079DCC6450A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9AEECE212BC545546730CF6851104280 /* CatalogByConvention.framework */,
+				A97D3AF36692E775C5E85BB27CD81D7E /* DDComponent.framework */,
+				E48F0D65F89CC343D4071F3F1B72CE6B /* IBPCollectionViewCompositionalLayout.framework */,
+				A6342398946FC17C12C6EBE93B1AFCCF /* Pods_DDComponent_Example.framework */,
+				918C8227EE5DCEF207244D343DA7D9A5 /* Pods_DDComponent_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA2021135CD7BCD7157EFD297BB8C1F3 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9ED0CCE46B519C60F268CED5E52ECCCC /* IBPCollectionViewCompositionalLayout.modulemap */,
+				B849B806779FB8AADB00CA772706DE1E /* IBPCollectionViewCompositionalLayout-dummy.m */,
+				1B83192488AD98526B88D056E9445BCC /* IBPCollectionViewCompositionalLayout-Info.plist */,
+				C19709BA17CE88ED0C363225D5A26ED0 /* IBPCollectionViewCompositionalLayout-prefix.pch */,
+				19796110A2B81D61CF583F2051153C62 /* IBPCollectionViewCompositionalLayout-umbrella.h */,
+				BA8A6AC228A6A6D356E4BB750E471FE0 /* IBPCollectionViewCompositionalLayout.debug.xcconfig */,
+				B24EC1DDECB25FD6350B134C9DB62410 /* IBPCollectionViewCompositionalLayout.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/IBPCollectionViewCompositionalLayout";
 			sourceTree = "<group>";
 		};
 		FA559F40ADC418342A258E0ED8B5B593 /* Collection */ = {
@@ -443,11 +676,57 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B19EBCFFB87C077D2A36CC3EC4BC513B /* Headers */ = {
+		3894AAF9446BD74CD20E1CEF1A08D95B /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E48457226B56D40F9621445F832CC50F /* Pods-DDComponent_Example-umbrella.h in Headers */,
+				A03723A19ADE8AD75D2D86A6DEB817B0 /* Pods-DDComponent_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AEE8015F028CA213EB52858E7F3F617 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				711CE71B2EFA01096B3D438D175F80D5 /* IBPCollectionCompositionalLayoutSolver.h in Headers */,
+				018F1D821C9CB5FAC6B1AFCFFBD8D72C /* IBPCollectionCompositionalLayoutSolverResult.h in Headers */,
+				ED5183EE6CA09091A3F1D26CBCF4A0BB /* IBPCollectionViewCompositionalLayout-umbrella.h in Headers */,
+				EDA0EACB1B0C41077572A87A96CA0310 /* IBPCollectionViewCompositionalLayout.h in Headers */,
+				5A2F983C424C84C1FAAF7C0CA56EA3C4 /* IBPCollectionViewOrthogonalScrollerEmbeddedScrollView.h in Headers */,
+				BC871DD4B2EACD84E0C9E8536E3B7EE7 /* IBPCollectionViewOrthogonalScrollerSectionController.h in Headers */,
+				140DD439C804AC6B195FD50D142C37ED /* IBPNSCollectionLayoutAnchor.h in Headers */,
+				EC6FDCB8F8D41D5CAFF85055D1788AE1 /* IBPNSCollectionLayoutAnchor_Private.h in Headers */,
+				F4136FB43721A84276FA4B56F1FDB355 /* IBPNSCollectionLayoutBoundarySupplementaryItem.h in Headers */,
+				D383F7F64A0739DEAF8F37FE8D9B7A4A /* IBPNSCollectionLayoutContainer.h in Headers */,
+				C4593ACE47E1EB5667CAFFB334F7F052 /* IBPNSCollectionLayoutContainer_Protocol.h in Headers */,
+				C2A6D936BB39B5FD62D5108014060F44 /* IBPNSCollectionLayoutDecorationItem.h in Headers */,
+				A4E13E540A29456A0090D6C71E6A9882 /* IBPNSCollectionLayoutDimension.h in Headers */,
+				0CE5D9FAC0732B0A57C2FEE645BB9945 /* IBPNSCollectionLayoutEdgeSpacing.h in Headers */,
+				729CFC1F49C329B1E77CF007B3A14BA4 /* IBPNSCollectionLayoutEdgeSpacing_Private.h in Headers */,
+				08386EC15D6CC3DFCE56D82A558F4FE8 /* IBPNSCollectionLayoutEnvironment.h in Headers */,
+				F74E1868883EB27ADF6A8EBD1304898C /* IBPNSCollectionLayoutEnvironment_Protocol.h in Headers */,
+				DC306158D653E81524AA8000680C6033 /* IBPNSCollectionLayoutForwardCompatibility.h in Headers */,
+				D09C3BD6D6A7AC3A8D04E9DF9A8582F1 /* IBPNSCollectionLayoutGroup.h in Headers */,
+				303A906125CF20098502E1BDBFD640A0 /* IBPNSCollectionLayoutGroup_Private.h in Headers */,
+				5B8BA72F68F93F592200ED09312CF0FA /* IBPNSCollectionLayoutGroupCustomItem.h in Headers */,
+				B65351A9BFC1FC60EB1FA14408A85FD2 /* IBPNSCollectionLayoutItem.h in Headers */,
+				8C83E8486C3A3825C0DC6F531BD15B52 /* IBPNSCollectionLayoutItem_Private.h in Headers */,
+				E8A5946E3F8FE11B888EDB225C82DBD4 /* IBPNSCollectionLayoutSection.h in Headers */,
+				638DCEACEB633194F4EB470299FD5202 /* IBPNSCollectionLayoutSection_Private.h in Headers */,
+				0C41B4904B29B76F893E4CC7CC3D7312 /* IBPNSCollectionLayoutSize.h in Headers */,
+				439DE7816CAF8D205C2680223555C4C9 /* IBPNSCollectionLayoutSize_Private.h in Headers */,
+				9F9854118B11E5A4B199F63DA54A8118 /* IBPNSCollectionLayoutSpacing.h in Headers */,
+				DE867215161BDAE9B420ADF97A4E73D2 /* IBPNSCollectionLayoutSpacing_Private.h in Headers */,
+				7C55C80316ED8B805F27C627AB0857B9 /* IBPNSCollectionLayoutSupplementaryItem.h in Headers */,
+				8CE3AB8837C5BBF84BC8C4FE7B6CF98A /* IBPNSCollectionLayoutSupplementaryItem_Private.h in Headers */,
+				EBB67B4256CAB321AF5EFC5B0E9B60B9 /* IBPNSCollectionLayoutVisibleItem.h in Headers */,
+				FABB2B357A27500142D6F8906E442FE8 /* IBPNSDirectionalEdgeInsets.h in Headers */,
+				8B1B8364163E35E5B113CDE0F037FA45 /* IBPNSDirectionalRectEdge.h in Headers */,
+				3972AD6D566F38F28B1282FDE0965E00 /* IBPNSRectAlignment.h in Headers */,
+				C688E5CD25C13850C5027D033AEBDD18 /* IBPUICollectionLayoutSectionOrthogonalScrollingBehavior.h in Headers */,
+				3C30D5BF7650DA29922C2780B854DAEF /* IBPUICollectionViewCompositionalLayout.h in Headers */,
+				6511BCF82FAEAEAA5650C45AFFCFBBED /* IBPUICollectionViewCompositionalLayoutConfiguration.h in Headers */,
+				A58A7446FB9E5128A7048CC48611E582 /* IBPUICollectionViewCompositionalLayoutConfiguration_Private.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -510,18 +789,19 @@
 		};
 		26CF912C65AEE0F0D088F78C5B945E6F /* Pods-DDComponent_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A1FE31E0FF99C26B69E8D114DADE1580 /* Build configuration list for PBXNativeTarget "Pods-DDComponent_Example" */;
+			buildConfigurationList = ADE0E9C51B4046DF879F88A0BF2B9820 /* Build configuration list for PBXNativeTarget "Pods-DDComponent_Example" */;
 			buildPhases = (
-				B19EBCFFB87C077D2A36CC3EC4BC513B /* Headers */,
-				6220F7119F7E0B11C667607557769395 /* Sources */,
-				BC39243E6F37A9688F752C01BD860474 /* Frameworks */,
-				533F3DDAB42F11382CE699154C5EF584 /* Resources */,
+				3894AAF9446BD74CD20E1CEF1A08D95B /* Headers */,
+				431301D7EBF3BDAB331846113EDB8A2A /* Sources */,
+				5AE37F7524B7E30DE59CCB1E6207285F /* Frameworks */,
+				176D1113E92D846A495FAD4B85373F69 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				9D3D0318C92EBAA45D156DCEB50EBCFA /* PBXTargetDependency */,
-				38A72846D6ACAE98E030845C3B462CF3 /* PBXTargetDependency */,
+				853C80CDEE00CEE889257EE7BB8D8247 /* PBXTargetDependency */,
+				E5D75B3332DD754789BC61D48B00AA55 /* PBXTargetDependency */,
+				193B26B74B5AC2C7B14B86B43898101F /* PBXTargetDependency */,
 			);
 			name = "Pods-DDComponent_Example";
 			productName = "Pods-DDComponent_Example";
@@ -540,7 +820,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				3DB48631746377DDAFDC654D01C7FFF9 /* PBXTargetDependency */,
+				B2A707561FCC05DD6B850720F3B5F3E9 /* PBXTargetDependency */,
 			);
 			name = "Pods-DDComponent_Tests";
 			productName = "Pods-DDComponent_Tests";
@@ -565,6 +845,24 @@
 			productReference = A97D3AF36692E775C5E85BB27CD81D7E /* DDComponent.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		C6D33972ECD5C3EBB2CA1DDF16BCE422 /* IBPCollectionViewCompositionalLayout */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6F8A5CC0A3320737CD7E3A927649F7D /* Build configuration list for PBXNativeTarget "IBPCollectionViewCompositionalLayout" */;
+			buildPhases = (
+				5AEE8015F028CA213EB52858E7F3F617 /* Headers */,
+				0EBF2CB838EC1E4D105B164EC426C70D /* Sources */,
+				C47ADA0B7B218E0495ABAAB766E26F45 /* Frameworks */,
+				9EAD8809E0BB1A8962B84AADC3522A73 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IBPCollectionViewCompositionalLayout;
+			productName = IBPCollectionViewCompositionalLayout;
+			productReference = E48F0D65F89CC343D4071F3F1B72CE6B /* IBPCollectionViewCompositionalLayout.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -583,12 +881,13 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = D71E4C69E157D6D3E61909A02CC82DD6 /* Products */;
+			productRefGroup = F338CB3D125C43BF74BAF079DCC6450A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				138A45554994A4757DF941467C358D29 /* CatalogByConvention */,
 				BC4558A150B1F5F9E0A6366FF11DDE54 /* DDComponent */,
+				C6D33972ECD5C3EBB2CA1DDF16BCE422 /* IBPCollectionViewCompositionalLayout */,
 				26CF912C65AEE0F0D088F78C5B945E6F /* Pods-DDComponent_Example */,
 				A4B60D575AB7C13BBE2F255492BA7BF0 /* Pods-DDComponent_Tests */,
 			);
@@ -596,6 +895,13 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		176D1113E92D846A495FAD4B85373F69 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		215F0C3B356D98B617EDA51A736C711A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -610,7 +916,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		533F3DDAB42F11382CE699154C5EF584 /* Resources */ = {
+		9EAD8809E0BB1A8962B84AADC3522A73 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -627,11 +933,40 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		6220F7119F7E0B11C667607557769395 /* Sources */ = {
+		0EBF2CB838EC1E4D105B164EC426C70D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C244D76068463D53CE20B2F9F0D466B4 /* Pods-DDComponent_Example-dummy.m in Sources */,
+				52E9781C23DB960335D370C26FF17E68 /* IBPCollectionCompositionalLayoutSolver.m in Sources */,
+				B8350317965A1354C6F36889C187A79D /* IBPCollectionCompositionalLayoutSolverResult.m in Sources */,
+				C29462F471DFBAFE5AE22D6E99BE438D /* IBPCollectionViewCompositionalLayout-dummy.m in Sources */,
+				73A1380FB098BACB92F70E2D42E89D9A /* IBPCollectionViewOrthogonalScrollerEmbeddedScrollView.m in Sources */,
+				6B8AB752EA43EBCE93F3BF2DAAE943FD /* IBPCollectionViewOrthogonalScrollerSectionController.m in Sources */,
+				895902F4086684AE77DC181A17B12CB2 /* IBPNSCollectionLayoutAnchor.m in Sources */,
+				FEF3DC5B3C7E36851AA810F1D6A32244 /* IBPNSCollectionLayoutBoundarySupplementaryItem.m in Sources */,
+				F23455D52768E441962BD0DFAA3A6530 /* IBPNSCollectionLayoutContainer.m in Sources */,
+				0DBAC6E685147F17BC459DD87BE820D2 /* IBPNSCollectionLayoutDecorationItem.m in Sources */,
+				633594B2F1A640D62E6F72B6488AC755 /* IBPNSCollectionLayoutDimension.m in Sources */,
+				8833675A1D62ADC2FC886B2E6C6218AC /* IBPNSCollectionLayoutEdgeSpacing.m in Sources */,
+				B1758E1F02627F989064C5703760EC36 /* IBPNSCollectionLayoutEnvironment.m in Sources */,
+				4FD56A339CCC5930A5C84FBC5475031A /* IBPNSCollectionLayoutGroup.m in Sources */,
+				037904199279FF2E6A2B1F2C81EC283E /* IBPNSCollectionLayoutGroupCustomItem.m in Sources */,
+				E47A8EB8A4A8F1E58A04ECBE31316A3E /* IBPNSCollectionLayoutItem.m in Sources */,
+				1BBCF154B2A4C5918428B00FC6EBCED3 /* IBPNSCollectionLayoutSection.m in Sources */,
+				ED3D97306B3C81D4ECCC3134B966342C /* IBPNSCollectionLayoutSize.m in Sources */,
+				4F618B0E5967F47755AA37615E4F4F68 /* IBPNSCollectionLayoutSpacing.m in Sources */,
+				C23E438A1EEE8108F6AA79C78D3E3492 /* IBPNSCollectionLayoutSupplementaryItem.m in Sources */,
+				8AB5779D577DD731DBDA7F8AF4EC08C6 /* IBPNSDirectionalEdgeInsets.m in Sources */,
+				80B79C46DED0F67742D8D9EF9009722C /* IBPUICollectionViewCompositionalLayout.m in Sources */,
+				C05ADD03F4095002C3C9A381AF2C5C21 /* IBPUICollectionViewCompositionalLayoutConfiguration.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		431301D7EBF3BDAB331846113EDB8A2A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E1D2B5EA6D8E38614BCCF21C005FDC7 /* Pods-DDComponent_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -676,28 +1011,354 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		38A72846D6ACAE98E030845C3B462CF3 /* PBXTargetDependency */ = {
+		193B26B74B5AC2C7B14B86B43898101F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = DDComponent;
-			target = BC4558A150B1F5F9E0A6366FF11DDE54 /* DDComponent */;
-			targetProxy = E07A1459278B0B5D225DE650E43A0FB3 /* PBXContainerItemProxy */;
+			name = IBPCollectionViewCompositionalLayout;
+			target = C6D33972ECD5C3EBB2CA1DDF16BCE422 /* IBPCollectionViewCompositionalLayout */;
+			targetProxy = 302BD58827D56588D8AD522DBE51AE72 /* PBXContainerItemProxy */;
 		};
-		3DB48631746377DDAFDC654D01C7FFF9 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-DDComponent_Example";
-			target = 26CF912C65AEE0F0D088F78C5B945E6F /* Pods-DDComponent_Example */;
-			targetProxy = 7C799AF1819DDC8943603CDDF8318011 /* PBXContainerItemProxy */;
-		};
-		9D3D0318C92EBAA45D156DCEB50EBCFA /* PBXTargetDependency */ = {
+		853C80CDEE00CEE889257EE7BB8D8247 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = CatalogByConvention;
 			target = 138A45554994A4757DF941467C358D29 /* CatalogByConvention */;
-			targetProxy = 2DF601ACD305DC1F9F8BE396D207C2B3 /* PBXContainerItemProxy */;
+			targetProxy = B9D5BAC2BE7D772C60554DF536EECB8A /* PBXContainerItemProxy */;
+		};
+		B2A707561FCC05DD6B850720F3B5F3E9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-DDComponent_Example";
+			target = 26CF912C65AEE0F0D088F78C5B945E6F /* Pods-DDComponent_Example */;
+			targetProxy = DF11C9583F02EA7FA5F363FF6A7A7450 /* PBXContainerItemProxy */;
+		};
+		E5D75B3332DD754789BC61D48B00AA55 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DDComponent;
+			target = BC4558A150B1F5F9E0A6366FF11DDE54 /* DDComponent */;
+			targetProxy = 1B34DA99206E8DD9966ADD7A2F77552B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		25AD9454612BF454A1E3DC4CD4FA8C6D /* Debug */ = {
+		16B679019B71511B87BC299C935F5242 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13B96216BB5807BB4930AC44B418DE90 /* Pods-DDComponent_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-DDComponent_Tests/Pods-DDComponent_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DDComponent_Tests/Pods-DDComponent_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4A1A125F123A7A1F4E97507E4D644DC1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3AA064D76F7312EE4C66D65A3D11815F /* CatalogByConvention.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CatalogByConvention/CatalogByConvention-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CatalogByConvention/CatalogByConvention-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CatalogByConvention/CatalogByConvention.modulemap";
+				PRODUCT_MODULE_NAME = CatalogByConvention;
+				PRODUCT_NAME = CatalogByConvention;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4C6CF5D353E924DA1F8DA7A7C78A1F2E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C44A8621F6A02E9B2D54CBEC39F55D3B /* Pods-DDComponent_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-DDComponent_Example/Pods-DDComponent_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DDComponent_Example/Pods-DDComponent_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		63B337462D8C2793041F16CA2D00DCEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7896B225FC1E00F12027C460021C259A /* CatalogByConvention.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CatalogByConvention/CatalogByConvention-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CatalogByConvention/CatalogByConvention-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CatalogByConvention/CatalogByConvention.modulemap";
+				PRODUCT_MODULE_NAME = CatalogByConvention;
+				PRODUCT_NAME = CatalogByConvention;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7A77B7381E9735752F0EFD1DF890DA30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11EAEF2A4829296B1D83C5F367356FA9 /* Pods-DDComponent_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-DDComponent_Tests/Pods-DDComponent_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DDComponent_Tests/Pods-DDComponent_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7EE7A78859F657F6BEFC651185B43192 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		942CEDAB544F52D2E1BEC95A91312E25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20A4BC8A1E33D32F13E72FAC4C5B8EDD /* Pods-DDComponent_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-DDComponent_Example/Pods-DDComponent_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DDComponent_Example/Pods-DDComponent_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AD51C0FAA1813BE6F64913B691C718B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B24EC1DDECB25FD6350B134C9DB62410 /* IBPCollectionViewCompositionalLayout.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/IBPCollectionViewCompositionalLayout/IBPCollectionViewCompositionalLayout-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/IBPCollectionViewCompositionalLayout/IBPCollectionViewCompositionalLayout-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/IBPCollectionViewCompositionalLayout/IBPCollectionViewCompositionalLayout.modulemap";
+				PRODUCT_MODULE_NAME = IBPCollectionViewCompositionalLayout;
+				PRODUCT_NAME = IBPCollectionViewCompositionalLayout;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BC98B01FDFC0180557858009BF1B35B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA8A6AC228A6A6D356E4BB750E471FE0 /* IBPCollectionViewCompositionalLayout.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/IBPCollectionViewCompositionalLayout/IBPCollectionViewCompositionalLayout-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/IBPCollectionViewCompositionalLayout/IBPCollectionViewCompositionalLayout-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/IBPCollectionViewCompositionalLayout/IBPCollectionViewCompositionalLayout.modulemap";
+				PRODUCT_MODULE_NAME = IBPCollectionViewCompositionalLayout;
+				PRODUCT_NAME = IBPCollectionViewCompositionalLayout;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D299434AB35E7FD6F7921C8EF24742FF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -750,7 +1411,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -762,226 +1423,6 @@
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
-		};
-		4A1A125F123A7A1F4E97507E4D644DC1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A0B863997599170DD5340506CAD3F4E8 /* CatalogByConvention.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/CatalogByConvention/CatalogByConvention-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/CatalogByConvention/CatalogByConvention-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/CatalogByConvention/CatalogByConvention.modulemap";
-				PRODUCT_MODULE_NAME = CatalogByConvention;
-				PRODUCT_NAME = CatalogByConvention;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		63B337462D8C2793041F16CA2D00DCEB /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8CDFECF166A036BBBB52BEF1BE19548D /* CatalogByConvention.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/CatalogByConvention/CatalogByConvention-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/CatalogByConvention/CatalogByConvention-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/CatalogByConvention/CatalogByConvention.modulemap";
-				PRODUCT_MODULE_NAME = CatalogByConvention;
-				PRODUCT_NAME = CatalogByConvention;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		6435FF6F6D9438ECE25CDF12E2B1B4DE /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 13B96216BB5807BB4930AC44B418DE90 /* Pods-DDComponent_Tests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-DDComponent_Tests/Pods-DDComponent_Tests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-DDComponent_Tests/Pods-DDComponent_Tests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		76056BACA4E8E9BF361752D89AFA26D7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 20A4BC8A1E33D32F13E72FAC4C5B8EDD /* Pods-DDComponent_Example.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-DDComponent_Example/Pods-DDComponent_Example-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-DDComponent_Example/Pods-DDComponent_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		8A686BFDEA9CD638843DE3CAA647FAB9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C44A8621F6A02E9B2D54CBEC39F55D3B /* Pods-DDComponent_Example.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-DDComponent_Example/Pods-DDComponent_Example-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-DDComponent_Example/Pods-DDComponent_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		CA547D2C7E9A8A153DC2B27FBE00B112 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 5.0;
-				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Release;
 		};
 		DC0ED9350FFDD82A79A4DD6429106CF3 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -1044,47 +1485,14 @@
 			};
 			name = Debug;
 		};
-		FD8C3F6588F3A13853EC8B4A1F2BB787 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 11EAEF2A4829296B1D83C5F367356FA9 /* Pods-DDComponent_Tests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-DDComponent_Tests/Pods-DDComponent_Tests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-DDComponent_Tests/Pods-DDComponent_Tests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				25AD9454612BF454A1E3DC4CD4FA8C6D /* Debug */,
-				CA547D2C7E9A8A153DC2B27FBE00B112 /* Release */,
+				D299434AB35E7FD6F7921C8EF24742FF /* Debug */,
+				7EE7A78859F657F6BEFC651185B43192 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1098,11 +1506,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A1FE31E0FF99C26B69E8D114DADE1580 /* Build configuration list for PBXNativeTarget "Pods-DDComponent_Example" */ = {
+		A6F8A5CC0A3320737CD7E3A927649F7D /* Build configuration list for PBXNativeTarget "IBPCollectionViewCompositionalLayout" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8A686BFDEA9CD638843DE3CAA647FAB9 /* Debug */,
-				76056BACA4E8E9BF361752D89AFA26D7 /* Release */,
+				BC98B01FDFC0180557858009BF1B35B0 /* Debug */,
+				AD51C0FAA1813BE6F64913B691C718B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ADE0E9C51B4046DF879F88A0BF2B9820 /* Build configuration list for PBXNativeTarget "Pods-DDComponent_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C6CF5D353E924DA1F8DA7A7C78A1F2E /* Debug */,
+				942CEDAB544F52D2E1BEC95A91312E25 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1119,8 +1536,8 @@
 		E12CE074470DDBE0F3CF8ED81FB7744D /* Build configuration list for PBXNativeTarget "Pods-DDComponent_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6435FF6F6D9438ECE25CDF12E2B1B4DE /* Debug */,
-				FD8C3F6588F3A13853EC8B4A1F2BB787 /* Release */,
+				16B679019B71511B87BC299C935F5242 /* Debug */,
+				7A77B7381E9735752F0EFD1DF890DA30 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

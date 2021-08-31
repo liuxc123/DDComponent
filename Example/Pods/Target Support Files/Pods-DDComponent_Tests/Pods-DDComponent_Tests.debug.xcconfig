@@ -1,8 +1,8 @@
 CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO
-FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/CatalogByConvention" "${PODS_CONFIGURATION_BUILD_DIR}/DDComponent"
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/CatalogByConvention" "${PODS_CONFIGURATION_BUILD_DIR}/DDComponent" "${PODS_CONFIGURATION_BUILD_DIR}/IBPCollectionViewCompositionalLayout"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/CatalogByConvention/CatalogByConvention.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/DDComponent/DDComponent.framework/Headers"
-OTHER_LDFLAGS = $(inherited) -framework "CatalogByConvention" -framework "DDComponent"
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/CatalogByConvention/CatalogByConvention.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/DDComponent/DDComponent.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/IBPCollectionViewCompositionalLayout/IBPCollectionViewCompositionalLayout.framework/Headers"
+OTHER_LDFLAGS = $(inherited) -framework "CatalogByConvention" -framework "DDComponent" -framework "IBPCollectionViewCompositionalLayout" -framework "UIKit"
 PODS_BUILD_DIR = ${BUILD_DIR}
 PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
 PODS_PODFILE_DIR_PATH = ${SRCROOT}/.

@@ -1,14 +1,17 @@
 PODS:
   - CatalogByConvention (2.5.2)
   - DDComponent (0.1.0)
+  - IBPCollectionViewCompositionalLayout (0.6.9)
 
 DEPENDENCIES:
   - CatalogByConvention
   - DDComponent (from `../`)
+  - IBPCollectionViewCompositionalLayout
 
 SPEC REPOS:
   trunk:
     - CatalogByConvention
+    - IBPCollectionViewCompositionalLayout
 
 EXTERNAL SOURCES:
   DDComponent:
@@ -17,7 +20,8 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   CatalogByConvention: ef713654160053be026fa4648dd28caf6b5ca4e1
   DDComponent: c792e3a6abdf33eba8f900ea1558a62975cc6bf2
+  IBPCollectionViewCompositionalLayout: bbb29e39ac564666a8c3cdb6633ed944b6feb55b
 
-PODFILE CHECKSUM: c0f580dba37d7906120027f3525e191e1d9c4eb3
+PODFILE CHECKSUM: fcff686c4a1611f75b6843f30c604b35a02f3366
 
 COCOAPODS: 1.10.1

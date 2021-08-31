@@ -6,9 +6,9 @@
 //  Copyright © 2021 liuxc123. All rights reserved.
 //
 
-#import "DDCollectionViewSectionComponent.h"
+#import <UIKit/UIKit.h>
 
-@interface DDCollectionViewItemDemoComponent : DDCollectionViewSectionComponent
+@interface DDCollectionViewItemDemoComponent : DDCollectionViewItemComponent
 
 @end
 

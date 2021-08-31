@@ -12,9 +12,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface DDCollectionViewHeaderFooterSectionDemoComponent : DDCollectionViewHeaderFooterSectionComponent
 
-@property (nonatomic, strong) NSArray<NSArray<NSString *> *> *demoData;
+@property (nonatomic, strong) NSArray<NSString *> *demoData;
 
-+ (instancetype)componentWithData:(NSArray<NSArray<NSString *> *> *)demoData;
++ (instancetype)componentWithData:(NSArray<NSString *> *)demoData;
 
 @end
 

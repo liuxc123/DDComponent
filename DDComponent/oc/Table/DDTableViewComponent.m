@@ -63,8 +63,11 @@
 
 - (void)prepareTableView {}
 
+- (void)reloadData {}
+
 - (void)clearDataSourceCache {}
 - (void)clearSizeCache {}
+
 
 - (NSInteger)row {
     return [self.superComponent firstRowOfSubComponent:self];
@@ -85,76 +88,6 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     NSAssert(false, @"MUST override!");
     return nil;
-}
-
-#pragma mark - convert
-
-- (NSInteger)convertSection:(NSInteger)section toSuperComponent:(DDTableViewBaseComponent *)comp {
-    if (self == comp) return section;
-    return [self.superComponent convertSection:section fromComponent:self toSuperComponent:comp];
-}
-
-- (NSInteger)convertSection:(NSInteger)section fromComponent:(DDTableViewBaseComponent *)from toSuperComponent:(DDTableViewBaseComponent *)comp {
-    return [self convertSection:section toSuperComponent:comp];
-}
-
-- (NSInteger)convertSection:(NSInteger)section toSubComponent:(DDTableViewBaseComponent *)comp {
-    if (self == comp) return section;
-    return NSNotFound;
-}
-
-- (NSInteger)convertToGlobalSection:(NSInteger)section {
-    DDTableViewRootComponent *root = self.rootComponent;
-    if (root) {
-        return [self convertSection:section toSuperComponent:root];
-    }
-    else {
-        return NSNotFound;
-    }
-}
-
-- (NSInteger)convertFromGlobalSection:(NSInteger)section {
-    DDTableViewRootComponent *root = self.rootComponent;
-    if (root) {
-        return [root convertSection:section toSubComponent:self];
-    }
-    else {
-        return NSNotFound;
-    }
-}
-
-- (NSIndexPath *)convertIndexPath:(NSIndexPath *)indexPath toSuperComponent:(DDTableViewBaseComponent *)comp {
-    if (self == comp) {
-        return indexPath;
-    }
-    else {
-        return [self.superComponent convertIndexPath:indexPath fromComponent:self toSuperComponent:comp];
-    }
-}
-
-- (NSIndexPath *)convertIndexPath:(NSIndexPath *)indexPath fromComponent:(DDTableViewBaseComponent *)from toSuperComponent:(DDTableViewBaseComponent *)comp {
-    return [self convertIndexPath:indexPath toSuperComponent:comp];
-}
-
-- (NSIndexPath *)convertIndexPath:(NSIndexPath *)indexPath toSubComponent:(DDTableViewBaseComponent *)comp {
-    if (self == comp) {
-        return indexPath;
-    }
-    else {
-        return nil;
-    }
-}
-
-- (NSIndexPath *)convertToGlobalIndexPath:(NSIndexPath *)indexPath {
-    return [self convertIndexPath:indexPath toSuperComponent:self.rootComponent];
-}
-
-- (NSIndexPath *)convertFromGlobalIndexPath:(NSIndexPath *)indexPath {
-    return [self.rootComponent convertIndexPath:indexPath toSubComponent:self];
-}
-
-- (DDTableViewBaseComponent *)componentAtIndexPath:(NSIndexPath *)indexPath {
-    return self;
 }
 
 @end

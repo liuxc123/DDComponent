@@ -5,3 +5,4 @@
 //
 
 #import <DDComponent/DDComponent.h>
+#import <IBPCollectionViewCompositionalLayout/IBPCollectionViewCompositionalLayout.h>

@@ -77,22 +77,6 @@
     return nil;
 }
 
-#pragma mark - convert
-
-- (NSIndexPath *)convertIndexPath:(NSIndexPath *)indexPath toSubComponent:(DDTableViewBaseComponent *)comp {
-    if (self == comp) return indexPath;
-    return [self.currentComponent convertIndexPath:indexPath toSubComponent:comp];
-}
-
-- (NSInteger)convertSection:(NSInteger)section toSubComponent:(DDTableViewBaseComponent *)comp {
-    if (self == comp) return section;
-    return [self.currentComponent convertSection:section toSubComponent:comp];
-}
-
-- (DDTableViewBaseComponent *)componentAtIndexPath:(NSIndexPath *)indexPath {
-    return [self.currentComponent componentAtIndexPath:indexPath];
-}
-
 #pragma mark - dataSource
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
