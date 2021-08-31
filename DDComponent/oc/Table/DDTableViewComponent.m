@@ -28,14 +28,14 @@
 @implementation DDTableViewBaseComponent
 @synthesize tableView=_tableView;
 @synthesize dataSourceCacheEnable=_dataSourceCacheEnable;
-@synthesize sizeCacheEnable=_sizeCacheEnable;
+//@synthesize sizeCacheEnable=_sizeCacheEnable;
 
 - (instancetype)init
 {
     self = [super init];
     if (self) {
         _dataSourceCacheEnable = YES;
-        _sizeCacheEnable = YES;
+//        _sizeCacheEnable = YES;
     }
     return self;
 }
