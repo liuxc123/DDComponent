@@ -117,46 +117,46 @@ po self.rootComponent
 
 ### ItemComponent
 
-1. 基础组件, 0个section 多个item  需要用容器包裹
-2. cell内容内部实现
-3. 需使用容器ItemGroupComponent嵌套
+1. Basic components, 0 sections and multiple items need to be wrapped in containers
+2. Internal implementation of cell content
+3. Container itemgroupcomponent nesting is required
 
 ### SectionComponent
 
-1. 基础组件, 一个Section 多个items
-2. cell、header、footer内容内部实现
-3. headerVIew继承此组件
-4. footerVIew继承此组件
+1. Base component, one section multiple items.
+2. Internal implementation of cell, header and footer content.
+3. Headerview inherits this component.
+4. Footerview inherits this component.
 
 ### HeaderFooterSectionComponent
 
-1. 基础组件, 一个Section 多个items
-2. Header以headerComponent为主
-3. Footer以footerComponent为主
-4. cell内容内部实现
+1. Base component, one section multiple items.
+2. The header is mainly HeaderComponent.
+3. The footer is mainly FooterComponent.
+4. Internal implementation of cell content.
 
 ### ItemGroupComponent
 
-1. 容器组件, 一个Section 多个items
-2. Header以headerComponent为主
-3. Footer以footerComponent为主
-4. 子视图以subComponents为主
+1. Container component, one section multiple items.
+2. The header is mainly HeaderComponent.
+3. The footer is mainly FooterComponent.
+4. Subviews are dominated by subcomponents
 
 ### SectionGroupComponent
 
-1. 容器组件, 多个Section
-2. 子视图subComponents嵌套ItemComponent、SectionComponent、HeaderFooterSectionComponent等容器组件
+1. Container component, multiple items.
+2. Subcomponents nested container components such as itemcomponent, sectioncomponent and headerfootersectioncomponent.
 
 ### RootComponent
 
-1. 根容器组件，绑定collectionView或tableView
-2. 多个Section
-3. 子视图subComponents嵌套SectionComponent等容器组件
+1. Root container component, binding collectionview or tableview
+2. Multiple sections
+3. Subview subcomponents nested container components such as sectioncomponent
 
 ### StatusComponent
 
-1. 状态机容器组件
-2. 用与切换Loading、Empty、Normal视图
+1. State machine container component
+2. Use and to switch the loading, empty and normal views
 
 ![](./Images/example.png)
 
