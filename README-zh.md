@@ -87,6 +87,49 @@ github 'DDComponent'
 1. 视图组件： 只负责视图展示，比如一个包含小列表的模块，或者仅仅只有一个元素的模块。只负责职责内的视图展示。
 2. 容器组件： 只负责组件间的组合，比如按照顺序或者空态等组合模式，当然最顶层的一个组件也是一个容器类组件。
 
+### ItemComponent
+
+1. 基础组件, 0个section 多个item  需要用容器包裹
+2. cell内容内部实现
+3. 需使用容器ItemGroupComponent嵌套
+
+### SectionComponent
+
+1. 基础组件, 一个Section 多个items
+2. cell、header、footer内容内部实现
+3. headerVIew继承此组件
+4. footerVIew继承此组件
+
+### HeaderFooterSectionComponent
+
+1. 基础组件, 一个Section 多个items
+2. Header以headerComponent为主
+3. Footer以footerComponent为主
+4. cell内容内部实现
+
+### ItemGroupComponent
+
+1. 容器组件, 一个Section 多个items
+2. Header以headerComponent为主
+3. Footer以footerComponent为主
+4. 子视图以subComponents为主
+
+### SectionGroupComponent
+
+1. 容器组件, 多个Section
+2. 子视图subComponents嵌套ItemComponent、SectionComponent、HeaderFooterSectionComponent等容器组件
+
+### RootComponent
+
+1. 根容器组件，绑定collectionView或tableView
+2. 多个Section
+3. 子视图subComponents嵌套SectionComponent等容器组件
+
+### StatusComponent
+
+1. 状态机容器组件
+2. 用与切换Loading、Empty、Normal视图
+
 ![](./Images/example.png)
 
 这是一个组装的例子。
