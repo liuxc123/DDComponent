@@ -17,7 +17,7 @@
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     
     UIViewController *rootViewController = [[CBCNodeListViewController alloc] initWithNode:CBCCreateNavigationTree()];
-    rootViewController.title = @"Catalog by Convention";
+    rootViewController.title = @"Catalog by DDComponent";
     
     UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:rootViewController];
     self.window.rootViewController = navController;

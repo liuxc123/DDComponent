@@ -17,6 +17,29 @@
 		04EA96EC26DE1A2E00725BB7 /* DDCollectionViewFooterComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EA96EB26DE1A2E00725BB7 /* DDCollectionViewFooterComponent.m */; };
 		04EA96F126DE2AC600725BB7 /* README-zh.md in Resources */ = {isa = PBXBuildFile; fileRef = 04EA96F026DE2AC600725BB7 /* README-zh.md */; };
 		04EA96F326DE2AD900725BB7 /* CompareToIGList.md in Resources */ = {isa = PBXBuildFile; fileRef = 04EA96F226DE2AD900725BB7 /* CompareToIGList.md */; };
+		04EA96F626DF0D9100725BB7 /* TextsComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EA96F526DF0D9100725BB7 /* TextsComponent.swift */; };
+		04EA96FE26DF0DC500725BB7 /* FooterComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EA96F926DF0DC500725BB7 /* FooterComponent.swift */; };
+		04EA96FF26DF0DC500725BB7 /* HeaderComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EA96FA26DF0DC500725BB7 /* HeaderComponent.swift */; };
+		04EA970026DF0DC500725BB7 /* ImagesComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EA96FB26DF0DC500725BB7 /* ImagesComponent.swift */; };
+		04EA970126DF0DC500725BB7 /* StatusComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EA96FC26DF0DC500725BB7 /* StatusComponent.swift */; };
+		04EA970226DF0DC500725BB7 /* TitlesComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EA96FD26DF0DC500725BB7 /* TitlesComponent.swift */; };
+		04EA970726DF0DE000725BB7 /* TextCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EA970426DF0DE000725BB7 /* TextCollectionReusableView.swift */; };
+		04EA970826DF0DE000725BB7 /* TitleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EA970526DF0DE000725BB7 /* TitleCollectionViewCell.swift */; };
+		04EA970926DF0DE000725BB7 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EA970626DF0DE000725BB7 /* ImageCollectionViewCell.swift */; };
+		04EA971026DF0DF700725BB7 /* HeaderStatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EA970B26DF0DF700725BB7 /* HeaderStatusViewController.swift */; };
+		04EA971126DF0DF700725BB7 /* StatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EA970C26DF0DF700725BB7 /* StatusViewController.swift */; };
+		04EA971226DF0DF700725BB7 /* SectionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EA970D26DF0DF700725BB7 /* SectionsViewController.swift */; };
+		04EA971326DF0DF700725BB7 /* HeaderFooterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EA970E26DF0DF700725BB7 /* HeaderFooterViewController.swift */; };
+		04EA971426DF0DF700725BB7 /* SimpleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EA970F26DF0DF700725BB7 /* SimpleViewController.swift */; };
+		04EA971F26DF0E0E00725BB7 /* TaobaoCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EA971626DF0E0D00725BB7 /* TaobaoCollectionViewController.swift */; };
+		04EA972026DF0E0E00725BB7 /* TaobaoGoods3.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04EA971726DF0E0D00725BB7 /* TaobaoGoods3.xib */; };
+		04EA972126DF0E0E00725BB7 /* TaobaoGoods0.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04EA971826DF0E0D00725BB7 /* TaobaoGoods0.xib */; };
+		04EA972226DF0E0E00725BB7 /* TaobaoBanner.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04EA971926DF0E0D00725BB7 /* TaobaoBanner.xib */; };
+		04EA972326DF0E0E00725BB7 /* TaobaoGoods2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04EA971A26DF0E0E00725BB7 /* TaobaoGoods2.xib */; };
+		04EA972426DF0E0E00725BB7 /* TaobaoEntriesComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EA971B26DF0E0E00725BB7 /* TaobaoEntriesComponent.swift */; };
+		04EA972526DF0E0E00725BB7 /* TaobaoGoodsComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EA971C26DF0E0E00725BB7 /* TaobaoGoodsComponent.swift */; };
+		04EA972626DF0E0E00725BB7 /* TaobaoBannerComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EA971D26DF0E0E00725BB7 /* TaobaoBannerComponent.swift */; };
+		04EA972726DF0E0E00725BB7 /* TaobaoGoods1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04EA971E26DF0E0E00725BB7 /* TaobaoGoods1.xib */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -71,6 +94,30 @@
 		04EA96EB26DE1A2E00725BB7 /* DDCollectionViewFooterComponent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDCollectionViewFooterComponent.m; sourceTree = "<group>"; };
 		04EA96F026DE2AC600725BB7 /* README-zh.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = "README-zh.md"; path = "../README-zh.md"; sourceTree = "<group>"; };
 		04EA96F226DE2AD900725BB7 /* CompareToIGList.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = CompareToIGList.md; path = ../CompareToIGList.md; sourceTree = "<group>"; };
+		04EA96F426DF0D9000725BB7 /* DDComponent_Example-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DDComponent_Example-Bridging-Header.h"; sourceTree = "<group>"; };
+		04EA96F526DF0D9100725BB7 /* TextsComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextsComponent.swift; sourceTree = "<group>"; };
+		04EA96F926DF0DC500725BB7 /* FooterComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FooterComponent.swift; sourceTree = "<group>"; };
+		04EA96FA26DF0DC500725BB7 /* HeaderComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderComponent.swift; sourceTree = "<group>"; };
+		04EA96FB26DF0DC500725BB7 /* ImagesComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagesComponent.swift; sourceTree = "<group>"; };
+		04EA96FC26DF0DC500725BB7 /* StatusComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusComponent.swift; sourceTree = "<group>"; };
+		04EA96FD26DF0DC500725BB7 /* TitlesComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitlesComponent.swift; sourceTree = "<group>"; };
+		04EA970426DF0DE000725BB7 /* TextCollectionReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextCollectionReusableView.swift; sourceTree = "<group>"; };
+		04EA970526DF0DE000725BB7 /* TitleCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleCollectionViewCell.swift; sourceTree = "<group>"; };
+		04EA970626DF0DE000725BB7 /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		04EA970B26DF0DF700725BB7 /* HeaderStatusViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderStatusViewController.swift; sourceTree = "<group>"; };
+		04EA970C26DF0DF700725BB7 /* StatusViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusViewController.swift; sourceTree = "<group>"; };
+		04EA970D26DF0DF700725BB7 /* SectionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionsViewController.swift; sourceTree = "<group>"; };
+		04EA970E26DF0DF700725BB7 /* HeaderFooterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderFooterViewController.swift; sourceTree = "<group>"; };
+		04EA970F26DF0DF700725BB7 /* SimpleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleViewController.swift; sourceTree = "<group>"; };
+		04EA971626DF0E0D00725BB7 /* TaobaoCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaobaoCollectionViewController.swift; sourceTree = "<group>"; };
+		04EA971726DF0E0D00725BB7 /* TaobaoGoods3.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TaobaoGoods3.xib; sourceTree = "<group>"; };
+		04EA971826DF0E0D00725BB7 /* TaobaoGoods0.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TaobaoGoods0.xib; sourceTree = "<group>"; };
+		04EA971926DF0E0D00725BB7 /* TaobaoBanner.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TaobaoBanner.xib; sourceTree = "<group>"; };
+		04EA971A26DF0E0E00725BB7 /* TaobaoGoods2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TaobaoGoods2.xib; sourceTree = "<group>"; };
+		04EA971B26DF0E0E00725BB7 /* TaobaoEntriesComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaobaoEntriesComponent.swift; sourceTree = "<group>"; };
+		04EA971C26DF0E0E00725BB7 /* TaobaoGoodsComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaobaoGoodsComponent.swift; sourceTree = "<group>"; };
+		04EA971D26DF0E0E00725BB7 /* TaobaoBannerComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaobaoBannerComponent.swift; sourceTree = "<group>"; };
+		04EA971E26DF0E0E00725BB7 /* TaobaoGoods1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TaobaoGoods1.xib; sourceTree = "<group>"; };
 		5DC714B7C6EAC4C67CB74966 /* Pods-DDComponent_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DDComponent_Tests.release.xcconfig"; path = "Target Support Files/Pods-DDComponent_Tests/Pods-DDComponent_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* DDComponent_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DDComponent_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -180,6 +227,68 @@
 			path = Component;
 			sourceTree = "<group>";
 		};
+		04EA96F726DF0DA700725BB7 /* SwiftDemo */ = {
+			isa = PBXGroup;
+			children = (
+				04EA971526DF0DFD00725BB7 /* TaoBao */,
+				04EA970A26DF0DEA00725BB7 /* Controller */,
+				04EA970326DF0DCD00725BB7 /* Cell */,
+				04EA96F826DF0DB800725BB7 /* Component */,
+			);
+			path = SwiftDemo;
+			sourceTree = "<group>";
+		};
+		04EA96F826DF0DB800725BB7 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				04EA96F926DF0DC500725BB7 /* FooterComponent.swift */,
+				04EA96FA26DF0DC500725BB7 /* HeaderComponent.swift */,
+				04EA96FB26DF0DC500725BB7 /* ImagesComponent.swift */,
+				04EA96FC26DF0DC500725BB7 /* StatusComponent.swift */,
+				04EA96FD26DF0DC500725BB7 /* TitlesComponent.swift */,
+				04EA96F526DF0D9100725BB7 /* TextsComponent.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		04EA970326DF0DCD00725BB7 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				04EA970626DF0DE000725BB7 /* ImageCollectionViewCell.swift */,
+				04EA970426DF0DE000725BB7 /* TextCollectionReusableView.swift */,
+				04EA970526DF0DE000725BB7 /* TitleCollectionViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		04EA970A26DF0DEA00725BB7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				04EA970E26DF0DF700725BB7 /* HeaderFooterViewController.swift */,
+				04EA970B26DF0DF700725BB7 /* HeaderStatusViewController.swift */,
+				04EA970D26DF0DF700725BB7 /* SectionsViewController.swift */,
+				04EA970F26DF0DF700725BB7 /* SimpleViewController.swift */,
+				04EA970C26DF0DF700725BB7 /* StatusViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		04EA971526DF0DFD00725BB7 /* TaoBao */ = {
+			isa = PBXGroup;
+			children = (
+				04EA971926DF0E0D00725BB7 /* TaobaoBanner.xib */,
+				04EA971D26DF0E0E00725BB7 /* TaobaoBannerComponent.swift */,
+				04EA971626DF0E0D00725BB7 /* TaobaoCollectionViewController.swift */,
+				04EA971B26DF0E0E00725BB7 /* TaobaoEntriesComponent.swift */,
+				04EA971826DF0E0D00725BB7 /* TaobaoGoods0.xib */,
+				04EA971E26DF0E0E00725BB7 /* TaobaoGoods1.xib */,
+				04EA971A26DF0E0E00725BB7 /* TaobaoGoods2.xib */,
+				04EA971726DF0E0D00725BB7 /* TaobaoGoods3.xib */,
+				04EA971C26DF0E0E00725BB7 /* TaobaoGoodsComponent.swift */,
+			);
+			path = TaoBao;
+			sourceTree = "<group>";
+		};
 		1F3421FAF9A276858B8CE9C3 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -230,6 +339,7 @@
 			children = (
 				6003F59C195388D20070C39A /* DDAppDelegate.h */,
 				6003F59D195388D20070C39A /* DDAppDelegate.m */,
+				04EA96F726DF0DA700725BB7 /* SwiftDemo */,
 				04EA96CD26DDB9AA00725BB7 /* CollectionDemo */,
 				F1B0480A26DD253C000D78C1 /* TableDemo */,
 				6003F594195388D20070C39A /* Supporting Files */,
@@ -248,6 +358,7 @@
 				6003F596195388D20070C39A /* InfoPlist.strings */,
 				6003F599195388D20070C39A /* main.m */,
 				6003F59B195388D20070C39A /* DDComponent-Prefix.pch */,
+				04EA96F426DF0D9000725BB7 /* DDComponent_Example-Bridging-Header.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -371,6 +482,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = liuxc123;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						LastSwiftMigration = 1250;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -404,8 +518,13 @@
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				04EA96F326DE2AD900725BB7 /* CompareToIGList.md in Resources */,
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
+				04EA972326DF0E0E00725BB7 /* TaobaoGoods2.xib in Resources */,
+				04EA972226DF0E0E00725BB7 /* TaobaoBanner.xib in Resources */,
+				04EA972126DF0E0E00725BB7 /* TaobaoGoods0.xib in Resources */,
+				04EA972026DF0E0E00725BB7 /* TaobaoGoods3.xib in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				04EA96F126DE2AC600725BB7 /* README-zh.md in Resources */,
+				04EA972726DF0E0E00725BB7 /* TaobaoGoods1.xib in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -494,11 +613,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04EA971F26DF0E0E00725BB7 /* TaobaoCollectionViewController.swift in Sources */,
+				04EA971126DF0DF700725BB7 /* StatusViewController.swift in Sources */,
 				F1B0482326DD253C000D78C1 /* DDComponentDemoTableViewCell.m in Sources */,
+				04EA971326DF0DF700725BB7 /* HeaderFooterViewController.swift in Sources */,
+				04EA970126DF0DC500725BB7 /* StatusComponent.swift in Sources */,
+				04EA970926DF0DE000725BB7 /* ImageCollectionViewCell.swift in Sources */,
+				04EA971026DF0DF700725BB7 /* HeaderStatusViewController.swift in Sources */,
 				04EA96D626DDF3D800725BB7 /* DDComponentDemoCollectionViewCell.m in Sources */,
 				F1B0481E26DD253C000D78C1 /* DDTableViewHeaderFooterSectionDemoComponent.m in Sources */,
 				F1B0482126DD253C000D78C1 /* DDTableViewFooterDemoComponent.m in Sources */,
+				04EA970226DF0DC500725BB7 /* TitlesComponent.swift in Sources */,
+				04EA970026DF0DC500725BB7 /* ImagesComponent.swift in Sources */,
+				04EA96F626DF0D9100725BB7 /* TextsComponent.swift in Sources */,
+				04EA971226DF0DF700725BB7 /* SectionsViewController.swift in Sources */,
 				04EA96D026DDB9CC00725BB7 /* DDCollectionComponentDemoViewController.m in Sources */,
+				04EA96FE26DF0DC500725BB7 /* FooterComponent.swift in Sources */,
 				04EA96EC26DE1A2E00725BB7 /* DDCollectionViewFooterComponent.m in Sources */,
 				F1B0482226DD253C000D78C1 /* DDHeaderFooterView.m in Sources */,
 				04EA96DD26DDF44B00725BB7 /* DDCollectionViewItemDemoComponent.m in Sources */,
@@ -506,11 +636,18 @@
 				F1B0482026DD253C000D78C1 /* DDTableViewItemDemoComponent.m in Sources */,
 				04EA96E026DE092800725BB7 /* DDCollectionViewHeaderFooterSectionDemoComponent.m in Sources */,
 				6003F59E195388D20070C39A /* DDAppDelegate.m in Sources */,
+				04EA970826DF0DE000725BB7 /* TitleCollectionViewCell.swift in Sources */,
 				F1B0481F26DD253C000D78C1 /* DDTableViewHeaderDemoComponent.m in Sources */,
 				04EA96D926DDF40D00725BB7 /* DDCollectionHeaderFooterView.m in Sources */,
+				04EA972426DF0E0E00725BB7 /* TaobaoEntriesComponent.swift in Sources */,
+				04EA972626DF0E0E00725BB7 /* TaobaoBannerComponent.swift in Sources */,
+				04EA96FF26DF0DC500725BB7 /* HeaderComponent.swift in Sources */,
+				04EA970726DF0DE000725BB7 /* TextCollectionReusableView.swift in Sources */,
 				F1B0482426DD253C000D78C1 /* DDTableComponentDemoViewController.m in Sources */,
 				04EA96E626DE167F00725BB7 /* DDSectionBackgroundDecorationView.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				04EA972526DF0E0E00725BB7 /* TaobaoGoodsComponent.swift in Sources */,
+				04EA971426DF0DF700725BB7 /* SimpleViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -638,13 +775,17 @@
 			baseConfigurationReference = B72107BBEFB5414F0FF43C5A /* Pods-DDComponent_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DDComponent/DDComponent-Prefix.pch";
 				INFOPLIST_FILE = "DDComponent/DDComponent-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_OBJC_BRIDGING_HEADER = "DDComponent/DDComponent_Example-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -654,13 +795,16 @@
 			baseConfigurationReference = D8D925B2EB0CBD69D18A4AB3 /* Pods-DDComponent_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DDComponent/DDComponent-Prefix.pch";
 				INFOPLIST_FILE = "DDComponent/DDComponent-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_OBJC_BRIDGING_HEADER = "DDComponent/DDComponent_Example-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -669,6 +813,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = ABFE1B2CAD6F32EAD775C4AF /* Pods-DDComponent_Tests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
@@ -694,6 +839,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5DC714B7C6EAC4C67CB74966 /* Pods-DDComponent_Tests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
