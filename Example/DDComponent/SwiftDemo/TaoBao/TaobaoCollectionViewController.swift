@@ -118,4 +118,8 @@ class TaobaoCollectionViewController: UICollectionViewController {
     @objc class func catalogBreadcrumbs() -> [String] {
         return ["TaoBao"]
     }
+    
+    override func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        print("scrollViewDidScroll")
+    }
 }

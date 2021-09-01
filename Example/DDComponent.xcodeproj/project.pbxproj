@@ -40,6 +40,7 @@
 		04EA972526DF0E0E00725BB7 /* TaobaoGoodsComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EA971C26DF0E0E00725BB7 /* TaobaoGoodsComponent.swift */; };
 		04EA972626DF0E0E00725BB7 /* TaobaoBannerComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EA971D26DF0E0E00725BB7 /* TaobaoBannerComponent.swift */; };
 		04EA972726DF0E0E00725BB7 /* TaobaoGoods1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04EA971E26DF0E0E00725BB7 /* TaobaoGoods1.xib */; };
+		04EA972926DF1AD000725BB7 /* MoveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EA972826DF1AD000725BB7 /* MoveViewController.swift */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -118,6 +119,7 @@
 		04EA971C26DF0E0E00725BB7 /* TaobaoGoodsComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaobaoGoodsComponent.swift; sourceTree = "<group>"; };
 		04EA971D26DF0E0E00725BB7 /* TaobaoBannerComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaobaoBannerComponent.swift; sourceTree = "<group>"; };
 		04EA971E26DF0E0E00725BB7 /* TaobaoGoods1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TaobaoGoods1.xib; sourceTree = "<group>"; };
+		04EA972826DF1AD000725BB7 /* MoveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveViewController.swift; sourceTree = "<group>"; };
 		5DC714B7C6EAC4C67CB74966 /* Pods-DDComponent_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DDComponent_Tests.release.xcconfig"; path = "Target Support Files/Pods-DDComponent_Tests/Pods-DDComponent_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* DDComponent_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DDComponent_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -269,6 +271,7 @@
 				04EA970D26DF0DF700725BB7 /* SectionsViewController.swift */,
 				04EA970F26DF0DF700725BB7 /* SimpleViewController.swift */,
 				04EA970C26DF0DF700725BB7 /* StatusViewController.swift */,
+				04EA972826DF1AD000725BB7 /* MoveViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -642,6 +645,7 @@
 				04EA972426DF0E0E00725BB7 /* TaobaoEntriesComponent.swift in Sources */,
 				04EA972626DF0E0E00725BB7 /* TaobaoBannerComponent.swift in Sources */,
 				04EA96FF26DF0DC500725BB7 /* HeaderComponent.swift in Sources */,
+				04EA972926DF1AD000725BB7 /* MoveViewController.swift in Sources */,
 				04EA970726DF0DE000725BB7 /* TextCollectionReusableView.swift in Sources */,
 				F1B0482426DD253C000D78C1 /* DDTableComponentDemoViewController.m in Sources */,
 				04EA96E626DE167F00725BB7 /* DDSectionBackgroundDecorationView.m in Sources */,

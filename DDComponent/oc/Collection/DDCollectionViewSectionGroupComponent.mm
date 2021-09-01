@@ -145,6 +145,21 @@
     return [comp collectionView:collectionView viewForSupplementaryElementOfKind:kind atIndexPath:indexPath];
 }
 
+- (BOOL)collectionView:(UICollectionView *)collectionView canMoveItemAtIndexPath:(NSIndexPath *)indexPath {
+    DDCollectionViewBaseComponent *comp = [self componentAtSection:indexPath.section];
+    if ([comp respondsToSelector:_cmd]) {
+        return [comp collectionView:collectionView canMoveItemAtIndexPath:indexPath];
+    }
+    return NO;
+}
+
+- (void)collectionView:(UICollectionView *)collectionView moveItemAtIndexPath:(NSIndexPath *)sourceIndexPath toIndexPath:(NSIndexPath *)destinationIndexPath {
+    DDCollectionViewBaseComponent *comp = [self componentAtSection:sourceIndexPath.section];
+    if ([comp respondsToSelector:_cmd]) {
+        [comp collectionView:collectionView moveItemAtIndexPath:sourceIndexPath toIndexPath:destinationIndexPath];
+    }
+}
+
 - (BOOL)collectionView:(UICollectionView *)collectionView shouldHighlightItemAtIndexPath:(NSIndexPath *)indexPath {
     DDCollectionViewBaseComponent *comp = [self componentAtSection:indexPath.section];
     if ([comp respondsToSelector:_cmd]) {

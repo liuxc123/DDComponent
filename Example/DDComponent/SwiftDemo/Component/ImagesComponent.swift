@@ -92,4 +92,16 @@ class ImagesComponent: DDCollectionViewHeaderFooterSectionComponent {
             self.navigationController?.pushViewController(cls.init(), animated: true)
         }
     }
+    
+    override func collectionView(_ collectionView: UICollectionView, canMoveItemAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    
+    override func collectionView(_ collectionView: UICollectionView, moveItemAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {
+        let moveSrouce = images[sourceIndexPath.item]
+        var result = images
+        result.remove(at: sourceIndexPath.item)
+        result.insert(moveSrouce, at: destinationIndexPath.item)
+        self.images = result
+    }
 }
