@@ -59,9 +59,11 @@ class ImageModel {
 
 class ImagesComponent: DDCollectionViewHeaderFooterSectionComponent {
     var images : [ImageModel] = []
+    var canMove: Bool = false
     weak var navigationController: UINavigationController?
     
-    override init() {
+    init(canMove: Bool = false) {
+        self.canMove = canMove
         super.init()
         self.size = imageSize
         self.lineSpacing = 5
@@ -96,7 +98,7 @@ class ImagesComponent: DDCollectionViewHeaderFooterSectionComponent {
     }
     
     override func collectionView(_ collectionView: UICollectionView, canMoveItemAt indexPath: IndexPath) -> Bool {
-        return true
+        return canMove
     }
     
     override func collectionView(_ collectionView: UICollectionView, moveItemAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {

@@ -39,7 +39,7 @@ class MoveViewController: UICollectionViewController {
         self.title = "Move"
         self.collectionView?.backgroundColor = UIColor.white
         
-        let images = ImagesComponent()
+        let images = ImagesComponent(canMove: true)
         images.headerComponent = {
             let header = HeaderComponent()
             header.text = "IMAGE HEADER"
@@ -53,45 +53,8 @@ class MoveViewController: UICollectionViewController {
         images.images = self.imageModels
         images.sectionInset = UIEdgeInsets(top: 0, left: 15, bottom: 0, right: 15)
         
-        let images2 = ImagesComponent()
-        images2.headerComponent = {
-            let header = HeaderComponent()
-            header.text = "IMAGE HEADER"
-            return header
-        }()
-        images2.footerComponent = {
-            let footer = FooterComponent()
-            footer.text = "IMAGE FOOTER"
-            return footer
-        }()
-        images2.images = self.imageModels
-        images2.sectionInset = UIEdgeInsets(top: 0, left: 15, bottom: 0, right: 15)
-        
-        self.rootComponent.subComponents = [images, images2]
+        self.rootComponent.subComponents = [images]
         self.collectionView?.reloadData()
-        
-        collectionView.isUserInteractionEnabled = true
-        collectionView.addGestureRecognizer(UILongPressGestureRecognizer(target: self, action: #selector(moveAction(_:))))
-    }
-    
-    @objc func moveAction(_ gesture: UIGestureRecognizer) {
-        switch gesture.state {
-        case .began:
-            guard let selectedIndexPath = collectionView?.indexPathForItem(at: gesture.location(in: collectionView))
-                , let canMoveItemAtIndexPath = collectionView?.dataSource?.collectionView?(collectionView, canMoveItemAt: selectedIndexPath)
-                , canMoveItemAtIndexPath else {
-                    return
-            }
-            collectionView.beginInteractiveMovementForItem(at: selectedIndexPath)
-        case .changed:
-            collectionView.updateInteractiveMovementTargetPosition(gesture.location(in: gesture.view))
-        case .ended:
-            collectionView.endInteractiveMovement()
-        case .cancelled, .failed, .possible:
-            collectionView.cancelInteractiveMovement()
-        @unknown default:
-            break;
-        }
     }
     
     @objc class func catalogBreadcrumbs() -> [String] {
