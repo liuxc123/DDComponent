@@ -11,6 +11,8 @@
 
 @implementation DDTableViewStatusComponent {
     NSMutableDictionary<NSString *, DDTableViewBaseComponent *> *_componentDict;
+@protected
+    NSUInteger _numberOfSections; // cache
 }
 
 - (instancetype)init
@@ -80,7 +82,8 @@
 #pragma mark - dataSource
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return [self.currentComponent numberOfSectionsInTableView:tableView];
+    _numberOfSections = [self.currentComponent numberOfSectionsInTableView:tableView];
+    return _numberOfSections;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -451,23 +454,31 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
-    DDTableViewSectionComponent *comp = self.headerComponent ?: self.headerFooterComponent;
-    if ([comp respondsToSelector:_cmd]) {
-        return [comp tableView:tableView heightForHeaderInSection:section];
+    // header appear at first component
+    if (self.section == section) {
+        DDTableViewSectionComponent *comp = self.headerComponent ?: self.headerFooterComponent;
+        if ([comp respondsToSelector:_cmd]) {
+            return [comp tableView:tableView heightForHeaderInSection:section];
+        }
+        else {
+            return [super tableView:tableView heightForHeaderInSection:section];
+        }
     }
-    else {
-        return [super tableView:tableView heightForHeaderInSection:section];
-    }
+    return CGFLOAT_MIN;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
-    DDTableViewSectionComponent *comp = self.footerComponent ?: self.headerFooterComponent;
-    if ([comp respondsToSelector:_cmd]) {
-        return [comp tableView:tableView heightForFooterInSection:section];
+    // footer appear at last component
+    if (self.section + _numberOfSections - 1 == section) {
+        DDTableViewSectionComponent *comp = self.footerComponent ?: self.headerFooterComponent;
+        if ([comp respondsToSelector:_cmd]) {
+            return [comp tableView:tableView heightForFooterInSection:section];
+        }
+        else {
+            return [super tableView:tableView heightForFooterInSection:section];
+        }
     }
-    else {
-        return [super tableView:tableView heightForFooterInSection:section];
-    }
+    return CGFLOAT_MIN;
 }
 
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {

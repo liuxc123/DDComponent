@@ -3,11 +3,9 @@ use_frameworks!
 platform :ios, '10.0'
 
 target 'DDComponent_Example' do
+  pod 'CatalogByConvention'
   pod 'DDComponent', :path => '../'
   pod 'IBPCollectionViewCompositionalLayout'
-
-  
-  pod 'CatalogByConvention'
 
   target 'DDComponent_Tests' do
     inherit! :search_paths
