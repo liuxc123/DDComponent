@@ -47,6 +47,11 @@ extern const CGFloat DDComponentAutomaticDimension;
 - (void)prepareCollectionView NS_REQUIRES_SUPER;
 
 /**
+ Reload collectionView
+ */
+- (void)reloadData;
+
+/**
  Life cycle
  Is really need?
 

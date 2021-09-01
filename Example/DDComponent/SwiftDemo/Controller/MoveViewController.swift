@@ -53,7 +53,21 @@ class MoveViewController: UICollectionViewController {
         images.images = self.imageModels
         images.sectionInset = UIEdgeInsets(top: 0, left: 15, bottom: 0, right: 15)
         
-        self.rootComponent.subComponents = [images]
+        let images2 = ImagesComponent()
+        images2.headerComponent = {
+            let header = HeaderComponent()
+            header.text = "IMAGE HEADER"
+            return header
+        }()
+        images2.footerComponent = {
+            let footer = FooterComponent()
+            footer.text = "IMAGE FOOTER"
+            return footer
+        }()
+        images2.images = self.imageModels
+        images2.sectionInset = UIEdgeInsets(top: 0, left: 15, bottom: 0, right: 15)
+        
+        self.rootComponent.subComponents = [images, images2]
         self.collectionView?.reloadData()
         
         collectionView.isUserInteractionEnabled = true

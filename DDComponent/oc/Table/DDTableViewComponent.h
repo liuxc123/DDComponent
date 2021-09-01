@@ -47,6 +47,9 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)prepareTableView NS_REQUIRES_SUPER;
 
+/**
+ Reload tableView
+ */
 - (void)reloadData;
 
 /**

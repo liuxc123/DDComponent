@@ -91,6 +91,8 @@ class ImagesComponent: DDCollectionViewHeaderFooterSectionComponent {
         if let cls = self.images[indexPath.item].controllerClass {
             self.navigationController?.pushViewController(cls.init(), animated: true)
         }
+        self.images.removeFirst()
+        self.reloadData()
     }
     
     override func collectionView(_ collectionView: UICollectionView, canMoveItemAt indexPath: IndexPath) -> Bool {

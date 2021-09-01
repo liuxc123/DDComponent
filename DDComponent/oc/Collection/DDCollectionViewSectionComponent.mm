@@ -38,6 +38,14 @@
     return self;
 }
 
+- (void)reloadData {
+    __weak typeof(self) weakSelf = self;
+    [self.collectionView performBatchUpdates:^{
+        __strong typeof(self) strongSelf = weakSelf;
+        [strongSelf.collectionView reloadSections:[NSIndexSet indexSetWithIndex:strongSelf.section]];
+    } completion:nil];
+}
+
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
     return 1;
 }

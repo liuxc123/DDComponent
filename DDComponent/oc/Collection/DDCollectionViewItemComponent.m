@@ -52,4 +52,12 @@
     return size;
 }
 
+- (void)reloadData {
+    __weak typeof(self) weakSelf = self;
+    [self.collectionView performBatchUpdates:^{
+        __strong typeof(self) strongSelf = weakSelf;
+        [strongSelf.collectionView reloadItemsAtIndexPaths:@[[NSIndexPath indexPathForRow:strongSelf.item inSection:strongSelf.section]]];
+    } completion:nil];
+}
+
 @end

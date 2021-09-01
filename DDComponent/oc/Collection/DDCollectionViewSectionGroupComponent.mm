@@ -111,6 +111,18 @@
     return component;
 }
 
+- (void)reloadData {
+    if (self.collectionView) {
+        __weak typeof(self) weakSelf = self;
+        [self.collectionView performBatchUpdates:^{
+            __strong typeof(self) strongSelf = weakSelf;
+            NSInteger sections = [self numberOfSectionsInCollectionView:strongSelf.collectionView];
+            NSIndexSet *indexSet = [NSIndexSet indexSetWithIndexesInRange:NSMakeRange(strongSelf.section, sections)];
+            [strongSelf.collectionView reloadSections:indexSet];
+        } completion:nil];
+    }
+}
+
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
     NSInteger sections = 0;
     if (self.dataSourceCacheEnable) {
