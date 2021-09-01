@@ -22,7 +22,9 @@ pod 'DDComponent'
 github 'DDComponent'
 ```
 
-# from
+# From
+
+The implementation code of this component adopts [djs66256/DDComponent](https://github.com/djs66256/DDComponent)
 
 # Getting Started
 
