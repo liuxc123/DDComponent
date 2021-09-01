@@ -250,6 +250,6 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     printf("%s\n", sel_getName(_cmd));
-    return 20;
+    return 80;
 }
 @end

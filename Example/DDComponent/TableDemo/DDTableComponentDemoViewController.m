@@ -40,8 +40,9 @@
     section0.headerComponent = [DDTableViewHeaderDemoComponent new];
     section0.footerComponent = [DDTableViewFooterDemoComponent new];
     
-    DDTableViewHeaderFooterSectionDemoComponent *section1 = [DDTableViewHeaderFooterSectionDemoComponent componentWithHeader:[DDTableViewHeaderDemoComponent new] footer:[DDTableViewFooterDemoComponent new]];
-    section1.demoData = @[@[@"AAA", @"BBB", @"CCC"]];
+    DDTableViewHeaderFooterSectionDemoComponent *section1 = [DDTableViewHeaderFooterSectionDemoComponent componentWithData:@[@"AAA", @"BBB", @"CCC"]];
+    section1.headerComponent = [DDTableViewHeaderDemoComponent new];
+    section1.footerComponent = [DDTableViewFooterDemoComponent new];
     
     DDTableViewSectionGroupComponent *sectionGroup = [DDTableViewSectionGroupComponent componentWithSubComponents:
                                                       @[

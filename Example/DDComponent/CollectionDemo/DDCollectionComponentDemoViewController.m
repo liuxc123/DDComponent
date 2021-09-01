@@ -25,7 +25,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"DDCollectionDemo";
-    
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Refresh" style:UIBarButtonItemStylePlain target:self action:@selector(refreshAction)];
+
     self.collectionView = [[UICollectionView alloc] initWithFrame:self.view.bounds collectionViewLayout:[self createLayout]];
     self.collectionView.backgroundColor = UIColor.whiteColor;
     [self.view addSubview:self.collectionView];
@@ -59,7 +60,8 @@
     ];
 
     
-    [self.collectionView reloadData];
+    [self.rootComponent reloadData];
+    
 }
 
 - (UICollectionViewLayout *)createLayout {
@@ -92,6 +94,16 @@
 
 - (UICollectionViewLayout *)createFlowLayout {
     return [UICollectionViewFlowLayout new];
+}
+
+- (void)refreshAction {
+    if ([self.collectionView.collectionViewLayout isKindOfClass:[UICollectionViewFlowLayout class]]) {
+        self.collectionView.collectionViewLayout = [self createLayout];
+    }
+    else {
+        self.collectionView.collectionViewLayout = [self createFlowLayout];
+    }
+    [self.collectionView.collectionViewLayout invalidateLayout];
 }
 
 + (NSArray<NSString *> *)catalogBreadcrumbs {

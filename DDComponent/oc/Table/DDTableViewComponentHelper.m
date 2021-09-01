@@ -14,7 +14,7 @@
                              footer:(DDTableViewSectionComponent *)footer {
     DDTableViewHeaderFooterSectionComponent *comp = [self new];
     comp.headerComponent = header;
-    comp.headerComponent = footer;
+    comp.footerComponent = footer;
     return comp;
 }
 
