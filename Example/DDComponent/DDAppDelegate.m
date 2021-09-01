@@ -16,12 +16,15 @@
     // Override point for customization after application launch.
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     
+    // root
     UIViewController *rootViewController = [[CBCNodeListViewController alloc] initWithNode:CBCCreateNavigationTree()];
     rootViewController.title = @"Catalog by DDComponent";
     
+    // nav
     UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:rootViewController];
     self.window.rootViewController = navController;
     
+    // set key and visible
     [self.window makeKeyAndVisible];
     
     return YES;
