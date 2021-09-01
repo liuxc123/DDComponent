@@ -115,6 +115,49 @@ po self.rootComponent
 1. View Component: displaying. for example, a list of cell or just an element。
 2. Container Component: combine the view components. For example, conbine some components as a list, or switch between different components(Loading, Error, Empty). And the root component is also a containter component.
 
+### ItemComponent
+
+1. 基础组件, 0个section 多个item  需要用容器包裹
+2. cell内容内部实现
+3. 需使用容器ItemGroupComponent嵌套
+
+### SectionComponent
+
+1. 基础组件, 一个Section 多个items
+2. cell、header、footer内容内部实现
+3. headerVIew继承此组件
+4. footerVIew继承此组件
+
+### HeaderFooterSectionComponent
+
+1. 基础组件, 一个Section 多个items
+2. Header以headerComponent为主
+3. Footer以footerComponent为主
+4. cell内容内部实现
+
+### ItemGroupComponent
+
+1. 容器组件, 一个Section 多个items
+2. Header以headerComponent为主
+3. Footer以footerComponent为主
+4. 子视图以subComponents为主
+
+### SectionGroupComponent
+
+1. 容器组件, 多个Section
+2. 子视图subComponents嵌套ItemComponent、SectionComponent、HeaderFooterSectionComponent等容器组件
+
+### RootComponent
+
+1. 根容器组件，绑定collectionView或tableView
+2. 多个Section
+3. 子视图subComponents嵌套SectionComponent等容器组件
+
+### StatusComponent
+
+1. 状态机容器组件
+2. 用与切换Loading、Empty、Normal视图
+
 ![](./Images/example.png)
 
 An example how it 
