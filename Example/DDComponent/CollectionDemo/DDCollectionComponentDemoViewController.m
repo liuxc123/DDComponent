@@ -33,35 +33,50 @@
 
     self.rootComponent = [[DDCollectionViewRootComponent alloc] initWithCollectionView:self.collectionView];
     
-    DDCollectionViewHeaderFooterSectionDemoComponent *section0 = [DDCollectionViewHeaderFooterSectionDemoComponent componentWithData:@[@"AAA", @"BBB", @"CCC", @"DDD", @"EEE"]];
+    DDCollectionViewItemGroupComponent *section0 = [DDCollectionViewItemGroupComponent componentWithSubComponents:
+                                                   @[
+                                                     [DDCollectionViewItemDemoComponent new],
+                                                     [DDCollectionViewItemDemoComponent new]
+                                                     ]];
     section0.headerComponent = [DDCollectionViewHeaderComponent new];
     section0.footerComponent = [DDCollectionViewFooterComponent new];
     
-    
-    DDCollectionViewHeaderFooterSectionDemoComponent *section1 = [DDCollectionViewHeaderFooterSectionDemoComponent componentWithData:@[@"AAA", @"BBB", @"CCC", @"DDD", @"EEE"]];
-    section1.headerComponent = [DDCollectionViewHeaderComponent new];
-    section1.footerComponent = [DDCollectionViewFooterComponent new];
-    
-    self.rootComponent.subComponents = @[
-        [DDCollectionViewSectionGroupComponent componentWithSubComponents: @[
-            [DDCollectionViewItemGroupComponent componentWithSubComponents:@[
-                [DDCollectionViewItemDemoComponent new],
-                [DDCollectionViewItemDemoComponent new],
-                [DDCollectionViewItemDemoComponent new]
-            ]],
-            [DDCollectionViewItemGroupComponent componentWithSubComponents:@[
-                [DDCollectionViewItemDemoComponent new],
-                [DDCollectionViewItemDemoComponent new],
-                [DDCollectionViewItemDemoComponent new]
-            ]],
-            section0,
-            section1
-        ]]
-    ];
+    DDCollectionViewHeaderFooterSectionDemoComponent *section1 = [DDCollectionViewHeaderFooterSectionDemoComponent componentWithHeader:[DDCollectionViewHeaderComponent new]
+                                                                                                                      footer:[DDCollectionViewFooterComponent new]];
+    section1.demoData = @[@[@"123", @"456", @"789"]];
 
+    DDCollectionViewHeaderFooterSectionDemoComponent *section2 = [DDCollectionViewHeaderFooterSectionDemoComponent componentWithHeader:[DDCollectionViewHeaderComponent new]
+                                                                                                                                footer:[DDCollectionViewFooterComponent new]];
+    section2.demoData = @[@[@"123", @"456", @"789"]];
+    
+    DDCollectionViewSectionGroupComponent *sectionGroup = [DDCollectionViewSectionGroupComponent componentWithSubComponents:
+                                                      @[[DDCollectionViewItemGroupComponent componentWithSubComponents:
+                                                         @[
+                                                           [DDCollectionViewItemDemoComponent new],
+                                                           [DDCollectionViewItemDemoComponent new],
+                                                           [DDCollectionViewHeaderFooterSectionDemoComponent componentWithData:@[@[@"AA", @"BB"], @[@"aa", @"bb", @"cc"]]],
+                                                           [DDCollectionViewHeaderFooterSectionDemoComponent  componentWithData:@[@[@"11", @"22"], @[@"111", @"222", @"333"], @[@"1111", @"2222", @"3333", @"4444"]]],
+                                                           ]],
+                                        
+                                                        section0,
+                                                        section1,
+                                                        section2
+                                                        ]];
+    
+    DDCollectionViewStatusComponent *status = [DDCollectionViewStatusComponent componentWithComponents:
+                                          @{ @"normal": sectionGroup }];
+    self.rootComponent.subComponents = @[sectionGroup];
+    
+    status.currentState = @"normal";
     
     [self.rootComponent reloadData];
+
+    [self.rootComponent reloadData];
     
+    NSLog(@"%@", [self.rootComponent debugDescription]);
+    
+    NSLog(@"section0 firstSection:%ld, firstItem:%ld", section0.section, section0.item);
+    NSLog(@"section1 firstSection:%ld, firstItem:%ld", section1.section, section1.item);
 }
 
 - (UICollectionViewLayout *)createLayout {

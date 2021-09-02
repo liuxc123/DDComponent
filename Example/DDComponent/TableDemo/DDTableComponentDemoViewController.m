@@ -40,29 +40,43 @@
     section0.headerComponent = [DDTableViewHeaderDemoComponent new];
     section0.footerComponent = [DDTableViewFooterDemoComponent new];
     
-    DDTableViewHeaderFooterSectionDemoComponent *section1 = [DDTableViewHeaderFooterSectionDemoComponent componentWithData:@[@"AAA", @"BBB", @"CCC"]];
-    section1.headerComponent = [DDTableViewHeaderDemoComponent new];
-    section1.footerComponent = [DDTableViewFooterDemoComponent new];
+    DDTableViewHeaderFooterSectionDemoComponent *section1 = [DDTableViewHeaderFooterSectionDemoComponent componentWithHeader:[DDTableViewHeaderDemoComponent new]
+                                                                                                                      footer:[DDTableViewFooterDemoComponent new]];
+    section1.demoData = @[@[@"123", @"456", @"789"]];
+
+    DDTableViewHeaderFooterSectionDemoComponent *section2 = [DDTableViewHeaderFooterSectionDemoComponent componentWithHeader:[DDTableViewHeaderDemoComponent new]
+                                                                                                                      footer:[DDTableViewFooterDemoComponent new]];
+    section2.demoData = @[@[@"123", @"456", @"789"]];
     
     DDTableViewSectionGroupComponent *sectionGroup = [DDTableViewSectionGroupComponent componentWithSubComponents:
-                                                      @[
-                                                          section0,
-                                                          section1,
-                                                          [DDTableViewItemGroupComponent componentWithSubComponents:
+                                                      @[[DDTableViewItemGroupComponent componentWithSubComponents:
                                                          @[
                                                            [DDTableViewItemDemo1Component new],
-                                                           [DDTableViewItemDemoComponent new]
+                                                           [DDTableViewItemDemoComponent new],
+                                                           [DDTableViewHeaderFooterSectionDemoComponent componentWithData:@[@[@"AA", @"BB"], @[@"aa", @"bb", @"cc"]]],
+                                                           [DDTableViewHeaderFooterSectionDemoComponent  componentWithData:@[@[@"11", @"22"], @[@"111", @"222", @"333"], @[@"1111", @"2222", @"3333", @"4444"]]],
                                                            ]],
-                                                        [DDTableViewHeaderFooterSectionDemoComponent componentWithData:@[@"AAA", @"BBB", @"CCC", @"DDD", @"EEE"]],
-                                                        [DDTableViewHeaderFooterSectionDemoComponent  componentWithData:@[@"111", @"222", @"333", @"444", @"555", @"666", @"777", @"888", @"999"]]
+                                        
+                                                        section0,
+                                                        section1,
+                                                        section2
                                                         ]];
     
-    DDTableViewStatusComponent *status = [DDTableViewStatusComponent componentWithComponents: @{ @"normal": sectionGroup }];
-    status.currentState = @"normal";
-
-    self.rootComponent.subComponents = @[status];
+    DDTableViewStatusComponent *status = [DDTableViewStatusComponent componentWithComponents:
+                                          @{ @"normal": sectionGroup }];
+    self.rootComponent.subComponents = @[sectionGroup];
     
-    [self.tableView reloadData];
+    status.currentState = @"normal";
+    
+    [self.rootComponent reloadData];
+    
+    NSLog(@"%@", [self.rootComponent debugDescription]);
+    
+    NSLog(@"section0 firstSection:%ld, firstRow:%ld", section0.section, section0.row);
+    NSLog(@"section1 firstSection:%ld, firstRow:%ld", section1.section, section1.row);
+    NSLog(@"section2 firstSection:%ld, firstRow:%ld", section2.section, section1.row);
+
+    
 }
 
 + (NSArray<NSString *> *)catalogBreadcrumbs {

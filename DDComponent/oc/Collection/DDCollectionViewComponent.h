@@ -22,6 +22,8 @@
 
 #import <UIKit/UIKit.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 // When width or height is auto, it will use collectionView.size
 // When inset lineSpacing itemSpacing is auto, it will use CollectionLayout's property.
 extern const CGFloat DDComponentAutomaticDimension;
@@ -70,4 +72,13 @@ extern const CGFloat DDComponentAutomaticDimension;
 @property (readonly, nonatomic) NSInteger item;
 @property (readonly, nonatomic) NSInteger section;
 
+/**
+ Convert from Global
+ */
+
+- (NSInteger)convertFromGlobalSection:(NSInteger)section;
+- (NSIndexPath *)convertFromGlobalIndexPath:(NSIndexPath *)indexPath;
+
 @end
+
+NS_ASSUME_NONNULL_END

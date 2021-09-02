@@ -298,7 +298,7 @@
     return component;
 }
 
-- (NSInteger)firstSectionOfSubComponent:(id<DDTableViewComponent>)comp {
+- (NSInteger)firstSectionOfSubComponent:(id<DDTableViewComponent>)subComp {
     return self.section;
 }
 

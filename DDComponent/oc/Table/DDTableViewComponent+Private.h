@@ -20,8 +20,8 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  For group component to caculate the indexPath.
  */
-- (NSInteger)firstRowOfSubComponent:(id<DDTableViewComponent>)comp;
-- (NSInteger)firstSectionOfSubComponent:(id<DDTableViewComponent>)comp;
+- (NSInteger)firstRowOfSubComponent:(id<DDTableViewComponent>)subComp;
+- (NSInteger)firstSectionOfSubComponent:(id<DDTableViewComponent>)subComp;
 
 @end
 

@@ -101,4 +101,17 @@ const CGFloat DDComponentAutomaticDimension = CGFLOAT_MAX;
     return nil;
 }
 
+#pragma mark - convert
+
+- (NSInteger)convertFromGlobalSection:(NSInteger)section {
+    NSInteger differenceSection = ABS(section - self.section);
+    return differenceSection;
+}
+
+- (NSIndexPath *)convertFromGlobalIndexPath:(NSIndexPath *)indexPath {
+    NSInteger differenceSection = ABS(indexPath.section - self.section);
+    NSInteger differenceItem = ABS(indexPath.item - self.item);
+    return [NSIndexPath indexPathForItem:differenceItem inSection:differenceSection];
+}
+
 @end

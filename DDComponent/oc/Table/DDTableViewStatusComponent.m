@@ -79,6 +79,16 @@
     return nil;
 }
 
+#pragma mark - convert
+
+- (NSInteger)convertFromGlobalSection:(NSInteger)section {
+    return [self.currentComponent convertFromGlobalSection:section];
+}
+
+- (NSIndexPath *)convertFromGlobalIndexPath:(NSIndexPath *)indexPath {
+    return [self.currentComponent convertFromGlobalIndexPath:indexPath];
+}
+
 #pragma mark - dataSource
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {

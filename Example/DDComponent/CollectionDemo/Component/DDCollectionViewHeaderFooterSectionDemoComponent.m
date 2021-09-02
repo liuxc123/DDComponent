@@ -33,17 +33,22 @@
 }
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
-    return 1;
+    return self.demoData.count;
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return self.demoData.count;
+    NSInteger converSection = [self convertFromGlobalSection: section];
+    return [self.demoData[converSection] count];
 }
 
 - (__kindof UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     DDComponentDemoCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"DDComponentDemoCollectionViewCell" forIndexPath:indexPath];
     cell.contentView.backgroundColor = indexPath.section%2 == 0 ? UIColor.redColor : UIColor.greenColor;
-    NSLog(@"section: %ld, item: %ld", indexPath.section, indexPath.item);
+    
+    NSIndexPath *converIndexPath = [self convertFromGlobalIndexPath:indexPath];
+    
+    cell.textLabel.text = [NSString stringWithFormat:@"%@, section:%ld, row:%ld, coverSection:%ld, coverItem:%ld", self.demoData[converIndexPath.section][converIndexPath.item], indexPath.section, indexPath.item, converIndexPath.section, converIndexPath.item];
+    
     return cell;
 }
 

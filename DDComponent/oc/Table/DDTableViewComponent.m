@@ -53,11 +53,11 @@
     return _tableView ?: self.superComponent.tableView;
 }
 
-- (NSInteger)firstRowOfSubComponent:(id<DDTableViewComponent>)comp {
+- (NSInteger)firstRowOfSubComponent:(id<DDTableViewComponent>)subComp {
     return 0;
 }
 
-- (NSInteger)firstSectionOfSubComponent:(id<DDTableViewComponent>)comp {
+- (NSInteger)firstSectionOfSubComponent:(id<DDTableViewComponent>)subComp {
     return 0;
 }
 
@@ -88,6 +88,19 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     NSAssert(false, @"MUST override!");
     return nil;
+}
+
+#pragma mark - convert
+
+- (NSInteger)convertFromGlobalSection:(NSInteger)section {
+    NSInteger differenceSection = ABS(section - self.section);
+    return differenceSection;
+}
+
+- (NSIndexPath *)convertFromGlobalIndexPath:(NSIndexPath *)indexPath {
+    NSInteger differenceSection = ABS(indexPath.section - self.section);
+    NSInteger differenceRow = ABS(indexPath.row - self.row);
+    return [NSIndexPath indexPathForRow:differenceRow inSection:differenceSection];
 }
 
 @end

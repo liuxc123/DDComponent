@@ -62,7 +62,7 @@
     }
 }
 
-- (NSInteger)firstSectionOfComponent:(id<DDTableViewComponent>)subComp {
+- (NSInteger)firstSectionOfSubComponent:(id<DDTableViewComponent>)subComp {
     UITableView *tableView = self.tableView;
     if (tableView) {
         __block NSInteger section = self.section;
