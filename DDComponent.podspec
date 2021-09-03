@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'DDComponent'
-  s.version          = '1.0.0'
+  s.version          = '1.0.1'
   s.summary          = 'Make a collection and table controller to several component'
   s.description      = <<-DESC
   Make a collection and table controller to several component. Make the controller smaller.
