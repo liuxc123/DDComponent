@@ -198,7 +198,7 @@
     DDComponentDemoTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"DDComponentDemoTableViewCell"];
     cell.contentView.backgroundColor = UIColor.grayColor;
     NSIndexPath *idx = indexPath;
-    NSIndexPath *lidx = indexPath;
+    NSIndexPath *lidx = [self convertFromGlobalIndexPath:indexPath];
     cell.textLabel.text = [NSString stringWithFormat:@"(%zd, %zd),(%zd, %zd)", idx.section, idx.row, lidx.section, lidx.row];
     return cell;
 }

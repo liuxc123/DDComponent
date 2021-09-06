@@ -123,6 +123,8 @@
     }
 }
 
+#pragma mark - UICollectionViewDataSource
+
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
     NSInteger sections = 0;
     if (self.dataSourceCacheEnable) {
@@ -171,6 +173,8 @@
         [comp collectionView:collectionView moveItemAtIndexPath:sourceIndexPath toIndexPath:destinationIndexPath];
     }
 }
+
+#pragma mark - UICollectionViewDelegate
 
 - (BOOL)collectionView:(UICollectionView *)collectionView shouldHighlightItemAtIndexPath:(NSIndexPath *)indexPath {
     DDCollectionViewBaseComponent *comp = [self componentAtSection:indexPath.section];
@@ -231,17 +235,17 @@
     }
 }
 
-- (void)collectionView:(UICollectionView *)collectionView didEndDisplayingCell:(UICollectionViewCell *)cell forItemAtIndexPath:(NSIndexPath *)indexPath {
-    DDCollectionViewBaseComponent *comp = [self componentAtSection:indexPath.section];
-    if ([comp respondsToSelector:_cmd]) {
-        [comp collectionView:collectionView didEndDisplayingCell:cell forItemAtIndexPath:indexPath];
-    }
-}
-
 - (void)collectionView:(UICollectionView *)collectionView willDisplaySupplementaryView:(UICollectionReusableView *)view forElementKind:(NSString *)elementKind atIndexPath:(NSIndexPath *)indexPath {
     DDCollectionViewBaseComponent *comp = [self componentAtSection:indexPath.section];
     if ([comp respondsToSelector:_cmd]) {
         [comp collectionView:collectionView willDisplaySupplementaryView:view forElementKind:elementKind atIndexPath:indexPath];
+    }
+}
+
+- (void)collectionView:(UICollectionView *)collectionView didEndDisplayingCell:(UICollectionViewCell *)cell forItemAtIndexPath:(NSIndexPath *)indexPath {
+    DDCollectionViewBaseComponent *comp = [self componentAtSection:indexPath.section];
+    if ([comp respondsToSelector:_cmd]) {
+        [comp collectionView:collectionView didEndDisplayingCell:cell forItemAtIndexPath:indexPath];
     }
 }
 
@@ -252,26 +256,39 @@
     }
 }
 
+// These methods provide support for copy/paste actions on cells.
+// All three should be implemented if any are.
+
+- (BOOL)collectionView:(UICollectionView *)collectionView shouldShowMenuForItemAtIndexPath:(NSIndexPath *)indexPath {
+    DDCollectionViewBaseComponent *comp = [self componentAtSection:indexPath.section];
+    if ([comp respondsToSelector:_cmd]) {
+        return [comp collectionView:collectionView shouldShowMenuForItemAtIndexPath:indexPath];
+    }
+    return NO;
+}
+
+- (BOOL)collectionView:(UICollectionView *)collectionView canPerformAction:(SEL)action forItemAtIndexPath:(NSIndexPath *)indexPath withSender:(id)sender {
+    DDCollectionViewBaseComponent *comp = [self componentAtSection:indexPath.section];
+    if ([comp respondsToSelector:_cmd]) {
+        return [comp collectionView:collectionView canPerformAction:action forItemAtIndexPath:indexPath withSender:sender];
+    }
+    return NO;
+}
+
+- (void)collectionView:(UICollectionView *)collectionView performAction:(SEL)action forItemAtIndexPath:(NSIndexPath *)indexPath withSender:(id)sender {
+    DDCollectionViewBaseComponent *comp = [self componentAtSection:indexPath.section];
+    if ([comp respondsToSelector:_cmd]) {
+        [comp collectionView:collectionView canPerformAction:action forItemAtIndexPath:indexPath withSender:sender];
+    }
+}
+
+#pragma mark - UICollectionViewDelegateFlowLayout
+
+
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
     DDCollectionViewBaseComponent *comp = [self componentAtSection:indexPath.section];
     if ([comp respondsToSelector:_cmd]) {
         return [comp collectionView:collectionView layout:collectionViewLayout sizeForItemAtIndexPath:indexPath];
-    }
-    return CGSizeZero;
-}
-
-- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout referenceSizeForFooterInSection:(NSInteger)section {
-    DDCollectionViewBaseComponent *comp = [self componentAtSection:section];
-    if ([comp respondsToSelector:_cmd]) {
-        return [comp collectionView:collectionView layout:collectionViewLayout referenceSizeForFooterInSection:section];
-    }
-    return CGSizeZero;
-}
-
-- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout referenceSizeForHeaderInSection:(NSInteger)section {
-    DDCollectionViewBaseComponent *comp = [self componentAtSection:section];
-    if ([comp respondsToSelector:_cmd]) {
-        return [comp collectionView:collectionView layout:collectionViewLayout referenceSizeForHeaderInSection:section];
     }
     return CGSizeZero;
 }
@@ -298,6 +315,23 @@
         return [comp collectionView:collectionView layout:collectionViewLayout minimumInteritemSpacingForSectionAtIndex:section];
     }
     return 0;
+}
+
+
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout referenceSizeForFooterInSection:(NSInteger)section {
+    DDCollectionViewBaseComponent *comp = [self componentAtSection:section];
+    if ([comp respondsToSelector:_cmd]) {
+        return [comp collectionView:collectionView layout:collectionViewLayout referenceSizeForFooterInSection:section];
+    }
+    return CGSizeZero;
+}
+
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout referenceSizeForHeaderInSection:(NSInteger)section {
+    DDCollectionViewBaseComponent *comp = [self componentAtSection:section];
+    if ([comp respondsToSelector:_cmd]) {
+        return [comp collectionView:collectionView layout:collectionViewLayout referenceSizeForHeaderInSection:section];
+    }
+    return CGSizeZero;
 }
 
 - (NSString *)debugDescription {

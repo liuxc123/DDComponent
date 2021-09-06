@@ -125,6 +125,8 @@
     }
 }
 
+#pragma mark - UITableViewDataSource
+
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     NSInteger sections = 0;
     if (self.dataSourceCacheEnable) {
@@ -154,6 +156,69 @@
     return [comp tableView:tableView cellForRowAtIndexPath:indexPath];
 }
 
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
+    DDTableViewBaseComponent *comp = [self componentAtSection:section];
+    if ([comp respondsToSelector:_cmd]) {
+        return [comp tableView:tableView titleForHeaderInSection:section];
+    }
+    return nil;
+}
+
+- (NSString *)tableView:(UITableView *)tableView titleForFooterInSection:(NSInteger)section {
+    DDTableViewBaseComponent *comp = [self componentAtSection:section];
+    if ([comp respondsToSelector:_cmd]) {
+        return [comp tableView:tableView titleForFooterInSection:section];
+    }
+    return nil;
+}
+
+// Editing
+
+- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
+    DDTableViewBaseComponent *comp = [self componentAtSection:indexPath.section];
+    if ([comp respondsToSelector:_cmd]) {
+        return [comp tableView:tableView canEditRowAtIndexPath:indexPath];
+    }
+    return NO;
+}
+
+// Moving/reordering
+
+- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
+    DDTableViewBaseComponent *comp = [self componentAtSection:indexPath.section];
+    if ([comp respondsToSelector:_cmd]) {
+        return [comp tableView:tableView canMoveRowAtIndexPath:indexPath];
+    }
+    return NO;
+}
+
+// Data manipulation - insert and delete support
+
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
+    DDTableViewBaseComponent *comp = [self componentAtSection:indexPath.section];
+    if ([comp respondsToSelector:_cmd]) {
+        return [comp tableView:tableView commitEditingStyle:editingStyle forRowAtIndexPath:indexPath];
+    }
+}
+
+// Data manipulation - reorder / moving support
+
+- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)sourceIndexPath toIndexPath:(NSIndexPath *)destinationIndexPath {
+    DDTableViewBaseComponent *comp = [self componentAtSection:sourceIndexPath.section];
+    if ([comp respondsToSelector:_cmd]) {
+        return [comp tableView:tableView moveRowAtIndexPath:sourceIndexPath toIndexPath:destinationIndexPath];
+    }
+}
+
+#pragma mark - UITableViewDelegate
+
+- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
+    DDTableViewBaseComponent *comp = [self componentAtSection:indexPath.section];
+    if ([comp respondsToSelector:_cmd]) {
+        [comp tableView:tableView willDisplayCell:cell forRowAtIndexPath:indexPath];
+    }
+}
+
 - (void)tableView:(UITableView *)tableView willDisplayHeaderView:(UIView *)view forSection:(NSInteger)section {
     DDTableViewBaseComponent *comp = [self componentAtSection:section];
     if ([comp respondsToSelector:_cmd]) {
@@ -165,6 +230,13 @@
     DDTableViewBaseComponent *comp = [self componentAtSection:section];
     if ([comp respondsToSelector:_cmd]) {
         [comp tableView:tableView willDisplayFooterView:view forSection:section];
+    }
+}
+
+- (void)tableView:(UITableView *)tableView didEndDisplayingCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
+    DDTableViewBaseComponent *comp = [self componentAtSection:indexPath.section];
+    if ([comp respondsToSelector:_cmd]) {
+        [comp tableView:tableView didEndDisplayingCell:cell forRowAtIndexPath:indexPath];
     }
 }
 
@@ -182,18 +254,12 @@
     }
 }
 
-- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     DDTableViewBaseComponent *comp = [self componentAtSection:indexPath.section];
     if ([comp respondsToSelector:_cmd]) {
-        [comp tableView:tableView willDisplayCell:cell forRowAtIndexPath:indexPath];
+        return [comp tableView:tableView heightForRowAtIndexPath:indexPath];
     }
-}
-
-- (void)tableView:(UITableView *)tableView didEndDisplayingCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
-    DDTableViewBaseComponent *comp = [self componentAtSection:indexPath.section];
-    if ([comp respondsToSelector:_cmd]) {
-        [comp tableView:tableView didEndDisplayingCell:cell forRowAtIndexPath:indexPath];
-    }
+    return 0;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
@@ -208,6 +274,30 @@
     DDTableViewBaseComponent *comp = [self componentAtSection:section];
     if ([comp respondsToSelector:_cmd]) {
         return [comp tableView:tableView heightForFooterInSection:section];
+    }
+    return 0;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    DDTableViewBaseComponent *comp = [self componentAtSection:indexPath.section];
+    if ([comp respondsToSelector:_cmd]) {
+        return [comp tableView:tableView estimatedHeightForRowAtIndexPath:indexPath];
+    }
+    return 0;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView estimatedHeightForHeaderInSection:(NSInteger)section {
+    DDTableViewBaseComponent *comp = [self componentAtSection:section];
+    if ([comp respondsToSelector:_cmd]) {
+        return [comp tableView:tableView estimatedHeightForHeaderInSection:section];
+    }
+    return 0;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView estimatedHeightForFooterInSection:(NSInteger)section {
+    DDTableViewBaseComponent *comp = [self componentAtSection:section];
+    if ([comp respondsToSelector:_cmd]) {
+        return [comp tableView:tableView estimatedHeightForHeaderInSection:section];
     }
     return 0;
 }
@@ -228,12 +318,11 @@
     return nil;
 }
 
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+- (void)tableView:(UITableView *)tableView accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath {
     DDTableViewBaseComponent *comp = [self componentAtSection:indexPath.section];
     if ([comp respondsToSelector:_cmd]) {
-        return [comp tableView:tableView heightForRowAtIndexPath:indexPath];
+        [comp tableView:tableView accessoryButtonTappedForRowWithIndexPath:indexPath];
     }
-    return 0;
 }
 
 - (BOOL)tableView:(UITableView *)tableView shouldHighlightRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -266,19 +355,19 @@
     return indexPath;
 }
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    DDTableViewBaseComponent *comp = [self componentAtSection:indexPath.section];
-    if ([comp respondsToSelector:_cmd]) {
-        [comp tableView:tableView didSelectRowAtIndexPath:indexPath];
-    }
-}
-
 - (NSIndexPath *)tableView:(UITableView *)tableView willDeselectRowAtIndexPath:(NSIndexPath *)indexPath {
     DDTableViewBaseComponent *comp = [self componentAtSection:indexPath.section];
     if ([comp respondsToSelector:_cmd]) {
         return [comp tableView:tableView willDeselectRowAtIndexPath:indexPath];
     }
     return indexPath;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    DDTableViewBaseComponent *comp = [self componentAtSection:indexPath.section];
+    if ([comp respondsToSelector:_cmd]) {
+        [comp tableView:tableView didSelectRowAtIndexPath:indexPath];
+    }
 }
 
 - (void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -288,12 +377,20 @@
     }
 }
 
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
+- (UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath {
     DDTableViewBaseComponent *comp = [self componentAtSection:indexPath.section];
     if ([comp respondsToSelector:_cmd]) {
-        return [comp tableView:tableView canEditRowAtIndexPath:indexPath];
+        return [comp tableView:tableView editingStyleForRowAtIndexPath:indexPath];
     }
-    return NO;
+    return UITableViewCellEditingStyleNone;
+}
+
+- (NSString *)tableView:(UITableView *)tableView titleForDeleteConfirmationButtonForRowAtIndexPath:(NSIndexPath *)indexPath {
+    DDTableViewBaseComponent *comp = [self componentAtSection:indexPath.section];
+    if ([comp respondsToSelector:_cmd]) {
+        return [comp tableView:tableView titleForDeleteConfirmationButtonForRowAtIndexPath:indexPath];
+    }
+    return nil;
 }
 
 - (NSArray<UITableViewRowAction *> *)tableView:(UITableView *)tableView editActionsForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -304,10 +401,72 @@
     return nil;
 }
 
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
+- (UISwipeActionsConfiguration *)tableView:(UITableView *)tableView leadingSwipeActionsConfigurationForRowAtIndexPath:(NSIndexPath *)indexPath  API_AVAILABLE(ios(11.0)) {
     DDTableViewBaseComponent *comp = [self componentAtSection:indexPath.section];
     if ([comp respondsToSelector:_cmd]) {
-        [comp tableView:tableView commitEditingStyle:editingStyle forRowAtIndexPath:indexPath];
+        return [comp tableView:tableView leadingSwipeActionsConfigurationForRowAtIndexPath:indexPath];
+    }
+    return nil;
+}
+
+- (UISwipeActionsConfiguration *)tableView:(UITableView *)tableView trailingSwipeActionsConfigurationForRowAtIndexPath:(NSIndexPath *)indexPath  API_AVAILABLE(ios(11.0)) {
+    DDTableViewBaseComponent *comp = [self componentAtSection:indexPath.section];
+    if ([comp respondsToSelector:_cmd]) {
+        return [comp tableView:tableView trailingSwipeActionsConfigurationForRowAtIndexPath:indexPath];
+    }
+    return nil;
+}
+
+- (BOOL)tableView:(UITableView *)tableView shouldIndentWhileEditingRowAtIndexPath:(NSIndexPath *)indexPath {
+    DDTableViewBaseComponent *comp = [self componentAtSection:indexPath.section];
+    if ([comp respondsToSelector:_cmd]) {
+        return [comp tableView:tableView shouldIndentWhileEditingRowAtIndexPath:indexPath];
+    }
+    return YES;
+}
+
+- (void)tableView:(UITableView *)tableView willBeginEditingRowAtIndexPath:(NSIndexPath *)indexPath {
+    DDTableViewBaseComponent *comp = [self componentAtSection:indexPath.section];
+    if ([comp respondsToSelector:_cmd]) {
+        [comp tableView:tableView willBeginEditingRowAtIndexPath:indexPath];
+    }
+}
+
+- (void)tableView:(UITableView *)tableView didEndEditingRowAtIndexPath:(NSIndexPath *)indexPath {
+    DDTableViewBaseComponent *comp = [self componentAtSection:indexPath.section];
+    if ([comp respondsToSelector:_cmd]) {
+        [comp tableView:tableView didEndEditingRowAtIndexPath:indexPath];
+    }
+}
+
+- (NSInteger)tableView:(UITableView *)tableView indentationLevelForRowAtIndexPath:(NSIndexPath *)indexPath {
+    DDTableViewBaseComponent *comp = [self componentAtSection:indexPath.section];
+    if ([comp respondsToSelector:_cmd]) {
+        return [comp tableView:tableView indentationLevelForRowAtIndexPath: indexPath];
+    }
+    return 0;
+}
+
+- (BOOL)tableView:(UITableView *)tableView shouldShowMenuForRowAtIndexPath:(NSIndexPath *)indexPath {
+    DDTableViewBaseComponent *comp = [self componentAtSection:indexPath.section];
+    if ([comp respondsToSelector:_cmd]) {
+        return [comp tableView:tableView shouldShowMenuForRowAtIndexPath: indexPath];
+    }
+    return NO;
+}
+
+- (BOOL)tableView:(UITableView *)tableView canPerformAction:(SEL)action forRowAtIndexPath:(NSIndexPath *)indexPath withSender:(id)sender {
+    DDTableViewBaseComponent *comp = [self componentAtSection:indexPath.section];
+    if ([comp respondsToSelector:_cmd]) {
+        return [comp tableView:tableView canPerformAction:action forRowAtIndexPath:indexPath withSender:sender];
+    }
+    return NO;
+}
+
+- (void)tableView:(UITableView *)tableView performAction:(SEL)action forRowAtIndexPath:(NSIndexPath *)indexPath withSender:(id)sender {
+    DDTableViewBaseComponent *comp = [self componentAtSection:indexPath.section];
+    if ([comp respondsToSelector:_cmd]) {
+        [comp tableView:tableView performAction:action forRowAtIndexPath:indexPath withSender:sender];
     }
 }
 
