@@ -54,17 +54,6 @@ extern const CGFloat DDComponentAutomaticDimension;
 - (void)reloadData;
 
 /**
- Life cycle
- Is really need?
-
- @param component Nil if remove from super component.
- */
-//- (void)willMovetoSubComponent:(DDCollectionViewBaseComponent * _Nullable)component NS_REQUIRES_SUPER;
-//- (void)didMovetoSubComponent NS_REQUIRES_SUPER;
-//- (void)willMoveToRootComponent:(DDCollectionViewRootComponent * _Nullable)component NS_REQUIRES_SUPER;
-//- (void)didMoveToRootComponent NS_REQUIRES_SUPER;
-
-/**
  For ItemComponent, {item, section} is equal to indexPath.
  For SectionComponent, {item, section} is equal to first item's indexPath, or Zero.
  For SectionGroupComponent, item should always be 0, section is the first section in the component.
@@ -75,7 +64,6 @@ extern const CGFloat DDComponentAutomaticDimension;
 /**
  Convert from Global
  */
-
 - (NSInteger)convertFromGlobalSection:(NSInteger)section;
 - (NSIndexPath *)convertFromGlobalIndexPath:(NSIndexPath *)indexPath;
 

@@ -60,11 +60,9 @@ NS_ASSUME_NONNULL_BEGIN
 @property (readonly, nonatomic) NSInteger row;
 @property (readonly, nonatomic) NSInteger section;
 
-
 /**
  Convert from Global
  */
-
 - (NSInteger)convertFromGlobalSection:(NSInteger)section;
 - (NSIndexPath *)convertFromGlobalIndexPath:(NSIndexPath *)indexPath;
 
