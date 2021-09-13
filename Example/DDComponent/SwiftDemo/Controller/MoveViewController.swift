@@ -54,7 +54,7 @@ class MoveViewController: UICollectionViewController {
         images.sectionInset = UIEdgeInsets(top: 0, left: 15, bottom: 0, right: 15)
         
         self.rootComponent.subComponents = [images]
-        self.collectionView?.reloadData()
+        self.collectionView?.reloadData()        
     }
     
     @objc class func catalogBreadcrumbs() -> [String] {

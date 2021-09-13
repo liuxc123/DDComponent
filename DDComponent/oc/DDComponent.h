@@ -25,5 +25,6 @@
 
 #import "DDCollectionComponent.h"
 #import "DDTableComponent.h"
+#import "UIView+DDComponentLayout.h"
 
 #endif /* DDComponent_h */

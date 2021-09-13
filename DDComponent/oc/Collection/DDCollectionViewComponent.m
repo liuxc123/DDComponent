@@ -26,6 +26,7 @@
 #import "DDCollectionViewSectionGroupComponent.h"
 
 const CGFloat DDComponentAutomaticDimension = CGFLOAT_MAX;
+const CGFloat UICollectionViewAutomaticDimension = CGFLOAT_MAX;
 
 @implementation DDCollectionViewBaseComponent
 @synthesize collectionView=_collectionView;
@@ -69,11 +70,6 @@ const CGFloat DDComponentAutomaticDimension = CGFLOAT_MAX;
 
 - (void)clearDataSourceCache {}
 - (void)clearSizeCache {}
-
-//- (void)willMovetoSubComponent:(DDCollectionViewBaseComponent *)component {}
-//- (void)didMovetoSubComponent {}
-//- (void)willMoveToRootComponent:(DDCollectionViewBaseComponent *)component {}
-//- (void)didMoveToRootComponent {}
 
 - (NSInteger)item {
     return [self.superComponent firstItemOfSubComponent:self];

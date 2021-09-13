@@ -75,8 +75,6 @@
     NSLog(@"section0 firstSection:%ld, firstRow:%ld", section0.section, section0.row);
     NSLog(@"section1 firstSection:%ld, firstRow:%ld", section1.section, section1.row);
     NSLog(@"section2 firstSection:%ld, firstRow:%ld", section2.section, section1.row);
-
-    
 }
 
 + (NSArray<NSString *> *)catalogBreadcrumbs {

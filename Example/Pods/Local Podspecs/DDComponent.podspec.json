@@ -1,8 +1,8 @@
 {
   "name": "DDComponent",
-  "version": "0.1.0",
-  "summary": "A short description of DDComponent.",
-  "description": "TODO: Add long description of the pod here.",
+  "version": "1.0.2",
+  "summary": "Make a collection and table controller to several component",
+  "description": "Make a collection and table controller to several component. Make the controller smaller.",
   "homepage": "https://github.com/liuxc123/DDComponent",
   "license": {
     "type": "MIT",
@@ -13,10 +13,11 @@
   },
   "source": {
     "git": "https://github.com/liuxc123/DDComponent.git",
-    "tag": "0.1.0"
+    "tag": "1.0.2"
   },
   "platforms": {
     "ios": "9.0"
   },
-  "source_files": "DDComponent/**/*"
+  "source_files": "DDComponent/**/*.{h,m,mm,swift}",
+  "frameworks": "UIKit"
 }
