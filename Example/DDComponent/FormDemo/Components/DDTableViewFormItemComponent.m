@@ -34,11 +34,6 @@
     return self;
 }
 
-- (void)setItemView:(UIView *)itemView {
-    _itemView = itemView;
-    self.reuseIdentifier = [NSString stringWithFormat:@"%p", itemView];
-}
-
 - (void)prepareTableView {
     [super prepareTableView];
     [self.tableView registerClass:[DDTableViewFormItemCell class] forCellReuseIdentifier:self.reuseIdentifier];
@@ -79,5 +74,8 @@
     return cell;
 }
 
+- (NSString *)reuseIdentifier {
+    return [NSString stringWithFormat:@"%p", self.itemView];
+}
 
 @end

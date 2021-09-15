@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface UIView (DDComponentLayout)
 
-- (CGSize)sizeToFittingSize:(CGSize)targetSize layoutSize:(DDComponentLayoutSize *)layoutSize;
+- (CGSize)sizeThatFits:(CGSize)maxSize layoutSize:(DDComponentLayoutSize *)layoutSize;
 
 @end
 

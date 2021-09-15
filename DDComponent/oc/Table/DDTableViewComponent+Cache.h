@@ -14,7 +14,7 @@
 @interface DDTableViewBaseComponent()
 
 @property (assign, nonatomic) BOOL dataSourceCacheEnable;
-//@property (assign, nonatomic) BOOL sizeCacheEnable;
+//@property (assign, nonatomic) BOOL heightCacheEnable;
 
 @end
 

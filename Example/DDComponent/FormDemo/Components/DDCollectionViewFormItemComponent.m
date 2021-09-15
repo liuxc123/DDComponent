@@ -22,7 +22,7 @@
     [self setNeedsLayout];
     
     CGRect frame = layoutAttributes.frame;
-    frame.size = [self.contentView sizeToFittingSize:frame.size layoutSize:self.itemSize];
+    frame.size = [self.contentView sizeThatFits:frame.size layoutSize:self.itemSize];
     layoutAttributes.frame = frame;
     
     return layoutAttributes;
@@ -92,9 +92,8 @@
     return cell;
 }
 
-- (void)setItemView:(UIView *)itemView {
-    _itemView = itemView;
-    self.reuseIdentifier = [NSString stringWithFormat:@"%p", itemView];
+- (NSString *)reuseIdentifier {
+    return [NSString stringWithFormat:@"%p", self.itemView];
 }
 
 @end

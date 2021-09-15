@@ -37,27 +37,22 @@
 
     self.rootComponent = [[DDTableViewRootComponent alloc] initWithTableView:self.tableView];
     
-    UILabel *label = [[UILabel alloc] init];
-    label.text = @"大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大";
-    label.numberOfLines = 0;
-    label.backgroundColor = UIColor.yellowColor;
-    self.label = label;
+
     
-    DDTableViewFormItemComponent *item = [[DDTableViewFormItemComponent alloc] initWithItemView:label];
+    DDTableViewFormItemComponent *item = [[DDTableViewFormItemComponent alloc] initWithItemView:self.label];
     item.height = UITableViewAutomaticDimension;
     
-    UILabel *label2 = [[UILabel alloc] init];
-    label2.text = @"大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大";
-    label2.numberOfLines = 0;
-    label2.backgroundColor = UIColor.redColor;
-    self.label2 = label2;
     
-    DDTableViewFormItemComponent *item2 = [[DDTableViewFormItemComponent alloc] initWithItemView:label2];
+    DDTableViewFormItemComponent *item2 = [[DDTableViewFormItemComponent alloc] initWithItemView:self.label2];
     item2.height = UITableViewAutomaticDimension;
+    
+    DDTableViewFormItemComponent *item3 = [[DDTableViewFormItemComponent alloc] initWithItemView:self.label3];
+    item3.height = UITableViewAutomaticDimension;
 
     DDTableViewItemGroupComponent *group = [DDTableViewItemGroupComponent componentWithSubComponents:@[
         item,
-        item2
+        item2,
+        item3
     ]];
     self.group = group;
     
@@ -68,7 +63,38 @@
 - (void)refreshAction {
     self.label.text = @"大叔大婶大所大所大所大所大";
     self.label2.text = @"大叔大婶大所大所大所大所大";
+    self.label3.text = @"大叔大婶大所大所大所大所大";
     [self.tableView reloadData];
+}
+
+- (UILabel *)label {
+    if (!_label) {
+        _label = [[UILabel alloc] init];
+        _label.text = @"大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大";
+        _label.numberOfLines = 0;
+        _label.backgroundColor = UIColor.yellowColor;
+    }
+    return _label;
+}
+
+- (UILabel *)label2 {
+    if (!_label2) {
+        _label2 = [[UILabel alloc] init];
+        _label2.text = @"大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大";
+        _label2.numberOfLines = 0;
+        _label2.backgroundColor = UIColor.redColor;
+    }
+    return _label2;
+}
+
+- (UILabel *)label3 {
+    if (!_label3) {
+        _label3 = [[UILabel alloc] init];
+        _label3.text = @"大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大";
+        _label3.numberOfLines = 0;
+        _label3.backgroundColor = UIColor.grayColor;
+    }
+    return _label3;
 }
 
 + (NSArray<NSString *> *)catalogBreadcrumbs {

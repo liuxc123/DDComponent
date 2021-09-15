@@ -24,6 +24,7 @@
 
 @implementation DDCollectionComponentFormDemoViewController
 
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -40,51 +41,84 @@
     self.rootComponent = [[DDCollectionViewRootComponent alloc] initWithCollectionView:self.collectionView];
     
     /// item1
-
-    UILabel *label = [[UILabel alloc] init];
-    label.text = @"大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大";
-    label.numberOfLines = 0;
-    label.backgroundColor = UIColor.yellowColor;
-    self.label = label;
-
-    
     DDComponentLayoutSize *itemSize = [DDComponentLayoutSize
                                         sizeWithWidthDimension:[DDComponentLayoutDimension fractionalWidthDimension:1.0]
                                         heightDimension:[DDComponentLayoutDimension estimatedDimension:60]];
     
-    DDCollectionViewFormItemComponent *item = [[DDCollectionViewFormItemComponent alloc] initWithItemView:label itemSize:itemSize];
+    DDCollectionViewFormItemComponent *item = [[DDCollectionViewFormItemComponent alloc] initWithItemView:self.label itemSize:itemSize];
     item.size = CGSizeMake(DDComponentAutomaticDimension, DDComponentAutomaticDimension);
     
     
     /// item2
-    UILabel *label2 = [[UILabel alloc] init];
-    label2.text = @"大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大";
-    label2.numberOfLines = 0;
-    label2.backgroundColor = UIColor.redColor;
-    self.label2 = label2;
-    
-    DDCollectionViewFormItemComponent *item2 = [[DDCollectionViewFormItemComponent alloc] initWithItemView:label2 itemSize:itemSize];
+    DDCollectionViewFormItemComponent *item2 = [[DDCollectionViewFormItemComponent alloc] initWithItemView:self.label2 itemSize:itemSize];
     item2.size = CGSizeMake(DDComponentAutomaticDimension, DDComponentAutomaticDimension);
     
+    /// item3
+    DDCollectionViewFormItemComponent *item3 = [[DDCollectionViewFormItemComponent alloc] initWithItemView:self.label3 itemSize:itemSize];
+    item3.size = CGSizeMake(DDComponentAutomaticDimension, DDComponentAutomaticDimension);
     
     /// Group
     DDCollectionViewItemGroupComponent *group = [DDCollectionViewItemGroupComponent componentWithSubComponents:@[
         item,
         item2
     ]];
+    group.lineSpacing = 0;
+    group.itemSpacing = 0;
     group.sectionInset = UIEdgeInsetsMake(10, 10, 10, 10);
     self.group = group;
     
-    self.rootComponent.subComponents = @[group];
+    /// Group2
+    DDCollectionViewItemGroupComponent *group2 = [DDCollectionViewItemGroupComponent componentWithSubComponents:@[
+        item3
+    ]];
+    group2.lineSpacing = 0;
+    group2.itemSpacing = 0;
+    group2.sectionInset = UIEdgeInsetsMake(10, 10, 10, 10);
+    
+    self.rootComponent.subComponents = @[group, group2];
     [self.rootComponent reloadData];
 }
 
 - (void)refreshAction {
     self.label.text = @"大叔大婶大所大所大所大所大";
     self.label2.text = @"大叔大婶大所大所大所大所大";
+    self.label3.text = @"大叔大婶大所大所大所大所大";
     [UIView animateWithDuration:0.5 animations:^{
         [self.collectionView.collectionViewLayout invalidateLayout];
     }];
+}
+
+
+
+
+- (UILabel *)label {
+    if (!_label) {
+        _label = [[UILabel alloc] init];
+        _label.text = @"大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大";
+        _label.numberOfLines = 0;
+        _label.backgroundColor = UIColor.yellowColor;
+    }
+    return _label;
+}
+
+- (UILabel *)label2 {
+    if (!_label2) {
+        _label2 = [[UILabel alloc] init];
+        _label2.text = @"大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大";
+        _label2.numberOfLines = 0;
+        _label2.backgroundColor = UIColor.yellowColor;
+    }
+    return _label2;
+}
+
+- (UILabel *)label3 {
+    if (!_label3) {
+        _label3 = [[UILabel alloc] init];
+        _label3.text = @"大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大";
+        _label3.numberOfLines = 0;
+        _label3.backgroundColor = UIColor.yellowColor;
+    }
+    return _label3;
 }
 
 + (NSArray<NSString *> *)catalogBreadcrumbs {
