@@ -27,7 +27,6 @@ NS_ASSUME_NONNULL_BEGIN
 // When width or height is auto, it will use collectionView.size
 // When inset lineSpacing itemSpacing is auto, it will use CollectionLayout's property.
 extern const CGFloat DDComponentAutomaticDimension;
-extern const CGFloat UICollectionViewAutomaticDimension;
 
 @class DDCollectionViewRootComponent;
 @protocol DDCollectionViewComponent <NSObject, UICollectionViewDelegateFlowLayout, UICollectionViewDataSource>

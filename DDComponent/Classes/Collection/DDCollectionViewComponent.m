@@ -26,7 +26,6 @@
 #import "DDCollectionViewSectionGroupComponent.h"
 
 const CGFloat DDComponentAutomaticDimension = CGFLOAT_MAX;
-const CGFloat UICollectionViewAutomaticDimension = CGFLOAT_MAX;
 
 @implementation DDCollectionViewBaseComponent
 @synthesize collectionView=_collectionView;
