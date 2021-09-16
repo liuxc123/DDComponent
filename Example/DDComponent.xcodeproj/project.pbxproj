@@ -17,6 +17,8 @@
 		04CA0E4326F1D4F600AF4B1F /* UICollectionView+FDIndexPathSizeCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CA0E3926F1D4F600AF4B1F /* UICollectionView+FDIndexPathSizeCache.m */; };
 		04CA0E4426F1D4F600AF4B1F /* UICollectionView+FDTemplateLayoutCellDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CA0E3A26F1D4F600AF4B1F /* UICollectionView+FDTemplateLayoutCellDebug.m */; };
 		04CA0E4526F1D4F600AF4B1F /* UICollectionView+FDTemplateLayoutCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CA0E3B26F1D4F600AF4B1F /* UICollectionView+FDTemplateLayoutCell.m */; };
+		04CA0E6426F3213700AF4B1F /* DDTableViewTextItemComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CA0E6326F3213700AF4B1F /* DDTableViewTextItemComponent.m */; };
+		04CA0E6726F322ED00AF4B1F /* DDTableViewTextDemoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CA0E6626F322ED00AF4B1F /* DDTableViewTextDemoController.m */; };
 		04EA96D026DDB9CC00725BB7 /* DDCollectionComponentDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EA96CF26DDB9CC00725BB7 /* DDCollectionComponentDemoViewController.m */; };
 		04EA96D626DDF3D800725BB7 /* DDComponentDemoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EA96D526DDF3D800725BB7 /* DDComponentDemoCollectionViewCell.m */; };
 		04EA96D926DDF40D00725BB7 /* DDCollectionHeaderFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EA96D826DDF40D00725BB7 /* DDCollectionHeaderFooterView.m */; };
@@ -107,6 +109,10 @@
 		04CA0E3B26F1D4F600AF4B1F /* UICollectionView+FDTemplateLayoutCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionView+FDTemplateLayoutCell.m"; sourceTree = "<group>"; };
 		04CA0E3C26F1D4F600AF4B1F /* UICollectionView+FDKeyedSizeCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionView+FDKeyedSizeCache.h"; sourceTree = "<group>"; };
 		04CA0E3D26F1D4F600AF4B1F /* UICollectionView+FDIndexPathSizeCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionView+FDIndexPathSizeCache.h"; sourceTree = "<group>"; };
+		04CA0E6226F3213700AF4B1F /* DDTableViewTextItemComponent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDTableViewTextItemComponent.h; sourceTree = "<group>"; };
+		04CA0E6326F3213700AF4B1F /* DDTableViewTextItemComponent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDTableViewTextItemComponent.m; sourceTree = "<group>"; };
+		04CA0E6526F322ED00AF4B1F /* DDTableViewTextDemoController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDTableViewTextDemoController.h; sourceTree = "<group>"; };
+		04CA0E6626F322ED00AF4B1F /* DDTableViewTextDemoController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDTableViewTextDemoController.m; sourceTree = "<group>"; };
 		04EA96CE26DDB9CC00725BB7 /* DDCollectionComponentDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDCollectionComponentDemoViewController.h; sourceTree = "<group>"; };
 		04EA96CF26DDB9CC00725BB7 /* DDCollectionComponentDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDCollectionComponentDemoViewController.m; sourceTree = "<group>"; };
 		04EA96D426DDF3D800725BB7 /* DDComponentDemoCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDComponentDemoCollectionViewCell.h; sourceTree = "<group>"; };
@@ -278,6 +284,17 @@
 			path = CollectionView;
 			sourceTree = "<group>";
 		};
+		04CA0E6026F3210800AF4B1F /* TextDemo */ = {
+			isa = PBXGroup;
+			children = (
+				04CA0E6226F3213700AF4B1F /* DDTableViewTextItemComponent.h */,
+				04CA0E6326F3213700AF4B1F /* DDTableViewTextItemComponent.m */,
+				04CA0E6526F322ED00AF4B1F /* DDTableViewTextDemoController.h */,
+				04CA0E6626F322ED00AF4B1F /* DDTableViewTextDemoController.m */,
+			);
+			path = TextDemo;
+			sourceTree = "<group>";
+		};
 		04EA96CD26DDB9AA00725BB7 /* CollectionDemo */ = {
 			isa = PBXGroup;
 			children = (
@@ -430,6 +447,7 @@
 			children = (
 				6003F59C195388D20070C39A /* DDAppDelegate.h */,
 				6003F59D195388D20070C39A /* DDAppDelegate.m */,
+				04CA0E6026F3210800AF4B1F /* TextDemo */,
 				04C09DFB26E730CE007D5FC1 /* FormDemo */,
 				04EA96F726DF0DA700725BB7 /* SwiftDemo */,
 				04EA96CD26DDB9AA00725BB7 /* CollectionDemo */,
@@ -710,6 +728,7 @@
 				04EA971F26DF0E0E00725BB7 /* TaobaoCollectionViewController.swift in Sources */,
 				04EA971126DF0DF700725BB7 /* StatusViewController.swift in Sources */,
 				F1B0482326DD253C000D78C1 /* DDComponentDemoTableViewCell.m in Sources */,
+				04CA0E6726F322ED00AF4B1F /* DDTableViewTextDemoController.m in Sources */,
 				04EA971326DF0DF700725BB7 /* HeaderFooterViewController.swift in Sources */,
 				04EA970126DF0DC500725BB7 /* StatusComponent.swift in Sources */,
 				04EA970926DF0DE000725BB7 /* ImageCollectionViewCell.swift in Sources */,
@@ -728,6 +747,7 @@
 				04EA971226DF0DF700725BB7 /* SectionsViewController.swift in Sources */,
 				04CA0E4126F1D4F600AF4B1F /* UITableView+FDIndexPathHeightCache.m in Sources */,
 				04EA96D026DDB9CC00725BB7 /* DDCollectionComponentDemoViewController.m in Sources */,
+				04CA0E6426F3213700AF4B1F /* DDTableViewTextItemComponent.m in Sources */,
 				04CA0E4426F1D4F600AF4B1F /* UICollectionView+FDTemplateLayoutCellDebug.m in Sources */,
 				04EA96FE26DF0DC500725BB7 /* FooterComponent.swift in Sources */,
 				04EA96EC26DE1A2E00725BB7 /* DDCollectionViewFooterComponent.m in Sources */,
