@@ -124,6 +124,11 @@ pod 'DDComponent', :git => 'https://github.com/liuxc123/DDComponent.git', :tag =
 1. 状态机容器组件
 2. 用与切换Loading、Empty、Normal视图
 
+### FormItemComponent
+
+1. 表单组件，一个View的容器组件  
+2. cell不重用
+
 ![](./Images/example.png)
 
 这是一个组装的例子。

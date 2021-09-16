@@ -154,6 +154,11 @@ po self.rootComponent
 1. State machine container component
 2. Use and to switch the loading, empty and normal views
 
+### FormItemComponent
+
+1. Form component, a container component of view
+2. Cells are not reused
+
 ![](./Images/example.png)
 
 An example how it 
