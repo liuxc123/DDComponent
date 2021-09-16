@@ -8,14 +8,6 @@
 
 #import "DDTableViewFormItemComponent.h"
 
-@interface DDTableViewFormItemCell : UITableViewCell
-
-@end
-
-@implementation DDTableViewFormItemCell
-
-@end
-
 @interface DDTableViewFormItemComponent ()
 
 @property (nonatomic, strong, readwrite) UIView *itemView;
@@ -36,7 +28,7 @@
 
 - (void)prepareTableView {
     [super prepareTableView];
-    [self.tableView registerClass:[DDTableViewFormItemCell class] forCellReuseIdentifier:self.reuseIdentifier];
+    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:self.reuseIdentifier];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -48,7 +40,7 @@
         return nil;
     }
     
-    DDTableViewFormItemCell *cell = [tableView dequeueReusableCellWithIdentifier:self.reuseIdentifier];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:self.reuseIdentifier];
         
     if ([self.itemView.superview isEqual: cell.contentView]) {
         return cell;

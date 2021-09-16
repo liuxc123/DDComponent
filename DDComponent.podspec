@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'DDComponent'
-  s.version          = '1.0.2'
+  s.version          = '1.0.3'
   s.summary          = 'Make a collection and table controller to several component'
   s.description      = <<-DESC
   Make a collection and table controller to several component. Make the controller smaller.
@@ -11,6 +11,6 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/liuxc123/DDComponent.git', :tag => s.version.to_s }
   s.ios.deployment_target = '9.0'
 
-  s.source_files = 'DDComponent/**/*.{h,m,mm,swift}'
+  s.source_files = 'DDComponent/Classes/**/*.{h,m,mm,swift}'
   s.framework  = "UIKit"
 end

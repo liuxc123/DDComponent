@@ -6,13 +6,18 @@
 //  Copyright © 2021 liuxc123. All rights reserved.
 //
 
-#import <DDComponent/DDComponent.h>
+#import <UIKit/UIKit.h>
+#import "DDTableViewItemComponent.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface DDTableViewFormItemComponent : DDTableViewItemComponent
 
+@property (nonatomic, strong, readonly) UIView *itemView;
+
 - (instancetype)initWithItemView:(UIView *)itemview;
+
+- (instancetype)init NS_UNAVAILABLE;
 
 @end
 

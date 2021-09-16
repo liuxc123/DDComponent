@@ -6,7 +6,9 @@
 //  Copyright © 2021 liuxc123. All rights reserved.
 //
 
-#import <DDComponent/DDComponent.h>
+#import <UIKit/UIKit.h>
+#import "DDCollectionViewItemComponent.h"
+#import "UIView+DDComponentLayout.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -16,6 +18,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy, readonly) DDComponentLayoutSize *itemSize;
 
 - (instancetype)initWithItemView:(UIView *)itemview itemSize:(DDComponentLayoutSize *)itemSize;
+
+- (instancetype)init NS_UNAVAILABLE;
 
 @end
 

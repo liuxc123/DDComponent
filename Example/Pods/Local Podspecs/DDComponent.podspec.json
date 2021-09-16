@@ -18,6 +18,6 @@
   "platforms": {
     "ios": "9.0"
   },
-  "source_files": "DDComponent/**/*.{h,m,mm,swift}",
+  "source_files": "DDComponent/Classes/**/*.{h,m,mm,swift}",
   "frameworks": "UIKit"
 }
