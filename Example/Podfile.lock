@@ -1,6 +1,6 @@
 PODS:
   - CatalogByConvention (2.5.2)
-  - DDComponent (1.0.3)
+  - DDComponent (1.0.4)
   - IBPCollectionViewCompositionalLayout (0.6.9)
 
 DEPENDENCIES:
@@ -19,9 +19,9 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   CatalogByConvention: ef713654160053be026fa4648dd28caf6b5ca4e1
-  DDComponent: 47d34ca5071dd327660f1f4b7765c014f5279809
+  DDComponent: ca954ecd69f24e10a3c80c00fccac5245710ac0f
   IBPCollectionViewCompositionalLayout: bbb29e39ac564666a8c3cdb6633ed944b6feb55b
 
 PODFILE CHECKSUM: 687b2fd0b8741bc1f0a0a611839d14d3b45add37
 
-COCOAPODS: 1.10.1
+COCOAPODS: 1.11.2
