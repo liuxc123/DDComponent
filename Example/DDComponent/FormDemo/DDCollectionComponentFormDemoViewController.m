@@ -45,18 +45,17 @@
                                         sizeWithWidthDimension:[DDComponentLayoutDimension fractionalWidthDimension:1.0]
                                         heightDimension:[DDComponentLayoutDimension estimatedDimension:60]];
     
-    DDCollectionViewFormItemComponent *item = [[DDCollectionViewFormItemComponent alloc] initWithItemView:self.label itemSize:itemSize];
-    item.size = CGSizeMake(DDComponentAutomaticDimension, DDComponentAutomaticDimension);
-    
+    DDCollectionViewFormItemComponent *item = [[DDCollectionViewFormItemComponent alloc] initWithItemView:self.label];
+    item.itemSize = itemSize;
     
     /// item2
-    DDCollectionViewFormItemComponent *item2 = [[DDCollectionViewFormItemComponent alloc] initWithItemView:self.label2 itemSize:itemSize];
-    item2.size = CGSizeMake(DDComponentAutomaticDimension, DDComponentAutomaticDimension);
-    
+    DDCollectionViewFormItemComponent *item2 = [[DDCollectionViewFormItemComponent alloc] initWithItemView:self.label2];
+    item.itemSize = itemSize;
+
     /// item3
-    DDCollectionViewFormItemComponent *item3 = [[DDCollectionViewFormItemComponent alloc] initWithItemView:self.label3 itemSize:itemSize];
-    item3.size = CGSizeMake(DDComponentAutomaticDimension, DDComponentAutomaticDimension);
-    
+    DDCollectionViewFormItemComponent *item3 = [[DDCollectionViewFormItemComponent alloc] initWithItemView:self.label3];
+    item.itemSize = itemSize;
+
     /// Group
     DDCollectionViewItemGroupComponent *group = [DDCollectionViewItemGroupComponent componentWithSubComponents:@[
         item,

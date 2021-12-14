@@ -17,11 +17,11 @@
 
 @implementation DDTableViewFormItemComponent
 
-- (instancetype)initWithItemView:(UIView *)itemview
+- (instancetype)initWithItemView:(UIView *)itemView
 {
     self = [super init];
     if (self) {
-        self.itemView = itemview;
+        self.itemView = itemView;
         self.height = DDComponentAutomaticDimension;
     }
     return self;

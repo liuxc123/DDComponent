@@ -15,7 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, strong, readonly) UIView *itemView;
 
-- (instancetype)initWithItemView:(UIView *)itemview;
+- (instancetype)initWithItemView:(UIView *)itemView;
 
 - (instancetype)init NS_UNAVAILABLE;
 

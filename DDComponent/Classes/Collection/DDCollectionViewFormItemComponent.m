@@ -10,7 +10,7 @@
 
 @interface DDCollectionViewFormItemCell : UICollectionViewCell
 
-@property (nonatomic, copy) DDComponentLayoutSize *itemSize;
+@property (nonatomic, copy, nullable) DDComponentLayoutSize *itemSize;
 
 @end
 
@@ -18,12 +18,16 @@
 
 - (UICollectionViewLayoutAttributes *)preferredLayoutAttributesFittingAttributes:(UICollectionViewLayoutAttributes *)layoutAttributes {
     
-    [self layoutIfNeeded];
-    [self setNeedsLayout];
-    
-    CGRect frame = layoutAttributes.frame;
-    frame.size = [self.contentView sizeThatFits:frame.size layoutSize:self.itemSize];
-    layoutAttributes.frame = frame;
+    if (self.itemSize) {
+        [self layoutIfNeeded];
+        [self setNeedsLayout];
+        
+        CGRect frame = layoutAttributes.frame;
+        frame.size = [self.contentView sizeThatFits:frame.size layoutSize:self.itemSize];
+        layoutAttributes.frame = frame;
+        
+        return layoutAttributes;
+    }
     
     return layoutAttributes;
 }
@@ -33,19 +37,19 @@
 @interface DDCollectionViewFormItemComponent ()
 
 @property (nonatomic, strong, readwrite) UIView *itemView;
-@property (nonatomic, strong, readwrite) NSString *reuseIdentifier;
-@property (nonatomic, copy, readwrite) DDComponentLayoutSize *itemSize;
+@property (nonatomic, strong, readonly) NSString *reuseIdentifier;
 
 @end
 
 @implementation DDCollectionViewFormItemComponent
 
-- (instancetype)initWithItemView:(UIView *)itemview itemSize:(DDComponentLayoutSize *)itemSize;
+- (instancetype)initWithItemView:(UIView *)itemView;
 {
     self = [super init];
     if (self) {
-        self.itemView = itemview;
-        self.itemSize = itemSize;
+        _itemView = itemView;
+        _itemSize = [DDComponentLayoutSize sizeWithWidthDimension:[DDComponentLayoutDimension fractionalWidthDimension:1.0]
+                                                  heightDimension:[DDComponentLayoutDimension absoluteDimension:44]];
         self.size = CGSizeMake(DDComponentAutomaticDimension, DDComponentAutomaticDimension);
     }
     return self;

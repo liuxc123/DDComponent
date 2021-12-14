@@ -15,9 +15,9 @@ NS_ASSUME_NONNULL_BEGIN
 @interface DDCollectionViewFormItemComponent : DDCollectionViewItemComponent
 
 @property (nonatomic, strong, readonly) UIView *itemView;
-@property (nonatomic, copy, readonly) DDComponentLayoutSize *itemSize;
+@property (nonatomic, copy, nullable) DDComponentLayoutSize *itemSize;
 
-- (instancetype)initWithItemView:(UIView *)itemview itemSize:(DDComponentLayoutSize *)itemSize;
+- (instancetype)initWithItemView:(UIView *)itemView;
 
 - (instancetype)init NS_UNAVAILABLE;
 

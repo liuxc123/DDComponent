@@ -27,7 +27,8 @@ class CollectionComponentFormViewController: UIViewController {
         
         let itemView = UIView()
         itemView.backgroundColor = .yellow
-        let itemComponent = DDCollectionViewFormItemComponent(itemView: itemView, itemSize: DDComponentLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .absolute(50)))
+        let itemComponent = DDCollectionViewFormItemComponent(itemView: itemView)
+        itemComponent.itemSize = DDComponentLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .absolute(50))
         
         let group = DDCollectionViewItemGroupComponent(subComponents: [itemComponent])
         group.lineSpacing = 0;
