@@ -1,11 +1,3 @@
-//
-//  DDTableViewFormItemComponent.m
-//  DDComponent_Example
-//
-//  Created by mac on 2021/9/13.
-//  Copyright © 2021 liuxc123. All rights reserved.
-//
-
 #import "DDTableViewFormItemComponent.h"
 
 @interface DDTableViewFormItemComponent ()

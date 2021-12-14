@@ -1,11 +1,3 @@
-//
-//  DDTableViewComponent+Cache.h
-//  DDComponent
-//
-//  Created by liuxc on 2021/8/30.
-//  Copyright © 2021 liuxc123. All rights reserved.
-//
-
 #ifndef DDTableViewComponent_Cache_h
 #define DDTableViewComponent_Cache_h
 

@@ -1,11 +1,3 @@
-//
-//  DDCollectionViewFormItemComponent.m
-//  DDComponent_Example
-//
-//  Created by mac on 2021/9/7.
-//  Copyright © 2021 liuxc123. All rights reserved.
-//
-
 #import "DDCollectionViewFormItemComponent.h"
 
 @interface DDCollectionViewFormItemCell : UICollectionViewCell

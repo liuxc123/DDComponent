@@ -1,11 +1,3 @@
-//
-//  DDCollectionViewComponentHelper.h
-//  DDComponent_Example
-//
-//  Created by liuxc on 2021/8/30.
-//  Copyright © 2021 liuxc123. All rights reserved.
-//
-
 #import "DDCollectionViewComponent.h"
 #import "DDCollectionViewItemComponent.h"
 #import "DDCollectionViewSectionComponent.h"
