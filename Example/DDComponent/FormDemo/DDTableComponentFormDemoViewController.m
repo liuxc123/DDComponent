@@ -37,11 +37,8 @@
 
     self.rootComponent = [[DDTableViewRootComponent alloc] initWithTableView:self.tableView];
     
-
-    
     DDTableViewFormItemComponent *item = [[DDTableViewFormItemComponent alloc] initWithItemView:self.label];
     item.height = UITableViewAutomaticDimension;
-    
     
     DDTableViewFormItemComponent *item2 = [[DDTableViewFormItemComponent alloc] initWithItemView:self.label2];
     item2.height = UITableViewAutomaticDimension;
@@ -64,7 +61,7 @@
     self.label.text = @"大叔大婶大所大所大所大所大";
     self.label2.text = @"大叔大婶大所大所大所大所大";
     self.label3.text = @"大叔大婶大所大所大所大所大";
-    [self.tableView reloadData];
+    [self.rootComponent reloadData];
 }
 
 - (UILabel *)label {

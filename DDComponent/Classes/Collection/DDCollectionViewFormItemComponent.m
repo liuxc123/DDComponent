@@ -46,6 +46,7 @@
     if (self) {
         self.itemView = itemview;
         self.itemSize = itemSize;
+        self.size = CGSizeMake(DDComponentAutomaticDimension, DDComponentAutomaticDimension);
     }
     return self;
 }

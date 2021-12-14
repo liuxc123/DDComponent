@@ -22,6 +22,7 @@
     self = [super init];
     if (self) {
         self.itemView = itemview;
+        self.height = DDComponentAutomaticDimension;
     }
     return self;
 }

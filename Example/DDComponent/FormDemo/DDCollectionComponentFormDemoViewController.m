@@ -80,15 +80,31 @@
 }
 
 - (void)refreshAction {
-    self.label.text = @"大叔大婶大所大所大所大所大";
-    self.label2.text = @"大叔大婶大所大所大所大所大";
-    self.label3.text = @"大叔大婶大所大所大所大所大";
-    [UIView animateWithDuration:0.5 animations:^{
-        [self.collectionView.collectionViewLayout invalidateLayout];
-    }];
+//    self.label.text = @"大叔大婶大所大所大所大所大";
+//    self.label2.text = @"大叔大婶大所大所大所大所大";
+//    self.label3.text = @"大叔大婶大所大所大所大所大";
+//
+//
+//    [self.collectionView performBatchUpdates:^{
+//        [self animateCollection];
+//    } completion:^(BOOL finished) {
+//
+//    }];
+//    [self animateCollection];
 }
 
-
+-(void)animateCollection{
+    NSArray *cells = _collectionView.visibleCells;
+    CGFloat collectionHeight = _collectionView.bounds.size.height;
+    for (UICollectionViewCell *cell in cells.objectEnumerator) {
+        cell.alpha = 1.0f;
+        cell.transform = CGAffineTransformMakeTranslation(0, collectionHeight);
+        NSUInteger index = [cells indexOfObject:cell];
+        [UIView animateWithDuration:0.7f delay:0.05*index usingSpringWithDamping:0.8 initialSpringVelocity:0 options:0 animations:^{
+            cell.transform =  CGAffineTransformMakeTranslation(0, 0);
+        } completion:nil];
+    }
+}
 
 
 - (UILabel *)label {
@@ -106,7 +122,7 @@
         _label2 = [[UILabel alloc] init];
         _label2.text = @"大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大";
         _label2.numberOfLines = 0;
-        _label2.backgroundColor = UIColor.yellowColor;
+        _label2.backgroundColor = UIColor.redColor;
     }
     return _label2;
 }
@@ -116,7 +132,7 @@
         _label3 = [[UILabel alloc] init];
         _label3.text = @"大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大";
         _label3.numberOfLines = 0;
-        _label3.backgroundColor = UIColor.yellowColor;
+        _label3.backgroundColor = UIColor.grayColor;
     }
     return _label3;
 }

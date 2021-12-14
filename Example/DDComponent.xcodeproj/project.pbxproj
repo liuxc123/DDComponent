@@ -69,6 +69,8 @@
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		8DD98160526D3D5A28432A0A /* Pods_DDComponent_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF1CA58DBBA935AAD5C6BF96 /* Pods_DDComponent_Tests.framework */; };
+		F154562527689C56006FA9DE /* CollectionComponentFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F154562427689C56006FA9DE /* CollectionComponentFormViewController.swift */; };
+		F154562A2768D161006FA9DE /* TableComponentFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15456292768D161006FA9DE /* TableComponentFormViewController.swift */; };
 		F1B0481E26DD253C000D78C1 /* DDTableViewHeaderFooterSectionDemoComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = F1B0481026DD253C000D78C1 /* DDTableViewHeaderFooterSectionDemoComponent.m */; };
 		F1B0481F26DD253C000D78C1 /* DDTableViewHeaderDemoComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = F1B0481126DD253C000D78C1 /* DDTableViewHeaderDemoComponent.m */; };
 		F1B0482026DD253C000D78C1 /* DDTableViewItemDemoComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = F1B0481226DD253C000D78C1 /* DDTableViewItemDemoComponent.m */; };
@@ -182,6 +184,8 @@
 		BF1CA58DBBA935AAD5C6BF96 /* Pods_DDComponent_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DDComponent_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8D925B2EB0CBD69D18A4AB3 /* Pods-DDComponent_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DDComponent_Example.release.xcconfig"; path = "Target Support Files/Pods-DDComponent_Example/Pods-DDComponent_Example.release.xcconfig"; sourceTree = "<group>"; };
 		E7B55A85DFFC23A1DABFB7FD /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		F154562427689C56006FA9DE /* CollectionComponentFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionComponentFormViewController.swift; sourceTree = "<group>"; };
+		F15456292768D161006FA9DE /* TableComponentFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableComponentFormViewController.swift; sourceTree = "<group>"; };
 		F1B0480B26DD253C000D78C1 /* DDTableComponentDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDTableComponentDemoViewController.h; sourceTree = "<group>"; };
 		F1B0480D26DD253C000D78C1 /* DDTableViewItemDemoComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDTableViewItemDemoComponent.h; sourceTree = "<group>"; };
 		F1B0480E26DD253C000D78C1 /* DDTableViewHeaderDemoComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDTableViewHeaderDemoComponent.h; sourceTree = "<group>"; };
@@ -233,6 +237,8 @@
 				04C09E0126E731BB007D5FC1 /* DDCollectionComponentFormDemoViewController.m */,
 				04CA0E1526EF28E700AF4B1F /* DDTableComponentFormDemoViewController.h */,
 				04CA0E1626EF28E700AF4B1F /* DDTableComponentFormDemoViewController.m */,
+				F154562427689C56006FA9DE /* CollectionComponentFormViewController.swift */,
+				F15456292768D161006FA9DE /* TableComponentFormViewController.swift */,
 			);
 			path = FormDemo;
 			sourceTree = "<group>";
@@ -596,6 +602,7 @@
 					6003F589195388D20070C39A = {
 						DevelopmentTeam = 835Q4MU3RA;
 						LastSwiftMigration = 1250;
+						ProvisioningStyle = Manual;
 					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
@@ -734,9 +741,11 @@
 				04EA970926DF0DE000725BB7 /* ImageCollectionViewCell.swift in Sources */,
 				04EA971026DF0DF700725BB7 /* HeaderStatusViewController.swift in Sources */,
 				04CA0E4026F1D4F600AF4B1F /* UITableView+FDTemplateLayoutCellDebug.m in Sources */,
+				F154562A2768D161006FA9DE /* TableComponentFormViewController.swift in Sources */,
 				04EA96D626DDF3D800725BB7 /* DDComponentDemoCollectionViewCell.m in Sources */,
 				F1B0481E26DD253C000D78C1 /* DDTableViewHeaderFooterSectionDemoComponent.m in Sources */,
 				F1B0482126DD253C000D78C1 /* DDTableViewFooterDemoComponent.m in Sources */,
+				F154562527689C56006FA9DE /* CollectionComponentFormViewController.swift in Sources */,
 				04EA970226DF0DC500725BB7 /* TitlesComponent.swift in Sources */,
 				04CA0E3F26F1D4F600AF4B1F /* UITableView+FDKeyedHeightCache.m in Sources */,
 				04CA0E3E26F1D4F600AF4B1F /* UITableView+FDTemplateLayoutCell.m in Sources */,
@@ -901,6 +910,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 835Q4MU3RA;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DDComponent/DDComponent-Prefix.pch";
@@ -910,6 +920,7 @@
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "match Development *";
 				SWIFT_OBJC_BRIDGING_HEADER = "DDComponent/DDComponent_Example-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -923,6 +934,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 835Q4MU3RA;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DDComponent/DDComponent-Prefix.pch";
@@ -932,6 +944,7 @@
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "match Development *";
 				SWIFT_OBJC_BRIDGING_HEADER = "DDComponent/DDComponent_Example-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				WRAPPER_EXTENSION = app;
