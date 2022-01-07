@@ -8,161 +8,177 @@
 
 /* Begin PBXBuildFile section */
 		01048CE0850EF3FA3669D2F275F3CC8D /* IBPCollectionCompositionalLayoutSolverResult.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A0257FECB52FA548CEA306E5D381BCE /* IBPCollectionCompositionalLayoutSolverResult.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		03823DFF089FDE0BA2D4A3FBEFE026A0 /* DDTableViewComponentHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 06AAAA1CBAB89481693424305F5F6FD4 /* DDTableViewComponentHelper.m */; };
-		04611907685457A28212CE66CDA4E20D /* DDComponentLayoutSize.m in Sources */ = {isa = PBXBuildFile; fileRef = EB395CD2AF74B5B5A2164842A01F3DBE /* DDComponentLayoutSize.m */; };
+		01A273D239AB3A6192D807E51700748B /* DDCollectionComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = F02FC013F43492EE004D6255741C8021 /* DDCollectionComponent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		01DF30C44E82F2A1891E93D4E9872534 /* DDCollectionViewSectionComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = 0EE07B0A838AA6347F5C793942939F27 /* DDCollectionViewSectionComponent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		020C199E3ABF4F950B5F2FF9EDB16534 /* DDTableViewComponent+Cache.h in Headers */ = {isa = PBXBuildFile; fileRef = 08ECD79ED1CC2B8E6EF57F822A80DA05 /* DDTableViewComponent+Cache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		046499D470F59BB1108047956CEA555D /* DDCollectionViewFormItemComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = F1BE2E0A5234ED9EFAF78D879520FBFC /* DDCollectionViewFormItemComponent.m */; };
 		0480806A588C033B9CE9C44658FA0797 /* IBPNSCollectionLayoutBoundarySupplementaryItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 83F8F633D42932F0D786B1F7A94CC1F1 /* IBPNSCollectionLayoutBoundarySupplementaryItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		048DC2BA101FB448FA34A870B8E85231 /* IBPNSCollectionLayoutEnvironment.m in Sources */ = {isa = PBXBuildFile; fileRef = 16B899F8C954F5DEB2BFF997C11E61AE /* IBPNSCollectionLayoutEnvironment.m */; };
 		0570E25946A7933BD6EE2433B1F1F1E7 /* CatalogByConvention.h in Headers */ = {isa = PBXBuildFile; fileRef = D18E9391152C0F70982E76FE1BA4600B /* CatalogByConvention.h */; };
-		05B938A3BE956E29C85F7D8B2900EB8A /* DDTableViewFormItemComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = 80FB189639CA285F8CD2F2145C34E8CD /* DDTableViewFormItemComponent.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		06F71F10C149F0EDB159A59E34CFA0C9 /* DDTableViewComponent+Cache.h in Headers */ = {isa = PBXBuildFile; fileRef = BEEA7E8B0BD3F05E2A6DE6895B029D35 /* DDTableViewComponent+Cache.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		07213D7B3EA04CFC0756B4DBF366817B /* UIView+DDComponentLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 9082D099E302816B8B4243FC103380C3 /* UIView+DDComponentLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		059038181FCA6007D5A5A6619189DBDC /* UIView+DDComponentLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EC7726E14FBF51245520EAC628A7560 /* UIView+DDComponentLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08FBE11DE9C57C47587C689C03683345 /* DDCollectionViewComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = F27D31EE85BE528DE6CBE42B69D4D627 /* DDCollectionViewComponent.m */; };
+		0F2B97EA01DAF96051A6CD586DAE0BED /* DDTableViewItemComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = B19CD37353E24996DCAEE2BA902DB771 /* DDTableViewItemComponent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0FBF6B05170CEAF81C5816DA9B3AA2D7 /* DDCollectionViewSectionGroupComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = F17C43EEBEAF1E3231F601E2119FE11D /* DDCollectionViewSectionGroupComponent.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		10A502328C490AA3E90A55B3072F28A0 /* IBPNSCollectionLayoutSupplementaryItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 57CE74FE4C0C5A45CDBBAFA52D9D527C /* IBPNSCollectionLayoutSupplementaryItem.m */; };
 		10F336B4628532B5E4EF04C2891120AB /* CatalogByConvention.h in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = D18E9391152C0F70982E76FE1BA4600B /* CatalogByConvention.h */; };
+		11A0A0F3D5EE98F63ED51524A2414A07 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */; };
 		130FBBE3DC31A091F60724717586992D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		131F6F2EAD815B37DED82CB600C87200 /* UITableView+DDIndexPathHeightCache.m in Sources */ = {isa = PBXBuildFile; fileRef = E496E3F3EE0E3984FFDD0C97D2247C91 /* UITableView+DDIndexPathHeightCache.m */; };
 		132A8D7B39337715594E0DAE08C7ED04 /* IBPNSCollectionLayoutBoundarySupplementaryItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B9FB492066ABFD359E772DC1FE8B6128 /* IBPNSCollectionLayoutBoundarySupplementaryItem.m */; };
-		171152C3015EEC432A4576F682027772 /* DDCollectionViewSectionComponent.mm in Sources */ = {isa = PBXBuildFile; fileRef = 09C39AE4121FADFA488182C94C9F392A /* DDCollectionViewSectionComponent.mm */; };
+		140E9D18A7E83C88A4B37E7F469E177B /* DDTableViewSectionGroupComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = 192B6D9D80894F54CC3C3BC4C21B18A4 /* DDTableViewSectionGroupComponent.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		181C96E2C4782243D9E14E3EFD9D79A1 /* CatalogByConvention-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 56001F6430A685615D7338FA3AAEF036 /* CatalogByConvention-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		19D14AC4638E2043AB3592B61138B57C /* DDComponentLayoutDimension.m in Sources */ = {isa = PBXBuildFile; fileRef = A3E1BB02B8217EADBA31CAADB409D5D1 /* DDComponentLayoutDimension.m */; };
-		1AECED7AE9109696B143220808376021 /* DDTableViewFormItemComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 294F1BA9B051C886FE8854D98896A03C /* DDTableViewFormItemComponent.m */; };
-		1C8E96EBB617195DEA90DEED6BF7CC77 /* DDTableViewComponent+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 41415C1EFDAB14EBEF36FA2671BE65E5 /* DDTableViewComponent+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1E8E4E9CE6D18888A696016218BA9E85 /* IBPCollectionViewCompositionalLayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B849B806779FB8AADB00CA772706DE1E /* IBPCollectionViewCompositionalLayout-dummy.m */; };
 		1EA644E86A069AF1A2D4A5E745BC4F59 /* Pods-DDComponent_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8421B58E92CD7F61A828E233323FBF33 /* Pods-DDComponent_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		228B54D9908BB6941226EC00BC7BFB71 /* DDCollectionViewComponent+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 6AF8659BD4F26A95B9134A3A5A8FEBBA /* DDCollectionViewComponent+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		241F06C95B6BFDEDF8F362447DD8AD18 /* DDCollectionViewSectionComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = 7DF0BF17ECCEA3D2F602F1883B86B886 /* DDCollectionViewSectionComponent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1EC1CF96AE0556D9EF9FD87C6C9B5E2B /* DDComponentLayoutSize.h in Headers */ = {isa = PBXBuildFile; fileRef = 011B3EEDD70B59A12EDE1A5189E8881C /* DDComponentLayoutSize.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		233551C10E4346CE9900E3F070275019 /* DDComponent-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A7218A3C76B2BA23C4404AEBFF977E75 /* DDComponent-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		24917E49AD7857B4FA148E3F11651241 /* DDTableViewComponentHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E4559A93439774DBA980F3B072CBA40 /* DDTableViewComponentHelper.m */; };
+		29327FADE236D804E98B30AA58631966 /* DDTableViewComponent+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = F277CB28BE83E1BF64674ABEF9938778 /* DDTableViewComponent+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2A6ED270901C3400FB5E5A83112EF8D7 /* UITableView+DDTemplateLayoutCellDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = 828F2CF79786755363D6D97EDCD7A93E /* UITableView+DDTemplateLayoutCellDebug.m */; };
 		2AD942F1F84FF1E80279C53C78D528ED /* IBPNSCollectionLayoutContainer_Protocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D99A2DDE20BA0DC8C8D099EA91EF478 /* IBPNSCollectionLayoutContainer_Protocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2CC24953AAD6FB97F6178C9E55959B1D /* IBPUICollectionLayoutSectionOrthogonalScrollingBehavior.h in Headers */ = {isa = PBXBuildFile; fileRef = A408B08E4AB2FEC0A3FA254BF9B84028 /* IBPUICollectionLayoutSectionOrthogonalScrollingBehavior.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2D20818FF64EB245D2EFF66D0EBCF0F7 /* IBPNSCollectionLayoutEdgeSpacing.h in Headers */ = {isa = PBXBuildFile; fileRef = D3D154A621AF07AFD1F84B2F429DFCB2 /* IBPNSCollectionLayoutEdgeSpacing.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2D5B3D0496B9D0E3B06B6CF1CA43A35F /* IBPNSCollectionLayoutDecorationItem.h in Headers */ = {isa = PBXBuildFile; fileRef = F50C421080DA9A13AF03E10878E3C82F /* IBPNSCollectionLayoutDecorationItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2DD03D7C76BE8DD05980359C4A3E0DDF /* DDCollectionViewComponentHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 57144083CF4F0143F8AA49C8AFF9C53C /* DDCollectionViewComponentHelper.m */; };
+		2F400F262F961820EC74CFFE8F5FF0EC /* UICollectionView+DDKeyedSizeCache.m in Sources */ = {isa = PBXBuildFile; fileRef = C02BCEEF28C471064803FCC1B39DFDB4 /* UICollectionView+DDKeyedSizeCache.m */; };
+		2F4ACFE7D597F3A25FEBC9DAD0CA6C54 /* DDTableViewFormItemComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B12079A851D59AC9A50DB9EB4AD3BA4 /* DDTableViewFormItemComponent.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3218DA0573BA2E13F11EAAC37C5D0781 /* CBCNodeListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECB9830D3E9A2BBE459A7BE917094527 /* CBCNodeListViewController.m */; };
-		3224AF824220548799A068A0C58AF8EF /* DDTableComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A79AAEDC1F4BFD75DC166204EFDD6EA /* DDTableComponent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		35340E96AA3BC8E8473AB5AD3267B256 /* DDTableComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = 40E5D4CFC5C8D0429B672F3BC4AAF31F /* DDTableComponent.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		37BF2FF82A3C817371DD540179C283FA /* IBPCollectionViewCompositionalLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 62978116510C59AE365A66DE85E5AC91 /* IBPCollectionViewCompositionalLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		38C8D8A931383A8E721D40B13123D532 /* UICollectionView+DDTemplateLayoutCellDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CC65685EED9277683AD107A4167BDDC /* UICollectionView+DDTemplateLayoutCellDebug.m */; };
 		3D1F770C1B6D32808484FECA79845B11 /* Pods-DDComponent_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3342312D642F90DAFF75CF136CFEDBF1 /* Pods-DDComponent_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3E86CFFAD378A1743E454B0B55E8C504 /* IBPUICollectionViewCompositionalLayoutConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = D339699580AA1D91116900354E78C6F0 /* IBPUICollectionViewCompositionalLayoutConfiguration.m */; };
+		3EF979D20EB280FF86BAADA691B13E33 /* DDTableViewStatusComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = DAFDC50295B50AD7A3FA331001EC0A3F /* DDTableViewStatusComponent.m */; };
 		408C36E05A618371934740FD04BFEB6B /* IBPNSCollectionLayoutSection.m in Sources */ = {isa = PBXBuildFile; fileRef = F36B2DDC1E0F7B5EC1B9D975138CA38A /* IBPNSCollectionLayoutSection.m */; };
 		40D36727E1FB378B1A27B293F162D682 /* IBPNSCollectionLayoutEdgeSpacing.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E45EF7B103B235A6534A0130F28274 /* IBPNSCollectionLayoutEdgeSpacing.m */; };
+		477D049A2108D0C3622AD6554CEE42CB /* UIView+DDComponentLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D036BA5CE9610363B8F1F0519DDC3CC /* UIView+DDComponentLayout.m */; };
 		478AA9991C5C479BBC18783536C2D130 /* CBCRuntime.h in Headers */ = {isa = PBXBuildFile; fileRef = F5B28E753A27B2ED23D915814D660FC4 /* CBCRuntime.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		48300E870F435E184D331650F04063E3 /* UITableView+DDKeyedHeightCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 284785B5F1725F1466DE0C5615B8762C /* UITableView+DDKeyedHeightCache.m */; };
 		486D9B68BA4D4A04CE5DD8DA4959157B /* IBPNSCollectionLayoutGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 847C35DF15AD8E67ED41A354983B705E /* IBPNSCollectionLayoutGroup.m */; };
 		48DCEDC8BAD2DFCE04E8EF0C6DD7C27B /* IBPNSCollectionLayoutEnvironment_Protocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 88E8646A7BFDCDD9DA9B1CFBB859F37C /* IBPNSCollectionLayoutEnvironment_Protocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		48F32CC4F30825730F588F7FAAF760E5 /* DDTableViewItemComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = B79DBA012B67BF5E0D9660FA6CF42E74 /* DDTableViewItemComponent.m */; };
 		493046348368169752EB04D58C240C9A /* IBPNSCollectionLayoutVisibleItem.h in Headers */ = {isa = PBXBuildFile; fileRef = BEC66A94C189BB65BFE1F956D797FC5C /* IBPNSCollectionLayoutVisibleItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		493433D077F48099E35722E4114F3204 /* UIView+DDComponentLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 315DC7CBECC8DFE7607E42B2110B346E /* UIView+DDComponentLayout.m */; };
+		4A976F256B2744E6C85C70519D7F7D05 /* UICollectionView+DDTemplateLayoutCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 283FAB5B52808806F97D263A0D8C0B28 /* UICollectionView+DDTemplateLayoutCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4C00834C5FB409C5063A8D44CDBFCD6C /* IBPNSCollectionLayoutSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 08FBF64F596A042E91A09FB2623A6E2D /* IBPNSCollectionLayoutSize.m */; };
 		4C29A0CBEEA21CB7B62D4BD79DF5D095 /* IBPCollectionCompositionalLayoutSolverResult.m in Sources */ = {isa = PBXBuildFile; fileRef = B1BFCDAE94C00837E30C90D225F703F8 /* IBPCollectionCompositionalLayoutSolverResult.m */; };
-		4E294A79BC0E003435889A9471D5FC02 /* DDCollectionViewStatusComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = 2623DC5B5924FACEF59E1CCB1BC9ADCF /* DDCollectionViewStatusComponent.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4E8E0C12AE034CCE121389B0F50FAE90 /* DDTableViewSectionComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = D8B0E494DCA2F3B247C942A56E58ED10 /* DDTableViewSectionComponent.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4EBDB73F21F8F27EDB009ABC79AD2DB4 /* IBPNSCollectionLayoutSize.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A2B30FDABCCFD04A0C5A73127DED9DE /* IBPNSCollectionLayoutSize.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4F8C276D6EDB032903E41EC9C09ABFA2 /* IBPNSDirectionalEdgeInsets.h in Headers */ = {isa = PBXBuildFile; fileRef = AC29154F14B477477F3BCFBC354D1706 /* IBPNSDirectionalEdgeInsets.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5102B7F8E2CE4698B7B8FAB492B78E30 /* IBPNSCollectionLayoutSection_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = AB32FDD2D7311A23B27924AD34000A75 /* IBPNSCollectionLayoutSection_Private.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		51A713E6F173471A83AD0B63DCD1A9B9 /* IBPNSCollectionLayoutItem_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = F14786F9358CD80D563392189E3602D8 /* IBPNSCollectionLayoutItem_Private.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		524915FBF541503225C5A2EE268D762E /* DDComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E1518E60BF40151E4594A04C442F751 /* DDComponent.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		526293D075818614853AC47A9FAF8041 /* IBPCollectionViewOrthogonalScrollerEmbeddedScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D3F7064DB0E74E5EB79A9CD9EF166F1 /* IBPCollectionViewOrthogonalScrollerEmbeddedScrollView.m */; };
-		568033DB204952EE15A33DD598922741 /* DDCollectionViewStatusComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A0C09AFBC6FB0FC05B344677A45B943 /* DDCollectionViewStatusComponent.m */; };
 		5AE53229165C3C017E9C5F3178F4AFCB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */; };
 		5B34490D8B39CEC8E8C1E0D7A46D96B6 /* IBPNSCollectionLayoutSpacing.m in Sources */ = {isa = PBXBuildFile; fileRef = CD6E400C1B49704F2B2AC95FF8F88AC6 /* IBPNSCollectionLayoutSpacing.m */; };
 		5C4E96BA4A33CE46154979ACD4C3145F /* CatalogByConvention-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 02AC81496FAE7DC078ADB9D2C6A2FFF3 /* CatalogByConvention-dummy.m */; };
-		60A54D204181392965E10319CBD3FA23 /* DDTableViewSectionComponent.mm in Sources */ = {isa = PBXBuildFile; fileRef = 632963B95D52C4CD6B53519A8D73AC99 /* DDTableViewSectionComponent.mm */; };
 		6225D143A32C25B71D9906757D1F232B /* IBPNSCollectionLayoutSpacing_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 51CBAF71BDBA65E3F8EF35A1C5D229D7 /* IBPNSCollectionLayoutSpacing_Private.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		624F71459AA6EAE7A4871E87181F933C /* DDComponentLayoutSize.m in Sources */ = {isa = PBXBuildFile; fileRef = F79813DF148249C2B98C8B04C06FBD34 /* DDComponentLayoutSize.m */; };
 		657B0231A8F968541BD81BDFB6D65CFA /* IBPUICollectionViewCompositionalLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = ACEC2161CCC026D5FC97FE9F05D4196A /* IBPUICollectionViewCompositionalLayout.m */; };
-		67D84CC350017BC40F9F3B07850F3779 /* DDComponent-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F973ED89F51DCD521C65FC7E2B8E3FB /* DDComponent-dummy.m */; };
 		6B505FC29A435607AD968976DDCBE18E /* CBCRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D1CA3A9F5AC85A1B77C8C51EF9135E8 /* CBCRuntime.m */; };
 		6C5EBA63A1D702252FFD7E121EE11D9A /* IBPCollectionViewCompositionalLayout-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 19796110A2B81D61CF583F2051153C62 /* IBPCollectionViewCompositionalLayout-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6CA123FFD67C102BF83097AA9195901D /* DDTableViewSectionComponent.mm in Sources */ = {isa = PBXBuildFile; fileRef = D000864489468E4AE1F77242467D1BB5 /* DDTableViewSectionComponent.mm */; };
 		6CA6AF8743E5D5A98D0EAD023C47A6F3 /* IBPNSCollectionLayoutGroupCustomItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C4BA844C6B7D23FC85E5A5466CCBEB9 /* IBPNSCollectionLayoutGroupCustomItem.m */; };
+		6CB4EDD921A6E2E6BC3252E4411DD5C1 /* DDCollectionViewItemComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D20FC2D49F3336C791BA1E5652F0725 /* DDCollectionViewItemComponent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6CE5420FC726550D5C895CBAA76D702B /* DDTableViewSectionGroupComponent.mm in Sources */ = {isa = PBXBuildFile; fileRef = E5E0F252DA2B020056D5C3556926AE46 /* DDTableViewSectionGroupComponent.mm */; };
 		6CFFAFDEA3542E234B2392F57B024DBF /* IBPNSCollectionLayoutItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 589C88D907FF5E38C9660C96ED244D7E /* IBPNSCollectionLayoutItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		72295D56128217221223C389C09390B4 /* DDCollectionViewSectionComponent.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E115E44F4E434B34D7A7B66FAB4D825 /* DDCollectionViewSectionComponent.mm */; };
 		748E760266658CC24A79154786F2459E /* IBPNSCollectionLayoutItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 524F62F647D8C7BE3F5FD78BF606AC3D /* IBPNSCollectionLayoutItem.m */; };
-		766D74270A24C484C39908FA2F5583EB /* DDCollectionViewFormItemComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = 04B3B96370C5159B0D842396D7BF53EC /* DDCollectionViewFormItemComponent.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		77E30F5C4F9559CF776F9B354D00002B /* IBPNSCollectionLayoutForwardCompatibility.h in Headers */ = {isa = PBXBuildFile; fileRef = E6346978DDD295B1BFE8752FAEC204CE /* IBPNSCollectionLayoutForwardCompatibility.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7911C28804334B5AC9E488C28D7D679B /* DDTableViewSectionGroupComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = A4239F0D1AC397076C03F1BFFF17CA83 /* DDTableViewSectionGroupComponent.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7CFEE7698558EE0B664C9E2A05349056 /* IBPUICollectionViewCompositionalLayoutConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = 97674B8F8CC1AAE4232B58B936BC2C83 /* IBPUICollectionViewCompositionalLayoutConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7E60446FF6B14D8CF7554689A3C1B966 /* DDComponentLayoutSize.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A80859E3289DE986E79BD2F0F6AC17A /* DDComponentLayoutSize.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7E8A00B8AE03AE508408CAE6CBAE48F0 /* IBPCollectionCompositionalLayoutSolver.h in Headers */ = {isa = PBXBuildFile; fileRef = 729CA2AF0D40B679719D9E6351A280BC /* IBPCollectionCompositionalLayoutSolver.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		7E8ADD3C1CC5C1A5B39BB90D579054E9 /* DDTableViewSectionGroupComponent.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E155DD4E878AB1917101334E348E742 /* DDTableViewSectionGroupComponent.mm */; };
-		7ECBFC1E56836B5752B01684173A7102 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
 		8097CD35183A1068092565D3F91AD4C0 /* IBPNSCollectionLayoutSupplementaryItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 71D8FB07E3D4A0ED197905953B0931E0 /* IBPNSCollectionLayoutSupplementaryItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		871764F42C6ABB11C7A262979139BD4F /* DDTableViewComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = 41D5AC6034CFDFCE90AD92812C342585 /* DDTableViewComponent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		84CC8AFF54190C3B4B111420EEBDB3C5 /* DDCollectionViewItemComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = B60BFE12BCA547DD9E4A08D708A18EEF /* DDCollectionViewItemComponent.m */; };
 		87CFE3F785FCEB6A6E4386F91047C571 /* IBPNSDirectionalEdgeInsets.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF08197AE62F0C2EEFF62B99715C1C8 /* IBPNSDirectionalEdgeInsets.m */; };
+		888E8C06A2E286E3E37425B715C1EE61 /* DDCollectionViewComponent+Cache.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F446910DC4339C284D7537DA5B0E012 /* DDCollectionViewComponent+Cache.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		88F67E40DF671AC8D0BBD2B492DEF72E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
 		8C1E7D6D511612841CE614821D7ECCA3 /* IBPCollectionCompositionalLayoutSolver.m in Sources */ = {isa = PBXBuildFile; fileRef = 96F8A2A10F33DF567C674EA1F923091C /* IBPCollectionCompositionalLayoutSolver.m */; };
-		8E3ECBCCDE11CC6EBAD1A3EA523F8227 /* DDTableViewStatusComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = B831BCD83F735A067290C9531B44891D /* DDTableViewStatusComponent.m */; };
+		8CE88106C36E4C64C0778D86F41F17E9 /* DDCollectionViewFormItemComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E9982C0BF57D75B8D64BC67AA79C1C6 /* DDCollectionViewFormItemComponent.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8E8A7F7C4B614AB7A008ACD2906D65CC /* CBCNodeListViewController.h in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = 081E44C4DF54D087AFF5123FA0D5DA16 /* CBCNodeListViewController.h */; };
 		90A4EA626598C9636CF7F7DBE17846FC /* CBCCatalogExample.h in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = 125FAB2BA10DDDE5AF594C531D5649BC /* CBCCatalogExample.h */; };
-		9665C2E5A5176B85AF51C1E30308B17A /* DDCollectionViewComponentHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 0367E950F86045A717E3E3B1452F65D6 /* DDCollectionViewComponentHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9703C5BF8631BC0102D671D4DE16619B /* DDCollectionViewComponent+Cache.h in Headers */ = {isa = PBXBuildFile; fileRef = 65F76A67CD3732A1265A4074D8EA401B /* DDCollectionViewComponent+Cache.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9B32306D5B80BD4D0D706842FFE65F41 /* DDTableViewStatusComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = 15065545F2FC00B23972E2286749C208 /* DDTableViewStatusComponent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		910116A60A435154E58C7E5BB042F40D /* UITableView+DDTemplateLayoutCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3436BCDC2C5B2496939EB509F3297024 /* UITableView+DDTemplateLayoutCell.m */; };
+		9697427DC7448FABC122E5789740FEF3 /* DDCollectionViewComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = 18F94499348E3AD4363C39CD9A480009 /* DDCollectionViewComponent.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9B9163755014E1BB778735D3E653FDC8 /* IBPNSCollectionLayoutGroupCustomItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D89CC04E1E81DC25FADA6E7900FD266 /* IBPNSCollectionLayoutGroupCustomItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9CECB630876A40726989185BA8BE6522 /* DDCollectionViewStatusComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 13FB838C78A3CBCE3897C414ACFA4EF5 /* DDCollectionViewStatusComponent.m */; };
+		9D247BFE2B72542C5C669AC5A6ABF0C4 /* UICollectionView+DDKeyedSizeCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E6A044FA3E28AB7B7EC476214C21CB0 /* UICollectionView+DDKeyedSizeCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A056B6D881BA800C1DABDE5A824D0BB2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
 		A12A4EF8D9453A1D845D6D9DA98B9311 /* IBPNSCollectionLayoutEnvironment.h in Headers */ = {isa = PBXBuildFile; fileRef = 818C4E5BFF22D82F6F8830698B252B05 /* IBPNSCollectionLayoutEnvironment.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		A516CB3EE5A7DBE1ABC283B579B7CEF8 /* DDCollectionViewItemComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = F68E66279B76F39587F676067C4F8DF2 /* DDCollectionViewItemComponent.m */; };
+		A1323433BE731F69E96D26E24B7FF268 /* DDTableViewComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = A77C50C579595B5EDF73A464E29262F8 /* DDTableViewComponent.m */; };
+		A5C0F1BC727595FFAE795C00D7421899 /* DDCollectionViewComponent+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 0072436E1EE7C67B11BD1D13AB4A6E37 /* DDCollectionViewComponent+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A65BE91F0646D88C6BB2B7D04FEE9DB6 /* IBPNSCollectionLayoutEdgeSpacing_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = D87D78E6F8B74DFA7F3377E10FF7153D /* IBPNSCollectionLayoutEdgeSpacing_Private.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A8AF7202EEFC8A6BE7CAAEC7F23E8D80 /* DDCollectionViewComponentHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 81859C74209BF9813BEB56F2DE3DDAAB /* DDCollectionViewComponentHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A9CDC3FD7BDEFC73A7BB7ADA9394B9DC /* IBPUICollectionViewCompositionalLayoutConfiguration_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = D476D575A68033566AFD1FB0304DCF5A /* IBPUICollectionViewCompositionalLayoutConfiguration_Private.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		ABCF3EEFF93395B7A1768DDAFB83C35A /* IBPNSRectAlignment.h in Headers */ = {isa = PBXBuildFile; fileRef = C933C39CCBECA7F867F21EABBC531B96 /* IBPNSRectAlignment.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ADA57916E7CD22C74E4028442DC627DD /* UICollectionView+DDIndexPathSizeCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 000AF6A7AE13A9FFC4411E2BB0FEE5BB /* UICollectionView+DDIndexPathSizeCache.m */; };
 		AE63785AA43FE04B5367628298A6ACF6 /* IBPNSCollectionLayoutGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = 19EE4A4A652378DEB695463A8C5F9066 /* IBPNSCollectionLayoutGroup.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AEFED27EE0699D6069D425E0EDC6E490 /* IBPCollectionViewOrthogonalScrollerSectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CDF9AB69AB2BFBFE4925B8894681364 /* IBPCollectionViewOrthogonalScrollerSectionController.m */; };
 		AF57E42D00AEB02998491054036DFF58 /* Pods-DDComponent_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 507A0E07347E7FD88E2B08DAB23A1493 /* Pods-DDComponent_Tests-dummy.m */; };
 		B1FAFBA7C0787F62EBF55E28F22BF699 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
-		B41B85D6B632E01A1602F499DE9E7463 /* DDTableViewComponentHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 40BEE1AD46794EF6DADED1914AE64643 /* DDTableViewComponentHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B69A248248C674935BAE72F7D8373052 /* DDComponentLayoutDimension.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A259CA753CD508C4D7C62A1B8BF8380 /* DDComponentLayoutDimension.m */; };
 		B906088491CDA28067153B1229080E2C /* IBPCollectionViewOrthogonalScrollerEmbeddedScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = DD802F1F3636F911E2F87DE7503FA1C1 /* IBPCollectionViewOrthogonalScrollerEmbeddedScrollView.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		B9868532D1BFC57DC58278BE4B5F2DE5 /* IBPNSCollectionLayoutGroup_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 515AEB0321B12FCF775430B9F570D932 /* IBPNSCollectionLayoutGroup_Private.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		BC657839A63D09F2483736C9675FA023 /* UICollectionView+DDIndexPathSizeCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 285C948984970D81111F701ED9AD64F7 /* UICollectionView+DDIndexPathSizeCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BEDFE5090C6F7A4DE1984433A251D403 /* UITableView+DDKeyedHeightCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 157C050AFF949DB5926FF5D7666D0D02 /* UITableView+DDKeyedHeightCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C15D6643883DA61443C4337939FB7CF0 /* IBPNSCollectionLayoutSize_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = A44193D7E1DDF8F6126037782FD950BC /* IBPNSCollectionLayoutSize_Private.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		C1EDDF5192056077DA1922A57F1A7F00 /* IBPNSCollectionLayoutAnchor.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D603B754981CD9DA75E4AA3CFC8358D /* IBPNSCollectionLayoutAnchor.m */; };
-		C295202C83362711C53F699C4DE1CCBD /* DDCollectionViewSectionGroupComponent.mm in Sources */ = {isa = PBXBuildFile; fileRef = FA59008F29D06FEA12C44E323D53295E /* DDCollectionViewSectionGroupComponent.mm */; };
 		C312B66363B5D5C2D634B62FF9EEA0D7 /* IBPCollectionViewOrthogonalScrollerSectionController.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E0AFFF41DCFF79781939C70E4671EC0 /* IBPCollectionViewOrthogonalScrollerSectionController.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		CB4DEF34F9D90BFA9A237DEFEF219D15 /* DDCollectionViewComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = 171A14610AF638B494DC6303071EFB0C /* DDCollectionViewComponent.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CCB8DB154E83D9F82524AA8F4150F09D /* DDCollectionViewSectionGroupComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = 68C085072934F6B2503A58548D699229 /* DDCollectionViewSectionGroupComponent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C625323A963706546CFE8CDF0CCA49EC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		CD4E2CB797DD682956C39DA1B9C6A182 /* DDTableViewSectionComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = 10022CAE1F93CF22EF8D95612A3C6E44 /* DDTableViewSectionComponent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CD63ADC7C74351CB362434DDE012FA59 /* DDCollectionViewComponentHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = D243B9917D660B48A989C8EF7308F334 /* DDCollectionViewComponentHelper.m */; };
 		CE37C3C9B6F8E956A8AF7BAB736F985D /* IBPNSDirectionalRectEdge.h in Headers */ = {isa = PBXBuildFile; fileRef = EE5ED23BA5B0188BDF535AD859CF092C /* IBPNSDirectionalRectEdge.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CF8C18E3FDE9A3455C75AA637AF9157F /* IBPNSCollectionLayoutAnchor.h in Headers */ = {isa = PBXBuildFile; fileRef = F13F51D31AE897A1D755F743828644E7 /* IBPNSCollectionLayoutAnchor.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D10A12D18D93161EF8B8332B89E7C8B3 /* DDCollectionViewFormItemComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 439BC2E2AECD6E65371D6252E11A19C1 /* DDCollectionViewFormItemComponent.m */; };
+		D0BE467C109CF67D14C8B735DD084F12 /* UITableView+DDTemplateLayoutCellDebug.h in Headers */ = {isa = PBXBuildFile; fileRef = CCED742DABA8C08EA8FCB95D944844C6 /* UITableView+DDTemplateLayoutCellDebug.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D1FFACED2CDEA694CFF72420B9D76780 /* DDTableViewComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D4C91F94AD0122B9FFCDD3DA4A684FC /* DDTableViewComponent.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D444C3172423F5E909767BA521F41E0B /* IBPNSCollectionLayoutSection.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BC344646E333D6E52E394F0E5FAE452 /* IBPNSCollectionLayoutSection.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D531072A53F5C98E93FEA8CFEF30D1EF /* CBCNodeListViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 081E44C4DF54D087AFF5123FA0D5DA16 /* CBCNodeListViewController.h */; };
+		D589ED0C9F37BF955833273AB5EF5AC6 /* UICollectionView+DDTemplateLayoutCellDebug.h in Headers */ = {isa = PBXBuildFile; fileRef = 12A7855ECE7F686FCCBDD989C4842EA5 /* UICollectionView+DDTemplateLayoutCellDebug.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D621DCFB28A43E22A653B1F26912CA85 /* IBPNSCollectionLayoutDimension.h in Headers */ = {isa = PBXBuildFile; fileRef = E7751A3864589EF13E685ED5923432D9 /* IBPNSCollectionLayoutDimension.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D6998FBAE8094DB0F93B7A97E1D06B94 /* DDComponentLayoutDimension.h in Headers */ = {isa = PBXBuildFile; fileRef = 062F1D05D8D055BD03CFAA7815E86917 /* DDComponentLayoutDimension.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DB4228DA76257DD31B4F33CD952FA930 /* DDCollectionComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = 05B0D127A479D2D8F479763D7C4BFB2C /* DDCollectionComponent.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DDEFFDCB848C1F9A57D0B9EBCCFB2A5A /* IBPNSCollectionLayoutDecorationItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B42F86F7955A53F6CC4386FD9FE62E36 /* IBPNSCollectionLayoutDecorationItem.m */; };
+		DF07456833F92A9527434216565FF26B /* DDCollectionViewSectionGroupComponent.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7055B102FCC6BAE53A4E09598ADE5F29 /* DDCollectionViewSectionGroupComponent.mm */; };
+		E050ED1A478F440151EA856376A117BB /* UICollectionView+DDTemplateLayoutCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A6CE46DBB975B44847522C2C2090AAF /* UICollectionView+DDTemplateLayoutCell.m */; };
 		E09F346F014D68B496A7E0C5456A7B45 /* IBPNSCollectionLayoutContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CFC7438E4814A2F1598BDCAAEC768A3 /* IBPNSCollectionLayoutContainer.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		E1C6C8E2666E1716FBC94EE184518004 /* DDTableViewItemComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = F479E66615DDBB7A827F8F5B4E0D2326 /* DDTableViewItemComponent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E111077DE9F12199055E02EF01A9DD36 /* DDComponentLayoutDimension.h in Headers */ = {isa = PBXBuildFile; fileRef = FAAF4C80519A9086E87571104705EEE5 /* DDComponentLayoutDimension.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E1FCDB82DFE8BB465A10F4930E44D98F /* IBPNSCollectionLayoutDimension.m in Sources */ = {isa = PBXBuildFile; fileRef = 854EDA0603AE41D7057D5BFA53EC8EE4 /* IBPNSCollectionLayoutDimension.m */; };
-		E44423C8247B7E6097DAEB6621529AEA /* DDTableViewComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 31BC5809759AB41B5B5AABA520BA313E /* DDTableViewComponent.m */; };
+		E5BB6ED175DE9B43F4D9C6B5BEF3A743 /* DDTableViewFormItemComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 4768C3459C4D20C7F40C5388238E3BBB /* DDTableViewFormItemComponent.m */; };
 		E5BD6DD7F418436B3D88EF7D2A285D86 /* IBPNSCollectionLayoutSupplementaryItem_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 56D8AE16396BE66B405B908EE7E35DE2 /* IBPNSCollectionLayoutSupplementaryItem_Private.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E65229153851B2DDAA9BC332E728AE60 /* DDTableViewItemComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 34A49DB41122818114CE128E50867F52 /* DDTableViewItemComponent.m */; };
 		E787EF8125BCF3BD60DE93FB8EC3C825 /* IBPNSCollectionLayoutAnchor_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 89090AD5ED9CDE13F721289C4EA60D0E /* IBPNSCollectionLayoutAnchor_Private.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		E7EAA0EE7710C5E975516A91B2650124 /* IBPNSCollectionLayoutSpacing.h in Headers */ = {isa = PBXBuildFile; fileRef = CAEE46D61AA9C5C8587733A541717710 /* IBPNSCollectionLayoutSpacing.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E9E0945BB2E60B494D51479E1D0748E4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */; };
 		EA896ACA3664A747D409F72257C2724E /* CBCCatalogExample.h in Headers */ = {isa = PBXBuildFile; fileRef = 125FAB2BA10DDDE5AF594C531D5649BC /* CBCCatalogExample.h */; };
-		F5BE5720FD1D1C90B7414F73B52BB444 /* DDComponent-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 65608D09070B701098AD20FBE89EEC5C /* DDComponent-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EDF61BC7CC3B422D2D44528645EA8C10 /* DDCollectionViewStatusComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = C169BA94C4D60AA7091752CEE7763F09 /* DDCollectionViewStatusComponent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F08A9D143037516BC8FA20B3079B3D2E /* DDTableViewComponentHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 6EECAACC956F51829B0C9F8AE0020424 /* DDTableViewComponentHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F5F352463F570F966F987002F6D562D1 /* Pods-DDComponent_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 435916D23E199FBDFDA65BFF54DE4DF4 /* Pods-DDComponent_Example-dummy.m */; };
-		F61466B701DEE0C8B59A8664DCB8EB1B /* DDCollectionViewComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 878FEE7C33254A5BD93F90E03268268B /* DDCollectionViewComponent.m */; };
 		F72804DFC7C585CAF89D572ECDACF078 /* IBPUICollectionViewCompositionalLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = DBC695AE21833E5209389D4A7CE4FE49 /* IBPUICollectionViewCompositionalLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F7D72F439B425B29996A6994B946E806 /* UITableView+DDIndexPathHeightCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E0CA2F94F2AA16A188FF519BB948B6B /* UITableView+DDIndexPathHeightCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FA7BADB033BBBCBD5B4882145A9E1820 /* IBPNSCollectionLayoutContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC57D00CB6734A95EC58126185B68E4 /* IBPNSCollectionLayoutContainer.m */; };
-		FC579066D43A9A9AD62B71744B309EF4 /* DDComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = 368FC3BA342C043E29F821197523EB1E /* DDComponent.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FD681C2BF70B73CF028311BA975144D8 /* DDCollectionViewItemComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = 2677A20167965BC6D251F924893E68D5 /* DDCollectionViewItemComponent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FD6F3E1262824B5A4B601B18BCE5DB08 /* DDComponent-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFCB913A1B7B581773F9ECFBB6F52C0 /* DDComponent-dummy.m */; };
+		FDD4FA412ACD14C39AC9B3F2E9BA5779 /* UITableView+DDTemplateLayoutCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 998AC930C606D95AF1E9E0B56B2657B1 /* UITableView+DDTemplateLayoutCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FF7EDC0320CCDC971C961E923C017CE8 /* DDTableViewStatusComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = B09DA608296A1C2B32FE4B02C36362D7 /* DDTableViewStatusComponent.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		3A3E5F2E605D206F7DC7687E7DEA8B0E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = BC4558A150B1F5F9E0A6366FF11DDE54;
-			remoteInfo = DDComponent;
-		};
-		5EE571D44C7CE35E1B3702491CAD46D4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 26CF912C65AEE0F0D088F78C5B945E6F;
-			remoteInfo = "Pods-DDComponent_Example";
-		};
-		8061132A93E454CB93B0D1B663097AEF /* PBXContainerItemProxy */ = {
+		0E566180AB2C8E42C115427D0158AF56 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = C6D33972ECD5C3EBB2CA1DDF16BCE422;
 			remoteInfo = IBPCollectionViewCompositionalLayout;
 		};
-		E1BB40401C6D883A74DE396CD0BAC0D9 /* PBXContainerItemProxy */ = {
+		26CDC899DC81D96F5BCDCD6CC1B39063 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 138A45554994A4757DF941467C358D29;
 			remoteInfo = CatalogByConvention;
+		};
+		96AAE1682B03D4E9C76C5203591A9ED6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 26CF912C65AEE0F0D088F78C5B945E6F;
+			remoteInfo = "Pods-DDComponent_Example";
+		};
+		AC47E9282901DA6EE35292D886BA1BD3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BC4558A150B1F5F9E0A6366FF11DDE54;
+			remoteInfo = DDComponent;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -183,49 +199,55 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		000AF6A7AE13A9FFC4411E2BB0FEE5BB /* UICollectionView+DDIndexPathSizeCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UICollectionView+DDIndexPathSizeCache.m"; sourceTree = "<group>"; };
+		0072436E1EE7C67B11BD1D13AB4A6E37 /* DDCollectionViewComponent+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DDCollectionViewComponent+Private.h"; sourceTree = "<group>"; };
+		011B3EEDD70B59A12EDE1A5189E8881C /* DDComponentLayoutSize.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DDComponentLayoutSize.h; sourceTree = "<group>"; };
 		02AC81496FAE7DC078ADB9D2C6A2FFF3 /* CatalogByConvention-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CatalogByConvention-dummy.m"; sourceTree = "<group>"; };
-		0367E950F86045A717E3E3B1452F65D6 /* DDCollectionViewComponentHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DDCollectionViewComponentHelper.h; sourceTree = "<group>"; };
-		04B3B96370C5159B0D842396D7BF53EC /* DDCollectionViewFormItemComponent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DDCollectionViewFormItemComponent.h; sourceTree = "<group>"; };
-		05B0D127A479D2D8F479763D7C4BFB2C /* DDCollectionComponent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DDCollectionComponent.h; sourceTree = "<group>"; };
-		062F1D05D8D055BD03CFAA7815E86917 /* DDComponentLayoutDimension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DDComponentLayoutDimension.h; sourceTree = "<group>"; };
-		06AAAA1CBAB89481693424305F5F6FD4 /* DDTableViewComponentHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DDTableViewComponentHelper.m; sourceTree = "<group>"; };
+		03390B3E344A1EB08589E51455586CB0 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		081E44C4DF54D087AFF5123FA0D5DA16 /* CBCNodeListViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CBCNodeListViewController.h; path = src/CBCNodeListViewController.h; sourceTree = "<group>"; };
+		08ECD79ED1CC2B8E6EF57F822A80DA05 /* DDTableViewComponent+Cache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DDTableViewComponent+Cache.h"; sourceTree = "<group>"; };
 		08FBF64F596A042E91A09FB2623A6E2D /* IBPNSCollectionLayoutSize.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IBPNSCollectionLayoutSize.m; path = Sources/IBPCollectionViewCompositionalLayout/IBPNSCollectionLayoutSize.m; sourceTree = "<group>"; };
-		09C39AE4121FADFA488182C94C9F392A /* DDCollectionViewSectionComponent.mm */ = {isa = PBXFileReference; includeInIndex = 1; path = DDCollectionViewSectionComponent.mm; sourceTree = "<group>"; };
+		0D4C91F94AD0122B9FFCDD3DA4A684FC /* DDTableViewComponent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DDTableViewComponent.h; sourceTree = "<group>"; };
+		0EE07B0A838AA6347F5C793942939F27 /* DDCollectionViewSectionComponent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DDCollectionViewSectionComponent.h; sourceTree = "<group>"; };
+		10022CAE1F93CF22EF8D95612A3C6E44 /* DDTableViewSectionComponent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DDTableViewSectionComponent.h; sourceTree = "<group>"; };
 		11EAEF2A4829296B1D83C5F367356FA9 /* Pods-DDComponent_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DDComponent_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		125FAB2BA10DDDE5AF594C531D5649BC /* CBCCatalogExample.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CBCCatalogExample.h; path = src/CBCCatalogExample.h; sourceTree = "<group>"; };
+		12A7855ECE7F686FCCBDD989C4842EA5 /* UICollectionView+DDTemplateLayoutCellDebug.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UICollectionView+DDTemplateLayoutCellDebug.h"; sourceTree = "<group>"; };
 		13B96216BB5807BB4930AC44B418DE90 /* Pods-DDComponent_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DDComponent_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		15065545F2FC00B23972E2286749C208 /* DDTableViewStatusComponent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DDTableViewStatusComponent.h; sourceTree = "<group>"; };
+		13FB838C78A3CBCE3897C414ACFA4EF5 /* DDCollectionViewStatusComponent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DDCollectionViewStatusComponent.m; sourceTree = "<group>"; };
+		157C050AFF949DB5926FF5D7666D0D02 /* UITableView+DDKeyedHeightCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UITableView+DDKeyedHeightCache.h"; sourceTree = "<group>"; };
+		157E2DCD2D7246AFBBA229066A178A6E /* README-zh.md */ = {isa = PBXFileReference; includeInIndex = 1; path = "README-zh.md"; sourceTree = "<group>"; };
 		16B899F8C954F5DEB2BFF997C11E61AE /* IBPNSCollectionLayoutEnvironment.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IBPNSCollectionLayoutEnvironment.m; path = Sources/IBPCollectionViewCompositionalLayout/IBPNSCollectionLayoutEnvironment.m; sourceTree = "<group>"; };
-		171A14610AF638B494DC6303071EFB0C /* DDCollectionViewComponent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DDCollectionViewComponent.h; sourceTree = "<group>"; };
+		18F94499348E3AD4363C39CD9A480009 /* DDCollectionViewComponent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DDCollectionViewComponent.h; sourceTree = "<group>"; };
+		192B6D9D80894F54CC3C3BC4C21B18A4 /* DDTableViewSectionGroupComponent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DDTableViewSectionGroupComponent.h; sourceTree = "<group>"; };
 		19796110A2B81D61CF583F2051153C62 /* IBPCollectionViewCompositionalLayout-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IBPCollectionViewCompositionalLayout-umbrella.h"; sourceTree = "<group>"; };
 		19EE4A4A652378DEB695463A8C5F9066 /* IBPNSCollectionLayoutGroup.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IBPNSCollectionLayoutGroup.h; path = Sources/IBPCollectionViewCompositionalLayout/include/IBPNSCollectionLayoutGroup.h; sourceTree = "<group>"; };
 		1B83192488AD98526B88D056E9445BCC /* IBPCollectionViewCompositionalLayout-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "IBPCollectionViewCompositionalLayout-Info.plist"; sourceTree = "<group>"; };
 		1BC344646E333D6E52E394F0E5FAE452 /* IBPNSCollectionLayoutSection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IBPNSCollectionLayoutSection.h; path = Sources/IBPCollectionViewCompositionalLayout/include/IBPNSCollectionLayoutSection.h; sourceTree = "<group>"; };
+		1CC65685EED9277683AD107A4167BDDC /* UICollectionView+DDTemplateLayoutCellDebug.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UICollectionView+DDTemplateLayoutCellDebug.m"; sourceTree = "<group>"; };
 		20A4BC8A1E33D32F13E72FAC4C5B8EDD /* Pods-DDComponent_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DDComponent_Example.release.xcconfig"; sourceTree = "<group>"; };
-		2623DC5B5924FACEF59E1CCB1BC9ADCF /* DDCollectionViewStatusComponent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DDCollectionViewStatusComponent.h; sourceTree = "<group>"; };
-		2677A20167965BC6D251F924893E68D5 /* DDCollectionViewItemComponent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DDCollectionViewItemComponent.h; sourceTree = "<group>"; };
-		294F1BA9B051C886FE8854D98896A03C /* DDTableViewFormItemComponent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DDTableViewFormItemComponent.m; sourceTree = "<group>"; };
-		2A0C09AFBC6FB0FC05B344677A45B943 /* DDCollectionViewStatusComponent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DDCollectionViewStatusComponent.m; sourceTree = "<group>"; };
-		2A80859E3289DE986E79BD2F0F6AC17A /* DDComponentLayoutSize.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DDComponentLayoutSize.h; sourceTree = "<group>"; };
+		24159172A8631BF19EFEC62246E49F81 /* DDComponent.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DDComponent.release.xcconfig; sourceTree = "<group>"; };
+		283FAB5B52808806F97D263A0D8C0B28 /* UICollectionView+DDTemplateLayoutCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UICollectionView+DDTemplateLayoutCell.h"; sourceTree = "<group>"; };
+		284785B5F1725F1466DE0C5615B8762C /* UITableView+DDKeyedHeightCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UITableView+DDKeyedHeightCache.m"; sourceTree = "<group>"; };
+		285C948984970D81111F701ED9AD64F7 /* UICollectionView+DDIndexPathSizeCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UICollectionView+DDIndexPathSizeCache.h"; sourceTree = "<group>"; };
 		2CDF9AB69AB2BFBFE4925B8894681364 /* IBPCollectionViewOrthogonalScrollerSectionController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IBPCollectionViewOrthogonalScrollerSectionController.m; path = Sources/IBPCollectionViewCompositionalLayout/IBPCollectionViewOrthogonalScrollerSectionController.m; sourceTree = "<group>"; };
 		2D89CC04E1E81DC25FADA6E7900FD266 /* IBPNSCollectionLayoutGroupCustomItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IBPNSCollectionLayoutGroupCustomItem.h; path = Sources/IBPCollectionViewCompositionalLayout/include/IBPNSCollectionLayoutGroupCustomItem.h; sourceTree = "<group>"; };
-		315DC7CBECC8DFE7607E42B2110B346E /* UIView+DDComponentLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIView+DDComponentLayout.m"; sourceTree = "<group>"; };
-		31BC5809759AB41B5B5AABA520BA313E /* DDTableViewComponent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DDTableViewComponent.m; sourceTree = "<group>"; };
 		3342312D642F90DAFF75CF136CFEDBF1 /* Pods-DDComponent_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DDComponent_Tests-umbrella.h"; sourceTree = "<group>"; };
-		368FC3BA342C043E29F821197523EB1E /* DDComponent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDComponent.h; path = DDComponent/Classes/DDComponent.h; sourceTree = "<group>"; };
-		37D8683FDD10EEA029C61C84B7D7BF15 /* DDComponent-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DDComponent-prefix.pch"; sourceTree = "<group>"; };
+		3436BCDC2C5B2496939EB509F3297024 /* UITableView+DDTemplateLayoutCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UITableView+DDTemplateLayoutCell.m"; sourceTree = "<group>"; };
+		34A49DB41122818114CE128E50867F52 /* DDTableViewItemComponent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DDTableViewItemComponent.m; sourceTree = "<group>"; };
+		36F01BCFF340298E986E5A7E88DAF654 /* DDComponent.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DDComponent.debug.xcconfig; sourceTree = "<group>"; };
 		3A2B30FDABCCFD04A0C5A73127DED9DE /* IBPNSCollectionLayoutSize.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IBPNSCollectionLayoutSize.h; path = Sources/IBPCollectionViewCompositionalLayout/include/IBPNSCollectionLayoutSize.h; sourceTree = "<group>"; };
 		3AA064D76F7312EE4C66D65A3D11815F /* CatalogByConvention.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CatalogByConvention.debug.xcconfig; sourceTree = "<group>"; };
 		3CFC7438E4814A2F1598BDCAAEC768A3 /* IBPNSCollectionLayoutContainer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IBPNSCollectionLayoutContainer.h; path = Sources/IBPCollectionViewCompositionalLayout/IBPNSCollectionLayoutContainer.h; sourceTree = "<group>"; };
+		3D036BA5CE9610363B8F1F0519DDC3CC /* UIView+DDComponentLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIView+DDComponentLayout.m"; sourceTree = "<group>"; };
 		3D3F7064DB0E74E5EB79A9CD9EF166F1 /* IBPCollectionViewOrthogonalScrollerEmbeddedScrollView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IBPCollectionViewOrthogonalScrollerEmbeddedScrollView.m; path = Sources/IBPCollectionViewCompositionalLayout/IBPCollectionViewOrthogonalScrollerEmbeddedScrollView.m; sourceTree = "<group>"; };
-		3F973ED89F51DCD521C65FC7E2B8E3FB /* DDComponent-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DDComponent-dummy.m"; sourceTree = "<group>"; };
-		403F3D8E1CA1371E457805982368411C /* DDComponent.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = DDComponent.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		40BEE1AD46794EF6DADED1914AE64643 /* DDTableViewComponentHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DDTableViewComponentHelper.h; sourceTree = "<group>"; };
-		41415C1EFDAB14EBEF36FA2671BE65E5 /* DDTableViewComponent+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DDTableViewComponent+Private.h"; sourceTree = "<group>"; };
-		41D5AC6034CFDFCE90AD92812C342585 /* DDTableViewComponent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DDTableViewComponent.h; sourceTree = "<group>"; };
+		3E4559A93439774DBA980F3B072CBA40 /* DDTableViewComponentHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DDTableViewComponentHelper.m; sourceTree = "<group>"; };
+		40E5D4CFC5C8D0429B672F3BC4AAF31F /* DDTableComponent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DDTableComponent.h; sourceTree = "<group>"; };
+		429CC7173E6F66C0B6B12EE5201ECAC1 /* DDComponent-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DDComponent-prefix.pch"; sourceTree = "<group>"; };
 		435916D23E199FBDFDA65BFF54DE4DF4 /* Pods-DDComponent_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DDComponent_Example-dummy.m"; sourceTree = "<group>"; };
-		439BC2E2AECD6E65371D6252E11A19C1 /* DDCollectionViewFormItemComponent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DDCollectionViewFormItemComponent.m; sourceTree = "<group>"; };
+		4768C3459C4D20C7F40C5388238E3BBB /* DDTableViewFormItemComponent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DDTableViewFormItemComponent.m; sourceTree = "<group>"; };
+		4A259CA753CD508C4D7C62A1B8BF8380 /* DDComponentLayoutDimension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DDComponentLayoutDimension.m; sourceTree = "<group>"; };
+		4B12079A851D59AC9A50DB9EB4AD3BA4 /* DDTableViewFormItemComponent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DDTableViewFormItemComponent.h; sourceTree = "<group>"; };
 		4CF08197AE62F0C2EEFF62B99715C1C8 /* IBPNSDirectionalEdgeInsets.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IBPNSDirectionalEdgeInsets.m; path = Sources/IBPCollectionViewCompositionalLayout/IBPNSDirectionalEdgeInsets.m; sourceTree = "<group>"; };
 		507A0E07347E7FD88E2B08DAB23A1493 /* Pods-DDComponent_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DDComponent_Tests-dummy.m"; sourceTree = "<group>"; };
 		515AEB0321B12FCF775430B9F570D932 /* IBPNSCollectionLayoutGroup_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IBPNSCollectionLayoutGroup_Private.h; path = Sources/IBPCollectionViewCompositionalLayout/IBPNSCollectionLayoutGroup_Private.h; sourceTree = "<group>"; };
@@ -233,111 +255,121 @@
 		524F62F647D8C7BE3F5FD78BF606AC3D /* IBPNSCollectionLayoutItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IBPNSCollectionLayoutItem.m; path = Sources/IBPCollectionViewCompositionalLayout/IBPNSCollectionLayoutItem.m; sourceTree = "<group>"; };
 		56001F6430A685615D7338FA3AAEF036 /* CatalogByConvention-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CatalogByConvention-umbrella.h"; sourceTree = "<group>"; };
 		56D8AE16396BE66B405B908EE7E35DE2 /* IBPNSCollectionLayoutSupplementaryItem_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IBPNSCollectionLayoutSupplementaryItem_Private.h; path = Sources/IBPCollectionViewCompositionalLayout/IBPNSCollectionLayoutSupplementaryItem_Private.h; sourceTree = "<group>"; };
-		57144083CF4F0143F8AA49C8AFF9C53C /* DDCollectionViewComponentHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DDCollectionViewComponentHelper.m; sourceTree = "<group>"; };
 		57CE74FE4C0C5A45CDBBAFA52D9D527C /* IBPNSCollectionLayoutSupplementaryItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IBPNSCollectionLayoutSupplementaryItem.m; path = Sources/IBPCollectionViewCompositionalLayout/IBPNSCollectionLayoutSupplementaryItem.m; sourceTree = "<group>"; };
 		589C88D907FF5E38C9660C96ED244D7E /* IBPNSCollectionLayoutItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IBPNSCollectionLayoutItem.h; path = Sources/IBPCollectionViewCompositionalLayout/include/IBPNSCollectionLayoutItem.h; sourceTree = "<group>"; };
-		5A79AAEDC1F4BFD75DC166204EFDD6EA /* DDTableComponent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DDTableComponent.h; sourceTree = "<group>"; };
+		5A6CE46DBB975B44847522C2C2090AAF /* UICollectionView+DDTemplateLayoutCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UICollectionView+DDTemplateLayoutCell.m"; sourceTree = "<group>"; };
 		5AF45F612345D370C62AA8C3A9107B47 /* Pods-DDComponent_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DDComponent_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		5E1DCC247D3EE67AF300B5B3359F1AC8 /* README-zh.md */ = {isa = PBXFileReference; includeInIndex = 1; path = "README-zh.md"; sourceTree = "<group>"; };
 		62978116510C59AE365A66DE85E5AC91 /* IBPCollectionViewCompositionalLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IBPCollectionViewCompositionalLayout.h; path = Sources/IBPCollectionViewCompositionalLayout/include/IBPCollectionViewCompositionalLayout.h; sourceTree = "<group>"; };
-		632963B95D52C4CD6B53519A8D73AC99 /* DDTableViewSectionComponent.mm */ = {isa = PBXFileReference; includeInIndex = 1; path = DDTableViewSectionComponent.mm; sourceTree = "<group>"; };
-		65608D09070B701098AD20FBE89EEC5C /* DDComponent-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DDComponent-umbrella.h"; sourceTree = "<group>"; };
-		65F76A67CD3732A1265A4074D8EA401B /* DDCollectionViewComponent+Cache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DDCollectionViewComponent+Cache.h"; sourceTree = "<group>"; };
-		68C085072934F6B2503A58548D699229 /* DDCollectionViewSectionGroupComponent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DDCollectionViewSectionGroupComponent.h; sourceTree = "<group>"; };
-		6AF8659BD4F26A95B9134A3A5A8FEBBA /* DDCollectionViewComponent+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DDCollectionViewComponent+Private.h"; sourceTree = "<group>"; };
-		6E040E699260D8671FFF80BE11551F8F /* DDComponent.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DDComponent.debug.xcconfig; sourceTree = "<group>"; };
-		6F80F93C76849D89F1521F9322BEF949 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		6E9982C0BF57D75B8D64BC67AA79C1C6 /* DDCollectionViewFormItemComponent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DDCollectionViewFormItemComponent.h; sourceTree = "<group>"; };
+		6EECAACC956F51829B0C9F8AE0020424 /* DDTableViewComponentHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DDTableViewComponentHelper.h; sourceTree = "<group>"; };
+		6F446910DC4339C284D7537DA5B0E012 /* DDCollectionViewComponent+Cache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DDCollectionViewComponent+Cache.h"; sourceTree = "<group>"; };
+		7055B102FCC6BAE53A4E09598ADE5F29 /* DDCollectionViewSectionGroupComponent.mm */ = {isa = PBXFileReference; includeInIndex = 1; path = DDCollectionViewSectionGroupComponent.mm; sourceTree = "<group>"; };
+		7111BFE6F920AFABAEE3DFC226496A60 /* DDComponent-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "DDComponent-Info.plist"; sourceTree = "<group>"; };
 		71D8FB07E3D4A0ED197905953B0931E0 /* IBPNSCollectionLayoutSupplementaryItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IBPNSCollectionLayoutSupplementaryItem.h; path = Sources/IBPCollectionViewCompositionalLayout/include/IBPNSCollectionLayoutSupplementaryItem.h; sourceTree = "<group>"; };
 		729CA2AF0D40B679719D9E6351A280BC /* IBPCollectionCompositionalLayoutSolver.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IBPCollectionCompositionalLayoutSolver.h; path = Sources/IBPCollectionViewCompositionalLayout/IBPCollectionCompositionalLayoutSolver.h; sourceTree = "<group>"; };
 		754ED38811AF747296AC382AB4347EFD /* Pods-DDComponent_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DDComponent_Example-frameworks.sh"; sourceTree = "<group>"; };
 		7896B225FC1E00F12027C460021C259A /* CatalogByConvention.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CatalogByConvention.release.xcconfig; sourceTree = "<group>"; };
 		7A0257FECB52FA548CEA306E5D381BCE /* IBPCollectionCompositionalLayoutSolverResult.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IBPCollectionCompositionalLayoutSolverResult.h; path = Sources/IBPCollectionViewCompositionalLayout/IBPCollectionCompositionalLayoutSolverResult.h; sourceTree = "<group>"; };
+		7D20FC2D49F3336C791BA1E5652F0725 /* DDCollectionViewItemComponent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DDCollectionViewItemComponent.h; sourceTree = "<group>"; };
 		7D603B754981CD9DA75E4AA3CFC8358D /* IBPNSCollectionLayoutAnchor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IBPNSCollectionLayoutAnchor.m; path = Sources/IBPCollectionViewCompositionalLayout/IBPNSCollectionLayoutAnchor.m; sourceTree = "<group>"; };
 		7DBEC0A529B13F2F29EC059537541665 /* Pods-DDComponent_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DDComponent_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		7DF0BF17ECCEA3D2F602F1883B86B886 /* DDCollectionViewSectionComponent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DDCollectionViewSectionComponent.h; sourceTree = "<group>"; };
-		7E155DD4E878AB1917101334E348E742 /* DDTableViewSectionGroupComponent.mm */ = {isa = PBXFileReference; includeInIndex = 1; path = DDTableViewSectionGroupComponent.mm; sourceTree = "<group>"; };
-		80FB189639CA285F8CD2F2145C34E8CD /* DDTableViewFormItemComponent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DDTableViewFormItemComponent.h; sourceTree = "<group>"; };
+		7E115E44F4E434B34D7A7B66FAB4D825 /* DDCollectionViewSectionComponent.mm */ = {isa = PBXFileReference; includeInIndex = 1; path = DDCollectionViewSectionComponent.mm; sourceTree = "<group>"; };
+		7E6A044FA3E28AB7B7EC476214C21CB0 /* UICollectionView+DDKeyedSizeCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UICollectionView+DDKeyedSizeCache.h"; sourceTree = "<group>"; };
+		81859C74209BF9813BEB56F2DE3DDAAB /* DDCollectionViewComponentHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DDCollectionViewComponentHelper.h; sourceTree = "<group>"; };
 		818C4E5BFF22D82F6F8830698B252B05 /* IBPNSCollectionLayoutEnvironment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IBPNSCollectionLayoutEnvironment.h; path = Sources/IBPCollectionViewCompositionalLayout/IBPNSCollectionLayoutEnvironment.h; sourceTree = "<group>"; };
+		828F2CF79786755363D6D97EDCD7A93E /* UITableView+DDTemplateLayoutCellDebug.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UITableView+DDTemplateLayoutCellDebug.m"; sourceTree = "<group>"; };
 		83F8F633D42932F0D786B1F7A94CC1F1 /* IBPNSCollectionLayoutBoundarySupplementaryItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IBPNSCollectionLayoutBoundarySupplementaryItem.h; path = Sources/IBPCollectionViewCompositionalLayout/include/IBPNSCollectionLayoutBoundarySupplementaryItem.h; sourceTree = "<group>"; };
 		8421B58E92CD7F61A828E233323FBF33 /* Pods-DDComponent_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DDComponent_Example-umbrella.h"; sourceTree = "<group>"; };
-		8423F9E54FD316D459D08BFD99C4161D /* DDComponent.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DDComponent.modulemap; sourceTree = "<group>"; };
 		847C35DF15AD8E67ED41A354983B705E /* IBPNSCollectionLayoutGroup.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IBPNSCollectionLayoutGroup.m; path = Sources/IBPCollectionViewCompositionalLayout/IBPNSCollectionLayoutGroup.m; sourceTree = "<group>"; };
 		854EDA0603AE41D7057D5BFA53EC8EE4 /* IBPNSCollectionLayoutDimension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IBPNSCollectionLayoutDimension.m; path = Sources/IBPCollectionViewCompositionalLayout/IBPNSCollectionLayoutDimension.m; sourceTree = "<group>"; };
 		858A3CDD4343D2730D9F6BCC60416A7C /* Pods-DDComponent_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DDComponent_Tests.modulemap"; sourceTree = "<group>"; };
-		878FEE7C33254A5BD93F90E03268268B /* DDCollectionViewComponent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DDCollectionViewComponent.m; sourceTree = "<group>"; };
 		88E8646A7BFDCDD9DA9B1CFBB859F37C /* IBPNSCollectionLayoutEnvironment_Protocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IBPNSCollectionLayoutEnvironment_Protocol.h; path = Sources/IBPCollectionViewCompositionalLayout/include/IBPNSCollectionLayoutEnvironment_Protocol.h; sourceTree = "<group>"; };
 		89090AD5ED9CDE13F721289C4EA60D0E /* IBPNSCollectionLayoutAnchor_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IBPNSCollectionLayoutAnchor_Private.h; path = Sources/IBPCollectionViewCompositionalLayout/IBPNSCollectionLayoutAnchor_Private.h; sourceTree = "<group>"; };
 		8C4BA844C6B7D23FC85E5A5466CCBEB9 /* IBPNSCollectionLayoutGroupCustomItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IBPNSCollectionLayoutGroupCustomItem.m; path = Sources/IBPCollectionViewCompositionalLayout/IBPNSCollectionLayoutGroupCustomItem.m; sourceTree = "<group>"; };
-		9082D099E302816B8B4243FC103380C3 /* UIView+DDComponentLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIView+DDComponentLayout.h"; sourceTree = "<group>"; };
+		8EC7726E14FBF51245520EAC628A7560 /* UIView+DDComponentLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIView+DDComponentLayout.h"; sourceTree = "<group>"; };
 		918C8227EE5DCEF207244D343DA7D9A5 /* Pods-DDComponent_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-DDComponent_Tests"; path = Pods_DDComponent_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		96F8A2A10F33DF567C674EA1F923091C /* IBPCollectionCompositionalLayoutSolver.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IBPCollectionCompositionalLayoutSolver.m; path = Sources/IBPCollectionViewCompositionalLayout/IBPCollectionCompositionalLayoutSolver.m; sourceTree = "<group>"; };
 		97674B8F8CC1AAE4232B58B936BC2C83 /* IBPUICollectionViewCompositionalLayoutConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IBPUICollectionViewCompositionalLayoutConfiguration.h; path = Sources/IBPCollectionViewCompositionalLayout/include/IBPUICollectionViewCompositionalLayoutConfiguration.h; sourceTree = "<group>"; };
+		998AC930C606D95AF1E9E0B56B2657B1 /* UITableView+DDTemplateLayoutCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UITableView+DDTemplateLayoutCell.h"; sourceTree = "<group>"; };
 		9AEECE212BC545546730CF6851104280 /* CatalogByConvention */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CatalogByConvention; path = CatalogByConvention.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D1CA3A9F5AC85A1B77C8C51EF9135E8 /* CBCRuntime.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CBCRuntime.m; path = src/private/CBCRuntime.m; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9D99A2DDE20BA0DC8C8D099EA91EF478 /* IBPNSCollectionLayoutContainer_Protocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IBPNSCollectionLayoutContainer_Protocol.h; path = Sources/IBPCollectionViewCompositionalLayout/include/IBPNSCollectionLayoutContainer_Protocol.h; sourceTree = "<group>"; };
 		9DA980C47E7015BFAB034BF39038535C /* Pods-DDComponent_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DDComponent_Tests-Info.plist"; sourceTree = "<group>"; };
 		9E0AFFF41DCFF79781939C70E4671EC0 /* IBPCollectionViewOrthogonalScrollerSectionController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IBPCollectionViewOrthogonalScrollerSectionController.h; path = Sources/IBPCollectionViewCompositionalLayout/IBPCollectionViewOrthogonalScrollerSectionController.h; sourceTree = "<group>"; };
+		9E0CA2F94F2AA16A188FF519BB948B6B /* UITableView+DDIndexPathHeightCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UITableView+DDIndexPathHeightCache.h"; sourceTree = "<group>"; };
+		9E1518E60BF40151E4594A04C442F751 /* DDComponent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDComponent.h; path = DDComponent/Classes/DDComponent.h; sourceTree = "<group>"; };
 		9ED0CCE46B519C60F268CED5E52ECCCC /* IBPCollectionViewCompositionalLayout.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = IBPCollectionViewCompositionalLayout.modulemap; sourceTree = "<group>"; };
-		A3E1BB02B8217EADBA31CAADB409D5D1 /* DDComponentLayoutDimension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DDComponentLayoutDimension.m; sourceTree = "<group>"; };
+		A260799AF2E83EB292831BD431F1588A /* DDComponent.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DDComponent.modulemap; sourceTree = "<group>"; };
 		A408B08E4AB2FEC0A3FA254BF9B84028 /* IBPUICollectionLayoutSectionOrthogonalScrollingBehavior.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IBPUICollectionLayoutSectionOrthogonalScrollingBehavior.h; path = Sources/IBPCollectionViewCompositionalLayout/include/IBPUICollectionLayoutSectionOrthogonalScrollingBehavior.h; sourceTree = "<group>"; };
-		A4239F0D1AC397076C03F1BFFF17CA83 /* DDTableViewSectionGroupComponent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DDTableViewSectionGroupComponent.h; sourceTree = "<group>"; };
 		A44193D7E1DDF8F6126037782FD950BC /* IBPNSCollectionLayoutSize_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IBPNSCollectionLayoutSize_Private.h; path = Sources/IBPCollectionViewCompositionalLayout/IBPNSCollectionLayoutSize_Private.h; sourceTree = "<group>"; };
 		A4F5AE7ED1D41D87FE4D301AF297B6B3 /* CatalogByConvention-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CatalogByConvention-Info.plist"; sourceTree = "<group>"; };
 		A6342398946FC17C12C6EBE93B1AFCCF /* Pods-DDComponent_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-DDComponent_Example"; path = Pods_DDComponent_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7218A3C76B2BA23C4404AEBFF977E75 /* DDComponent-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DDComponent-umbrella.h"; sourceTree = "<group>"; };
+		A77C50C579595B5EDF73A464E29262F8 /* DDTableViewComponent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DDTableViewComponent.m; sourceTree = "<group>"; };
 		A97D3AF36692E775C5E85BB27CD81D7E /* DDComponent */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DDComponent; path = DDComponent.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB32FDD2D7311A23B27924AD34000A75 /* IBPNSCollectionLayoutSection_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IBPNSCollectionLayoutSection_Private.h; path = Sources/IBPCollectionViewCompositionalLayout/IBPNSCollectionLayoutSection_Private.h; sourceTree = "<group>"; };
 		AC29154F14B477477F3BCFBC354D1706 /* IBPNSDirectionalEdgeInsets.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IBPNSDirectionalEdgeInsets.h; path = Sources/IBPCollectionViewCompositionalLayout/include/IBPNSDirectionalEdgeInsets.h; sourceTree = "<group>"; };
 		ACEC2161CCC026D5FC97FE9F05D4196A /* IBPUICollectionViewCompositionalLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IBPUICollectionViewCompositionalLayout.m; path = Sources/IBPCollectionViewCompositionalLayout/IBPUICollectionViewCompositionalLayout.m; sourceTree = "<group>"; };
+		B09DA608296A1C2B32FE4B02C36362D7 /* DDTableViewStatusComponent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DDTableViewStatusComponent.h; sourceTree = "<group>"; };
+		B19CD37353E24996DCAEE2BA902DB771 /* DDTableViewItemComponent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DDTableViewItemComponent.h; sourceTree = "<group>"; };
 		B1BFCDAE94C00837E30C90D225F703F8 /* IBPCollectionCompositionalLayoutSolverResult.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IBPCollectionCompositionalLayoutSolverResult.m; path = Sources/IBPCollectionViewCompositionalLayout/IBPCollectionCompositionalLayoutSolverResult.m; sourceTree = "<group>"; };
 		B24EC1DDECB25FD6350B134C9DB62410 /* IBPCollectionViewCompositionalLayout.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IBPCollectionViewCompositionalLayout.release.xcconfig; sourceTree = "<group>"; };
-		B3A242F4662FF8492C60E7C0558BE714 /* DDComponent-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "DDComponent-Info.plist"; sourceTree = "<group>"; };
 		B42F86F7955A53F6CC4386FD9FE62E36 /* IBPNSCollectionLayoutDecorationItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IBPNSCollectionLayoutDecorationItem.m; path = Sources/IBPCollectionViewCompositionalLayout/IBPNSCollectionLayoutDecorationItem.m; sourceTree = "<group>"; };
 		B59BC8E2614B0BE4A1FDDC37976CAD6E /* Pods-DDComponent_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DDComponent_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		B79DBA012B67BF5E0D9660FA6CF42E74 /* DDTableViewItemComponent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DDTableViewItemComponent.m; sourceTree = "<group>"; };
-		B831BCD83F735A067290C9531B44891D /* DDTableViewStatusComponent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DDTableViewStatusComponent.m; sourceTree = "<group>"; };
+		B60BFE12BCA547DD9E4A08D708A18EEF /* DDCollectionViewItemComponent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DDCollectionViewItemComponent.m; sourceTree = "<group>"; };
 		B849B806779FB8AADB00CA772706DE1E /* IBPCollectionViewCompositionalLayout-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "IBPCollectionViewCompositionalLayout-dummy.m"; sourceTree = "<group>"; };
 		B9FB492066ABFD359E772DC1FE8B6128 /* IBPNSCollectionLayoutBoundarySupplementaryItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IBPNSCollectionLayoutBoundarySupplementaryItem.m; path = Sources/IBPCollectionViewCompositionalLayout/IBPNSCollectionLayoutBoundarySupplementaryItem.m; sourceTree = "<group>"; };
 		BA8A6AC228A6A6D356E4BB750E471FE0 /* IBPCollectionViewCompositionalLayout.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IBPCollectionViewCompositionalLayout.debug.xcconfig; sourceTree = "<group>"; };
 		BEC66A94C189BB65BFE1F956D797FC5C /* IBPNSCollectionLayoutVisibleItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IBPNSCollectionLayoutVisibleItem.h; path = Sources/IBPCollectionViewCompositionalLayout/include/IBPNSCollectionLayoutVisibleItem.h; sourceTree = "<group>"; };
-		BEEA7E8B0BD3F05E2A6DE6895B029D35 /* DDTableViewComponent+Cache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DDTableViewComponent+Cache.h"; sourceTree = "<group>"; };
+		C02BCEEF28C471064803FCC1B39DFDB4 /* UICollectionView+DDKeyedSizeCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UICollectionView+DDKeyedSizeCache.m"; sourceTree = "<group>"; };
 		C130D258C631DCF6A447BD7639F8F749 /* CatalogByConvention-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CatalogByConvention-prefix.pch"; sourceTree = "<group>"; };
+		C169BA94C4D60AA7091752CEE7763F09 /* DDCollectionViewStatusComponent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DDCollectionViewStatusComponent.h; sourceTree = "<group>"; };
 		C19709BA17CE88ED0C363225D5A26ED0 /* IBPCollectionViewCompositionalLayout-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IBPCollectionViewCompositionalLayout-prefix.pch"; sourceTree = "<group>"; };
 		C44A8621F6A02E9B2D54CBEC39F55D3B /* Pods-DDComponent_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DDComponent_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		C5F650CFDD2B4FB069ED9AB5FEE11014 /* DDComponent.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = DDComponent.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		C60732FA2588704A4C43757E2F7D5D35 /* Pods-DDComponent_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DDComponent_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		C933C39CCBECA7F867F21EABBC531B96 /* IBPNSRectAlignment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IBPNSRectAlignment.h; path = Sources/IBPCollectionViewCompositionalLayout/include/IBPNSRectAlignment.h; sourceTree = "<group>"; };
 		CAEE46D61AA9C5C8587733A541717710 /* IBPNSCollectionLayoutSpacing.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IBPNSCollectionLayoutSpacing.h; path = Sources/IBPCollectionViewCompositionalLayout/include/IBPNSCollectionLayoutSpacing.h; sourceTree = "<group>"; };
+		CCED742DABA8C08EA8FCB95D944844C6 /* UITableView+DDTemplateLayoutCellDebug.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UITableView+DDTemplateLayoutCellDebug.h"; sourceTree = "<group>"; };
 		CD6E400C1B49704F2B2AC95FF8F88AC6 /* IBPNSCollectionLayoutSpacing.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IBPNSCollectionLayoutSpacing.m; path = Sources/IBPCollectionViewCompositionalLayout/IBPNSCollectionLayoutSpacing.m; sourceTree = "<group>"; };
-		D18644B68A5A5CFB51A20D91CC1B237E /* DDComponent.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DDComponent.release.xcconfig; sourceTree = "<group>"; };
+		D000864489468E4AE1F77242467D1BB5 /* DDTableViewSectionComponent.mm */ = {isa = PBXFileReference; includeInIndex = 1; path = DDTableViewSectionComponent.mm; sourceTree = "<group>"; };
 		D18E9391152C0F70982E76FE1BA4600B /* CatalogByConvention.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CatalogByConvention.h; path = src/CatalogByConvention.h; sourceTree = "<group>"; };
+		D243B9917D660B48A989C8EF7308F334 /* DDCollectionViewComponentHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DDCollectionViewComponentHelper.m; sourceTree = "<group>"; };
 		D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		D339699580AA1D91116900354E78C6F0 /* IBPUICollectionViewCompositionalLayoutConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IBPUICollectionViewCompositionalLayoutConfiguration.m; path = Sources/IBPCollectionViewCompositionalLayout/IBPUICollectionViewCompositionalLayoutConfiguration.m; sourceTree = "<group>"; };
 		D3D154A621AF07AFD1F84B2F429DFCB2 /* IBPNSCollectionLayoutEdgeSpacing.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IBPNSCollectionLayoutEdgeSpacing.h; path = Sources/IBPCollectionViewCompositionalLayout/include/IBPNSCollectionLayoutEdgeSpacing.h; sourceTree = "<group>"; };
 		D476D575A68033566AFD1FB0304DCF5A /* IBPUICollectionViewCompositionalLayoutConfiguration_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IBPUICollectionViewCompositionalLayoutConfiguration_Private.h; path = Sources/IBPCollectionViewCompositionalLayout/IBPUICollectionViewCompositionalLayoutConfiguration_Private.h; sourceTree = "<group>"; };
 		D87D78E6F8B74DFA7F3377E10FF7153D /* IBPNSCollectionLayoutEdgeSpacing_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IBPNSCollectionLayoutEdgeSpacing_Private.h; path = Sources/IBPCollectionViewCompositionalLayout/IBPNSCollectionLayoutEdgeSpacing_Private.h; sourceTree = "<group>"; };
 		D89C1277AE07D1453A89EA6E952BE211 /* Pods-DDComponent_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DDComponent_Example-Info.plist"; sourceTree = "<group>"; };
-		D8B0E494DCA2F3B247C942A56E58ED10 /* DDTableViewSectionComponent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DDTableViewSectionComponent.h; sourceTree = "<group>"; };
+		DAFDC50295B50AD7A3FA331001EC0A3F /* DDTableViewStatusComponent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DDTableViewStatusComponent.m; sourceTree = "<group>"; };
 		DBC695AE21833E5209389D4A7CE4FE49 /* IBPUICollectionViewCompositionalLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IBPUICollectionViewCompositionalLayout.h; path = Sources/IBPCollectionViewCompositionalLayout/include/IBPUICollectionViewCompositionalLayout.h; sourceTree = "<group>"; };
 		DD802F1F3636F911E2F87DE7503FA1C1 /* IBPCollectionViewOrthogonalScrollerEmbeddedScrollView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IBPCollectionViewOrthogonalScrollerEmbeddedScrollView.h; path = Sources/IBPCollectionViewCompositionalLayout/IBPCollectionViewOrthogonalScrollerEmbeddedScrollView.h; sourceTree = "<group>"; };
 		E48F0D65F89CC343D4071F3F1B72CE6B /* IBPCollectionViewCompositionalLayout */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = IBPCollectionViewCompositionalLayout; path = IBPCollectionViewCompositionalLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E496E3F3EE0E3984FFDD0C97D2247C91 /* UITableView+DDIndexPathHeightCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UITableView+DDIndexPathHeightCache.m"; sourceTree = "<group>"; };
+		E5E0F252DA2B020056D5C3556926AE46 /* DDTableViewSectionGroupComponent.mm */ = {isa = PBXFileReference; includeInIndex = 1; path = DDTableViewSectionGroupComponent.mm; sourceTree = "<group>"; };
 		E6346978DDD295B1BFE8752FAEC204CE /* IBPNSCollectionLayoutForwardCompatibility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IBPNSCollectionLayoutForwardCompatibility.h; path = Sources/IBPCollectionViewCompositionalLayout/include/IBPNSCollectionLayoutForwardCompatibility.h; sourceTree = "<group>"; };
 		E7751A3864589EF13E685ED5923432D9 /* IBPNSCollectionLayoutDimension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IBPNSCollectionLayoutDimension.h; path = Sources/IBPCollectionViewCompositionalLayout/include/IBPNSCollectionLayoutDimension.h; sourceTree = "<group>"; };
 		EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		EB395CD2AF74B5B5A2164842A01F3DBE /* DDComponentLayoutSize.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DDComponentLayoutSize.m; sourceTree = "<group>"; };
 		EBC57D00CB6734A95EC58126185B68E4 /* IBPNSCollectionLayoutContainer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IBPNSCollectionLayoutContainer.m; path = Sources/IBPCollectionViewCompositionalLayout/IBPNSCollectionLayoutContainer.m; sourceTree = "<group>"; };
 		ECB9830D3E9A2BBE459A7BE917094527 /* CBCNodeListViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CBCNodeListViewController.m; path = src/CBCNodeListViewController.m; sourceTree = "<group>"; };
 		EE5ED23BA5B0188BDF535AD859CF092C /* IBPNSDirectionalRectEdge.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IBPNSDirectionalRectEdge.h; path = Sources/IBPCollectionViewCompositionalLayout/include/IBPNSDirectionalRectEdge.h; sourceTree = "<group>"; };
+		F02FC013F43492EE004D6255741C8021 /* DDCollectionComponent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DDCollectionComponent.h; sourceTree = "<group>"; };
 		F13F51D31AE897A1D755F743828644E7 /* IBPNSCollectionLayoutAnchor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IBPNSCollectionLayoutAnchor.h; path = Sources/IBPCollectionViewCompositionalLayout/include/IBPNSCollectionLayoutAnchor.h; sourceTree = "<group>"; };
 		F14786F9358CD80D563392189E3602D8 /* IBPNSCollectionLayoutItem_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IBPNSCollectionLayoutItem_Private.h; path = Sources/IBPCollectionViewCompositionalLayout/IBPNSCollectionLayoutItem_Private.h; sourceTree = "<group>"; };
+		F17C43EEBEAF1E3231F601E2119FE11D /* DDCollectionViewSectionGroupComponent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DDCollectionViewSectionGroupComponent.h; sourceTree = "<group>"; };
+		F1BE2E0A5234ED9EFAF78D879520FBFC /* DDCollectionViewFormItemComponent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DDCollectionViewFormItemComponent.m; sourceTree = "<group>"; };
+		F277CB28BE83E1BF64674ABEF9938778 /* DDTableViewComponent+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DDTableViewComponent+Private.h"; sourceTree = "<group>"; };
+		F27D31EE85BE528DE6CBE42B69D4D627 /* DDCollectionViewComponent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DDCollectionViewComponent.m; sourceTree = "<group>"; };
 		F36B2DDC1E0F7B5EC1B9D975138CA38A /* IBPNSCollectionLayoutSection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IBPNSCollectionLayoutSection.m; path = Sources/IBPCollectionViewCompositionalLayout/IBPNSCollectionLayoutSection.m; sourceTree = "<group>"; };
-		F479E66615DDBB7A827F8F5B4E0D2326 /* DDTableViewItemComponent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DDTableViewItemComponent.h; sourceTree = "<group>"; };
 		F50C421080DA9A13AF03E10878E3C82F /* IBPNSCollectionLayoutDecorationItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IBPNSCollectionLayoutDecorationItem.h; path = Sources/IBPCollectionViewCompositionalLayout/include/IBPNSCollectionLayoutDecorationItem.h; sourceTree = "<group>"; };
 		F5B28E753A27B2ED23D915814D660FC4 /* CBCRuntime.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CBCRuntime.h; path = src/private/CBCRuntime.h; sourceTree = "<group>"; };
-		F68E66279B76F39587F676067C4F8DF2 /* DDCollectionViewItemComponent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DDCollectionViewItemComponent.m; sourceTree = "<group>"; };
+		F79813DF148249C2B98C8B04C06FBD34 /* DDComponentLayoutSize.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DDComponentLayoutSize.m; sourceTree = "<group>"; };
 		F8E45EF7B103B235A6534A0130F28274 /* IBPNSCollectionLayoutEdgeSpacing.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IBPNSCollectionLayoutEdgeSpacing.m; path = Sources/IBPCollectionViewCompositionalLayout/IBPNSCollectionLayoutEdgeSpacing.m; sourceTree = "<group>"; };
-		FA59008F29D06FEA12C44E323D53295E /* DDCollectionViewSectionGroupComponent.mm */ = {isa = PBXFileReference; includeInIndex = 1; path = DDCollectionViewSectionGroupComponent.mm; sourceTree = "<group>"; };
+		FAAF4C80519A9086E87571104705EEE5 /* DDComponentLayoutDimension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DDComponentLayoutDimension.h; sourceTree = "<group>"; };
 		FD4D08D32E17B87CE75B4235D4AD5E81 /* CatalogByConvention.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CatalogByConvention.modulemap; sourceTree = "<group>"; };
 		FF49C116378040E480680D94F3E8F03A /* Pods-DDComponent_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DDComponent_Example.modulemap"; sourceTree = "<group>"; };
+		FFFCB913A1B7B581773F9ECFBB6F52C0 /* DDComponent-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DDComponent-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -346,6 +378,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				B1FAFBA7C0787F62EBF55E28F22BF699 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2AC8CA36573435BA7F252399FF4AC1CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C625323A963706546CFE8CDF0CCA49EC /* Foundation.framework in Frameworks */,
+				11A0A0F3D5EE98F63ED51524A2414A07 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -371,15 +412,6 @@
 			files = (
 				A056B6D881BA800C1DABDE5A824D0BB2 /* Foundation.framework in Frameworks */,
 				5AE53229165C3C017E9C5F3178F4AFCB /* UIKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BC2572845BFACBC00480144C3669A336 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7ECBFC1E56836B5752B01684173A7102 /* Foundation.framework in Frameworks */,
-				E9E0945BB2E60B494D51479E1D0748E4 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,50 +443,35 @@
 			path = "Target Support Files/Pods-DDComponent_Example";
 			sourceTree = "<group>";
 		};
-		39FEB9A2F48534BB06C712A920CDAD48 /* Table */ = {
+		3886CA83FE9884706BCC96745C01F51F /* Collection */ = {
 			isa = PBXGroup;
 			children = (
-				5A79AAEDC1F4BFD75DC166204EFDD6EA /* DDTableComponent.h */,
-				41D5AC6034CFDFCE90AD92812C342585 /* DDTableViewComponent.h */,
-				31BC5809759AB41B5B5AABA520BA313E /* DDTableViewComponent.m */,
-				BEEA7E8B0BD3F05E2A6DE6895B029D35 /* DDTableViewComponent+Cache.h */,
-				41415C1EFDAB14EBEF36FA2671BE65E5 /* DDTableViewComponent+Private.h */,
-				40BEE1AD46794EF6DADED1914AE64643 /* DDTableViewComponentHelper.h */,
-				06AAAA1CBAB89481693424305F5F6FD4 /* DDTableViewComponentHelper.m */,
-				80FB189639CA285F8CD2F2145C34E8CD /* DDTableViewFormItemComponent.h */,
-				294F1BA9B051C886FE8854D98896A03C /* DDTableViewFormItemComponent.m */,
-				F479E66615DDBB7A827F8F5B4E0D2326 /* DDTableViewItemComponent.h */,
-				B79DBA012B67BF5E0D9660FA6CF42E74 /* DDTableViewItemComponent.m */,
-				D8B0E494DCA2F3B247C942A56E58ED10 /* DDTableViewSectionComponent.h */,
-				632963B95D52C4CD6B53519A8D73AC99 /* DDTableViewSectionComponent.mm */,
-				A4239F0D1AC397076C03F1BFFF17CA83 /* DDTableViewSectionGroupComponent.h */,
-				7E155DD4E878AB1917101334E348E742 /* DDTableViewSectionGroupComponent.mm */,
-				15065545F2FC00B23972E2286749C208 /* DDTableViewStatusComponent.h */,
-				B831BCD83F735A067290C9531B44891D /* DDTableViewStatusComponent.m */,
+				F02FC013F43492EE004D6255741C8021 /* DDCollectionComponent.h */,
+				18F94499348E3AD4363C39CD9A480009 /* DDCollectionViewComponent.h */,
+				F27D31EE85BE528DE6CBE42B69D4D627 /* DDCollectionViewComponent.m */,
+				6F446910DC4339C284D7537DA5B0E012 /* DDCollectionViewComponent+Cache.h */,
+				0072436E1EE7C67B11BD1D13AB4A6E37 /* DDCollectionViewComponent+Private.h */,
+				81859C74209BF9813BEB56F2DE3DDAAB /* DDCollectionViewComponentHelper.h */,
+				D243B9917D660B48A989C8EF7308F334 /* DDCollectionViewComponentHelper.m */,
+				6E9982C0BF57D75B8D64BC67AA79C1C6 /* DDCollectionViewFormItemComponent.h */,
+				F1BE2E0A5234ED9EFAF78D879520FBFC /* DDCollectionViewFormItemComponent.m */,
+				7D20FC2D49F3336C791BA1E5652F0725 /* DDCollectionViewItemComponent.h */,
+				B60BFE12BCA547DD9E4A08D708A18EEF /* DDCollectionViewItemComponent.m */,
+				0EE07B0A838AA6347F5C793942939F27 /* DDCollectionViewSectionComponent.h */,
+				7E115E44F4E434B34D7A7B66FAB4D825 /* DDCollectionViewSectionComponent.mm */,
+				F17C43EEBEAF1E3231F601E2119FE11D /* DDCollectionViewSectionGroupComponent.h */,
+				7055B102FCC6BAE53A4E09598ADE5F29 /* DDCollectionViewSectionGroupComponent.mm */,
+				C169BA94C4D60AA7091752CEE7763F09 /* DDCollectionViewStatusComponent.h */,
+				13FB838C78A3CBCE3897C414ACFA4EF5 /* DDCollectionViewStatusComponent.m */,
 			);
-			name = Table;
-			path = DDComponent/Classes/Table;
-			sourceTree = "<group>";
-		};
-		3B32BF8E2604A1379A13460EEC858B0B /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				8423F9E54FD316D459D08BFD99C4161D /* DDComponent.modulemap */,
-				3F973ED89F51DCD521C65FC7E2B8E3FB /* DDComponent-dummy.m */,
-				B3A242F4662FF8492C60E7C0558BE714 /* DDComponent-Info.plist */,
-				37D8683FDD10EEA029C61C84B7D7BF15 /* DDComponent-prefix.pch */,
-				65608D09070B701098AD20FBE89EEC5C /* DDComponent-umbrella.h */,
-				6E040E699260D8671FFF80BE11551F8F /* DDComponent.debug.xcconfig */,
-				D18644B68A5A5CFB51A20D91CC1B237E /* DDComponent.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/DDComponent";
+			name = Collection;
+			path = DDComponent/Classes/Collection;
 			sourceTree = "<group>";
 		};
 		3E8B8F1CC5BBD7A4071E9024C55A039D /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				9A54D730EB25505FB471B6C976A0562D /* DDComponent */,
+				8160A0FDA73549B90C4435F472CA60AC /* DDComponent */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
@@ -483,18 +500,55 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		622F3C14F2D42AD2F6166D67733710A9 /* Layout */ = {
+		5CD0D44C92727B9BB0DF972BD22DC052 /* Layout */ = {
 			isa = PBXGroup;
 			children = (
-				062F1D05D8D055BD03CFAA7815E86917 /* DDComponentLayoutDimension.h */,
-				A3E1BB02B8217EADBA31CAADB409D5D1 /* DDComponentLayoutDimension.m */,
-				2A80859E3289DE986E79BD2F0F6AC17A /* DDComponentLayoutSize.h */,
-				EB395CD2AF74B5B5A2164842A01F3DBE /* DDComponentLayoutSize.m */,
-				9082D099E302816B8B4243FC103380C3 /* UIView+DDComponentLayout.h */,
-				315DC7CBECC8DFE7607E42B2110B346E /* UIView+DDComponentLayout.m */,
+				C6AEC4BEDC76BB9577811E1DEFC94C3E /* LayoutCollectionViewCell */,
+				69C78D04387E773F7B9CACCE7E06C8D0 /* LayoutTableViewCell */,
+				64BADB824D699F7E3A00F14BA77AC984 /* LayoutView */,
 			);
 			name = Layout;
 			path = DDComponent/Classes/Layout;
+			sourceTree = "<group>";
+		};
+		64BADB824D699F7E3A00F14BA77AC984 /* LayoutView */ = {
+			isa = PBXGroup;
+			children = (
+				FAAF4C80519A9086E87571104705EEE5 /* DDComponentLayoutDimension.h */,
+				4A259CA753CD508C4D7C62A1B8BF8380 /* DDComponentLayoutDimension.m */,
+				011B3EEDD70B59A12EDE1A5189E8881C /* DDComponentLayoutSize.h */,
+				F79813DF148249C2B98C8B04C06FBD34 /* DDComponentLayoutSize.m */,
+				8EC7726E14FBF51245520EAC628A7560 /* UIView+DDComponentLayout.h */,
+				3D036BA5CE9610363B8F1F0519DDC3CC /* UIView+DDComponentLayout.m */,
+			);
+			name = LayoutView;
+			path = LayoutView;
+			sourceTree = "<group>";
+		};
+		69C78D04387E773F7B9CACCE7E06C8D0 /* LayoutTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				9E0CA2F94F2AA16A188FF519BB948B6B /* UITableView+DDIndexPathHeightCache.h */,
+				E496E3F3EE0E3984FFDD0C97D2247C91 /* UITableView+DDIndexPathHeightCache.m */,
+				157C050AFF949DB5926FF5D7666D0D02 /* UITableView+DDKeyedHeightCache.h */,
+				284785B5F1725F1466DE0C5615B8762C /* UITableView+DDKeyedHeightCache.m */,
+				998AC930C606D95AF1E9E0B56B2657B1 /* UITableView+DDTemplateLayoutCell.h */,
+				3436BCDC2C5B2496939EB509F3297024 /* UITableView+DDTemplateLayoutCell.m */,
+				CCED742DABA8C08EA8FCB95D944844C6 /* UITableView+DDTemplateLayoutCellDebug.h */,
+				828F2CF79786755363D6D97EDCD7A93E /* UITableView+DDTemplateLayoutCellDebug.m */,
+			);
+			name = LayoutTableViewCell;
+			path = LayoutTableViewCell;
+			sourceTree = "<group>";
+		};
+		6FC84F6AE53AFB37D5575FFED858A955 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				C5F650CFDD2B4FB069ED9AB5FEE11014 /* DDComponent.podspec */,
+				03390B3E344A1EB08589E51455586CB0 /* LICENSE */,
+				157E2DCD2D7246AFBBA229066A178A6E /* README-zh.md */,
+			);
+			name = Pod;
 			sourceTree = "<group>";
 		};
 		77E6D6F9C9075FA1C5346BFEE45F2D8B /* Pods-DDComponent_Tests */ = {
@@ -522,6 +576,20 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		8160A0FDA73549B90C4435F472CA60AC /* DDComponent */ = {
+			isa = PBXGroup;
+			children = (
+				9E1518E60BF40151E4594A04C442F751 /* DDComponent.h */,
+				3886CA83FE9884706BCC96745C01F51F /* Collection */,
+				5CD0D44C92727B9BB0DF972BD22DC052 /* Layout */,
+				6FC84F6AE53AFB37D5575FFED858A955 /* Pod */,
+				91AEED2BD52C9592B7DB7EAA17721541 /* Support Files */,
+				DB4E2879FAD7E67841203E9086F678E7 /* Table */,
+			);
+			name = DDComponent;
+			path = ../..;
+			sourceTree = "<group>";
+		};
 		8FD7FFCBB29AA27E7CEDCD81C78D7A60 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -534,18 +602,19 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		9A54D730EB25505FB471B6C976A0562D /* DDComponent */ = {
+		91AEED2BD52C9592B7DB7EAA17721541 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				368FC3BA342C043E29F821197523EB1E /* DDComponent.h */,
-				E677F3C8CB8093F13EE1004828CF7688 /* Collection */,
-				622F3C14F2D42AD2F6166D67733710A9 /* Layout */,
-				FC93E5F63D90B8450206E94ED9AAD42C /* Pod */,
-				3B32BF8E2604A1379A13460EEC858B0B /* Support Files */,
-				39FEB9A2F48534BB06C712A920CDAD48 /* Table */,
+				A260799AF2E83EB292831BD431F1588A /* DDComponent.modulemap */,
+				FFFCB913A1B7B581773F9ECFBB6F52C0 /* DDComponent-dummy.m */,
+				7111BFE6F920AFABAEE3DFC226496A60 /* DDComponent-Info.plist */,
+				429CC7173E6F66C0B6B12EE5201ECAC1 /* DDComponent-prefix.pch */,
+				A7218A3C76B2BA23C4404AEBFF977E75 /* DDComponent-umbrella.h */,
+				36F01BCFF340298E986E5A7E88DAF654 /* DDComponent.debug.xcconfig */,
+				24159172A8631BF19EFEC62246E49F81 /* DDComponent.release.xcconfig */,
 			);
-			name = DDComponent;
-			path = ../..;
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/DDComponent";
 			sourceTree = "<group>";
 		};
 		9EE9CC9AFD0B84C51679C2E1D39F2D9D /* IBPCollectionViewCompositionalLayout */ = {
@@ -616,6 +685,22 @@
 			path = IBPCollectionViewCompositionalLayout;
 			sourceTree = "<group>";
 		};
+		C6AEC4BEDC76BB9577811E1DEFC94C3E /* LayoutCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				285C948984970D81111F701ED9AD64F7 /* UICollectionView+DDIndexPathSizeCache.h */,
+				000AF6A7AE13A9FFC4411E2BB0FEE5BB /* UICollectionView+DDIndexPathSizeCache.m */,
+				7E6A044FA3E28AB7B7EC476214C21CB0 /* UICollectionView+DDKeyedSizeCache.h */,
+				C02BCEEF28C471064803FCC1B39DFDB4 /* UICollectionView+DDKeyedSizeCache.m */,
+				283FAB5B52808806F97D263A0D8C0B28 /* UICollectionView+DDTemplateLayoutCell.h */,
+				5A6CE46DBB975B44847522C2C2090AAF /* UICollectionView+DDTemplateLayoutCell.m */,
+				12A7855ECE7F686FCCBDD989C4842EA5 /* UICollectionView+DDTemplateLayoutCellDebug.h */,
+				1CC65685EED9277683AD107A4167BDDC /* UICollectionView+DDTemplateLayoutCellDebug.m */,
+			);
+			name = LayoutCollectionViewCell;
+			path = LayoutCollectionViewCell;
+			sourceTree = "<group>";
+		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
@@ -637,6 +722,31 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
+		DB4E2879FAD7E67841203E9086F678E7 /* Table */ = {
+			isa = PBXGroup;
+			children = (
+				40E5D4CFC5C8D0429B672F3BC4AAF31F /* DDTableComponent.h */,
+				0D4C91F94AD0122B9FFCDD3DA4A684FC /* DDTableViewComponent.h */,
+				A77C50C579595B5EDF73A464E29262F8 /* DDTableViewComponent.m */,
+				08ECD79ED1CC2B8E6EF57F822A80DA05 /* DDTableViewComponent+Cache.h */,
+				F277CB28BE83E1BF64674ABEF9938778 /* DDTableViewComponent+Private.h */,
+				6EECAACC956F51829B0C9F8AE0020424 /* DDTableViewComponentHelper.h */,
+				3E4559A93439774DBA980F3B072CBA40 /* DDTableViewComponentHelper.m */,
+				4B12079A851D59AC9A50DB9EB4AD3BA4 /* DDTableViewFormItemComponent.h */,
+				4768C3459C4D20C7F40C5388238E3BBB /* DDTableViewFormItemComponent.m */,
+				B19CD37353E24996DCAEE2BA902DB771 /* DDTableViewItemComponent.h */,
+				34A49DB41122818114CE128E50867F52 /* DDTableViewItemComponent.m */,
+				10022CAE1F93CF22EF8D95612A3C6E44 /* DDTableViewSectionComponent.h */,
+				D000864489468E4AE1F77242467D1BB5 /* DDTableViewSectionComponent.mm */,
+				192B6D9D80894F54CC3C3BC4C21B18A4 /* DDTableViewSectionGroupComponent.h */,
+				E5E0F252DA2B020056D5C3556926AE46 /* DDTableViewSectionGroupComponent.mm */,
+				B09DA608296A1C2B32FE4B02C36362D7 /* DDTableViewStatusComponent.h */,
+				DAFDC50295B50AD7A3FA331001EC0A3F /* DDTableViewStatusComponent.m */,
+			);
+			name = Table;
+			path = DDComponent/Classes/Table;
+			sourceTree = "<group>";
+		};
 		DE66BD133EC155EBA9950D736465B0F6 /* CatalogByConvention */ = {
 			isa = PBXGroup;
 			children = (
@@ -652,31 +762,6 @@
 			path = CatalogByConvention;
 			sourceTree = "<group>";
 		};
-		E677F3C8CB8093F13EE1004828CF7688 /* Collection */ = {
-			isa = PBXGroup;
-			children = (
-				05B0D127A479D2D8F479763D7C4BFB2C /* DDCollectionComponent.h */,
-				171A14610AF638B494DC6303071EFB0C /* DDCollectionViewComponent.h */,
-				878FEE7C33254A5BD93F90E03268268B /* DDCollectionViewComponent.m */,
-				65F76A67CD3732A1265A4074D8EA401B /* DDCollectionViewComponent+Cache.h */,
-				6AF8659BD4F26A95B9134A3A5A8FEBBA /* DDCollectionViewComponent+Private.h */,
-				0367E950F86045A717E3E3B1452F65D6 /* DDCollectionViewComponentHelper.h */,
-				57144083CF4F0143F8AA49C8AFF9C53C /* DDCollectionViewComponentHelper.m */,
-				04B3B96370C5159B0D842396D7BF53EC /* DDCollectionViewFormItemComponent.h */,
-				439BC2E2AECD6E65371D6252E11A19C1 /* DDCollectionViewFormItemComponent.m */,
-				2677A20167965BC6D251F924893E68D5 /* DDCollectionViewItemComponent.h */,
-				F68E66279B76F39587F676067C4F8DF2 /* DDCollectionViewItemComponent.m */,
-				7DF0BF17ECCEA3D2F602F1883B86B886 /* DDCollectionViewSectionComponent.h */,
-				09C39AE4121FADFA488182C94C9F392A /* DDCollectionViewSectionComponent.mm */,
-				68C085072934F6B2503A58548D699229 /* DDCollectionViewSectionGroupComponent.h */,
-				FA59008F29D06FEA12C44E323D53295E /* DDCollectionViewSectionGroupComponent.mm */,
-				2623DC5B5924FACEF59E1CCB1BC9ADCF /* DDCollectionViewStatusComponent.h */,
-				2A0C09AFBC6FB0FC05B344677A45B943 /* DDCollectionViewStatusComponent.m */,
-			);
-			name = Collection;
-			path = DDComponent/Classes/Collection;
-			sourceTree = "<group>";
-		};
 		FA2021135CD7BCD7157EFD297BB8C1F3 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -690,16 +775,6 @@
 			);
 			name = "Support Files";
 			path = "../Target Support Files/IBPCollectionViewCompositionalLayout";
-			sourceTree = "<group>";
-		};
-		FC93E5F63D90B8450206E94ED9AAD42C /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				403F3D8E1CA1371E457805982368411C /* DDComponent.podspec */,
-				6F80F93C76849D89F1521F9322BEF949 /* LICENSE */,
-				5E1DCC247D3EE67AF300B5B3359F1AC8 /* README-zh.md */,
-			);
-			name = Pod;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -763,43 +838,51 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		746267EAFCA05FB79CE869085BC9D305 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DB4228DA76257DD31B4F33CD952FA930 /* DDCollectionComponent.h in Headers */,
-				CB4DEF34F9D90BFA9A237DEFEF219D15 /* DDCollectionViewComponent.h in Headers */,
-				9703C5BF8631BC0102D671D4DE16619B /* DDCollectionViewComponent+Cache.h in Headers */,
-				228B54D9908BB6941226EC00BC7BFB71 /* DDCollectionViewComponent+Private.h in Headers */,
-				9665C2E5A5176B85AF51C1E30308B17A /* DDCollectionViewComponentHelper.h in Headers */,
-				766D74270A24C484C39908FA2F5583EB /* DDCollectionViewFormItemComponent.h in Headers */,
-				FD681C2BF70B73CF028311BA975144D8 /* DDCollectionViewItemComponent.h in Headers */,
-				241F06C95B6BFDEDF8F362447DD8AD18 /* DDCollectionViewSectionComponent.h in Headers */,
-				CCB8DB154E83D9F82524AA8F4150F09D /* DDCollectionViewSectionGroupComponent.h in Headers */,
-				4E294A79BC0E003435889A9471D5FC02 /* DDCollectionViewStatusComponent.h in Headers */,
-				FC579066D43A9A9AD62B71744B309EF4 /* DDComponent.h in Headers */,
-				F5BE5720FD1D1C90B7414F73B52BB444 /* DDComponent-umbrella.h in Headers */,
-				D6998FBAE8094DB0F93B7A97E1D06B94 /* DDComponentLayoutDimension.h in Headers */,
-				7E60446FF6B14D8CF7554689A3C1B966 /* DDComponentLayoutSize.h in Headers */,
-				3224AF824220548799A068A0C58AF8EF /* DDTableComponent.h in Headers */,
-				871764F42C6ABB11C7A262979139BD4F /* DDTableViewComponent.h in Headers */,
-				06F71F10C149F0EDB159A59E34CFA0C9 /* DDTableViewComponent+Cache.h in Headers */,
-				1C8E96EBB617195DEA90DEED6BF7CC77 /* DDTableViewComponent+Private.h in Headers */,
-				B41B85D6B632E01A1602F499DE9E7463 /* DDTableViewComponentHelper.h in Headers */,
-				05B938A3BE956E29C85F7D8B2900EB8A /* DDTableViewFormItemComponent.h in Headers */,
-				E1C6C8E2666E1716FBC94EE184518004 /* DDTableViewItemComponent.h in Headers */,
-				4E8E0C12AE034CCE121389B0F50FAE90 /* DDTableViewSectionComponent.h in Headers */,
-				7911C28804334B5AC9E488C28D7D679B /* DDTableViewSectionGroupComponent.h in Headers */,
-				9B32306D5B80BD4D0D706842FFE65F41 /* DDTableViewStatusComponent.h in Headers */,
-				07213D7B3EA04CFC0756B4DBF366817B /* UIView+DDComponentLayout.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		B2B81B32113EEBEA43ABC765B8F73AD9 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				3D1F770C1B6D32808484FECA79845B11 /* Pods-DDComponent_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1202F3F35D44DF602CC5EF782C7E304 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01A273D239AB3A6192D807E51700748B /* DDCollectionComponent.h in Headers */,
+				9697427DC7448FABC122E5789740FEF3 /* DDCollectionViewComponent.h in Headers */,
+				888E8C06A2E286E3E37425B715C1EE61 /* DDCollectionViewComponent+Cache.h in Headers */,
+				A5C0F1BC727595FFAE795C00D7421899 /* DDCollectionViewComponent+Private.h in Headers */,
+				A8AF7202EEFC8A6BE7CAAEC7F23E8D80 /* DDCollectionViewComponentHelper.h in Headers */,
+				8CE88106C36E4C64C0778D86F41F17E9 /* DDCollectionViewFormItemComponent.h in Headers */,
+				6CB4EDD921A6E2E6BC3252E4411DD5C1 /* DDCollectionViewItemComponent.h in Headers */,
+				01DF30C44E82F2A1891E93D4E9872534 /* DDCollectionViewSectionComponent.h in Headers */,
+				0FBF6B05170CEAF81C5816DA9B3AA2D7 /* DDCollectionViewSectionGroupComponent.h in Headers */,
+				EDF61BC7CC3B422D2D44528645EA8C10 /* DDCollectionViewStatusComponent.h in Headers */,
+				524915FBF541503225C5A2EE268D762E /* DDComponent.h in Headers */,
+				233551C10E4346CE9900E3F070275019 /* DDComponent-umbrella.h in Headers */,
+				E111077DE9F12199055E02EF01A9DD36 /* DDComponentLayoutDimension.h in Headers */,
+				1EC1CF96AE0556D9EF9FD87C6C9B5E2B /* DDComponentLayoutSize.h in Headers */,
+				35340E96AA3BC8E8473AB5AD3267B256 /* DDTableComponent.h in Headers */,
+				D1FFACED2CDEA694CFF72420B9D76780 /* DDTableViewComponent.h in Headers */,
+				020C199E3ABF4F950B5F2FF9EDB16534 /* DDTableViewComponent+Cache.h in Headers */,
+				29327FADE236D804E98B30AA58631966 /* DDTableViewComponent+Private.h in Headers */,
+				F08A9D143037516BC8FA20B3079B3D2E /* DDTableViewComponentHelper.h in Headers */,
+				2F4ACFE7D597F3A25FEBC9DAD0CA6C54 /* DDTableViewFormItemComponent.h in Headers */,
+				0F2B97EA01DAF96051A6CD586DAE0BED /* DDTableViewItemComponent.h in Headers */,
+				CD4E2CB797DD682956C39DA1B9C6A182 /* DDTableViewSectionComponent.h in Headers */,
+				140E9D18A7E83C88A4B37E7F469E177B /* DDTableViewSectionGroupComponent.h in Headers */,
+				FF7EDC0320CCDC971C961E923C017CE8 /* DDTableViewStatusComponent.h in Headers */,
+				BC657839A63D09F2483736C9675FA023 /* UICollectionView+DDIndexPathSizeCache.h in Headers */,
+				9D247BFE2B72542C5C669AC5A6ABF0C4 /* UICollectionView+DDKeyedSizeCache.h in Headers */,
+				4A976F256B2744E6C85C70519D7F7D05 /* UICollectionView+DDTemplateLayoutCell.h in Headers */,
+				D589ED0C9F37BF955833273AB5EF5AC6 /* UICollectionView+DDTemplateLayoutCellDebug.h in Headers */,
+				F7D72F439B425B29996A6994B946E806 /* UITableView+DDIndexPathHeightCache.h in Headers */,
+				BEDFE5090C6F7A4DE1984433A251D403 /* UITableView+DDKeyedHeightCache.h in Headers */,
+				FDD4FA412ACD14C39AC9B3F2E9BA5779 /* UITableView+DDTemplateLayoutCell.h in Headers */,
+				D0BE467C109CF67D14C8B735DD084F12 /* UITableView+DDTemplateLayoutCellDebug.h in Headers */,
+				059038181FCA6007D5A5A6619189DBDC /* UIView+DDComponentLayout.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -846,9 +929,9 @@
 			buildRules = (
 			);
 			dependencies = (
-				FE347648D628280E51D8A264CD4E59BC /* PBXTargetDependency */,
-				F6D1809C88389A7F0D781B7CD55577D7 /* PBXTargetDependency */,
-				AFD62B6046778436B67A46927DFE62F6 /* PBXTargetDependency */,
+				9F2A304E1E47D36869F8C7C449F173FE /* PBXTargetDependency */,
+				2EB3E2A9C9D83EB57B002F0F4589581B /* PBXTargetDependency */,
+				A6285823C04BDADF55D5644CC2D75120 /* PBXTargetDependency */,
 			);
 			name = "Pods-DDComponent_Example";
 			productName = Pods_DDComponent_Example;
@@ -867,7 +950,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				5CF06F4E8C9D28A702167C49763D4433 /* PBXTargetDependency */,
+				DCD2FE6C3116E3D1BBFE72ED4F8525CC /* PBXTargetDependency */,
 			);
 			name = "Pods-DDComponent_Tests";
 			productName = Pods_DDComponent_Tests;
@@ -876,12 +959,12 @@
 		};
 		BC4558A150B1F5F9E0A6366FF11DDE54 /* DDComponent */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 46C9E533A3762E9DF743BD53C72A02EB /* Build configuration list for PBXNativeTarget "DDComponent" */;
+			buildConfigurationList = E9EAEC1FF2B7ACE5FE3AF2A30E084F08 /* Build configuration list for PBXNativeTarget "DDComponent" */;
 			buildPhases = (
-				746267EAFCA05FB79CE869085BC9D305 /* Headers */,
-				2670F93EDCF403C4EF16BBB46DE3711F /* Sources */,
-				BC2572845BFACBC00480144C3669A336 /* Frameworks */,
-				88626C9CF4D60FEF71DBFC28DC141EBD /* Resources */,
+				F1202F3F35D44DF602CC5EF782C7E304 /* Headers */,
+				414D98CFC94266E6A5D41B4317EF97DA /* Sources */,
+				2AC8CA36573435BA7F252399FF4AC1CE /* Frameworks */,
+				ABBCDC63B1A8E8101E64943C4C393B05 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -963,7 +1046,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		88626C9CF4D60FEF71DBFC28DC141EBD /* Resources */ = {
+		ABBCDC63B1A8E8101E64943C4C393B05 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1001,28 +1084,36 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		2670F93EDCF403C4EF16BBB46DE3711F /* Sources */ = {
+		414D98CFC94266E6A5D41B4317EF97DA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F61466B701DEE0C8B59A8664DCB8EB1B /* DDCollectionViewComponent.m in Sources */,
-				2DD03D7C76BE8DD05980359C4A3E0DDF /* DDCollectionViewComponentHelper.m in Sources */,
-				D10A12D18D93161EF8B8332B89E7C8B3 /* DDCollectionViewFormItemComponent.m in Sources */,
-				A516CB3EE5A7DBE1ABC283B579B7CEF8 /* DDCollectionViewItemComponent.m in Sources */,
-				171152C3015EEC432A4576F682027772 /* DDCollectionViewSectionComponent.mm in Sources */,
-				C295202C83362711C53F699C4DE1CCBD /* DDCollectionViewSectionGroupComponent.mm in Sources */,
-				568033DB204952EE15A33DD598922741 /* DDCollectionViewStatusComponent.m in Sources */,
-				67D84CC350017BC40F9F3B07850F3779 /* DDComponent-dummy.m in Sources */,
-				19D14AC4638E2043AB3592B61138B57C /* DDComponentLayoutDimension.m in Sources */,
-				04611907685457A28212CE66CDA4E20D /* DDComponentLayoutSize.m in Sources */,
-				E44423C8247B7E6097DAEB6621529AEA /* DDTableViewComponent.m in Sources */,
-				03823DFF089FDE0BA2D4A3FBEFE026A0 /* DDTableViewComponentHelper.m in Sources */,
-				1AECED7AE9109696B143220808376021 /* DDTableViewFormItemComponent.m in Sources */,
-				48F32CC4F30825730F588F7FAAF760E5 /* DDTableViewItemComponent.m in Sources */,
-				60A54D204181392965E10319CBD3FA23 /* DDTableViewSectionComponent.mm in Sources */,
-				7E8ADD3C1CC5C1A5B39BB90D579054E9 /* DDTableViewSectionGroupComponent.mm in Sources */,
-				8E3ECBCCDE11CC6EBAD1A3EA523F8227 /* DDTableViewStatusComponent.m in Sources */,
-				493433D077F48099E35722E4114F3204 /* UIView+DDComponentLayout.m in Sources */,
+				08FBE11DE9C57C47587C689C03683345 /* DDCollectionViewComponent.m in Sources */,
+				CD63ADC7C74351CB362434DDE012FA59 /* DDCollectionViewComponentHelper.m in Sources */,
+				046499D470F59BB1108047956CEA555D /* DDCollectionViewFormItemComponent.m in Sources */,
+				84CC8AFF54190C3B4B111420EEBDB3C5 /* DDCollectionViewItemComponent.m in Sources */,
+				72295D56128217221223C389C09390B4 /* DDCollectionViewSectionComponent.mm in Sources */,
+				DF07456833F92A9527434216565FF26B /* DDCollectionViewSectionGroupComponent.mm in Sources */,
+				9CECB630876A40726989185BA8BE6522 /* DDCollectionViewStatusComponent.m in Sources */,
+				FD6F3E1262824B5A4B601B18BCE5DB08 /* DDComponent-dummy.m in Sources */,
+				B69A248248C674935BAE72F7D8373052 /* DDComponentLayoutDimension.m in Sources */,
+				624F71459AA6EAE7A4871E87181F933C /* DDComponentLayoutSize.m in Sources */,
+				A1323433BE731F69E96D26E24B7FF268 /* DDTableViewComponent.m in Sources */,
+				24917E49AD7857B4FA148E3F11651241 /* DDTableViewComponentHelper.m in Sources */,
+				E5BB6ED175DE9B43F4D9C6B5BEF3A743 /* DDTableViewFormItemComponent.m in Sources */,
+				E65229153851B2DDAA9BC332E728AE60 /* DDTableViewItemComponent.m in Sources */,
+				6CA123FFD67C102BF83097AA9195901D /* DDTableViewSectionComponent.mm in Sources */,
+				6CE5420FC726550D5C895CBAA76D702B /* DDTableViewSectionGroupComponent.mm in Sources */,
+				3EF979D20EB280FF86BAADA691B13E33 /* DDTableViewStatusComponent.m in Sources */,
+				ADA57916E7CD22C74E4028442DC627DD /* UICollectionView+DDIndexPathSizeCache.m in Sources */,
+				2F400F262F961820EC74CFFE8F5FF0EC /* UICollectionView+DDKeyedSizeCache.m in Sources */,
+				E050ED1A478F440151EA856376A117BB /* UICollectionView+DDTemplateLayoutCell.m in Sources */,
+				38C8D8A931383A8E721D40B13123D532 /* UICollectionView+DDTemplateLayoutCellDebug.m in Sources */,
+				131F6F2EAD815B37DED82CB600C87200 /* UITableView+DDIndexPathHeightCache.m in Sources */,
+				48300E870F435E184D331650F04063E3 /* UITableView+DDKeyedHeightCache.m in Sources */,
+				910116A60A435154E58C7E5BB042F40D /* UITableView+DDTemplateLayoutCell.m in Sources */,
+				2A6ED270901C3400FB5E5A83112EF8D7 /* UITableView+DDTemplateLayoutCellDebug.m in Sources */,
+				477D049A2108D0C3622AD6554CEE42CB /* UIView+DDComponentLayout.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1084,29 +1175,29 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		5CF06F4E8C9D28A702167C49763D4433 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-DDComponent_Example";
-			target = 26CF912C65AEE0F0D088F78C5B945E6F /* Pods-DDComponent_Example */;
-			targetProxy = 5EE571D44C7CE35E1B3702491CAD46D4 /* PBXContainerItemProxy */;
-		};
-		AFD62B6046778436B67A46927DFE62F6 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = IBPCollectionViewCompositionalLayout;
-			target = C6D33972ECD5C3EBB2CA1DDF16BCE422 /* IBPCollectionViewCompositionalLayout */;
-			targetProxy = 8061132A93E454CB93B0D1B663097AEF /* PBXContainerItemProxy */;
-		};
-		F6D1809C88389A7F0D781B7CD55577D7 /* PBXTargetDependency */ = {
+		2EB3E2A9C9D83EB57B002F0F4589581B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = DDComponent;
 			target = BC4558A150B1F5F9E0A6366FF11DDE54 /* DDComponent */;
-			targetProxy = 3A3E5F2E605D206F7DC7687E7DEA8B0E /* PBXContainerItemProxy */;
+			targetProxy = AC47E9282901DA6EE35292D886BA1BD3 /* PBXContainerItemProxy */;
 		};
-		FE347648D628280E51D8A264CD4E59BC /* PBXTargetDependency */ = {
+		9F2A304E1E47D36869F8C7C449F173FE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = CatalogByConvention;
 			target = 138A45554994A4757DF941467C358D29 /* CatalogByConvention */;
-			targetProxy = E1BB40401C6D883A74DE396CD0BAC0D9 /* PBXContainerItemProxy */;
+			targetProxy = 26CDC899DC81D96F5BCDCD6CC1B39063 /* PBXContainerItemProxy */;
+		};
+		A6285823C04BDADF55D5644CC2D75120 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = IBPCollectionViewCompositionalLayout;
+			target = C6D33972ECD5C3EBB2CA1DDF16BCE422 /* IBPCollectionViewCompositionalLayout */;
+			targetProxy = 0E566180AB2C8E42C115427D0158AF56 /* PBXContainerItemProxy */;
+		};
+		DCD2FE6C3116E3D1BBFE72ED4F8525CC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-DDComponent_Example";
+			target = 26CF912C65AEE0F0D088F78C5B945E6F /* Pods-DDComponent_Example */;
+			targetProxy = 96AAE1682B03D4E9C76C5203591A9ED6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1210,9 +1301,9 @@
 			};
 			name = Release;
 		};
-		702EC6623067EF65000BB9990318A0A6 /* Release */ = {
+		7160201CF194B6283F596C60F381B67A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D18644B68A5A5CFB51A20D91CC1B237E /* DDComponent.release.xcconfig */;
+			baseConfigurationReference = 36F01BCFF340298E986E5A7E88DAF654 /* DDComponent.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1235,11 +1326,10 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 		7EE7A78859F657F6BEFC651185B43192 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -1361,36 +1451,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		BCFE567EB5CBFFC9ED3CEEA6674CDB9A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6E040E699260D8671FFF80BE11551F8F /* DDComponent.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/DDComponent/DDComponent-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/DDComponent/DDComponent-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/DDComponent/DDComponent.modulemap";
-				PRODUCT_MODULE_NAME = DDComponent;
-				PRODUCT_NAME = DDComponent;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1558,18 +1618,40 @@
 			};
 			name = Debug;
 		};
+		F9C86535777E972E70C1E1F6D6685FD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24159172A8631BF19EFEC62246E49F81 /* DDComponent.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/DDComponent/DDComponent-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DDComponent/DDComponent-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/DDComponent/DDComponent.modulemap";
+				PRODUCT_MODULE_NAME = DDComponent;
+				PRODUCT_NAME = DDComponent;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		46C9E533A3762E9DF743BD53C72A02EB /* Build configuration list for PBXNativeTarget "DDComponent" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				BCFE567EB5CBFFC9ED3CEEA6674CDB9A /* Debug */,
-				702EC6623067EF65000BB9990318A0A6 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1611,6 +1693,15 @@
 			buildConfigurations = (
 				B26A57DA5913D5B6C7A11F7F1774DDCD /* Debug */,
 				6246CB6D0B8819C620ECB4E9DA4B5A4F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E9EAEC1FF2B7ACE5FE3AF2A30E084F08 /* Build configuration list for PBXNativeTarget "DDComponent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7160201CF194B6283F596C60F381B67A /* Debug */,
+				F9C86535777E972E70C1E1F6D6685FD5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -2,27 +2,9 @@
 
 @interface DDCollectionViewFormItemCell : UICollectionViewCell
 
-@property (nonatomic, copy, nullable) DDComponentLayoutSize *itemSize;
-
 @end
 
 @implementation DDCollectionViewFormItemCell
-
-- (UICollectionViewLayoutAttributes *)preferredLayoutAttributesFittingAttributes:(UICollectionViewLayoutAttributes *)layoutAttributes {
-    
-    if (self.itemSize) {
-        [self layoutIfNeeded];
-        [self setNeedsLayout];
-        
-        CGRect frame = layoutAttributes.frame;
-        frame.size = [self.contentView sizeThatFits:frame.size layoutSize:self.itemSize];
-        layoutAttributes.frame = frame;
-        
-        return layoutAttributes;
-    }
-    
-    return layoutAttributes;
-}
 
 @end
 
@@ -56,14 +38,13 @@
     return self.itemView ? 1 : 0;
 }
 
-- (__kindof UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
+    
     if (!self.itemView) {
         return nil;
     }
     
     DDCollectionViewFormItemCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:self.reuseIdentifier forIndexPath:indexPath];
-    
-    cell.itemSize = self.itemSize;
     
     if ([self.itemView.superview isEqual: cell.contentView]) {
         return cell;
@@ -87,6 +68,21 @@
     [NSLayoutConstraint activateConstraints:@[top, right, bottom, left]];
 
     return cell;
+}
+
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
+    
+    if (!self.itemView) {
+        return CGSizeZero;
+    }
+    
+    CGSize size = [super collectionView:collectionView layout:collectionViewLayout sizeForItemAtIndexPath:indexPath];
+
+    if (!self.itemSize) {
+        return size;
+    }
+    
+    return [self.itemView sizeThatFits:size layoutSize:self.itemSize];
 }
 
 - (NSString *)reuseIdentifier {

@@ -1,22 +1,14 @@
-//
-//  UICollectionView+FDIndexPathSizeCache.m
-//  Demo
-//
-//  Created by mac on 2021/9/14.
-//  Copyright © 2021 forkingdog. All rights reserved.
-//
-
-#import "UICollectionView+FDIndexPathSizeCache.h"
+#import "UICollectionView+DDIndexPathSizeCache.h"
 #import <objc/runtime.h>
 
 typedef NSMutableArray<NSMutableArray<NSValue *> *> FDIndexPathSizesBySection;
 
-@interface FDIndexPathSizeCache ()
+@interface DDIndexPathSizeCache ()
 @property (nonatomic, strong) FDIndexPathSizesBySection *sizesBySectionForPortrait;
 @property (nonatomic, strong) FDIndexPathSizesBySection *sizesBySectionForLandscape;
 @end
 
-@implementation FDIndexPathSizeCache
+@implementation DDIndexPathSizeCache
 
 - (instancetype)init {
     self = [super init];
@@ -99,12 +91,12 @@ typedef NSMutableArray<NSMutableArray<NSValue *> *> FDIndexPathSizesBySection;
 @end
 
 
-@implementation UICollectionView (FDIndexPathSizeCache)
+@implementation UICollectionView (DDIndexPathSizeCache)
 
-- (FDIndexPathSizeCache *)fd_indexPathSizeCache {
-    FDIndexPathSizeCache *cache = objc_getAssociatedObject(self, _cmd);
+- (DDIndexPathSizeCache *)dd_indexPathSizeCache {
+    DDIndexPathSizeCache *cache = objc_getAssociatedObject(self, _cmd);
     if (!cache) {
-        cache = [FDIndexPathSizeCache new];
+        cache = [DDIndexPathSizeCache new];
         objc_setAssociatedObject(self, _cmd, cache, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
     }
     return cache;
@@ -115,15 +107,15 @@ typedef NSMutableArray<NSMutableArray<NSValue *> *> FDIndexPathSizesBySection;
 // We just forward primary call, in crash report, top most method in stack maybe FD's,
 // but it's really not our bug, you should check whether your table view's data source and
 // displaying cells are not matched when reloading.
-static void __FD_TEMPLATE_LAYOUT_CELL_PRIMARY_CALL_IF_CRASH_NOT_OUR_BUG__(void (^callout)(void)) {
+static void __DD_TEMPLATE_LAYOUT_CELL_PRIMARY_CALL_IF_CRASH_NOT_OUR_BUG__(void (^callout)(void)) {
     callout();
 }
-#define FDPrimaryCall(...) do {__FD_TEMPLATE_LAYOUT_CELL_PRIMARY_CALL_IF_CRASH_NOT_OUR_BUG__(^{__VA_ARGS__});} while(0)
+#define DDPrimaryCall(...) do {__DD_TEMPLATE_LAYOUT_CELL_PRIMARY_CALL_IF_CRASH_NOT_OUR_BUG__(^{__VA_ARGS__});} while(0)
 
-@implementation UICollectionView (FDIndexPathSizeCacheInvalidation)
+@implementation UICollectionView (DDIndexPathSizeCacheInvalidation)
 
-- (void)fd_reloadDataWithoutInvalidateIndexPathSizeCache {
-    FDPrimaryCall([self fd_reloadData];);
+- (void)dd_reloadDataWithoutInvalidateIndexPathSizeCache {
+    DDPrimaryCall([self dd_reloadData];);
 }
 
 + (void)load {
@@ -142,94 +134,94 @@ static void __FD_TEMPLATE_LAYOUT_CELL_PRIMARY_CALL_IF_CRASH_NOT_OUR_BUG__(void (
     
     for (NSUInteger index = 0; index < sizeof(selectors) / sizeof(SEL); ++index) {
         SEL originalSelector = selectors[index];
-        SEL swizzledSelector = NSSelectorFromString([@"fd_" stringByAppendingString:NSStringFromSelector(originalSelector)]);
+        SEL swizzledSelector = NSSelectorFromString([@"dd_" stringByAppendingString:NSStringFromSelector(originalSelector)]);
         Method originalMethod = class_getInstanceMethod(self, originalSelector);
         Method swizzledMethod = class_getInstanceMethod(self, swizzledSelector);
         method_exchangeImplementations(originalMethod, swizzledMethod);
     }
 }
 
-- (void)fd_reloadData {
-    if (self.fd_indexPathSizeCache.automaticallyInvalidateEnabled) {
-        [self.fd_indexPathSizeCache enumerateAllOrientationsUsingBlock:^(FDIndexPathSizesBySection *sizesBySection) {
+- (void)dd_reloadData {
+    if (self.dd_indexPathSizeCache.automaticallyInvalidateEnabled) {
+        [self.dd_indexPathSizeCache enumerateAllOrientationsUsingBlock:^(FDIndexPathSizesBySection *sizesBySection) {
             [sizesBySection removeAllObjects];
         }];
     }
-    FDPrimaryCall([self fd_reloadData];);
+    DDPrimaryCall([self dd_reloadData];);
 }
 
-- (void)fd_insertSections {
-    if (self.fd_indexPathSizeCache.automaticallyInvalidateEnabled) {
-        [self.fd_indexPathSizeCache enumerateAllOrientationsUsingBlock:^(FDIndexPathSizesBySection *sizesBySection) {
+- (void)dd_insertSections {
+    if (self.dd_indexPathSizeCache.automaticallyInvalidateEnabled) {
+        [self.dd_indexPathSizeCache enumerateAllOrientationsUsingBlock:^(FDIndexPathSizesBySection *sizesBySection) {
             [sizesBySection removeAllObjects];
         }];
     }
-    FDPrimaryCall([self fd_reloadData];);
+    DDPrimaryCall([self dd_reloadData];);
 }
 
-- (void)fd_insertSections:(NSIndexSet *)sections {
-    if (self.fd_indexPathSizeCache.automaticallyInvalidateEnabled) {
+- (void)dd_insertSections:(NSIndexSet *)sections {
+    if (self.dd_indexPathSizeCache.automaticallyInvalidateEnabled) {
         [sections enumerateIndexesUsingBlock:^(NSUInteger section, BOOL *stop) {
-            [self.fd_indexPathSizeCache buildSectionsIfNeeded:section];
-            [self.fd_indexPathSizeCache enumerateAllOrientationsUsingBlock:^(FDIndexPathSizesBySection *sizesBySection) {
+            [self.dd_indexPathSizeCache buildSectionsIfNeeded:section];
+            [self.dd_indexPathSizeCache enumerateAllOrientationsUsingBlock:^(FDIndexPathSizesBySection *sizesBySection) {
                 [sizesBySection insertObject:[NSMutableArray array] atIndex:section];
             }];
         }];
     }
-    FDPrimaryCall([self fd_insertSections:sections];);
+    DDPrimaryCall([self dd_insertSections:sections];);
 }
 
-- (void)fd_deleteSections:(NSIndexSet *)sections {
-    if (self.fd_indexPathSizeCache.automaticallyInvalidateEnabled) {
+- (void)dd_deleteSections:(NSIndexSet *)sections {
+    if (self.dd_indexPathSizeCache.automaticallyInvalidateEnabled) {
         [sections enumerateIndexesUsingBlock:^(NSUInteger section, BOOL *stop) {
-            [self.fd_indexPathSizeCache buildSectionsIfNeeded:section];
-            [self.fd_indexPathSizeCache enumerateAllOrientationsUsingBlock:^(FDIndexPathSizesBySection *sizesBySection) {
+            [self.dd_indexPathSizeCache buildSectionsIfNeeded:section];
+            [self.dd_indexPathSizeCache enumerateAllOrientationsUsingBlock:^(FDIndexPathSizesBySection *sizesBySection) {
                 [sizesBySection removeObjectAtIndex:section];
             }];
         }];
     }
-    FDPrimaryCall([self fd_deleteSections:sections];);
+    DDPrimaryCall([self dd_deleteSections:sections];);
 }
 
-- (void)fd_reloadSections:(NSIndexSet *)sections {
-    if (self.fd_indexPathSizeCache.automaticallyInvalidateEnabled) {
+- (void)dd_reloadSections:(NSIndexSet *)sections {
+    if (self.dd_indexPathSizeCache.automaticallyInvalidateEnabled) {
         [sections enumerateIndexesUsingBlock: ^(NSUInteger section, BOOL *stop) {
-            [self.fd_indexPathSizeCache buildSectionsIfNeeded:section];
-            [self.fd_indexPathSizeCache enumerateAllOrientationsUsingBlock:^(FDIndexPathSizesBySection *sizesBySection) {
+            [self.dd_indexPathSizeCache buildSectionsIfNeeded:section];
+            [self.dd_indexPathSizeCache enumerateAllOrientationsUsingBlock:^(FDIndexPathSizesBySection *sizesBySection) {
                 [sizesBySection[section] removeAllObjects];
             }];
 
         }];
     }
-    FDPrimaryCall([self fd_reloadSections:sections];);
+    DDPrimaryCall([self dd_reloadSections:sections];);
 }
 
-- (void)fd_moveSection:(NSInteger)section toSection:(NSInteger)newSection {
-    if (self.fd_indexPathSizeCache.automaticallyInvalidateEnabled) {
-        [self.fd_indexPathSizeCache buildSectionsIfNeeded:section];
-        [self.fd_indexPathSizeCache buildSectionsIfNeeded:newSection];
-        [self.fd_indexPathSizeCache enumerateAllOrientationsUsingBlock:^(FDIndexPathSizesBySection *sizesBySection) {
+- (void)dd_moveSection:(NSInteger)section toSection:(NSInteger)newSection {
+    if (self.dd_indexPathSizeCache.automaticallyInvalidateEnabled) {
+        [self.dd_indexPathSizeCache buildSectionsIfNeeded:section];
+        [self.dd_indexPathSizeCache buildSectionsIfNeeded:newSection];
+        [self.dd_indexPathSizeCache enumerateAllOrientationsUsingBlock:^(FDIndexPathSizesBySection *sizesBySection) {
             [sizesBySection exchangeObjectAtIndex:section withObjectAtIndex:newSection];
         }];
     }
-    FDPrimaryCall([self fd_moveSection:section toSection:newSection];);
+    DDPrimaryCall([self dd_moveSection:section toSection:newSection];);
 }
 
-- (void)fd_insertItemsAtIndexPaths:(NSArray<NSIndexPath *> *)indexPaths {
-    if (self.fd_indexPathSizeCache.automaticallyInvalidateEnabled) {
-        [self.fd_indexPathSizeCache buildCachesAtIndexPathsIfNeeded:indexPaths];
+- (void)dd_insertItemsAtIndexPaths:(NSArray<NSIndexPath *> *)indexPaths {
+    if (self.dd_indexPathSizeCache.automaticallyInvalidateEnabled) {
+        [self.dd_indexPathSizeCache buildCachesAtIndexPathsIfNeeded:indexPaths];
         [indexPaths enumerateObjectsUsingBlock:^(NSIndexPath *indexPath, NSUInteger idx, BOOL *stop) {
-            [self.fd_indexPathSizeCache enumerateAllOrientationsUsingBlock:^(FDIndexPathSizesBySection *sizesBySection) {
+            [self.dd_indexPathSizeCache enumerateAllOrientationsUsingBlock:^(FDIndexPathSizesBySection *sizesBySection) {
                 [sizesBySection[indexPath.section] insertObject:@-1 atIndex:indexPath.row];
             }];
         }];
     }
-    FDPrimaryCall([self fd_insertItemsAtIndexPaths:indexPaths];);
+    DDPrimaryCall([self dd_insertItemsAtIndexPaths:indexPaths];);
 }
 
-- (void)fd_deleteItemsAtIndexPaths:(NSArray<NSIndexPath *> *)indexPaths {
-    if (self.fd_indexPathSizeCache.automaticallyInvalidateEnabled) {
-        [self.fd_indexPathSizeCache buildCachesAtIndexPathsIfNeeded:indexPaths];
+- (void)dd_deleteItemsAtIndexPaths:(NSArray<NSIndexPath *> *)indexPaths {
+    if (self.dd_indexPathSizeCache.automaticallyInvalidateEnabled) {
+        [self.dd_indexPathSizeCache buildCachesAtIndexPathsIfNeeded:indexPaths];
         
         NSMutableDictionary<NSNumber *, NSMutableIndexSet *> *mutableIndexSetsToRemove = [NSMutableDictionary dictionary];
         [indexPaths enumerateObjectsUsingBlock:^(NSIndexPath *indexPath, NSUInteger idx, BOOL *stop) {
@@ -242,30 +234,30 @@ static void __FD_TEMPLATE_LAYOUT_CELL_PRIMARY_CALL_IF_CRASH_NOT_OUR_BUG__(void (
         }];
         
         [mutableIndexSetsToRemove enumerateKeysAndObjectsUsingBlock:^(NSNumber *key, NSIndexSet *indexSet, BOOL *stop) {
-            [self.fd_indexPathSizeCache enumerateAllOrientationsUsingBlock:^(FDIndexPathSizesBySection *sizesBySection) {
+            [self.dd_indexPathSizeCache enumerateAllOrientationsUsingBlock:^(FDIndexPathSizesBySection *sizesBySection) {
                 [sizesBySection[key.integerValue] removeObjectsAtIndexes:indexSet];
             }];
         }];
     }
-    FDPrimaryCall([self fd_deleteItemsAtIndexPaths:indexPaths];);
+    DDPrimaryCall([self dd_deleteItemsAtIndexPaths:indexPaths];);
 }
 
-- (void)fd_reloadItemsAtIndexPaths:(NSArray<NSIndexPath *> *)indexPaths {
-    if (self.fd_indexPathSizeCache.automaticallyInvalidateEnabled) {
-        [self.fd_indexPathSizeCache buildCachesAtIndexPathsIfNeeded:indexPaths];
+- (void)dd_reloadItemsAtIndexPaths:(NSArray<NSIndexPath *> *)indexPaths {
+    if (self.dd_indexPathSizeCache.automaticallyInvalidateEnabled) {
+        [self.dd_indexPathSizeCache buildCachesAtIndexPathsIfNeeded:indexPaths];
         [indexPaths enumerateObjectsUsingBlock:^(NSIndexPath *indexPath, NSUInteger idx, BOOL *stop) {
-            [self.fd_indexPathSizeCache enumerateAllOrientationsUsingBlock:^(FDIndexPathSizesBySection *sizesBySection) {
+            [self.dd_indexPathSizeCache enumerateAllOrientationsUsingBlock:^(FDIndexPathSizesBySection *sizesBySection) {
                 sizesBySection[indexPath.section][indexPath.row] = @-1;
             }];
         }];
     }
-    FDPrimaryCall([self fd_reloadItemsAtIndexPaths:indexPaths];);
+    DDPrimaryCall([self dd_reloadItemsAtIndexPaths:indexPaths];);
 }
 
-- (void)fd_moveItemAtIndexPath:(NSIndexPath *)indexPath toIndexPath:(NSIndexPath *)newIndexPath {
-    if (self.fd_indexPathSizeCache.automaticallyInvalidateEnabled) {
-        [self.fd_indexPathSizeCache buildCachesAtIndexPathsIfNeeded:@[indexPath, newIndexPath]];
-        [self.fd_indexPathSizeCache enumerateAllOrientationsUsingBlock:^(FDIndexPathSizesBySection *sizesBySection) {
+- (void)dd_moveItemAtIndexPath:(NSIndexPath *)indexPath toIndexPath:(NSIndexPath *)newIndexPath {
+    if (self.dd_indexPathSizeCache.automaticallyInvalidateEnabled) {
+        [self.dd_indexPathSizeCache buildCachesAtIndexPathsIfNeeded:@[indexPath, newIndexPath]];
+        [self.dd_indexPathSizeCache enumerateAllOrientationsUsingBlock:^(FDIndexPathSizesBySection *sizesBySection) {
             NSMutableArray<NSValue *> *sourceItems = sizesBySection[indexPath.section];
             NSMutableArray<NSValue *> *destinationItems = sizesBySection[newIndexPath.section];
             NSValue *sourceValue = sourceItems[indexPath.item];
@@ -274,7 +266,7 @@ static void __FD_TEMPLATE_LAYOUT_CELL_PRIMARY_CALL_IF_CRASH_NOT_OUR_BUG__(void (
             destinationItems[newIndexPath.item] = sourceValue;
         }];
     }
-    FDPrimaryCall([self fd_moveItemAtIndexPath:indexPath toIndexPath:newIndexPath];);
+    DDPrimaryCall([self dd_moveItemAtIndexPath:indexPath toIndexPath:newIndexPath];);
 }
 
 @end

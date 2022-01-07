@@ -1,26 +1,18 @@
-//
-//  UICollectionView+FDTemplateLayoutCell.h
-//  Demo
-//
-//  Created by mac on 2021/9/14.
-//  Copyright © 2021 forkingdog. All rights reserved.
-//
-
 #import <UIKit/UIKit.h>
-#import "UICollectionView+FDKeyedSizeCache.h"
-#import "UICollectionView+FDIndexPathSizeCache.h"
-#import "UICollectionView+FDTemplateLayoutCellDebug.h"
+#import "UICollectionView+DDKeyedSizeCache.h"
+#import "UICollectionView+DDIndexPathSizeCache.h"
+#import "UICollectionView+DDTemplateLayoutCellDebug.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface UICollectionView (FDTemplateLayoutCell)
+@interface UICollectionView (DDTemplateLayoutCell)
 
 /// Access to internal template layout cell for given reuse identifier.
 /// Generally, you don't need to know these template layout cells.
 ///
 /// @param identifier Reuse identifier for cell which must be registered.
 ///
-- (__kindof UICollectionViewCell *)fd_templateCellForReuseIdentifier:(NSString *)identifier
+- (__kindof UICollectionViewCell *)dd_templateCellForReuseIdentifier:(NSString *)identifier
                                                         forIndexPath:(NSIndexPath *)indexPath;
 
 /// Returns height of cell of type specifed by a reuse identifier and configured
@@ -37,22 +29,22 @@ NS_ASSUME_NONNULL_BEGIN
 ///        to the template cell. The configuration should be minimal for scrolling
 ///        performance yet sufficient for calculating cell's height.
 ///
-- (CGSize)fd_sizeForCellWithIdentifier:(NSString *)identifier
+- (CGSize)dd_sizeForCellWithIdentifier:(NSString *)identifier
                              indexPath:(NSIndexPath *)indexPath
                          configuration:(void (^)(id cell))configuration;
 
-- (CGSize)fd_sizeForCellWithIdentifier:(NSString *)identifier
+- (CGSize)dd_sizeForCellWithIdentifier:(NSString *)identifier
                             fixedWidth:(CGFloat)fixedWidth
                              indexPath:(NSIndexPath *)indexPath
                          configuration:(void (^)(id cell))configuration;
 
-- (CGSize)fd_sizeForCellWithIdentifier:(NSString *)identifier
+- (CGSize)dd_sizeForCellWithIdentifier:(NSString *)identifier
                            fixedHeight:(CGFloat)fixedHeight
                              indexPath:(NSIndexPath *)indexPath
                          configuration:(void (^)(id cell))configuration;
 
 
-/// This method does what "-fd_heightForCellWithIdentifier:configuration" does, and
+/// This method does what "-dd_heightForCellWithIdentifier:configuration" does, and
 /// calculated height will be cached by its index path, returns a cached height
 /// when needed. Therefore lots of extra height calculations could be saved.
 ///
@@ -62,16 +54,16 @@ NS_ASSUME_NONNULL_BEGIN
 ///
 /// @param indexPath where this cell's height cache belongs.
 ///
-- (CGSize)fd_sizeForCellWithIdentifier:(NSString *)identifier
+- (CGSize)dd_sizeForCellWithIdentifier:(NSString *)identifier
                       cacheByIndexPath:(NSIndexPath *)indexPath
                          configuration:(void (^)(id cell))configuration;
 
-- (CGSize)fd_sizeForCellWithIdentifier:(NSString *)identifier
+- (CGSize)dd_sizeForCellWithIdentifier:(NSString *)identifier
                             fixedWidth:(CGFloat)fixedWidth
                       cacheByIndexPath:(NSIndexPath *)indexPath
                          configuration:(void (^)(id cell))configuration;
 
-- (CGSize)fd_sizeForCellWithIdentifier:(NSString *)identifier
+- (CGSize)dd_sizeForCellWithIdentifier:(NSString *)identifier
                            fixedHeight:(CGFloat)fixedHeight
                       cacheByIndexPath:(NSIndexPath *)indexPath
                          configuration:(void (^)(id cell))configuration;
@@ -82,18 +74,18 @@ NS_ASSUME_NONNULL_BEGIN
 ///
 /// @param key model entity's identifier whose data configures a cell.
 ///
-- (CGSize)fd_sizeForCellWithIdentifier:(NSString *)identifier
+- (CGSize)dd_sizeForCellWithIdentifier:(NSString *)identifier
                             cacheByKey:(id<NSCopying>)key
                              indexPath:(NSIndexPath *)indexPath
                          configuration:(void (^)(id cell))configuration;
 
-- (CGSize)fd_sizeForCellWithIdentifier:(NSString *)identifier
+- (CGSize)dd_sizeForCellWithIdentifier:(NSString *)identifier
                             fixedWidth:(CGFloat)fixedWidth
                             cacheByKey:(id<NSCopying>)key
                              indexPath:(NSIndexPath *)indexPath
                          configuration:(void (^)(id cell))configuration;
 
-- (CGSize)fd_sizeForCellWithIdentifier:(NSString *)identifier
+- (CGSize)dd_sizeForCellWithIdentifier:(NSString *)identifier
                            fixedHeight:(CGFloat)fixedHeight
                             cacheByKey:(id<NSCopying>)key
                              indexPath:(NSIndexPath *)indexPath
@@ -101,41 +93,41 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
-@interface UICollectionView (FDTemplateLayoutReusableSupplementaryView)
+@interface UICollectionView (DDTemplateLayoutReusableSupplementaryView)
 
 /// Returns header or footer view's height that registered in table view with reuse identifier.
 ///
 /// Use it after calling "-[UITableView registerNib/Class:forHeaderFooterViewReuseIdentifier]",
-/// same with "-fd_heightForCellWithIdentifier:configuration:", it will call "-sizeThatFits:" for
+/// same with "-dd_heightForCellWithIdentifier:configuration:", it will call "-sizeThatFits:" for
 /// subclass of UITableViewHeaderFooterView which is not using Auto Layout.
 ///
-- (CGFloat)fd_sizeForReusableSupplementaryViewWithKind:(NSString *)kind
+- (CGFloat)dd_sizeForReusableSupplementaryViewWithKind:(NSString *)kind
                                             identifier:(NSString *)identifier
                                              indexPath:(NSIndexPath *)indexPath
                                          configuration:(void (^)(id))configuration;
 
 @end
 
-@interface UICollectionViewCell (FDTemplateLayoutCell)
+@interface UICollectionViewCell (DDTemplateLayoutCell)
 
 /// Indicate this is a template layout cell for calculation only.
 /// You may need this when there are non-UI side effects when configure a cell.
 /// Like:
 ///   - (void)configureCell:(FooCell *)cell atIndexPath:(NSIndexPath *)indexPath {
 ///       cell.entity = [self entityAtIndexPath:indexPath];
-///       if (!cell.fd_isTemplateLayoutCell) {
+///       if (!cell.dd_isTemplateLayoutCell) {
 ///           [self notifySomething]; // non-UI side effects
 ///       }
 ///   }
 ///
-@property (nonatomic, assign) BOOL fd_isTemplateLayoutCell;
+@property (nonatomic, assign) BOOL dd_isTemplateLayoutCell;
 
 /// Enable to enforce this template layout cell to use "frame layout" rather than "auto layout",
 /// and will ask cell's height by calling "-sizeThatFits:", so you must override this method.
 /// Use this property only when you want to manually control this template layout cell's height
 /// calculation mode, default to NO.
 ///
-@property (nonatomic, assign) BOOL fd_enforceFrameLayout;
+@property (nonatomic, assign) BOOL dd_enforceFrameLayout;
 
 @end
 

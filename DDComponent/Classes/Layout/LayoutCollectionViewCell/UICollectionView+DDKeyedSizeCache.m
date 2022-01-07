@@ -1,20 +1,12 @@
-//
-//  UICollectionView+FDKeyedSizeCache.m
-//  Demo
-//
-//  Created by mac on 2021/9/14.
-//  Copyright © 2021 forkingdog. All rights reserved.
-//
-
-#import "UICollectionView+FDKeyedSizeCache.h"
+#import "UICollectionView+DDKeyedSizeCache.h"
 #import <objc/runtime.h>
 
-@interface FDKeyedSizeCache ()
+@interface DDKeyedSizeCache ()
 @property (nonatomic, strong) NSMutableDictionary<id<NSCopying>, NSValue *> *mutableSizesByKeyForPortrait;
 @property (nonatomic, strong) NSMutableDictionary<id<NSCopying>, NSValue *> *mutableSizesByKeyForLandscape;
 @end
 
-@implementation FDKeyedSizeCache
+@implementation DDKeyedSizeCache
 
 - (instancetype)init {
     self = [super init];
@@ -54,12 +46,12 @@
 
 @end
 
-@implementation UICollectionView (FDKeyedSizeCache)
+@implementation UICollectionView (DDKeyedSizeCache)
 
-- (FDKeyedSizeCache *)fd_keyedSizeCache {
-    FDKeyedSizeCache *cache = objc_getAssociatedObject(self, _cmd);
+- (DDKeyedSizeCache *)dd_keyedSizeCache {
+    DDKeyedSizeCache *cache = objc_getAssociatedObject(self, _cmd);
     if (!cache) {
-        cache = [FDKeyedSizeCache new];
+        cache = [DDKeyedSizeCache new];
         objc_setAssociatedObject(self, _cmd, cache, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
     }
     return cache;

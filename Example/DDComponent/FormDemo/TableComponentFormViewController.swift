@@ -33,6 +33,8 @@ class TableComponentFormViewController: UIViewController {
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
         self.tableView.frame = self.view.bounds
+        
+        self.view.contentMode
     }
     
     @objc class func catalogBreadcrumbs() -> [String] {

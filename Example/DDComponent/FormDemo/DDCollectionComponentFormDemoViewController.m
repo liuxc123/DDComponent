@@ -33,12 +33,18 @@
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Refresh" style:UIBarButtonItemStylePlain target:self action:@selector(refreshAction)];
     
     UICollectionViewFlowLayout *layout = [UICollectionViewFlowLayout new];
-    layout.estimatedItemSize = CGSizeMake(self.view.frame.size.width, 60);
+//    layout.estimatedItemSize = CGSizeMake(self.view.frame.size.width, 60);
     self.collectionView = [[UICollectionView alloc] initWithFrame:self.view.bounds collectionViewLayout: layout];
     self.collectionView.backgroundColor = UIColor.whiteColor;
     [self.view addSubview:self.collectionView];
 
     self.rootComponent = [[DDCollectionViewRootComponent alloc] initWithCollectionView:self.collectionView];
+    
+    [self setupComponent];
+}
+
+- (void)setupComponent {
+    NSMutableArray *subComponents = [NSMutableArray array];
     
     /// item1
     DDComponentLayoutSize *itemSize = [DDComponentLayoutSize
@@ -47,21 +53,31 @@
     
     DDCollectionViewFormItemComponent *item = [[DDCollectionViewFormItemComponent alloc] initWithItemView:self.label];
     item.itemSize = itemSize;
-    
+    [subComponents addObject:item];
+
     /// item2
     DDCollectionViewFormItemComponent *item2 = [[DDCollectionViewFormItemComponent alloc] initWithItemView:self.label2];
-    item.itemSize = itemSize;
+    item2.itemSize = itemSize;
+    [subComponents addObject:item2];
 
     /// item3
     DDCollectionViewFormItemComponent *item3 = [[DDCollectionViewFormItemComponent alloc] initWithItemView:self.label3];
-    item.itemSize = itemSize;
+    item3.itemSize = itemSize;
+    [subComponents addObject:item3];
+    
+    for (int i = 0; i < 10; i++) {
+        UILabel *label = [[UILabel alloc] init];
+        label.text = @"大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大";
+        label.numberOfLines = 0;
+        label.backgroundColor = arc4random()%100 > 50 ? UIColor.redColor : UIColor.greenColor;
+        DDCollectionViewFormItemComponent *item = [[DDCollectionViewFormItemComponent alloc] initWithItemView:label];
+        item.itemSize = itemSize;
+        [subComponents addObject:item];
+    }
 
     /// Group
-    DDCollectionViewItemGroupComponent *group = [DDCollectionViewItemGroupComponent componentWithSubComponents:@[
-        item,
-        item2
-    ]];
-    group.lineSpacing = 0;
+    DDCollectionViewItemGroupComponent *group = [DDCollectionViewItemGroupComponent componentWithSubComponents:subComponents];
+    group.lineSpacing = 10;
     group.itemSpacing = 0;
     group.sectionInset = UIEdgeInsetsMake(10, 10, 10, 10);
     self.group = group;
@@ -82,10 +98,11 @@
 //    self.label.text = @"大叔大婶大所大所大所大所大";
 //    self.label2.text = @"大叔大婶大所大所大所大所大";
 //    self.label3.text = @"大叔大婶大所大所大所大所大";
-//
-//
+    [self setupComponent];
+
+
 //    [self.collectionView performBatchUpdates:^{
-//        [self animateCollection];
+////        [self animateCollection];
 //    } completion:^(BOOL finished) {
 //
 //    }];

@@ -1,29 +1,21 @@
-//
-//  UICollectionView+FDTemplateLayoutCell.m
-//  Demo
-//
-//  Created by mac on 2021/9/14.
-//  Copyright © 2021 forkingdog. All rights reserved.
-//
-
-#import "UICollectionView+FDTemplateLayoutCell.h"
+#import "UICollectionView+DDTemplateLayoutCell.h"
 #import <objc/runtime.h>
 
-typedef NS_ENUM(NSUInteger, FDTemplateDynamicSizeCaculateType) {
-    FDTemplateDynamicSizeCaculateTypeSize = 0,
-    FDTemplateDynamicSizeCaculateTypeHeight,
-    FDTemplateDynamicSizeCaculateTypeWidth
+typedef NS_ENUM(NSUInteger, DDTemplateDynamicSizeCaculateType) {
+    DDTemplateDynamicSizeCaculateTypeSize = 0,
+    DDTemplateDynamicSizeCaculateTypeHeight,
+    DDTemplateDynamicSizeCaculateTypeWidth
 };
 
-@implementation UICollectionView (FDTemplateLayoutCell)
+@implementation UICollectionView (DDTemplateLayoutCell)
 
-- (CGSize)fd_systemFittingSizeForConfiguratedCell:(UICollectionViewCell *)cell
+- (CGSize)dd_systemFittingSizeForConfiguratedCell:(UICollectionViewCell *)cell
                                        fixedValue:(CGFloat)fixedValue
-                                     caculateType:(FDTemplateDynamicSizeCaculateType)caculateType {
+                                     caculateType:(DDTemplateDynamicSizeCaculateType)caculateType {
     CGSize fittingSize = CGSizeMake(fixedValue, fixedValue);
     
-    if (caculateType != FDTemplateDynamicSizeCaculateTypeSize) {
-        NSLayoutAttribute attribute = caculateType == FDTemplateDynamicSizeCaculateTypeWidth
+    if (caculateType != DDTemplateDynamicSizeCaculateTypeSize) {
+        NSLayoutAttribute attribute = caculateType == DDTemplateDynamicSizeCaculateTypeWidth
         ? NSLayoutAttributeWidth
         : NSLayoutAttributeHeight;
         NSLayoutConstraint *tempConstraint =
@@ -45,7 +37,7 @@ typedef NS_ENUM(NSUInteger, FDTemplateDynamicSizeCaculateType) {
     return fittingSize;
 }
 
-- (__kindof UICollectionViewCell *)fd_templateCellForReuseIdentifier:(NSString *)identifier forIndexPath:(NSIndexPath *)indexPath {
+- (__kindof UICollectionViewCell *)dd_templateCellForReuseIdentifier:(NSString *)identifier forIndexPath:(NSIndexPath *)indexPath {
     NSAssert(identifier.length > 0, @"Expect a valid identifier - %@", identifier);
     
     NSMutableDictionary<NSString *, UICollectionViewCell *> *templateCellsByIdentifiers = objc_getAssociatedObject(self, _cmd);
@@ -59,59 +51,59 @@ typedef NS_ENUM(NSUInteger, FDTemplateDynamicSizeCaculateType) {
     if (!templateCell) {
         templateCell = [self dequeueReusableCellWithReuseIdentifier:identifier forIndexPath:indexPath];
         NSAssert(templateCell != nil, @"Cell must be registered to table view for identifier - %@", identifier);
-        templateCell.fd_isTemplateLayoutCell = YES;
+        templateCell.dd_isTemplateLayoutCell = YES;
         templateCell.contentView.translatesAutoresizingMaskIntoConstraints = NO;
         templateCellsByIdentifiers[identifier] = templateCell;
-        [self fd_debugLog:[NSString stringWithFormat:@"layout cell created - %@", identifier]];
+        [self dd_debugLog:[NSString stringWithFormat:@"layout cell created - %@", identifier]];
     }
     
     return templateCell;
 }
 
-- (CGSize)fd_sizeForCellWithIdentifier:(NSString *)identifier
+- (CGSize)dd_sizeForCellWithIdentifier:(NSString *)identifier
                              indexPath:(nonnull NSIndexPath *)indexPath
                          configuration:(void (^)(id _Nonnull))configuration {
-    return [self fd_sizeForCellWithIdentifier:identifier
+    return [self dd_sizeForCellWithIdentifier:identifier
                                    fixedValue:0
-                                 caculateType:FDTemplateDynamicSizeCaculateTypeSize
+                                 caculateType:DDTemplateDynamicSizeCaculateTypeSize
                                     indexPath:indexPath
                                 configuration:configuration];
 }
 
-- (CGSize)fd_sizeForCellWithIdentifier:(NSString *)identifier
+- (CGSize)dd_sizeForCellWithIdentifier:(NSString *)identifier
                             fixedWidth:(CGFloat)fixedWidth
                              indexPath:(nonnull NSIndexPath *)indexPath
                          configuration:(void (^)(id _Nonnull))configuration {
-    return [self fd_sizeForCellWithIdentifier:identifier
+    return [self dd_sizeForCellWithIdentifier:identifier
                                    fixedValue:fixedWidth
-                                 caculateType:FDTemplateDynamicSizeCaculateTypeWidth
+                                 caculateType:DDTemplateDynamicSizeCaculateTypeWidth
                                     indexPath:indexPath
                                 configuration:configuration];
 }
 
 
-- (CGSize)fd_sizeForCellWithIdentifier:(NSString *)identifier
+- (CGSize)dd_sizeForCellWithIdentifier:(NSString *)identifier
                            fixedHeight:(CGFloat)fixedHeight
                              indexPath:(nonnull NSIndexPath *)indexPath
                          configuration:(void (^)(id _Nonnull))configuration {
-    return [self fd_sizeForCellWithIdentifier:identifier
+    return [self dd_sizeForCellWithIdentifier:identifier
                                    fixedValue:fixedHeight
-                                 caculateType:FDTemplateDynamicSizeCaculateTypeHeight
+                                 caculateType:DDTemplateDynamicSizeCaculateTypeHeight
                                     indexPath:indexPath
                                 configuration:configuration];
 }
 
 
-- (CGSize)fd_sizeForCellWithIdentifier:(NSString *)identifier
+- (CGSize)dd_sizeForCellWithIdentifier:(NSString *)identifier
                            fixedValue:(CGFloat)fixedValue
-                          caculateType:(FDTemplateDynamicSizeCaculateType)caculateType
+                          caculateType:(DDTemplateDynamicSizeCaculateType)caculateType
                              indexPath:(nonnull NSIndexPath *)indexPath
                          configuration:(void (^)(id _Nonnull))configuration {
     if (!identifier) {
         return CGSizeZero;
     }
     
-    UICollectionViewCell *templateLayoutCell = [self fd_templateCellForReuseIdentifier:identifier forIndexPath:indexPath];
+    UICollectionViewCell *templateLayoutCell = [self dd_templateCellForReuseIdentifier:identifier forIndexPath:indexPath];
     
     // Manually calls to ensure consistent behavior with actual cells. (that are displayed on screen)
     [templateLayoutCell prepareForReuse];
@@ -121,45 +113,45 @@ typedef NS_ENUM(NSUInteger, FDTemplateDynamicSizeCaculateType) {
         configuration(templateLayoutCell);
     }
     
-    return [self fd_systemFittingSizeForConfiguratedCell:templateLayoutCell fixedValue:fixedValue caculateType:caculateType];
+    return [self dd_systemFittingSizeForConfiguratedCell:templateLayoutCell fixedValue:fixedValue caculateType:caculateType];
 }
 
-- (CGSize)fd_sizeForCellWithIdentifier:(NSString *)identifier
+- (CGSize)dd_sizeForCellWithIdentifier:(NSString *)identifier
                       cacheByIndexPath:(NSIndexPath *)indexPath
                          configuration:(void (^)(id cell))configuration {
-    return [self fd_sizeForCellWithIdentifier:identifier
+    return [self dd_sizeForCellWithIdentifier:identifier
                                    fixedValue:0
-                                 caculateType:FDTemplateDynamicSizeCaculateTypeSize
+                                 caculateType:DDTemplateDynamicSizeCaculateTypeSize
                              cacheByIndexPath:indexPath
                                 configuration:configuration];
 }
 
 
-- (CGSize)fd_sizeForCellWithIdentifier:(NSString *)identifier
+- (CGSize)dd_sizeForCellWithIdentifier:(NSString *)identifier
                             fixedWidth:(CGFloat)fixedWidth
                       cacheByIndexPath:(NSIndexPath *)indexPath
                          configuration:(void (^)(id cell))configuration {
-    return [self fd_sizeForCellWithIdentifier:identifier
+    return [self dd_sizeForCellWithIdentifier:identifier
                                    fixedValue:fixedWidth
-                                 caculateType:FDTemplateDynamicSizeCaculateTypeWidth
+                                 caculateType:DDTemplateDynamicSizeCaculateTypeWidth
                              cacheByIndexPath:indexPath
                                 configuration:configuration];
 }
 
-- (CGSize)fd_sizeForCellWithIdentifier:(NSString *)identifier
+- (CGSize)dd_sizeForCellWithIdentifier:(NSString *)identifier
                             fixedHeight:(CGFloat)fixedHeight
                       cacheByIndexPath:(NSIndexPath *)indexPath
                          configuration:(void (^)(id cell))configuration {
-    return [self fd_sizeForCellWithIdentifier:identifier
+    return [self dd_sizeForCellWithIdentifier:identifier
                                    fixedValue:fixedHeight
-                                 caculateType:FDTemplateDynamicSizeCaculateTypeHeight
+                                 caculateType:DDTemplateDynamicSizeCaculateTypeHeight
                              cacheByIndexPath:indexPath
                                 configuration:configuration];
 }
 
-- (CGSize)fd_sizeForCellWithIdentifier:(NSString *)identifier
+- (CGSize)dd_sizeForCellWithIdentifier:(NSString *)identifier
                             fixedValue:(CGFloat)fixedValue
-                          caculateType:(FDTemplateDynamicSizeCaculateType)caculateType
+                          caculateType:(DDTemplateDynamicSizeCaculateType)caculateType
                       cacheByIndexPath:(NSIndexPath *)indexPath
                          configuration:(void (^)(id cell))configuration {
     if (!identifier || !indexPath) {
@@ -167,60 +159,60 @@ typedef NS_ENUM(NSUInteger, FDTemplateDynamicSizeCaculateType) {
     }
     
     // Hit cache
-    if ([self.fd_indexPathSizeCache existsSizeAtIndexPath:indexPath]) {
-        [self fd_debugLog:[NSString stringWithFormat:@"hit cache by index path[%@:%@] - %@", @(indexPath.section), @(indexPath.row), @([self.fd_indexPathSizeCache sizeForIndexPath:indexPath])]];
-        return [self.fd_indexPathSizeCache sizeForIndexPath:indexPath];
+    if ([self.dd_indexPathSizeCache existsSizeAtIndexPath:indexPath]) {
+        [self dd_debugLog:[NSString stringWithFormat:@"hit cache by index path[%@:%@] - %@", @(indexPath.section), @(indexPath.row), @([self.dd_indexPathSizeCache sizeForIndexPath:indexPath])]];
+        return [self.dd_indexPathSizeCache sizeForIndexPath:indexPath];
     }
     
-    CGSize size = [self fd_sizeForCellWithIdentifier:identifier fixedValue:fixedValue caculateType:caculateType indexPath:indexPath configuration:configuration];
-    [self.fd_indexPathSizeCache cacheSize:size byIndexPath:indexPath];
-    [self fd_debugLog:[NSString stringWithFormat: @"cached by index path[%@:%@] - w:%@ h:%@", @(indexPath.section), @(indexPath.row), @(size.width), @(size.height)]];
+    CGSize size = [self dd_sizeForCellWithIdentifier:identifier fixedValue:fixedValue caculateType:caculateType indexPath:indexPath configuration:configuration];
+    [self.dd_indexPathSizeCache cacheSize:size byIndexPath:indexPath];
+    [self dd_debugLog:[NSString stringWithFormat: @"cached by index path[%@:%@] - w:%@ h:%@", @(indexPath.section), @(indexPath.row), @(size.width), @(size.height)]];
     
     return size;
 }
 
-- (CGSize)fd_sizeForCellWithIdentifier:(NSString *)identifier
+- (CGSize)dd_sizeForCellWithIdentifier:(NSString *)identifier
                             cacheByKey:(id<NSCopying>)key
                              indexPath:(NSIndexPath *)indexPath
                          configuration:(void (^)(id cell))configuration {
-    return [self fd_sizeForCellWithIdentifier:identifier
+    return [self dd_sizeForCellWithIdentifier:identifier
                                    fixedValue:0
-                                 caculateType:FDTemplateDynamicSizeCaculateTypeSize
+                                 caculateType:DDTemplateDynamicSizeCaculateTypeSize
                                    cacheByKey:key
                                     indexPath:indexPath
                                 configuration:configuration];
 }
 
-- (CGSize)fd_sizeForCellWithIdentifier:(NSString *)identifier
+- (CGSize)dd_sizeForCellWithIdentifier:(NSString *)identifier
                             fixedWidth:(CGFloat)fixedWidth
                             cacheByKey:(id<NSCopying>)key
                              indexPath:(NSIndexPath *)indexPath
                          configuration:(void (^)(id cell))configuration {
-    return [self fd_sizeForCellWithIdentifier:identifier
+    return [self dd_sizeForCellWithIdentifier:identifier
                                    fixedValue:fixedWidth
-                                 caculateType:FDTemplateDynamicSizeCaculateTypeWidth
+                                 caculateType:DDTemplateDynamicSizeCaculateTypeWidth
                                    cacheByKey:key
                                     indexPath:indexPath
                                 configuration:configuration];
 }
 
 
-- (CGSize)fd_sizeForCellWithIdentifier:(NSString *)identifier
+- (CGSize)dd_sizeForCellWithIdentifier:(NSString *)identifier
                            fixedHeight:(CGFloat)fixedHeight
                             cacheByKey:(id<NSCopying>)key
                              indexPath:(NSIndexPath *)indexPath
                          configuration:(void (^)(id cell))configuration {
-    return [self fd_sizeForCellWithIdentifier:identifier
+    return [self dd_sizeForCellWithIdentifier:identifier
                                    fixedValue:fixedHeight
-                                 caculateType:FDTemplateDynamicSizeCaculateTypeHeight
+                                 caculateType:DDTemplateDynamicSizeCaculateTypeHeight
                                    cacheByKey:key
                                     indexPath:indexPath
                                 configuration:configuration];
 }
 
-- (CGSize)fd_sizeForCellWithIdentifier:(NSString *)identifier
+- (CGSize)dd_sizeForCellWithIdentifier:(NSString *)identifier
                             fixedValue:(CGFloat)fixedValue
-                          caculateType:(FDTemplateDynamicSizeCaculateType)caculateType
+                          caculateType:(DDTemplateDynamicSizeCaculateType)caculateType
                             cacheByKey:(id<NSCopying>)key
                              indexPath:(NSIndexPath *)indexPath
                          configuration:(void (^)(id cell))configuration {
@@ -229,24 +221,24 @@ typedef NS_ENUM(NSUInteger, FDTemplateDynamicSizeCaculateType) {
     }
     
     // Hit cache
-    if ([self.fd_keyedSizeCache existsSizeForKey:key]) {
-        CGSize cachedSize = [self.fd_keyedSizeCache sizeForKey:key];
-        [self fd_debugLog:[NSString stringWithFormat:@"hit cache by key[%@] - w:%@ h:%@", key, @(cachedSize.width), @(cachedSize.height)]];
+    if ([self.dd_keyedSizeCache existsSizeForKey:key]) {
+        CGSize cachedSize = [self.dd_keyedSizeCache sizeForKey:key];
+        [self dd_debugLog:[NSString stringWithFormat:@"hit cache by key[%@] - w:%@ h:%@", key, @(cachedSize.width), @(cachedSize.height)]];
         return cachedSize;
     }
     
-    CGSize size = [self fd_sizeForCellWithIdentifier:identifier indexPath:indexPath configuration:configuration];
-    [self.fd_keyedSizeCache cacheSize:size byKey:key];
-    [self fd_debugLog:[NSString stringWithFormat:@"cached by key[%@] - w:%@ h:%@", key, @(size.width), @(size.height)]];
+    CGSize size = [self dd_sizeForCellWithIdentifier:identifier indexPath:indexPath configuration:configuration];
+    [self.dd_keyedSizeCache cacheSize:size byKey:key];
+    [self dd_debugLog:[NSString stringWithFormat:@"cached by key[%@] - w:%@ h:%@", key, @(size.width), @(size.height)]];
     
     return size;
 }
 
 @end
 
-@implementation UICollectionView (FDTemplateLayoutReusableSupplementaryView)
+@implementation UICollectionView (DDTemplateLayoutReusableSupplementaryView)
 
-- (__kindof UICollectionReusableView *)fd_templateReusableSupplementaryViewForKind:(NSString *)kind
+- (__kindof UICollectionReusableView *)dd_templateReusableSupplementaryViewForKind:(NSString *)kind
                                                                    reuseIdentifier:(NSString *)identifier
                                                                          indexPath:(NSIndexPath *)indexPath {
     NSAssert(identifier.length > 0, @"Expect a valid identifier - %@", identifier);
@@ -264,17 +256,17 @@ typedef NS_ENUM(NSUInteger, FDTemplateDynamicSizeCaculateType) {
         NSAssert(templateSupplementaryView != nil, @"ReusableSupplementaryView must be registered to collection view for identifier - %@", identifier);
         templateSupplementaryView.translatesAutoresizingMaskIntoConstraints = NO;
         templateSupplementaryViews[identifier] = templateSupplementaryView;
-        [self fd_debugLog:[NSString stringWithFormat:@"layout header footer view created - %@", identifier]];
+        [self dd_debugLog:[NSString stringWithFormat:@"layout header footer view created - %@", identifier]];
     }
     
     return templateSupplementaryView;
 }
 
-- (CGFloat)fd_sizeForReusableSupplementaryViewWithKind:(NSString *)kind
+- (CGFloat)dd_sizeForReusableSupplementaryViewWithKind:(NSString *)kind
                                             identifier:(NSString *)identifier
                                              indexPath:(NSIndexPath *)indexPath
                                          configuration:(void (^)(id))configuration {
-    UICollectionReusableView *templateSupplementaryView = [self fd_templateReusableSupplementaryViewForKind:kind reuseIdentifier:identifier indexPath:indexPath];
+    UICollectionReusableView *templateSupplementaryView = [self dd_templateReusableSupplementaryViewForKind:kind reuseIdentifier:identifier indexPath:indexPath];
     
     NSLayoutConstraint *widthFenceConstraint = [NSLayoutConstraint constraintWithItem:templateSupplementaryView attribute:NSLayoutAttributeWidth relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeNotAnAttribute multiplier:1.0 constant:CGRectGetWidth(self.frame)];
     [templateSupplementaryView addConstraint:widthFenceConstraint];
@@ -290,22 +282,22 @@ typedef NS_ENUM(NSUInteger, FDTemplateDynamicSizeCaculateType) {
 
 @end
 
-@implementation UICollectionViewCell (FDTemplateLayoutCell)
+@implementation UICollectionViewCell (DDTemplateLayoutCell)
 
-- (BOOL)fd_isTemplateLayoutCell {
+- (BOOL)dd_isTemplateLayoutCell {
     return [objc_getAssociatedObject(self, _cmd) boolValue];
 }
 
-- (void)setFd_isTemplateLayoutCell:(BOOL)isTemplateLayoutCell {
-    objc_setAssociatedObject(self, @selector(fd_isTemplateLayoutCell), @(isTemplateLayoutCell), OBJC_ASSOCIATION_RETAIN);
+- (void)setDd_isTemplateLayoutCell:(BOOL)isTemplateLayoutCell {
+    objc_setAssociatedObject(self, @selector(dd_isTemplateLayoutCell), @(isTemplateLayoutCell), OBJC_ASSOCIATION_RETAIN);
 }
 
-- (BOOL)fd_enforceFrameLayout {
+- (BOOL)dd_enforceFrameLayout {
     return [objc_getAssociatedObject(self, _cmd) boolValue];
 }
 
-- (void)setFd_enforceFrameLayout:(BOOL)enforceFrameLayout {
-    objc_setAssociatedObject(self, @selector(fd_enforceFrameLayout), @(enforceFrameLayout), OBJC_ASSOCIATION_RETAIN);
+- (void)setDd_enforceFrameLayout:(BOOL)enforceFrameLayout {
+    objc_setAssociatedObject(self, @selector(dd_enforceFrameLayout), @(enforceFrameLayout), OBJC_ASSOCIATION_RETAIN);
 }
 
 @end

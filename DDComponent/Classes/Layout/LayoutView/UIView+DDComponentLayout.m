@@ -6,7 +6,7 @@
 {
     NSAssert(layoutSize, @"Must set layoutSize!");
     
-    CGSize effectiveSize = [self dd_effectiveSizeForContentSize:maxSize layoutSize:layoutSize];
+    CGSize effectiveSize = [layoutSize effectiveSizeForContentSize:maxSize];
     
     // Fixed width
     if (!layoutSize.widthDimension.isEstimated && layoutSize.heightDimension.isEstimated) {
@@ -29,41 +29,6 @@
         effectiveSize = [self systemLayoutSizeFittingSize:UILayoutFittingCompressedSize];
     }
         
-    return effectiveSize;
-}
-
-- (CGSize)dd_effectiveSizeForContentSize:(CGSize)contentSize layoutSize:(DDComponentLayoutSize *)layoutSize  {
-    CGSize effectiveSize = CGSizeZero;
-
-    DDComponentLayoutDimension *widthDimension = layoutSize.widthDimension;
-    DDComponentLayoutDimension *heightDimension = layoutSize.heightDimension;
-
-    if (widthDimension.isFractionalWidth) {
-        effectiveSize.width = contentSize.width * widthDimension.dimension;
-    }
-    if (widthDimension.isFractionalHeight) {
-        effectiveSize.width = contentSize.height * widthDimension.dimension;
-    }
-    if (widthDimension.isAbsolute) {
-        effectiveSize.width = widthDimension.dimension;
-    }
-    if (widthDimension.isEstimated) {
-        effectiveSize.width = widthDimension.dimension;
-    }
-
-    if (heightDimension.isFractionalWidth) {
-        effectiveSize.height = contentSize.width * heightDimension.dimension;
-    }
-    if (heightDimension.isFractionalHeight) {
-        effectiveSize.height = contentSize.height * heightDimension.dimension;
-    }
-    if (heightDimension.isAbsolute) {
-        effectiveSize.height = heightDimension.dimension;
-    }
-    if (heightDimension.isEstimated) {
-        effectiveSize.height = heightDimension.dimension;
-    }
-
     return effectiveSize;
 }
 
