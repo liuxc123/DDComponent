@@ -31,11 +31,14 @@
 }
 
 - (void)reloadData {
-    __weak typeof(self) weakSelf = self;
-    [self.collectionView performBatchUpdates:^{
-        __strong typeof(self) strongSelf = weakSelf;
-        [strongSelf.collectionView reloadItemsAtIndexPaths:@[[NSIndexPath indexPathForRow:strongSelf.item inSection:strongSelf.section]]];
-    } completion:nil];
+    if (self.collectionView) {
+        NSInteger items = [self collectionView:self.collectionView numberOfItemsInSection:self.section];
+        NSMutableArray *indexPaths = [NSMutableArray array];
+        for (int i = 0 ; i < items; i++) {
+            [indexPaths addObject:[NSIndexPath indexPathForRow:self.item + i inSection:self.section]];
+        }
+        [self.collectionView reloadItemsAtIndexPaths:indexPaths];
+    }
 }
 
 @end

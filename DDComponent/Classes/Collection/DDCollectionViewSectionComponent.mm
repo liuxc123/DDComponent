@@ -17,11 +17,9 @@
 }
 
 - (void)reloadData {
-    __weak typeof(self) weakSelf = self;
-    [self.collectionView performBatchUpdates:^{
-        __strong typeof(self) strongSelf = weakSelf;
-        [strongSelf.collectionView reloadSections:[NSIndexSet indexSetWithIndex:strongSelf.section]];
-    } completion:nil];
+    if (self.collectionView) {
+        [self.collectionView reloadSections:[NSIndexSet indexSetWithIndex:self.section]];
+    }
 }
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {

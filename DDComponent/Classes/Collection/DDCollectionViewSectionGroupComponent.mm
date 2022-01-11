@@ -91,13 +91,9 @@
 
 - (void)reloadData {
     if (self.collectionView) {
-        __weak typeof(self) weakSelf = self;
-        [self.collectionView performBatchUpdates:^{
-            __strong typeof(self) strongSelf = weakSelf;
-            NSInteger sections = [self numberOfSectionsInCollectionView:strongSelf.collectionView];
-            NSIndexSet *indexSet = [NSIndexSet indexSetWithIndexesInRange:NSMakeRange(strongSelf.section, sections)];
-            [strongSelf.collectionView reloadSections:indexSet];
-        } completion:nil];
+        NSInteger sections = [self numberOfSectionsInCollectionView:self.collectionView];
+        NSIndexSet *indexSet = [NSIndexSet indexSetWithIndexesInRange:NSMakeRange(self.section, sections)];
+        [self.collectionView reloadSections:indexSet];
     }
 }
 
