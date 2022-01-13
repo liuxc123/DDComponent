@@ -15,23 +15,36 @@ typedef NS_ENUM(NSUInteger, DDTemplateDynamicSizeCaculateType) {
     CGSize fittingSize = CGSizeMake(fixedValue, fixedValue);
     
     if (caculateType != DDTemplateDynamicSizeCaculateTypeSize) {
+        
+        // update cell frame
+        CGRect frame = cell.frame;
+        if (caculateType == DDTemplateDynamicSizeCaculateTypeWidth) {
+            frame.size.width = fixedValue;
+        }
+        if (caculateType == DDTemplateDynamicSizeCaculateTypeHeight) {
+            frame.size.height = fixedValue;
+        }
+        cell.frame = frame;
+        
         NSLayoutAttribute attribute = caculateType == DDTemplateDynamicSizeCaculateTypeWidth
         ? NSLayoutAttributeWidth
         : NSLayoutAttributeHeight;
         NSLayoutConstraint *tempConstraint =
-          [NSLayoutConstraint constraintWithItem:cell
+          [NSLayoutConstraint constraintWithItem:cell.contentView
                                        attribute:attribute
                                        relatedBy:NSLayoutRelationEqual
                                           toItem:nil
                                        attribute:NSLayoutAttributeNotAnAttribute
                                       multiplier:1
                                         constant:fixedValue];
-        [cell addConstraint:tempConstraint];
-        fittingSize = [cell systemLayoutSizeFittingSize:UILayoutFittingCompressedSize];
-        [cell removeConstraint:tempConstraint];
+        [cell.contentView addConstraint:tempConstraint];
+        [cell.contentView setNeedsUpdateConstraints];
+        [cell.contentView updateConstraintsIfNeeded];
+        fittingSize = [cell.contentView systemLayoutSizeFittingSize:UILayoutFittingCompressedSize];
+        [cell.contentView removeConstraint:tempConstraint];
     }
     else {
-        fittingSize = [cell systemLayoutSizeFittingSize:UILayoutFittingCompressedSize];
+        fittingSize = [cell.contentView systemLayoutSizeFittingSize:UILayoutFittingCompressedSize];
     }
 
     return fittingSize;
@@ -227,7 +240,7 @@ typedef NS_ENUM(NSUInteger, DDTemplateDynamicSizeCaculateType) {
         return cachedSize;
     }
     
-    CGSize size = [self dd_sizeForCellWithIdentifier:identifier indexPath:indexPath configuration:configuration];
+    CGSize size = [self dd_sizeForCellWithIdentifier:identifier fixedValue:fixedValue caculateType:caculateType indexPath:indexPath configuration:configuration];
     [self.dd_keyedSizeCache cacheSize:size byKey:key];
     [self dd_debugLog:[NSString stringWithFormat:@"cached by key[%@] - w:%@ h:%@", key, @(size.width), @(size.height)]];
     
