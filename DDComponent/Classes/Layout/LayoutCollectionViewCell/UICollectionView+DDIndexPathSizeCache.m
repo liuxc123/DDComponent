@@ -212,7 +212,7 @@ static void __DD_TEMPLATE_LAYOUT_CELL_PRIMARY_CALL_IF_CRASH_NOT_OUR_BUG__(void (
         [self.dd_indexPathSizeCache buildCachesAtIndexPathsIfNeeded:indexPaths];
         [indexPaths enumerateObjectsUsingBlock:^(NSIndexPath *indexPath, NSUInteger idx, BOOL *stop) {
             [self.dd_indexPathSizeCache enumerateAllOrientationsUsingBlock:^(FDIndexPathSizesBySection *sizesBySection) {
-                [sizesBySection[indexPath.section] insertObject:@-1 atIndex:indexPath.row];
+                [sizesBySection[indexPath.section] insertObject:[NSValue valueWithCGSize:CGSizeMake(-1, -1)] atIndex:indexPath.row];
             }];
         }];
     }
@@ -247,7 +247,7 @@ static void __DD_TEMPLATE_LAYOUT_CELL_PRIMARY_CALL_IF_CRASH_NOT_OUR_BUG__(void (
         [self.dd_indexPathSizeCache buildCachesAtIndexPathsIfNeeded:indexPaths];
         [indexPaths enumerateObjectsUsingBlock:^(NSIndexPath *indexPath, NSUInteger idx, BOOL *stop) {
             [self.dd_indexPathSizeCache enumerateAllOrientationsUsingBlock:^(FDIndexPathSizesBySection *sizesBySection) {
-                sizesBySection[indexPath.section][indexPath.row] = @-1;
+                sizesBySection[indexPath.section][indexPath.row] = [NSValue valueWithCGSize:CGSizeMake(-1, -1)];
             }];
         }];
     }

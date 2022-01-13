@@ -8,6 +8,12 @@
     
     CGSize effectiveSize = [layoutSize effectiveSizeForContentSize:maxSize];
     
+    // Fixed effective frame
+    CGRect originFrame = self.frame;
+    CGRect frame = self.frame;
+    frame.size = effectiveSize;
+    self.frame = frame;
+    
     // Fixed width
     if (!layoutSize.widthDimension.isEstimated && layoutSize.heightDimension.isEstimated) {
         NSLayoutConstraint *temp = [NSLayoutConstraint constraintWithItem:self attribute:NSLayoutAttributeWidth relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeNotAnAttribute multiplier:1.0 constant:maxSize.width];
@@ -28,6 +34,9 @@
     if (layoutSize.widthDimension.isEstimated && layoutSize.heightDimension.isEstimated) {
         effectiveSize = [self systemLayoutSizeFittingSize:UILayoutFittingCompressedSize];
     }
+    
+    // Restore origin frame
+    self.frame = originFrame;
         
     return effectiveSize;
 }
