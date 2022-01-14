@@ -18,7 +18,7 @@
     if (!layoutSize.widthDimension.isEstimated && layoutSize.heightDimension.isEstimated) {
         NSLayoutConstraint *temp = [NSLayoutConstraint constraintWithItem:self attribute:NSLayoutAttributeWidth relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeNotAnAttribute multiplier:1.0 constant:maxSize.width];
         [self addConstraint:temp];
-        effectiveSize = [self systemLayoutSizeFittingSize:UILayoutFittingCompressedSize];
+        effectiveSize = [self systemLayoutSizeFittingSize:effectiveSize];
         [self removeConstraint:temp];
     }
     
@@ -26,14 +26,16 @@
     if (layoutSize.widthDimension.isEstimated && !layoutSize.heightDimension.isEstimated) {
         NSLayoutConstraint *temp = [NSLayoutConstraint constraintWithItem:self attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeNotAnAttribute multiplier:1.0 constant:maxSize.height];
         [self addConstraint:temp];
-        effectiveSize = [self systemLayoutSizeFittingSize:UILayoutFittingCompressedSize];
+        effectiveSize = [self systemLayoutSizeFittingSize:effectiveSize];
         [self removeConstraint:temp];
     }
     
     // Dynamic size
     if (layoutSize.widthDimension.isEstimated && layoutSize.heightDimension.isEstimated) {
-        effectiveSize = [self systemLayoutSizeFittingSize:UILayoutFittingCompressedSize];
+        effectiveSize = [self systemLayoutSizeFittingSize:effectiveSize];
     }
+    
+    NSLog(@"%@", [NSString stringWithFormat:@"calculate using system fitting size (AutoLayout) - %@", @(effectiveSize)]);
     
     // Restore origin frame
     self.frame = originFrame;

@@ -12,39 +12,80 @@ typedef NS_ENUM(NSUInteger, DDTemplateDynamicSizeCaculateType) {
 - (CGSize)dd_systemFittingSizeForConfiguratedCell:(UICollectionViewCell *)cell
                                        fixedValue:(CGFloat)fixedValue
                                      caculateType:(DDTemplateDynamicSizeCaculateType)caculateType {
-    CGSize fittingSize = CGSizeMake(fixedValue, fixedValue);
     
-    if (caculateType != DDTemplateDynamicSizeCaculateTypeSize) {
+    CGSize fittingSize = CGSizeZero;
+    
+    if (!cell.dd_enforceFrameLayout) {
         
-        // update cell frame
-        CGRect frame = cell.frame;
+        if (caculateType != DDTemplateDynamicSizeCaculateTypeSize) {
+            
+            // update cell frame
+            CGRect frame = cell.frame;
+            if (caculateType == DDTemplateDynamicSizeCaculateTypeWidth) {
+                frame.size.width = fixedValue;
+            }
+            if (caculateType == DDTemplateDynamicSizeCaculateTypeHeight) {
+                frame.size.height = fixedValue;
+            }
+            cell.frame = frame;
+            
+            // update fitting size
+            fittingSize = cell.bounds.size;
+            
+            if (caculateType == DDTemplateDynamicSizeCaculateTypeWidth) {
+                fittingSize.width = fixedValue;
+            }
+            if (caculateType == DDTemplateDynamicSizeCaculateTypeHeight) {
+                fittingSize.height = fixedValue;
+            }
+            
+            NSLayoutAttribute attribute = caculateType == DDTemplateDynamicSizeCaculateTypeWidth
+            ? NSLayoutAttributeWidth
+            : NSLayoutAttributeHeight;
+            NSLayoutConstraint *tempConstraint =
+              [NSLayoutConstraint constraintWithItem:cell.contentView
+                                           attribute:attribute
+                                           relatedBy:NSLayoutRelationEqual
+                                              toItem:nil
+                                           attribute:NSLayoutAttributeNotAnAttribute
+                                          multiplier:1
+                                            constant:fixedValue];
+            [cell.contentView addConstraint:tempConstraint];
+            [cell.contentView setNeedsUpdateConstraints];
+            [cell.contentView updateConstraintsIfNeeded];
+            fittingSize = [cell.contentView systemLayoutSizeFittingSize:fittingSize];
+            [cell.contentView removeConstraint:tempConstraint];
+        }
+        else {
+            fittingSize = [cell.contentView systemLayoutSizeFittingSize:fittingSize];
+        }
+        
+        [self dd_debugLog:[NSString stringWithFormat:@"calculate using system fitting size (AutoLayout) - %@", @(fittingSize)]];
+    }
+    
+    else {
+        
+#if DEBUG
+        // Warn if using AutoLayout but get zero height.
+        if (cell.contentView.constraints.count > 0) {
+            if (!objc_getAssociatedObject(self, _cmd)) {
+                NSLog(@"[DDTemplateLayoutCell] Warning once only: Cannot get a proper cell size (now zero) from '- systemFittingSize:'(AutoLayout). You should check how constraints are built in cell, making it into 'self-sizing' cell.");
+                objc_setAssociatedObject(self, _cmd, @YES, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+            }
+        }
+#endif
+                
         if (caculateType == DDTemplateDynamicSizeCaculateTypeWidth) {
-            frame.size.width = fixedValue;
+            fittingSize.width = fixedValue;
         }
         if (caculateType == DDTemplateDynamicSizeCaculateTypeHeight) {
-            frame.size.height = fixedValue;
+            fittingSize.height = fixedValue;
         }
-        cell.frame = frame;
         
-        NSLayoutAttribute attribute = caculateType == DDTemplateDynamicSizeCaculateTypeWidth
-        ? NSLayoutAttributeWidth
-        : NSLayoutAttributeHeight;
-        NSLayoutConstraint *tempConstraint =
-          [NSLayoutConstraint constraintWithItem:cell.contentView
-                                       attribute:attribute
-                                       relatedBy:NSLayoutRelationEqual
-                                          toItem:nil
-                                       attribute:NSLayoutAttributeNotAnAttribute
-                                      multiplier:1
-                                        constant:fixedValue];
-        [cell.contentView addConstraint:tempConstraint];
-        [cell.contentView setNeedsUpdateConstraints];
-        [cell.contentView updateConstraintsIfNeeded];
-        fittingSize = [cell.contentView systemLayoutSizeFittingSize:UILayoutFittingCompressedSize];
-        [cell.contentView removeConstraint:tempConstraint];
-    }
-    else {
-        fittingSize = [cell.contentView systemLayoutSizeFittingSize:UILayoutFittingCompressedSize];
+        // Try '- sizeThatFits:' for frame layout.
+        fittingSize = [cell sizeThatFits:fittingSize];
+        
+        [self dd_debugLog:[NSString stringWithFormat:@"calculate using sizeThatFits - %@", @(fittingSize)]];
     }
 
     return fittingSize;
