@@ -68,12 +68,17 @@
 - (UICollectionViewLayoutAttributes *)dd_preferredLayoutAttributesFittingAttributes:(UICollectionViewLayoutAttributes *)layoutAttributes {
     
     if (self.layoutSize) {
-        [self setNeedsLayout];
-        [self layoutIfNeeded];
+        [CATransaction begin];
+        [CATransaction setDisableActions:NO];
+        
+        [self.contentView setNeedsLayout];
+        [self.contentView layoutIfNeeded];
         
         CGRect frame = layoutAttributes.frame;
-        frame.size = [self dd_sizeThatFits:layoutAttributes.frame.size layoutSize:self.layoutSize];
+        frame.size = [self.contentView dd_sizeThatFits:layoutAttributes.frame.size layoutSize:self.layoutSize];
         layoutAttributes.frame = frame;
+        
+        [CATransaction commit];
     }
     
     return layoutAttributes;
@@ -87,12 +92,17 @@
 - (UICollectionViewLayoutAttributes *)dd_preferredLayoutAttributesFittingAttributes:(UICollectionViewLayoutAttributes *)layoutAttributes {
     
     if (self.layoutSize) {
+        [CATransaction begin];
+        [CATransaction setDisableActions:NO];
+        
         [self setNeedsLayout];
         [self layoutIfNeeded];
         
         CGRect frame = layoutAttributes.frame;
         frame.size = [self dd_sizeThatFits:layoutAttributes.frame.size layoutSize:self.layoutSize];
         layoutAttributes.frame = frame;
+        
+        [CATransaction commit];
     }
     
     return layoutAttributes;

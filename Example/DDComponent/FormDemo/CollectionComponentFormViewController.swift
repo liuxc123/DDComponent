@@ -47,7 +47,7 @@ class CollectionComponentFormViewController: UIViewController {
             textItemView.backgroundColor = .white
 
             let itemComponent = DDCollectionViewFormItemComponent(itemView: textItemView)
-            itemComponent.layoutSize = DDComponentLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .absolute(50))
+            itemComponent.layoutSize = DDComponentLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .estimated(50))
             subComponents.append(itemComponent)
         }
         
@@ -57,7 +57,7 @@ class CollectionComponentFormViewController: UIViewController {
         label.sizeToFit()
                 
         let itemComponent = DDCollectionViewFormItemComponent(itemView: label)
-        itemComponent.layoutSize = DDComponentLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .absolute(50))
+        itemComponent.layoutSize = DDComponentLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .estimated(50))
         subComponents.append(itemComponent)
         
         let group = DDCollectionViewItemGroupComponent(subComponents: subComponents)

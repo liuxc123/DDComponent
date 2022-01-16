@@ -64,7 +64,7 @@
     DDCollectionViewFormItemComponent *item3 = [[DDCollectionViewFormItemComponent alloc] initWithItemView:self.label3];
     item3.layoutSize = layoutSize;
     [subComponents addObject:item3];
-    
+
     for (int i = 0; i < 10; i++) {
         UILabel *label = [[UILabel alloc] init];
         label.text = @"大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大\n大叔大婶大所大所大所大所大";
@@ -82,15 +82,7 @@
     group.sectionInset = UIEdgeInsetsMake(10, 10, 10, 10);
     self.group = group;
     
-    /// Group2
-    DDCollectionViewItemGroupComponent *group2 = [DDCollectionViewItemGroupComponent componentWithSubComponents:@[
-        item3
-    ]];
-    group2.lineSpacing = 0;
-    group2.itemSpacing = 0;
-    group2.sectionInset = UIEdgeInsetsMake(10, 10, 10, 10);
-    
-    self.rootComponent.subComponents = @[group, group2];
+    self.rootComponent.subComponents = @[group];
     [self.rootComponent reloadData];
 }
 
@@ -98,15 +90,11 @@
 //    self.label.text = @"大叔大婶大所大所大所大所大";
 //    self.label2.text = @"大叔大婶大所大所大所大所大";
 //    self.label3.text = @"大叔大婶大所大所大所大所大";
-    [self setupComponent];
 
-
-//    [self.collectionView performBatchUpdates:^{
-////        [self animateCollection];
-//    } completion:^(BOOL finished) {
-//
-//    }];
-//    [self animateCollection];
+    [self.collectionView reloadData];
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [self animateCollection];
+    });
 }
 
 -(void)animateCollection{

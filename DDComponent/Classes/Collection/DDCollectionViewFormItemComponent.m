@@ -7,7 +7,6 @@
 @implementation DDCollectionViewFormItemCell
 
 - (UICollectionViewLayoutAttributes *)preferredLayoutAttributesFittingAttributes:(UICollectionViewLayoutAttributes *)layoutAttributes {
-    
     return [self dd_preferredLayoutAttributesFittingAttributes: layoutAttributes];
 }
 
@@ -27,9 +26,9 @@
     self = [super init];
     if (self) {
         self.itemView = itemView;
-        self.layoutSize = [DDComponentLayoutSize sizeWithWidthDimension:[DDComponentLayoutDimension fractionalWidthDimension:1.0]
-                                                    heightDimension:[DDComponentLayoutDimension absoluteDimension:44]];
         self.size = CGSizeMake(DDComponentAutomaticDimension, DDComponentAutomaticDimension);
+        self.layoutSize = [DDComponentLayoutSize sizeWithWidthDimension:[DDComponentLayoutDimension fractionalWidthDimension:1.0]
+                                                        heightDimension:[DDComponentLayoutDimension absoluteDimension:44]];
     }
     return self;
 }
@@ -40,14 +39,15 @@
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return self.itemView ? 1 : 0;
+    
+    NSAssert(self.itemView, @"Must set itemView!");
+    
+    return 1;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     
-    if (!self.itemView) {
-        return nil;
-    }
+    NSAssert(self.itemView, @"Must set itemView!");
     
     DDCollectionViewFormItemCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:self.reuseIdentifier forIndexPath:indexPath];
     

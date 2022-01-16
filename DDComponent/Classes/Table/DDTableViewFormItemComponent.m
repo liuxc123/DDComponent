@@ -25,13 +25,15 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return self.itemView ? 1 : 0;
+    
+    NSAssert(self.itemView, @"Must set itemView!");
+    
+    return 1;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (!self.itemView) {
-        return nil;
-    }
+    
+    NSAssert(self.itemView, @"Must set itemView!");
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:self.reuseIdentifier];
         

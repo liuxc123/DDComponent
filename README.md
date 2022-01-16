@@ -13,7 +13,7 @@ Make a collection controller to several components. A `UICollectionView/UITableV
 ### CocoaPods
 
 ```
-pod 'DDComponent', :git => 'https://github.com/liuxc123/DDComponent.git', :tag => '1.0.8'
+pod 'DDComponent', :git => 'https://github.com/liuxc123/DDComponent.git', :tag => '1.0.9'
 ```
 
 # From
