@@ -19,7 +19,7 @@
 ### CocoaPods
 
 ```
-pod 'DDComponent', :git => 'https://github.com/liuxc123/DDComponent.git', :tag => '1.0.9'
+pod 'DDComponent', :git => 'https://github.com/liuxc123/DDComponent.git', :tag => '1.0.11'
 ```
 
 # 使用
