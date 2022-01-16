@@ -11,8 +11,12 @@
 @property (assign, nonatomic) CGSize size;
 
 /**
- It will fit the collection height or width when use DDComponentLayoutSize.
- - (UICollectionViewLayoutAttributes *)preferredLayoutAttributesFittingAttributes:(UICollectionViewLayoutAttributes *)layoutAttributes
+ It will fit the collection height or width when use DDComponentLayoutSize. default nil.
+ UICollectionViewCell or UICollectionReuseableView function:
+ 
+ - (UICollectionViewLayoutAttributes *)preferredLayoutAttributesFittingAttributes:(UICollectionViewLayoutAttributes *)layoutAttributes {
+     return [self dd_preferredLayoutAttributesFittingAttributes: layoutAttributes];
+ }
  */
 @property (copy, nonatomic, nullable) DDComponentLayoutSize *headerLayoutSize;
 @property (copy, nonatomic, nullable) DDComponentLayoutSize *footerLayoutSize;
