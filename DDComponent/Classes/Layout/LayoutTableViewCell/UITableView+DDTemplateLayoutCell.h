@@ -1,7 +1,7 @@
 #import <UIKit/UIKit.h>
+#import "UIView+DDComponentLayoutDebug.h"
 #import "UITableView+DDKeyedHeightCache.h"
 #import "UITableView+DDIndexPathHeightCache.h"
-#import "UITableView+DDTemplateLayoutCellDebug.h"
 
 @interface UITableView (DDTemplateLayoutCell)
 

@@ -1,6 +1,15 @@
+//
+//  UIView+DDComponentLayoutDebug.h
+//  DDComponent
+//
+//  Created by liuxc on 2022/1/14.
+//
+
 #import <UIKit/UIKit.h>
 
-@interface UITableView (DDTemplateLayoutCellDebug)
+NS_ASSUME_NONNULL_BEGIN
+
+@interface UIView (DDComponentLayoutDebug)
 
 /// Helps to debug or inspect what is this "DDTemplateLayoutCell" extention doing,
 /// turning on to print logs when "creating", "calculating", "precaching" or "hitting cache".
@@ -13,3 +22,5 @@
 - (void)dd_debugLog:(NSString *)message;
 
 @end
+
+NS_ASSUME_NONNULL_END

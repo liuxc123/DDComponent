@@ -1,8 +1,26 @@
 #import "UIView+DDComponentLayout.h"
+#import "UIView+DDComponentLayoutDebug.h"
+#import <objc/runtime.h>
 
 @implementation UIView (DDComponentLayout)
 
-- (CGSize)sizeThatFits:(CGSize)maxSize layoutSize:(DDComponentLayoutSize *)layoutSize
+- (DDComponentLayoutSize *)layoutSize {
+    return objc_getAssociatedObject(self, _cmd);
+}
+
+- (void)setLayoutSize:(DDComponentLayoutSize *)layoutSize {
+    objc_setAssociatedObject(self, @selector(layoutSize), layoutSize, OBJC_ASSOCIATION_COPY_NONATOMIC);
+
+}
+
+- (CGSize)dd_sizeThatFits:(CGSize)size {
+    if (self.layoutSize) {
+        return [self dd_sizeThatFits:size layoutSize:self.layoutSize];
+    }
+    return size;
+}
+
+- (CGSize)dd_sizeThatFits:(CGSize)maxSize layoutSize:(DDComponentLayoutSize *)layoutSize
 {
     NSAssert(layoutSize, @"Must set layoutSize!");
     
@@ -35,12 +53,49 @@
         effectiveSize = [self systemLayoutSizeFittingSize:effectiveSize];
     }
     
-    NSLog(@"%@", [NSString stringWithFormat:@"calculate using system fitting size (AutoLayout) - %@", @(effectiveSize)]);
+    [self dd_debugLog:[NSString stringWithFormat:@"calculate using system fitting size (AutoLayout) - %@", @(effectiveSize)]];
     
     // Restore origin frame
     self.frame = originFrame;
         
     return effectiveSize;
+}
+
+@end
+
+
+@implementation UICollectionViewCell (DDComponentLayout)
+
+- (UICollectionViewLayoutAttributes *)dd_preferredLayoutAttributesFittingAttributes:(UICollectionViewLayoutAttributes *)layoutAttributes {
+    
+    if (self.layoutSize) {
+        [self setNeedsLayout];
+        [self layoutIfNeeded];
+        
+        CGRect frame = layoutAttributes.frame;
+        frame.size = [self dd_sizeThatFits:layoutAttributes.frame.size layoutSize:self.layoutSize];
+        layoutAttributes.frame = frame;
+    }
+    
+    return layoutAttributes;
+}
+
+@end
+
+@implementation UICollectionReusableView (DDComponentLayout)
+
+- (UICollectionViewLayoutAttributes *)dd_preferredLayoutAttributesFittingAttributes:(UICollectionViewLayoutAttributes *)layoutAttributes {
+    
+    if (self.layoutSize) {
+        [self setNeedsLayout];
+        [self layoutIfNeeded];
+        
+        CGRect frame = layoutAttributes.frame;
+        frame.size = [self dd_sizeThatFits:layoutAttributes.frame.size layoutSize:self.layoutSize];
+        layoutAttributes.frame = frame;
+    }
+    
+    return layoutAttributes;
 }
 
 @end

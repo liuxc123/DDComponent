@@ -1,7 +1,7 @@
-#import "UITableView+DDTemplateLayoutCellDebug.h"
+#import "UIView+DDComponentLayoutDebug.h"
 #import <objc/runtime.h>
 
-@implementation UITableView (DDTemplateLayoutCellDebug)
+@implementation UIView (DDComponentLayoutDebug)
 
 - (BOOL)dd_debugLogEnabled {
     return [objc_getAssociatedObject(self, _cmd) boolValue];
@@ -13,7 +13,7 @@
 
 - (void)dd_debugLog:(NSString *)message {
     if (self.dd_debugLogEnabled) {
-        NSLog(@"** DDTemplateLayoutCell ** %@", message);
+        NSLog(@"** DDComponentLayout ** %@", message);
     }
 }
 

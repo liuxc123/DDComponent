@@ -1,7 +1,7 @@
 #import <UIKit/UIKit.h>
+#import "UIView+DDComponentLayoutDebug.h"
 #import "UICollectionView+DDKeyedSizeCache.h"
 #import "UICollectionView+DDIndexPathSizeCache.h"
-#import "UICollectionView+DDTemplateLayoutCellDebug.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

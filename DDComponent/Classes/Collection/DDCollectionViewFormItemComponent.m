@@ -6,6 +6,10 @@
 
 @implementation DDCollectionViewFormItemCell
 
+- (UICollectionViewLayoutAttributes *)preferredLayoutAttributesFittingAttributes:(UICollectionViewLayoutAttributes *)layoutAttributes {
+    return [self dd_preferredLayoutAttributesFittingAttributes: layoutAttributes];
+}
+
 @end
 
 @interface DDCollectionViewFormItemComponent ()
@@ -46,6 +50,8 @@
     
     DDCollectionViewFormItemCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:self.reuseIdentifier forIndexPath:indexPath];
     
+    cell.layoutSize = self.itemSize;
+        
     if ([self.itemView.superview isEqual: cell.contentView]) {
         return cell;
     }
@@ -82,7 +88,7 @@
         return size;
     }
     
-    return [self.itemView sizeThatFits:size layoutSize:self.itemSize];
+    return [self.itemView dd_sizeThatFits:size layoutSize:self.itemSize];
 }
 
 - (NSString *)reuseIdentifier {

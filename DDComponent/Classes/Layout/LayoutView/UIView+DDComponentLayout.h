@@ -4,11 +4,25 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@class DDComponentLayoutDimension;
-
 @interface UIView (DDComponentLayout)
 
-- (CGSize)sizeThatFits:(CGSize)maxSize layoutSize:(DDComponentLayoutSize *)layoutSize;
+@property (nonatomic, copy, nullable) DDComponentLayoutSize *layoutSize;
+
+- (CGSize)dd_sizeThatFits:(CGSize)size;
+
+- (CGSize)dd_sizeThatFits:(CGSize)size layoutSize:(DDComponentLayoutSize *)layoutSize;
+
+@end
+
+@interface UICollectionViewCell (DDComponentLayout)
+
+- (UICollectionViewLayoutAttributes *)dd_preferredLayoutAttributesFittingAttributes:(UICollectionViewLayoutAttributes *)layoutAttributes;
+
+@end
+
+@interface UICollectionReusableView (DDComponentLayout)
+
+- (UICollectionViewLayoutAttributes *)dd_preferredLayoutAttributesFittingAttributes:(UICollectionViewLayoutAttributes *)layoutAttributes;
 
 @end
 
