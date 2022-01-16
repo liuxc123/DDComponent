@@ -7,6 +7,7 @@
 @implementation DDCollectionViewFormItemCell
 
 - (UICollectionViewLayoutAttributes *)preferredLayoutAttributesFittingAttributes:(UICollectionViewLayoutAttributes *)layoutAttributes {
+    
     return [self dd_preferredLayoutAttributesFittingAttributes: layoutAttributes];
 }
 
@@ -25,9 +26,9 @@
 {
     self = [super init];
     if (self) {
-        _itemView = itemView;
-        _itemSize = [DDComponentLayoutSize sizeWithWidthDimension:[DDComponentLayoutDimension fractionalWidthDimension:1.0]
-                                                  heightDimension:[DDComponentLayoutDimension absoluteDimension:44]];
+        self.itemView = itemView;
+        self.layoutSize = [DDComponentLayoutSize sizeWithWidthDimension:[DDComponentLayoutDimension fractionalWidthDimension:1.0]
+                                                    heightDimension:[DDComponentLayoutDimension absoluteDimension:44]];
         self.size = CGSizeMake(DDComponentAutomaticDimension, DDComponentAutomaticDimension);
     }
     return self;
@@ -50,7 +51,8 @@
     
     DDCollectionViewFormItemCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:self.reuseIdentifier forIndexPath:indexPath];
     
-    cell.layoutSize = self.itemSize;
+    // set up layout size
+    cell.layoutSize = self.layoutSize;
         
     if ([self.itemView.superview isEqual: cell.contentView]) {
         return cell;
@@ -74,21 +76,6 @@
     [NSLayoutConstraint activateConstraints:@[top, right, bottom, left]];
 
     return cell;
-}
-
-- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
-    
-    if (!self.itemView) {
-        return CGSizeZero;
-    }
-    
-    CGSize size = [super collectionView:collectionView layout:collectionViewLayout sizeForItemAtIndexPath:indexPath];
-
-    if (!self.itemSize) {
-        return size;
-    }
-    
-    return [self.itemView dd_sizeThatFits:size layoutSize:self.itemSize];
 }
 
 - (NSString *)reuseIdentifier {

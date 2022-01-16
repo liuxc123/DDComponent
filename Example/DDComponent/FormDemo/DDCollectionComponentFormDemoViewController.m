@@ -33,7 +33,7 @@
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Refresh" style:UIBarButtonItemStylePlain target:self action:@selector(refreshAction)];
     
     UICollectionViewFlowLayout *layout = [UICollectionViewFlowLayout new];
-//    layout.estimatedItemSize = CGSizeMake(self.view.frame.size.width, 60);
+    layout.estimatedItemSize = UICollectionViewFlowLayoutAutomaticSize;
     self.collectionView = [[UICollectionView alloc] initWithFrame:self.view.bounds collectionViewLayout: layout];
     self.collectionView.backgroundColor = UIColor.whiteColor;
     [self.view addSubview:self.collectionView];
@@ -47,22 +47,22 @@
     NSMutableArray *subComponents = [NSMutableArray array];
     
     /// item1
-    DDComponentLayoutSize *itemSize = [DDComponentLayoutSize
+    DDComponentLayoutSize *layoutSize = [DDComponentLayoutSize
                                         sizeWithWidthDimension:[DDComponentLayoutDimension fractionalWidthDimension:1.0]
                                         heightDimension:[DDComponentLayoutDimension estimatedDimension:60]];
     
     DDCollectionViewFormItemComponent *item = [[DDCollectionViewFormItemComponent alloc] initWithItemView:self.label];
-    item.itemSize = itemSize;
+    item.layoutSize = layoutSize;
     [subComponents addObject:item];
 
     /// item2
     DDCollectionViewFormItemComponent *item2 = [[DDCollectionViewFormItemComponent alloc] initWithItemView:self.label2];
-    item2.itemSize = itemSize;
+    item2.layoutSize = layoutSize;
     [subComponents addObject:item2];
 
     /// item3
     DDCollectionViewFormItemComponent *item3 = [[DDCollectionViewFormItemComponent alloc] initWithItemView:self.label3];
-    item3.itemSize = itemSize;
+    item3.layoutSize = layoutSize;
     [subComponents addObject:item3];
     
     for (int i = 0; i < 10; i++) {
@@ -71,7 +71,7 @@
         label.numberOfLines = 0;
         label.backgroundColor = arc4random()%100 > 50 ? UIColor.redColor : UIColor.greenColor;
         DDCollectionViewFormItemComponent *item = [[DDCollectionViewFormItemComponent alloc] initWithItemView:label];
-        item.itemSize = itemSize;
+        item.layoutSize = layoutSize;
         [subComponents addObject:item];
     }
 

@@ -8,7 +8,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, copy, nullable) DDComponentLayoutSize *layoutSize;
 
+/**
+ if self.layoutSize != nil , return calculate view size
+ */
 - (CGSize)dd_sizeThatFits:(CGSize)size;
+
 
 - (CGSize)dd_sizeThatFits:(CGSize)size layoutSize:(DDComponentLayoutSize *)layoutSize;
 

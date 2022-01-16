@@ -13,6 +13,7 @@ class CollectionComponentFormViewController: UIViewController {
     
     lazy var collectionViewLayout: UICollectionViewFlowLayout = {
         let layout = UICollectionViewFlowLayout()
+        layout.estimatedItemSize = UICollectionViewFlowLayout.automaticSize
         return layout
     }()
     lazy var collectionView = UICollectionView(frame: self.view.bounds, collectionViewLayout: collectionViewLayout)
@@ -46,7 +47,7 @@ class CollectionComponentFormViewController: UIViewController {
             textItemView.backgroundColor = .white
 
             let itemComponent = DDCollectionViewFormItemComponent(itemView: textItemView)
-            itemComponent.itemSize = DDComponentLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .absolute(50))
+            itemComponent.layoutSize = DDComponentLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .absolute(50))
             subComponents.append(itemComponent)
         }
         
@@ -56,7 +57,7 @@ class CollectionComponentFormViewController: UIViewController {
         label.sizeToFit()
                 
         let itemComponent = DDCollectionViewFormItemComponent(itemView: label)
-        itemComponent.itemSize = DDComponentLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .absolute(50))
+        itemComponent.layoutSize = DDComponentLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .absolute(50))
         subComponents.append(itemComponent)
         
         let group = DDCollectionViewItemGroupComponent(subComponents: subComponents)

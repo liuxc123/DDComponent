@@ -10,7 +10,6 @@
 
 - (void)setLayoutSize:(DDComponentLayoutSize *)layoutSize {
     objc_setAssociatedObject(self, @selector(layoutSize), layoutSize, OBJC_ASSOCIATION_COPY_NONATOMIC);
-
 }
 
 - (CGSize)dd_sizeThatFits:(CGSize)size {
@@ -81,6 +80,7 @@
 }
 
 @end
+
 
 @implementation UICollectionReusableView (DDComponentLayout)
 
