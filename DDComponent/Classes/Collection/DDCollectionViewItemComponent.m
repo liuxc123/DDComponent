@@ -15,17 +15,18 @@
     CGSize size = self.size;
     BOOL autoWidth = size.width == DDComponentAutomaticDimension;
     BOOL autoHeight = size.height == DDComponentAutomaticDimension;
-    UIEdgeInsets inset = UIEdgeInsetsZero;
+    UIEdgeInsets contentInset = collectionView.contentInset;
+    UIEdgeInsets sectionInset = UIEdgeInsetsZero;
     if (autoWidth || autoHeight) {
-        inset = [self.rootComponent collectionView:collectionView
-                                            layout:collectionViewLayout
-                            insetForSectionAtIndex:indexPath.section];
+        sectionInset = [self.rootComponent collectionView:collectionView
+                                                   layout:collectionViewLayout
+                                   insetForSectionAtIndex:indexPath.section];
     }
     if (autoWidth) {
-        size.width = MAX(collectionView.frame.size.width - inset.left - inset.right, 0);
+        size.width = MAX(collectionView.frame.size.width - sectionInset.left - sectionInset.right - contentInset.left - contentInset.right, 0);
     }
     if (autoHeight) {
-        size.height = MAX(collectionView.frame.size.height - inset.top - inset.bottom, 0);
+        size.height = MAX(collectionView.frame.size.height - sectionInset.top - sectionInset.bottom - contentInset.top - contentInset.bottom, 0);
     }
     return size;
 }

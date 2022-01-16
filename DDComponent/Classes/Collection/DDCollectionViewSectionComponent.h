@@ -1,4 +1,5 @@
 #import "DDCollectionViewComponent.h"
+#import "UIView+DDComponentLayout.h"
 
 @interface DDCollectionViewSectionComponent : DDCollectionViewBaseComponent
 
@@ -8,6 +9,14 @@
 @property (assign, nonatomic) CGSize headerSize;
 @property (assign, nonatomic) CGSize footerSize;
 @property (assign, nonatomic) CGSize size;
+
+/**
+ It will fit the collection height or width when use DDComponentLayoutSize.
+ - (UICollectionViewLayoutAttributes *)preferredLayoutAttributesFittingAttributes:(UICollectionViewLayoutAttributes *)layoutAttributes
+ */
+@property (copy, nonatomic, nullable) DDComponentLayoutSize *headerLayoutSize;
+@property (copy, nonatomic, nullable) DDComponentLayoutSize *footerLayoutSize;
+@property (copy, nonatomic, nullable) DDComponentLayoutSize *layoutSize;
 
 /**
  It will use FlowLayout's properties if DDComponentAutomaticDimension.
